@@ -290,8 +290,35 @@ jobs:
           # only clean up previous stats when all tools runned
           cleanup: ${{ github.event.inputs.tool == 'all' && true || false }}
 
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: '["results"]'
-          default_author: github_actions
-          message: "update: ${{ matrix.sites.url }}"
+      - name: "Commit"
+        id: commit1
+        continue-on-error: true
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name GitHub
+          git add "results"
+          git commit -m "update: ${{ matrix.sites.url }}"
+          git pull --rebase --no-ff origin ${{ github.ref }}
+          git push
+
+      - name: "Commit retry"
+        if: steps.commit1.outcome=='failure'
+        id: commit2
+        continue-on-error: true
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name GitHub
+          git add "results"
+          git commit -m "update: ${{ matrix.sites.url }}"
+          git pull --rebase --no-ff origin ${{ github.ref }}
+          git push
+
+      - name: "Commit retry 2"
+        if: steps.commit2.outcome=='failure'
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name GitHub
+          git add "results"
+          git commit -m "update: ${{ matrix.sites.url }}"
+          git pull --rebase --no-ff origin ${{ github.ref }}
+          git push
