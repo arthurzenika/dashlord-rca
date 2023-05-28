@@ -149,18 +149,18 @@
       }
     },
     {
-      "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=CDFvp7CXAHw7k3HxO47Gm1O9&theme=light&size=normal&cb=z87daea1hxzs",
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je35o0&_p=568936717&cid=128340102.1685236488&ul=en-us&_geo=1&_rdi=1&ngs=1&_s=1&sid=1685236488&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
       "details": {
-        "id": "google",
+        "id": "google analytics",
         "message": "Use hosted Matomo instance"
       }
     },
     {
-      "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je35o0&_p=875773613&cid=516920895.1685090968&ul=en-us&_geo=1&_rdi=1&ngs=1&_s=1&sid=1685090968&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
+      "type": "google",
+      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=CDFvp7CXAHw7k3HxO47Gm1O9&theme=light&size=normal&cb=orv18shyqqar",
       "details": {
-        "id": "google analytics",
+        "id": "google",
         "message": "Use hosted Matomo instance"
       }
     },
@@ -224,10 +224,10 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.516920895.1685090968",
+      "value": "GA1.1.128340102.1685236488",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1748162968,
+      "expires": 1748308488,
       "size": 29,
       "httpOnly": false,
       "secure": false,
@@ -238,10 +238,10 @@
     },
     {
       "name": "_ga_VTC217M61H",
-      "value": "GS1.1.1685090968.1.0.1685090968.0.0.0",
+      "value": "GS1.1.1685236488.1.0.1685236488.0.0.0",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1748162968,
+      "expires": 1748308488,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -257,7 +257,7 @@
     "content-encoding": "gzip",
     "content-length": "38119",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Fri, 26 May 2023 08:49:26 GMT",
+    "date": "Sun, 28 May 2023 01:14:46 GMT",
     "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
     "pragma": "no-cache",
     "server": "Apache",
@@ -322,7 +322,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.16.95",
+      "ip": "172.253.62.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -376,7 +376,7 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.15.9.58",
+      "ip": "23.199.55.5",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -455,8 +455,15 @@
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "23.62.6.195",
+      "ip": "23.199.55.39",
       "geoip": {
+        "city": {
+          "geoname_id": 4744870,
+          "names": {
+            "en": "Ashburn",
+            "ru": "Ашберн"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -486,10 +493,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 20,
+          "latitude": 39.0469,
+          "longitude": -77.4903,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "20149"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -504,12 +515,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 6254928,
+            "iso_code": "VA",
+            "names": {
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.16.105",
+      "ip": "142.250.31.105",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -563,7 +588,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.16.94",
+      "ip": "172.253.115.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -673,7 +698,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.251.111.97",
+      "ip": "142.250.31.97",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -727,7 +752,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.251.167.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -781,7 +806,7 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.251.163.100",
+      "ip": "142.251.16.101",
       "geoip": {
         "continent": {
           "code": "NA",
