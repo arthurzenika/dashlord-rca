@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 28 May 2023 01:31:10",
+	"@generated": "Sun, 4 Jun 2023 01:45:17",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -207,7 +207,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-un-acteur-engage-de-la-facture-electronique/",
+							"uri": "https://blog.rca.fr/rse-les-actions-mises-en-place-chez-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -470,7 +470,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "564"
+					"sourceid": "557"
 				},
 				{
 					"pluginid": "10063",
@@ -547,7 +547,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-un-acteur-engage-de-la-facture-electronique/",
+							"uri": "https://blog.rca.fr/rca-day-la-journee-dintegration-officielle/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -638,14 +638,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/les-ambassadeurs-rca/",
 							"method": "GET",
 							"param": "",
@@ -686,7 +678,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
@@ -890,33 +882,9 @@
 							"attack": "",
 							"evidence": "1663701474",
 							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
-						},
-						{
-							"uri": "https://blog.rca.fr/rca-un-acteur-engage-de-la-facture-electronique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1663701474",
-							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
-						},
-						{
-							"uri": "https://blog.rca.fr/rse-les-actions-mises-en-place-chez-rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1663701474",
-							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
-						},
-						{
-							"uri": "https://blog.rca.fr/seminaire-annuel-rca-2023/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1663701474",
-							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
 						}
 					],
-					"count": "13",
+					"count": "10",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1663701474, which evaluates to: 2022-09-20 19:17:54</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -999,7 +967,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-un-acteur-engage-de-la-facture-electronique/",
+							"uri": "https://blog.rca.fr/robots.txt",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1007,7 +975,15 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/robots.txt",
+							"uri": "https://blog.rca.fr/rse-les-actions-mises-en-place-chez-rca/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://blog.rca.fr/seminaire-annuel-rca-2023/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1023,7 +999,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -1114,14 +1090,6 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-un-acteur-engage-de-la-facture-electronique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/05/RCA-HD-33-copie-1-scaled",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x0003\uFFFD\uFFFD\uFFFD}\uFFFDr\uFFFDb{\uFFFD~\uFFFD\u01A5y"
-						},
-						{
 							"uri": "https://blog.rca.fr/rse-les-actions-mises-en-place-chez-rca/",
 							"method": "GET",
 							"param": "",
@@ -1138,7 +1106,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x0003\uFFFD\uFFFD\uFFFD~\uFFFD\uFFFD\u01A5y</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1243,138 +1211,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fteam-rca-instagram%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
 					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "534"
-				},
-				{
-					"pluginid": "10019",
-					"alertRef": "10019",
-					"alert": "Content-Type Header Missing",
-					"name": "Content-Type Header Missing",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The Content-Type header was either missing or empty.</p>",
-					"instances":[ 
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Heavy.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-HeavyItalic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Medium.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-MediumItalic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Regular.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-RegularItalic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBold.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBoldItalic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Thin.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-ThinItalic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-UltraLight.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-UltraLightItalic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "12",
-					"solution": "<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>",
-					"otherinfo": "",
-					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
-					"cweid": "345",
-					"wascid": "12",
-					"sourceid": "1229"
+					"sourceid": "537"
 				},
 				{
 					"pluginid": "10027",
@@ -1550,7 +1395,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-un-acteur-engage-de-la-facture-electronique/",
+							"uri": "https://blog.rca.fr/rca-day-la-journee-dintegration-officielle/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1756,6 +1601,14 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
+							"uri": "https://blog.rca.fr/les-ambassadeurs-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://blog.rca.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1788,7 +1641,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
