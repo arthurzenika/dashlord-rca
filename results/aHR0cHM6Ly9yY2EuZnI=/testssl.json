@@ -199,7 +199,7 @@
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (25)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-06-29 11:02"
           }
 ,         {
@@ -535,14 +535,14 @@
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1685237199"
+              "finding"      : "1685842992"
           }
 ,         {
               "id"           : "HSTS",
@@ -1105,6 +1105,6 @@
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "60"
+              "finding"      : "106"
           }
 ]
