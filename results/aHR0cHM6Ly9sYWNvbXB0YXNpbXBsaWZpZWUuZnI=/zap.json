@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 28 May 2023 01:21:39",
+	"@generated": "Sun, 4 Jun 2023 01:34:41",
 	"site":[ 
 		{
 			"@name": "https://lacomptasimplifiee.fr",
@@ -106,7 +106,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10038",
@@ -320,7 +320,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -373,15 +373,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Manrope:700%2C500%7CRoboto:400&display=swap\" rel=\"stylesheet\" property=\"stylesheet\" media=\"all\" type=\"text/css\" >",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -389,7 +381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -397,19 +389,11 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.2.2' type='text/css' media='all' />",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.2.2#038;render=explicit' id='gform_recaptcha-js'></script>",
 							"otherinfo": ""
 						},
 						{
@@ -437,13 +421,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "13",
+					"count": "11",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10017",
@@ -585,7 +569,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "365"
+					"sourceid": "366"
 				},
 				{
 					"pluginid": "10063",
@@ -692,7 +676,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10037",
@@ -706,14 +690,6 @@
 					"instances":[ 
 						{
 							"uri": "https://lacomptasimplifiee.fr/?p=974",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/?s=ZAP",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -754,6 +730,14 @@
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fpilotage%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -807,7 +791,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "592"
+					"sourceid": "488"
 				},
 				{
 					"pluginid": "10035",
@@ -892,7 +876,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -914,7 +898,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10096",
@@ -949,7 +933,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1056"
+					"sourceid": "1059"
 				},
 				{
 					"pluginid": "10021",
@@ -1034,7 +1018,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1056,7 +1040,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10094",
@@ -1163,7 +1147,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90011",
@@ -1339,6 +1323,22 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
 							"method": "GET",
 							"param": "",
@@ -1371,13 +1371,13 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'></p><p>/* <![CDATA[ */</p><p>var nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10109",
@@ -1484,7 +1484,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
@@ -1567,23 +1567,15 @@
 							"attack": "",
 							"evidence": "no-store",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store",
-							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -1595,14 +1587,6 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
-						{
-							"uri": "https://lacomptasimplifiee.fr/?s=ZAP",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/comments/feed/",
 							"method": "GET",
@@ -1645,6 +1629,14 @@
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2F",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fpilotage%2F",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1698,7 +1690,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "589"
+					"sourceid": "297"
 				},
 				{
 					"pluginid": "10049",
@@ -1711,6 +1703,14 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
+							"uri": "https://lacomptasimplifiee.fr/comments/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1719,13 +1719,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "297"
 				},
 				{
 					"pluginid": "10031",
@@ -1856,7 +1856,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "623"
+					"sourceid": "656"
 				}
 			]
 		}
