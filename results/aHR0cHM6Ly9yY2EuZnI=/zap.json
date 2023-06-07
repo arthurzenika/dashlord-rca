@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 4 Jun 2023 01:41:14",
+	"@generated": "Wed, 7 Jun 2023 14:42:21",
 	"site":[ 
 		{
 			"@name": "https://rca.fr",
@@ -92,14 +92,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/simulauto/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"https://rca.fr/\" method=\"GET\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
-						},
-						{
 							"uri": "https://rca.fr/nos-solutions/tableau-de-bord/",
 							"method": "GET",
 							"param": "",
@@ -116,7 +108,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -167,6 +159,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/nos-solutions/e-creation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/evaluation/",
 							"method": "GET",
 							"param": "",
@@ -192,14 +192,6 @@
 						},
 						{
 							"uri": "https://rca.fr/nos-solutions/ratios-sectoriels/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/nos-solutions/simulauto/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -478,7 +470,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10017",
@@ -492,14 +484,6 @@
 					"instances":[ 
 						{
 							"uri": "https://rca.fr/accompagnement/formations-rca/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.2.2#038;render=explicit' id='gform_recaptcha-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/le-parcours-meg/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2#038;render=explicit",
 							"attack": "",
@@ -523,13 +507,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "650"
+					"sourceid": "628"
 				},
 				{
 					"pluginid": "10110",
@@ -588,7 +572,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1106"
+					"sourceid": "1093"
 				},
 				{
 					"pluginid": "10063",
@@ -633,6 +617,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/nos-solutions/e-creation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/evaluation/",
 							"method": "GET",
 							"param": "",
@@ -658,14 +650,6 @@
 						},
 						{
 							"uri": "https://rca.fr/nos-solutions/ratios-sectoriels/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/nos-solutions/simulauto/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -709,6 +693,14 @@
 					"instances":[ 
 						{
 							"uri": "https://rca.fr/a-propos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/le-parcours-meg/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -788,14 +780,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-json/wp/v2/pages/6",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/xmlrpc.php?rsd",
 							"method": "GET",
 							"param": "",
@@ -810,7 +794,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "852"
+					"sourceid": "795"
 				},
 				{
 					"pluginid": "10035",
@@ -970,7 +954,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/lettre-de-mission/",
+							"uri": "https://rca.fr/nos-solutions/previsionnel/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -978,7 +962,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/previsionnel/",
+							"uri": "https://rca.fr/nos-solutions/ratios-sectoriels/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1109,14 +1093,6 @@
 							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/simulauto/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
-						},
-						{
 							"uri": "https://rca.fr/nos-solutions/tableau-de-bord/",
 							"method": "GET",
 							"param": "",
@@ -1133,7 +1109,7 @@
 							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1254,7 +1230,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1088"
+					"sourceid": "1078"
 				},
 				{
 					"pluginid": "10027",
@@ -1398,6 +1374,14 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://rca.fr/nos-solutions/e-creation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/evaluation/",
 							"method": "GET",
 							"param": "",
@@ -1423,14 +1407,6 @@
 						},
 						{
 							"uri": "https://rca.fr/nos-solutions/ratios-sectoriels/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://rca.fr/nos-solutions/simulauto/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1548,14 +1524,6 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"uri": "https://rca.fr/category-sitemap.xml",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/comments/feed/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1612,6 +1580,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2F",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2F",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1620,7 +1596,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-json/wp/v2/pages/6",
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2F",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1628,7 +1604,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wpdmpro-sitemap.xml",
+							"uri": "https://rca.fr/wp-json/wp/v2/pages/6",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1650,7 +1626,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1247"
+					"sourceid": "1024"
 				},
 				{
 					"pluginid": "10049",
@@ -1701,7 +1677,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				}
 			]
 		}
