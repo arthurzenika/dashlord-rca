@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln rca.fr</pre>
-<p class="lead">Wed Jun  7 14:45:21 2023 – Wed Jun  7 14:45:57 2023<br>1 hosts scanned.
+<p class="lead">Sun Jun 11 01:39:08 2023 – Sun Jun 11 01:39:39 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,19 +120,23 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Wed, 07 Jun 2023 14:45:38 GMT
+    date: Sun, 11 Jun 2023 01:39:24 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 57edfafe1bea2afc310b54fcdb9098cf
+    x-ovh-webhosting-id: 18a6e2ba8b0f5fc050ce58bb9300dd81
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 0D530E85:67C0_923BD198:0050_6480980C_14321:2588F
-    x-iplb-instance: 41928
+    content-length: 4959
+    x-iplb-request-id: 34F85781:2808_923BD198:0050_648525C6_107DF:125D
+    x-iplb-instance: 41929
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -143,18 +147,18 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta
+    &lt;meta h
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Wed, 07 Jun 2023 14:45:39 GMT
+    date: Sun, 11 Jun 2023 01:39:24 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 727c5a2a9646aaeae4e1ad2a4f4c68c1
+    x-ovh-webhosting-id: f8cd776b59aee95429d790cace54b46c
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 0D530E85:67C1_923BD198:0050_64809813_12B3B:A106
-    x-iplb-instance: 41927
+    content-length: 4959
+    x-iplb-request-id: 34F85781:2809_923BD198:0050_648525CC_10E64:125C
+    x-iplb-instance: 41929
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -166,10 +170,6 @@
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
     &lt;meta h</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
