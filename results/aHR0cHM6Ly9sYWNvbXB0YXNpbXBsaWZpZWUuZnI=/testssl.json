@@ -199,7 +199,7 @@
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -262,7 +262,7 @@
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04C41748FABAFCAF8EC5C5A0B635E125863A"
+              "finding"      : "03B23EA6CC42C43927DA9940CD7952A0076C"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,28 +276,28 @@
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "9B7270AF8B287702849E126DA2FA32ED58B94B2F"
+              "finding"      : "A9043389CD0743414F3332D206F4B12925EBEF96"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04D2704159C751CF7DB1E751EFAB760ADD128F6C7E84A22DECECE7BEFFE0E142"
+              "finding"      : "6CC90CE69D4B3B5876868C732B4E5D6B8C61A7244A99F7945F637C8CFAB48199"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFUTCCBDmgAwIBAgISBMQXSPq6/K+OxcWgtjXhJYY6MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAzMjcxMjAzNDNaFw0yMzA2MjUxMjAzNDJaMCQxIjAgBgNVBAMTGXd3dy5sYWNvbXB0YXNpbXBsaWZpZWUuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+pIWFWMR0xnZepenLkfZCe2nW7psc0oHttPYGeS+gitUSok7meMIa3yfJ/Sdpgma8aPLIs4RKqNxIYBzd1SEFfMv6qzGABkytkggkB9cUdPsfYWkj3UgPJqBCM2zJSqtqUcj4ZgcQBr8q8te647QIT57sHhMslUBOXuYdfOkac+WREAG7mkRBrXjXxHQnO2aeRaA904SSHOHWVG2CCWX6U1K3FQqgdsTCLJwbgoI5Vd5NWjq9liNIH8iwl41zcntwTlv22XVTqLmndenuaz647P1rvbYadalTi2onwDcUkXYM23B1gsDpG2E5YUiW68rJwtE0SCmcPA4WZCDj6vGNAgMBAAGjggJtMIICaTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFFDG+hUDMcW51sB0sR5ktmVADQR6MB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMDsGA1UdEQQ0MDKCFWxhY29tcHRhc2ltcGxpZmllZS5mcoIZd3d3LmxhY29tcHRhc2ltcGxpZmllZS5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQYGCisGAQQB1nkCBAIEgfcEgfQA8gB3ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhyMq2xEAAAQDAEgwRgIhAIzYICwSBzNYfCJZs/Wp4x9Qwrx/rs1tzUj88Vv1TjNqAiEAkQH36PfS83e8badYdu0Yo1KRozvJ1jshIQ4x8p6OetkAdwB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYcjKt0MAAAEAwBIMEYCIQCMsFsKDU24RIXJ+YUIgDBCy66wP5kT29+hXzTu/ii84wIhAObewsRnBHgwB51+cujQJ7o30AMdIkeGQ20lB+jz++b8MA0GCSqGSIb3DQEBCwUAA4IBAQCAl2S3gJCkNBbociWk8iR5Q1IEz9k13ocFF8vwiGS7xEjoT12PW7gdaxklp63PfdxH5PIIhQybn1CNVNzbiiztmrVaLrGpL23Q+PavqlkayixvFBNYebw5xu4cZ0FxskDHkygXgaJVnZcxD/7THzvcWUrhVJ6mayOSGoqYfN4CF/wbx4Tb3Xx3Q+fdL3MBROvCJPr1bzF/KKAf+Hoxmi/bm3Jb2Zpe8W/bYLU8Ib4ggjb8zZ13dWSSqaG4TkK39167pSrJajsdUWhh+T5xB9ued8OR/8ZE9tb3zQkQF02DDC5x4ANUHJnqv8bN+TcOVp4yamLTWwOGkQDMoSAOG2/w\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFSTCCBDGgAwIBAgISA7I+psxCxDkn2plAzXlSoAdsMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA2MTUxMjE3MzdaFw0yMzA5MTMxMjE3MzZaMCAxHjAcBgNVBAMTFWxhY29tcHRhc2ltcGxpZmllZS5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMD0HRJgYP6znc/YTf8YBQZ/pJo6sg77n4Btjcfne0QSDSOAQ+mLm4xN2z6wAiOOHi4i+I+4KyJdQjTpzlbr/h4dlY6RQV+BvYtmXOKgT2ANqiNrY/R2aUfIRYjBF1giE235nx59kapGaaifZx//oxX9m2V/yszXVW2LC3L+KFQUKuji3hr4xYnYK25n0rDjR/ReAP7k6Nj6by/cDm8GQ1O/vCbUhk2d9XW9LxWGdgOCWlrw6hWyA3W7EzHZT9r0TTZZQx2iUW8bBSu1KRXagS2ydagJhNqgN5Bh++jUbENTkp9b2PUGZjlOnzSL21dkuUT4pKY68Jn9wJQai6fI/NUCAwEAAaOCAmkwggJlMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUcBhmPV7WmKMOXs2QnRGoLooYtzowHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wOwYDVR0RBDQwMoIVbGFjb21wdGFzaW1wbGlmaWVlLmZyghl3d3cubGFjb21wdGFzaW1wbGlmaWVlLmZyMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBAgYKKwYBBAHWeQIEAgSB8wSB8ADuAHUAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIvzRSfgAABAMARjBEAiBi5CFwF1OqFfgvwrmZy8F4+1Fe/OVGBz6hNm6STUMFUAIgS0lKTL8jsVOFc1GBqV+ODaY9ZfOCYDv8D/3ywdD1KYgAdQDoPtDaPvUGNTLnVyi8iWvJA9PL0RFr7Otp4Xd9bQa9bgAAAYi/NFJlAAAEAwBGMEQCIG6Y+gk/im4MbuZQkFDlE68kllz/WclWzNaIjW9Namz4AiA74PMR9x9GZeS4L0LYMaiAjGscjmzN0ebouXIcHL4neDANBgkqhkiG9w0BAQsFAAOCAQEAOaz+3dKleBo10phTKvxRemni7gRFh/PuxdPlQ83CLKQVsG1PHBumwGPH0d9Lu4E9ZTJBmv9Wr6Gyzd709GC4pvbsJUDMAC3ngGoK8GPrwbfkCbxaRHzR1Sr5eQQsjNK4X2AlX/MIS32ByyGYkaWjmaHGZ5cOn/05tVlI2l5HVRArAUC/xdzgFJovrhFkp5ToSa8ltfveX4rSGn2bXXLTAJdFxzqXmYT94gHdQ0mh5Fttn2Tru6p4D27WrU+GHjrS4VV90jBdK+kAYSIqjEQTG0G/b6yaUkXu0tePYzs1dH4Yr0iuSsZrYQsCrcNnr4e0vUpReIMoXxnmaA87gcfn+w==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "www.lacomptasimplifiee.fr"
+              "finding"      : "lacomptasimplifiee.fr"
           }
 ,         {
               "id"           : "cert_commonName_wo_SNI",
@@ -318,7 +318,7 @@
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "Ok via SAN (SNI mandatory)"
+              "finding"      : "Ok via SAN and CN (SNI mandatory)"
           }
 ,         {
               "id"           : "cert_chain_of_trust",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 15 days (14)"
+              "severity"     : "OK",
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-03-27 12:03"
+              "finding"      : "2023-06-15 12:17"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2023-06-25 12:03"
+              "severity"     : "OK",
+              "finding"      : "2023-09-13 12:17"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -542,7 +542,7 @@
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1686447262"
+              "finding"      : "1687052065"
           }
 ,         {
               "id"           : "HSTS",
@@ -722,7 +722,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=04D2704159C751CF7DB1E751EFAB760ADD128F6C7E84A22DECECE7BEFFE0E142"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6CC90CE69D4B3B5876868C732B4E5D6B8C61A7244A99F7945F637C8CFAB48199"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1105,6 +1105,6 @@
               "ip"           : "lacomptasimplifiee.fr/51.91.236.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "110"
           }
 ]
