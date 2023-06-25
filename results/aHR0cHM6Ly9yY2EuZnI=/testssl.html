@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az575-821:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az180-822:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-06-18 01:39:15                --&gt;&gt; 146.59.209.152:443 (rca.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-06-25 01:51:44                --&gt;&gt; 146.59.209.152:443 (rca.fr) &lt;&lt;--</span>
 
  Further IP addresses:   2001:41d0:301::31 
  rDNS (146.59.209.152):  cluster031.hosting.ovh.net.
@@ -101,15 +101,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>031D6AF953C642E6DF525C56DF50144422FD (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F0846CB40B5B7C70DE2304FD979382FD63F09815
-                              SHA256 E03D7EA42989661304EB1330E4A582AE79011238FA6378D0D1A9C473AC3B1BAF
-<span style="font-weight:bold;"> Common Name (CN)             </span><i>www.rca.fr </i> (CN in response to request w/o SNI: <i>cluster031.hosting.ovh.net </i>)
+<span style="font-weight:bold;"> Serial                       </span>040E1A8F684059417F7255E6DBD00DDFA6F7 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 AC27850EB939B5C5083FAE74B11AF4F015605823
+                              SHA256 EDCDD456C3514A2B3746BC32E8C4F4F39A607A15596D55D2A87A37D1156989A7
+<span style="font-weight:bold;"> Common Name (CN)             </span><i>rca.fr </i> (CN in response to request w/o SNI: <i>cluster031.hosting.ovh.net </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>rca.fr www.rca.fr </i>
-<span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN</span> (SNI mandatory)
+<span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 15 days (11)</span> (2023-03-31 11:02 --&gt; 2023-06-29 11:02)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">84 &gt;= 30 days</span> (2023-06-19 11:17 --&gt; 2023-09-17 11:17)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -127,7 +127,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>Apache
@@ -156,7 +156,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E03D7EA42989661304EB1330E4A582AE79011238FA6378D0D1A9C473AC3B1BAF" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E03D7EA42989661304EB1330E4A582AE79011238FA6378D0D1A9C473AC3B1BAF</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=EDCDD456C3514A2B3746BC32E8C4F4F39A607A15596D55D2A87A37D1156989A7" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=EDCDD456C3514A2B3746BC32E8C4F4F39A607A15596D55D2A87A37D1156989A7</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     potentially <span style="color:#a86437;">VULNERABLE</span>, uses cipher block chaining (CBC) ciphers with TLS. Check patches
@@ -216,7 +216,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2023-06-18 01:41:04 [ 111s] --&gt;&gt; 146.59.209.152:443 (rca.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-06-25 01:52:39 [  57s] --&gt;&gt; 146.59.209.152:443 (rca.fr) &lt;&lt;--</span>
 
 
 </pre>
