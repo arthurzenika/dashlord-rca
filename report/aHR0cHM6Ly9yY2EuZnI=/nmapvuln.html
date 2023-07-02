@@ -54,14 +54,14 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln rca.fr</pre>
-<p class="lead">Sun Jun 25 01:52:41 2023 – Sun Jun 25 01:52:44 2023<br>1 hosts scanned.
-              0 hosts up.
-              1 hosts down.
+<p class="lead">Sun Jul  2 01:38:26 2023 – Sun Jul  2 01:38:53 2023<br>1 hosts scanned.
+              1 hosts up.
+              0 hosts down.
             </p>
 <div class="progress">
-<div class="progress-bar progress-bar-success" style="width:0%;">0<span class="sr-only"></span>
+<div class="progress-bar progress-bar-success" style="width:100%;">1<span class="sr-only"></span>
 </div>
-<div class="progress-bar progress-bar-danger" style="width:100%;">1<span class="sr-only"></span>
+<div class="progress-bar progress-bar-danger" style="width:0%;">0<span class="sr-only"></span>
 </div>
 </div>
 </div>
@@ -74,7 +74,13 @@
 <th>TCP (open)</th>
 <th>UDP (open)</th>
 </tr></thead>
-<tbody></tbody>
+<tbody><tr>
+<td><span class="label label-success">up</span></td>
+<td>146.59.209.152</td>
+<td>rca.fr</td>
+<td>2</td>
+<td>0</td>
+</tr></tbody>
 </table></div>
 <script>
             $(document).ready(function() {
@@ -84,6 +90,104 @@
               "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, "All"] ]
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
+<div class="panel panel-default">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#146-59-209-152"><h3 class="panel-title">146.59.209.152 - rca.fr</h3></div>
+<div class="panel-body collapse in" id="146-59-209-152">
+<h4>Hostnames</h4>
+<ul>
+<li>rca.fr (user)</li>
+<li>cluster031.hosting.ovh.net (PTR)</li>
+</ul>
+<h4>Ports</h4>
+<div class="table-responsive"><table class="table table-bordered">
+<thead><tr>
+<th>Port</th>
+<th>Protocol</th>
+<th>State<br>Reason</th>
+<th>Service</th>
+<th>Product</th>
+<th>Version</th>
+<th>Extra Info</th>
+</tr></thead>
+<tbody>
+<tr class="success">
+<td title="Port">80</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">nginx</td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  GetRequest: 
+    HTTP/1.1 404 Not Found
+    server: nginx
+    date: Sun, 02 Jul 2023 01:38:40 GMT
+    content-type: text/html; charset=utf8
+    x-ovh-webhosting-id: 4fa3150e6ecd2a4a93a6a02cd4c1a466
+    pragma: no-cache
+    cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    content-length: 4961
+    x-iplb-request-id: ACB19A65:9C81_923BD198:0050_64A0D51A_1323D:17D8F
+    x-iplb-instance: 41929
+    connection: close
+    &lt;html xml:lang="en-EN" lang="en-EN"&gt;
+    &lt;head&gt;
+    &lt;title&gt;Site not installed - OVHcloud&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;meta http-equiv="refresh" content="90"&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+    &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
+    &lt;meta name="robots" content="noindex, nofollow"&gt;
+    &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
+    &lt;meta
+  HTTPOptions: 
+    HTTP/1.1 404 Not Found
+    server: nginx
+    date: Sun, 02 Jul 2023 01:38:40 GMT
+    content-type: text/html; charset=utf8
+    x-ovh-webhosting-id: 0ab37be5a2d5701e92841abeb40a89a8
+    pragma: no-cache
+    cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    content-length: 4961
+    x-iplb-request-id: ACB19A65:9C80_923BD198:0050_64A0D520_17D52:29FD6
+    x-iplb-instance: 41930
+    connection: close
+    &lt;html xml:lang="en-EN" lang="en-EN"&gt;
+    &lt;head&gt;
+    &lt;title&gt;Site not installed - OVHcloud&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;meta http-equiv="refresh" content="90"&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+    &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
+    &lt;meta name="robots" content="noindex, nofollow"&gt;
+    &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
+    &lt;meta</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+</td></tr>
+<tr class="success">
+<td title="Port">443</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">nginx</td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+</td></tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <h2 id="openservices" class="target">Open Services</h2>
 <div class="table-responsive"><table id="table-services" class="table table-striped dataTable" role="grid">
 <thead><tr>
@@ -96,7 +200,28 @@
 <th>CPE</th>
 <th>Extra info</th>
 </tr></thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td>146.59.209.152 - rca.fr</td>
+<td>80</td>
+<td>tcp</td>
+<td>http</td>
+<td>nginx</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>146.59.209.152 - rca.fr</td>
+<td>443</td>
+<td>tcp</td>
+<td>http</td>
+<td>nginx</td>
+<td></td>
+<td>cpe:/a:igor_sysoev:nginx</td>
+<td></td>
+</tr>
+</tbody>
 </table></div>
 <script>
             $(document).ready(function() {
