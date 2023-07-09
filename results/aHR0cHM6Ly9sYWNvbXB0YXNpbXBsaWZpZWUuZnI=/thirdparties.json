@@ -29,10 +29,6 @@
       }
     },
     {
-      "type": "unknown",
-      "url": "https://p.typekit.net/p.css?s=1&k=paz3zve&ht=tk&f=36656.36659.44807.44809.44811.44813&a=83353725&app=typekit&e=css"
-    },
-    {
       "type": "google",
       "url": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2",
       "details": {
@@ -41,12 +37,8 @@
       }
     },
     {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2",
-      "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
+      "type": "unknown",
+      "url": "https://p.typekit.net/p.css?s=1&k=paz3zve&ht=tk&f=36656.36659.44807.44809.44811.44813&a=83353725&app=typekit&e=css"
     },
     {
       "type": "google fonts",
@@ -59,6 +51,14 @@
     {
       "type": "unknown",
       "url": "https://prod-classe7.fr/compta-simplifie/wp-content/uploads/2022/12/bg_motif-2.svg"
+    },
+    {
+      "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2",
+      "details": {
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+      }
     },
     {
       "type": "unknown",
@@ -141,18 +141,26 @@
       "url": "https://prod-classe7.fr/compta-simplifie/wp-content/uploads/2022/12/illu-slider-client-motif.svg"
     },
     {
+      "type": "google tag manager",
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VTC217M61H&l=dataLayer&cx=c",
+      "details": {
+        "id": "google tag manager",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
       "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=khH7Ei3klcvfRI74FvDcfuOo&theme=light&size=normal&cb=iu1uz1hcs9zf",
+      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=khH7Ei3klcvfRI74FvDcfuOo&theme=light&size=normal&cb=rsck6ynp8r1j",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
       }
     },
     {
-      "type": "google tag manager",
-      "url": "https://www.googletagmanager.com/gtag/js?id=G-VTC217M61H&l=dataLayer&cx=c",
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je3750&_p=1888611648&cid=183115568.1688866626&ul=en-us&_geo=1&_rdi=1&ngs=1&_s=1&sid=1688866626&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
       "details": {
-        "id": "google tag manager",
+        "id": "google analytics",
         "message": "Use hosted Matomo instance"
       }
     },
@@ -205,14 +213,6 @@
       }
     },
     {
-      "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je36s0&_p=484581982&cid=1284733450.1688261228&ul=en-us&_geo=1&_rdi=1&ngs=1&_s=1&sid=1688261228&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
-      "details": {
-        "id": "google analytics",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
       "type": "google",
       "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=khH7Ei3klcvfRI74FvDcfuOo&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz",
       "details": {
@@ -224,11 +224,11 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1284733450.1688261228",
+      "value": "GA1.1.183115568.1688866626",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1751333228,
-      "size": 30,
+      "expires": 1751938626,
+      "size": 29,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -238,10 +238,10 @@
     },
     {
       "name": "_ga_VTC217M61H",
-      "value": "GS1.1.1688261228.1.0.1688261228.0.0.0",
+      "value": "GS1.1.1688866626.1.0.1688866626.0.0.0",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1751333228,
+      "expires": 1751938626,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -255,9 +255,9 @@
     "accept-ranges": "bytes",
     "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
     "content-encoding": "gzip",
-    "content-length": "38118",
+    "content-length": "38177",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 02 Jul 2023 01:27:05 GMT",
+    "date": "Sun, 09 Jul 2023 01:37:04 GMT",
     "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
     "pragma": "no-cache",
     "server": "Apache",
@@ -376,89 +376,7 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.220.161.8",
-      "geoip": {
-        "city": {
-          "geoname_id": 4700168,
-          "names": {
-            "en": "Irving",
-            "fr": "Irving",
-            "ja": "アービング",
-            "pt-BR": "Irving",
-            "ru": "Ирвинг"
-          }
-        },
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 20,
-          "latitude": 32.799,
-          "longitude": -96.956,
-          "metro_code": 623,
-          "time_zone": "America/Chicago"
-        },
-        "postal": {
-          "code": "75059"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4736286,
-            "iso_code": "TX",
-            "names": {
-              "en": "Texas",
-              "es": "Texas",
-              "fr": "Texas",
-              "ja": "テキサス州",
-              "ru": "Техас",
-              "zh-CN": "德克萨斯州"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "hostname": "p.typekit.net",
-      "ip": "23.47.48.118",
+      "ip": "23.47.48.109",
       "geoip": {
         "city": {
           "geoname_id": 4684888,
@@ -542,7 +460,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.32.164",
+      "ip": "142.250.115.105",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -574,9 +492,79 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "p.typekit.net",
+      "ip": "23.47.48.125",
+      "geoip": {
+        "city": {
+          "geoname_id": 4684888,
+          "names": {
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 20,
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
+        },
+        "postal": {
+          "code": "75270"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -594,15 +582,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
+            "geoname_id": 4736286,
+            "iso_code": "TX",
             "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
             }
           }
         ]
@@ -610,7 +598,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.114.94",
+      "ip": "142.250.115.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -720,7 +708,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.250.113.97",
+      "ip": "142.250.115.97",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -774,7 +762,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.32.195",
+      "ip": "142.250.138.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -806,9 +794,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -823,26 +811,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
-            "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "192.178.48.142",
+      "ip": "142.250.115.139",
       "geoip": {
         "continent": {
           "code": "NA",
