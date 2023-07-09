@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 2 Jul 2023 01:36:52",
+	"@generated": "Sun, 9 Jul 2023 01:49:11",
 	"site":[ 
 		{
 			"@name": "https://rca.fr",
@@ -405,6 +405,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/nos-solutions/previsionnel/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel='stylesheet' id='nectar_default_font_open_sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/previsionnel/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%2C500%2C200&#038;ver=6.2.2' type='text/css' media='all' />",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/vos-enjeux/",
 							"method": "GET",
 							"param": "",
@@ -421,7 +437,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -470,7 +486,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "73"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10017",
@@ -482,14 +498,6 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
-						{
-							"uri": "https://rca.fr/?s",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.2.2#038;render=explicit' id='gform_recaptcha-js'></script>",
-							"otherinfo": ""
-						},
 						{
 							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "GET",
@@ -508,22 +516,6 @@
 						},
 						{
 							"uri": "https://rca.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.2.2#038;render=explicit' id='gform_recaptcha-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/actualites/author/rca/page/3/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.2.2#038;render=explicit' id='gform_recaptcha-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/actualites/category/ressources/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.2.2#038;render=explicit",
 							"attack": "",
@@ -579,13 +571,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "9",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "2302"
+					"sourceid": "655"
 				},
 				{
 					"pluginid": "10110",
@@ -668,7 +660,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1171"
+					"sourceid": "1183"
 				},
 				{
 					"pluginid": "10063",
@@ -890,7 +882,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "766"
+					"sourceid": "707"
 				},
 				{
 					"pluginid": "10035",
@@ -935,7 +927,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/evaluation/",
+							"uri": "https://rca.fr/nos-solutions/e-creation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -943,7 +935,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/lettre-de-mission/",
+							"uri": "https://rca.fr/nos-solutions/evaluation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1042,7 +1034,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/evaluation/",
+							"uri": "https://rca.fr/nos-solutions/e-creation/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1050,7 +1042,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/lettre-de-mission/",
+							"uri": "https://rca.fr/nos-solutions/evaluation/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1326,7 +1318,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1160"
+					"sourceid": "1168"
 				},
 				{
 					"pluginid": "10027",
@@ -1403,6 +1395,22 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "https://rca.fr/nos-solutions/previsionnel/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 4 times, the first in the element starting with: \"<script type='text/javascript' id='wpdm-frontjs-js-extra'>\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/previsionnel/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "https://rca.fr/vos-enjeux/",
 							"method": "GET",
 							"param": "",
@@ -1419,7 +1427,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 4 times, the first in the element starting with: \"<script type='text/javascript' id='wpdm-frontjs-js-extra'></p><p>/* <![CDATA[ */</p><p>var wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1577,7 +1585,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/evaluation/",
+							"uri": "https://rca.fr/nos-solutions/e-creation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1585,7 +1593,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/lettre-de-mission/",
+							"uri": "https://rca.fr/nos-solutions/evaluation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1692,6 +1700,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2F",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2F",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1701,14 +1717,6 @@
 						},
 						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2F",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/wp-json/wp/v2/pages/129",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1738,7 +1746,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1103"
+					"sourceid": "1121"
 				},
 				{
 					"pluginid": "10049",
@@ -1773,7 +1781,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "73"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10031",
@@ -1896,7 +1904,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2192"
+					"sourceid": "2102"
 				}
 			]
 		}
