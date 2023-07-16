@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.experts-en-gestion.fr/146.59.209.152",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "34 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (27)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.experts-en-gestion.fr/146.59.209.152",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-08-12 09:58"
           }
 ,         {
@@ -542,7 +542,7 @@
               "ip"           : "www.experts-en-gestion.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1688868547"
+              "finding"      : "1689473359"
           }
 ,         {
               "id"           : "HSTS",
@@ -1112,6 +1112,6 @@
               "ip"           : "www.experts-en-gestion.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "78"
+              "finding"      : "134"
           }
 ]
