@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (25)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-08-10 07:43"
           }
 ,         {
@@ -535,14 +535,14 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1688867616"
+              "finding"      : "1689472963"
           }
 ,         {
               "id"           : "HSTS",
@@ -1098,6 +1098,6 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "64"
+              "finding"      : "117"
           }
 ]
