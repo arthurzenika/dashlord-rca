@@ -141,26 +141,18 @@
       "url": "https://prod-classe7.fr/compta-simplifie/wp-content/uploads/2022/12/illu-slider-client-motif.svg"
     },
     {
-      "type": "google tag manager",
-      "url": "https://www.googletagmanager.com/gtag/js?id=G-VTC217M61H&l=dataLayer&cx=c",
-      "details": {
-        "id": "google tag manager",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
       "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC&theme=light&size=normal&cb=1j0bbzkaxquu",
+      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC&theme=light&size=normal&cb=xsaeh2gu0kig",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
       }
     },
     {
-      "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je37c0&_p=546128704&cid=1377616102.1689471723&ul=en-us&_geo=1&_rdi=1&ngs=1&_s=1&sid=1689471722&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
+      "type": "google tag manager",
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VTC217M61H&l=dataLayer&cx=c",
       "details": {
-        "id": "google analytics",
+        "id": "google tag manager",
         "message": "Use hosted Matomo instance"
       }
     },
@@ -219,15 +211,23 @@
         "id": "google",
         "message": "Use hosted Matomo instance"
       }
+    },
+    {
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je37j0&_p=1844836784&cid=1753615962.1690075007&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1690075007&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
     }
   ],
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1377616102.1689471723",
+      "value": "GA1.1.1753615962.1690075007",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1752543722,
+      "expires": 1753147007,
       "size": 30,
       "httpOnly": false,
       "secure": false,
@@ -238,10 +238,10 @@
     },
     {
       "name": "_ga_VTC217M61H",
-      "value": "GS1.1.1689471722.1.0.1689471722.0.0.0",
+      "value": "GS1.1.1690075007.1.0.1690075007.0.0.0",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1752543722,
+      "expires": 1753147007,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -257,7 +257,7 @@
     "content-encoding": "gzip",
     "content-length": "38160",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 16 Jul 2023 01:42:00 GMT",
+    "date": "Sun, 23 Jul 2023 01:16:44 GMT",
     "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
     "pragma": "no-cache",
     "server": "Apache",
@@ -322,7 +322,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.62.95",
+      "ip": "173.194.192.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -376,13 +376,18 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.218.217.22",
+      "ip": "184.28.41.140",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 4684888,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
           }
         },
         "continent": {
@@ -415,13 +420,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "20149"
+          "code": "75270"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -439,15 +444,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 4736286,
+            "iso_code": "TX",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
             }
           }
         ]
@@ -455,13 +460,18 @@
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "23.218.217.42",
+      "ip": "184.28.41.140",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 4684888,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
           }
         },
         "continent": {
@@ -494,13 +504,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "20149"
+          "code": "75270"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -518,15 +528,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 4736286,
+            "iso_code": "TX",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
             }
           }
         ]
@@ -534,7 +544,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.115.105",
+      "ip": "74.125.201.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -588,7 +598,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.63.94",
+      "ip": "108.177.120.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -698,7 +708,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.250.31.97",
+      "ip": "74.125.132.97",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -752,7 +762,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.63.94",
+      "ip": "142.250.125.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -806,7 +816,7 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "172.253.115.102",
+      "ip": "74.125.132.138",
       "geoip": {
         "continent": {
           "code": "NA",
