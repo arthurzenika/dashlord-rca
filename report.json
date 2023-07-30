@@ -5,7 +5,7 @@
     "http": {
       "url": "https://mon-expert-en-gestion.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 23 Jul 2023 01:20:52 GMT",
+      "end_time": "Sun, 30 Jul 2023 01:11:30 GMT",
       "grade": "C",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -13,10 +13,10 @@
         "cache-control": "no-cache",
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Sun, 23 Jul 2023 01:20:51 GMT",
-        "etag": "W/\"64b9338e-358c\"",
+        "date": "Sun, 30 Jul 2023 01:11:28 GMT",
+        "etag": "W/\"64c294ad-358c\"",
         "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-        "last-modified": "Thu, 20 Jul 2023 13:15:58 GMT",
+        "last-modified": "Thu, 27 Jul 2023 16:00:45 GMT",
         "server": "Apache",
         "transfer-encoding": "chunked",
         "x-content-type-options": "nosniff",
@@ -24,9 +24,9 @@
         "x-hostname": "buildkitsandbox",
         "x-xss-protection": "1;mode=block"
       },
-      "scan_id": 40005030,
+      "scan_id": 40198159,
       "score": 55,
-      "start_time": "Sun, 23 Jul 2023 01:20:48 GMT",
+      "start_time": "Sun, 30 Jul 2023 01:11:26 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -606,7 +606,7 @@
         "ip": "mon-expert-en-gestion.fr/54.37.63.101",
         "port": "443",
         "severity": "OK",
-        "finding": "78 >= 60 days"
+        "finding": "71 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -767,7 +767,7 @@
         "ip": "mon-expert-en-gestion.fr/54.37.63.101",
         "port": "443",
         "severity": "INFO",
-        "finding": "1690075333"
+        "finding": "1690679536"
       },
       {
         "id": "HSTS",
@@ -1374,7 +1374,7 @@
         "ip": "mon-expert-en-gestion.fr/54.37.63.101",
         "port": "443",
         "severity": "INFO",
-        "finding": "109"
+        "finding": "62"
       }
     ],
     "thirdparties": {
@@ -1393,15 +1393,19 @@
         },
         {
           "type": "unknown",
-          "url": "https://connect.mon-expert-en-gestion.fr/meg/oauth/authorize?client_id=portail-front&redirect_uri=https%3A%2F%2Fmon-expert-en-gestion.fr%2Fportail%2F&response_type=code&scope=openid%20profile%20email&nonce=8e4ccbe1e7a0d8f0a228c2b9b995b38357XcEnaIR&state=febf60df45f4edbeb70f2fa3f0476a7c2et6y2r4V&code_challenge=7ysMNB5OubpcOQuJSGUpT0y7N6LY3M1wFh3SyrOoH9M&code_challenge_method=S256"
+          "url": "https://connect.mon-expert-en-gestion.fr/meg/oauth/authorize?client_id=portail-front&redirect_uri=https%3A%2F%2Fmon-expert-en-gestion.fr%2Fportail%2F&response_type=code&scope=openid%20profile%20email&nonce=9510d74fc3db070209f84bb5e48dc4bfd8gdJYlhE&state=ca914629d97d49e5d9bcb29486cec8ddffIWm9iQu&code_challenge=rEsrX4lPb4WNRZBoXobCHF2ZNVarNUBPVBX_7f-Nm_Y&code_challenge_method=S256"
         },
         {
           "type": "unknown",
-          "url": "https://connect.mon-expert-en-gestion.fr/meg/login?client_id=portail-front&redirect_uri=https%3A%2F%2Fmon-expert-en-gestion.fr%2Fportail%2F&response_type=code&scope=openid+profile+email&nonce=8e4ccbe1e7a0d8f0a228c2b9b995b38357XcEnaIR&state=febf60df45f4edbeb70f2fa3f0476a7c2et6y2r4V&code_challenge=7ysMNB5OubpcOQuJSGUpT0y7N6LY3M1wFh3SyrOoH9M&code_challenge_method=S256"
+          "url": "https://connect.mon-expert-en-gestion.fr/meg/login?client_id=portail-front&redirect_uri=https%3A%2F%2Fmon-expert-en-gestion.fr%2Fportail%2F&response_type=code&scope=openid+profile+email&nonce=9510d74fc3db070209f84bb5e48dc4bfd8gdJYlhE&state=ca914629d97d49e5d9bcb29486cec8ddffIWm9iQu&code_challenge=rEsrX4lPb4WNRZBoXobCHF2ZNVarNUBPVBX_7f-Nm_Y&code_challenge_method=S256"
         },
         {
           "type": "unknown",
           "url": "https://cdn.rca.fr/meg/fonts/Manrope/Manrope-Regular.ttf"
+        },
+        {
+          "type": "unknown",
+          "url": "https://cdn.rca.fr/meg/fonts/Manrope/Manrope-Medium.ttf"
         },
         {
           "type": "unknown",
@@ -1423,7 +1427,7 @@
       "cookies": [
         {
           "name": "X-HA-Backend",
-          "value": "rbx1|ZLx/g",
+          "value": "rbx2|ZMW4A",
           "domain": ".mon-expert-en-gestion.fr",
           "path": "/",
           "expires": -1,
@@ -1440,10 +1444,10 @@
         "cache-control": "no-cache",
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Sun, 23 Jul 2023 01:16:47 GMT",
-        "etag": "W/\"64b9338e-358c\"",
+        "date": "Sun, 30 Jul 2023 01:08:14 GMT",
+        "etag": "W/\"64c294ad-358c\"",
         "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-        "last-modified": "Thu, 20 Jul 2023 13:15:58 GMT",
+        "last-modified": "Thu, 27 Jul 2023 16:00:45 GMT",
         "server": "Apache",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN",
@@ -1873,7 +1877,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 23 Jul 2023 01:20:13",
+      "@generated": "Sun, 30 Jul 2023 01:10:57",
       "site": [
         {
           "@name": "https://mon-expert-en-gestion.fr",
@@ -2078,10 +2082,10 @@
     "lhr": [
       {
         "requestedUrl": "https://mon-expert-en-gestion.fr/",
-        "finalUrl": "https://mon-expert-en-gestion.fr/cas/login?service=https%3A%2F%2Fconnect.mon-expert-en-gestion.fr%2Fmeg%2Flogin%2Fcallback%3Fstate%3DeyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJwIjoiNjdhN2ExNjEtNGU0Mi00ODY3LWE3YTEtNjE0ZTQyMTg2NzcwIiwicSI6ImNsaWVudF9pZD1wb3J0YWlsLWZyb250JnJlZGlyZWN0X3VyaT1odHRwcyUzQSUyRiUyRm1vbi1leHBlcnQtZW4tZ2VzdGlvbi5mciUyRnBvcnRhaWwlMkYmcmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPW9wZW5pZCtwcm9maWxlK2VtYWlsJm5vbmNlPWEwYWJiYWE1ZjNkZDI1NDk3NjkyY2RjNDk3OWU1MDYxMzF3MHRxM29CJnN0YXRlPWRlMDg3MDkxZWY3M2QzMjZlNGE2Y2E0MGM5Y2NiNzhkOWFKdFprMkJXJmNvZGVfY2hhbGxlbmdlPUpFTVBULWZxVE1EbVN4cmRma012QXNXWV9ycGVWNHFENmtiLWNPQVZYZVkmY29kZV9jaGFsbGVuZ2VfbWV0aG9kPVMyNTYifQ.88sgNeMlW6GP6CnHBSx9moRfq0_y4e8lEznYQCRu3og",
-        "fetchTime": "2023-07-23T01:20:33.319Z",
+        "finalUrl": "https://mon-expert-en-gestion.fr/cas/login?service=https%3A%2F%2Fconnect.mon-expert-en-gestion.fr%2Fmeg%2Flogin%2Fcallback%3Fstate%3DeyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJwIjoiNjdhN2ExNjEtNGU0Mi00ODY3LWE3YTEtNjE0ZTQyMTg2NzcwIiwicSI6ImNsaWVudF9pZD1wb3J0YWlsLWZyb250JnJlZGlyZWN0X3VyaT1odHRwcyUzQSUyRiUyRm1vbi1leHBlcnQtZW4tZ2VzdGlvbi5mciUyRnBvcnRhaWwlMkYmcmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPW9wZW5pZCtwcm9maWxlK2VtYWlsJm5vbmNlPWM4MmEwMjkzYjIxNGI1ZjBjMzBhMmQzZGI0MWE4OTRhOGJqRlVhSmVOJnN0YXRlPWY4NTFkYWI1NGE5NTJhZDhkMjllNDhhMDE1MWUwNTgyNWNoQ05qazlNJmNvZGVfY2hhbGxlbmdlPWxJbVhBRUMtbTVZUjZlOFJqVHFwblp2VExqR01ndjZ2RmFBY3pDMk9CUHcmY29kZV9jaGFsbGVuZ2VfbWV0aG9kPVMyNTYifQ.jv9lyeT2iM3_qYZICYT_4U7riRRtSBDjcinfUJYDV68",
+        "fetchTime": "2023-07-30T01:11:13.579Z",
         "runWarnings": [
-          "The page may not be loading as expected because your test URL (https://mon-expert-en-gestion.fr/) was redirected to https://mon-expert-en-gestion.fr/cas/login?service=https%3A%2F%2Fconnect.mon-expert-en-gestion.fr%2Fmeg%2Flogin%2Fcallback%3Fstate%3DeyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJwIjoiNjdhN2ExNjEtNGU0Mi00ODY3LWE3YTEtNjE0ZTQyMTg2NzcwIiwicSI6ImNsaWVudF9pZD1wb3J0YWlsLWZyb250JnJlZGlyZWN0X3VyaT1odHRwcyUzQSUyRiUyRm1vbi1leHBlcnQtZW4tZ2VzdGlvbi5mciUyRnBvcnRhaWwlMkYmcmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPW9wZW5pZCtwcm9maWxlK2VtYWlsJm5vbmNlPWEwYWJiYWE1ZjNkZDI1NDk3NjkyY2RjNDk3OWU1MDYxMzF3MHRxM29CJnN0YXRlPWRlMDg3MDkxZWY3M2QzMjZlNGE2Y2E0MGM5Y2NiNzhkOWFKdFprMkJXJmNvZGVfY2hhbGxlbmdlPUpFTVBULWZxVE1EbVN4cmRma012QXNXWV9ycGVWNHFENmtiLWNPQVZYZVkmY29kZV9jaGFsbGVuZ2VfbWV0aG9kPVMyNTYifQ.88sgNeMlW6GP6CnHBSx9moRfq0_y4e8lEznYQCRu3og. Try testing the second URL directly."
+          "The page may not be loading as expected because your test URL (https://mon-expert-en-gestion.fr/) was redirected to https://mon-expert-en-gestion.fr/cas/login?service=https%3A%2F%2Fconnect.mon-expert-en-gestion.fr%2Fmeg%2Flogin%2Fcallback%3Fstate%3DeyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJwIjoiNjdhN2ExNjEtNGU0Mi00ODY3LWE3YTEtNjE0ZTQyMTg2NzcwIiwicSI6ImNsaWVudF9pZD1wb3J0YWlsLWZyb250JnJlZGlyZWN0X3VyaT1odHRwcyUzQSUyRiUyRm1vbi1leHBlcnQtZW4tZ2VzdGlvbi5mciUyRnBvcnRhaWwlMkYmcmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPW9wZW5pZCtwcm9maWxlK2VtYWlsJm5vbmNlPWM4MmEwMjkzYjIxNGI1ZjBjMzBhMmQzZGI0MWE4OTRhOGJqRlVhSmVOJnN0YXRlPWY4NTFkYWI1NGE5NTJhZDhkMjllNDhhMDE1MWUwNTgyNWNoQ05qazlNJmNvZGVfY2hhbGxlbmdlPWxJbVhBRUMtbTVZUjZlOFJqVHFwblp2VExqR01ndjZ2RmFBY3pDMk9CUHcmY29kZV9jaGFsbGVuZ2VfbWV0aG9kPVMyNTYifQ.jv9lyeT2iM3_qYZICYT_4U7riRRtSBDjcinfUJYDV68. Try testing the second URL directly."
         ],
         "categories": {
           "performance": {
@@ -2092,7 +2096,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.6782979965209961
+            "score": 0.7171932220458984
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2113,7 +2117,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.92
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -2144,53 +2148,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17968,
+            "numericValue": 16130,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 11278,
-                  "firstMeaningfulPaint": 11278,
-                  "largestContentfulPaint": 17530,
-                  "interactive": 17968,
-                  "speedIndex": 11278,
-                  "totalBlockingTime": 450,
-                  "maxPotentialFID": 603,
-                  "cumulativeLayoutShift": 0.010352864583333333,
-                  "cumulativeLayoutShiftMainFrame": 0.010352864583333333,
-                  "totalCumulativeLayoutShift": 0.010352864583333333,
+                  "firstContentfulPaint": 10493,
+                  "firstMeaningfulPaint": 10952,
+                  "largestContentfulPaint": 16055,
+                  "interactive": 16130,
+                  "speedIndex": 10493,
+                  "totalBlockingTime": 376,
+                  "maxPotentialFID": 493,
+                  "cumulativeLayoutShift": 0.0101005859375,
+                  "cumulativeLayoutShiftMainFrame": 0.0101005859375,
+                  "totalCumulativeLayoutShift": 0.0101005859375,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 312967487,
+                  "observedTimeOriginTs": 330676225,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 312967487,
-                  "observedFirstPaint": 519,
-                  "observedFirstPaintTs": 313486267,
-                  "observedFirstContentfulPaint": 519,
-                  "observedFirstContentfulPaintTs": 313486267,
-                  "observedFirstContentfulPaintAllFrames": 519,
-                  "observedFirstContentfulPaintAllFramesTs": 313486267,
-                  "observedFirstMeaningfulPaint": 519,
-                  "observedFirstMeaningfulPaintTs": 313486267,
-                  "observedLargestContentfulPaint": 963,
-                  "observedLargestContentfulPaintTs": 313930358,
-                  "observedLargestContentfulPaintAllFrames": 963,
-                  "observedLargestContentfulPaintAllFramesTs": 313930358,
-                  "observedTraceEnd": 3478,
-                  "observedTraceEndTs": 316445785,
-                  "observedLoad": 1159,
-                  "observedLoadTs": 314126522,
-                  "observedDomContentLoaded": 588,
-                  "observedDomContentLoadedTs": 313555797,
-                  "observedCumulativeLayoutShift": 0.010352864583333333,
-                  "observedCumulativeLayoutShiftMainFrame": 0.010352864583333333,
-                  "observedTotalCumulativeLayoutShift": 0.010352864583333333,
-                  "observedFirstVisualChange": 3,
-                  "observedFirstVisualChangeTs": 312970487,
-                  "observedLastVisualChange": 1486,
-                  "observedLastVisualChangeTs": 314453487,
-                  "observedSpeedIndex": 958,
-                  "observedSpeedIndexTs": 313925109
+                  "observedNavigationStartTs": 330676225,
+                  "observedFirstPaint": 408,
+                  "observedFirstPaintTs": 331084445,
+                  "observedFirstContentfulPaint": 408,
+                  "observedFirstContentfulPaintTs": 331084445,
+                  "observedFirstContentfulPaintAllFrames": 408,
+                  "observedFirstContentfulPaintAllFramesTs": 331084445,
+                  "observedFirstMeaningfulPaint": 901,
+                  "observedFirstMeaningfulPaintTs": 331577710,
+                  "observedLargestContentfulPaint": 660,
+                  "observedLargestContentfulPaintTs": 331336719,
+                  "observedLargestContentfulPaintAllFrames": 660,
+                  "observedLargestContentfulPaintAllFramesTs": 331336719,
+                  "observedTraceEnd": 3060,
+                  "observedTraceEndTs": 333735932,
+                  "observedLoad": 748,
+                  "observedLoadTs": 331424299,
+                  "observedDomContentLoaded": 462,
+                  "observedDomContentLoadedTs": 331137796,
+                  "observedCumulativeLayoutShift": 0.0101005859375,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0101005859375,
+                  "observedTotalCumulativeLayoutShift": 0.0101005859375,
+                  "observedFirstVisualChange": 10,
+                  "observedFirstVisualChangeTs": 330686225,
+                  "observedLastVisualChange": 2977,
+                  "observedLastVisualChangeTs": 333653225,
+                  "observedSpeedIndex": 616,
+                  "observedSpeedIndexTs": 331291914
                 },
                 {
                   "lcpInvalidated": false
@@ -2212,19 +2216,19 @@
                   "numScripts": 22,
                   "numStylesheets": 8,
                   "numFonts": 7,
-                  "numTasks": 736,
-                  "numTasksOver10ms": 22,
+                  "numTasks": 753,
+                  "numTasksOver10ms": 18,
                   "numTasksOver25ms": 9,
                   "numTasksOver50ms": 3,
                   "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 51.873000000000005,
-                  "throughput": 25158028.394508597,
-                  "maxRtt": 120.941,
-                  "maxServerLatency": 583.688,
-                  "totalByteWeight": 2735221,
-                  "totalTaskTime": 1317.4549999999956,
-                  "mainDocumentTransferSize": 3884
+                  "rtt": 82.488,
+                  "throughput": 34452088.134267725,
+                  "maxRtt": 83.544,
+                  "maxServerLatency": 5.234999999999999,
+                  "totalByteWeight": 2531298,
+                  "totalTaskTime": 1087.1080000000006,
+                  "mainDocumentTransferSize": 3888
                 }
               ]
             }
@@ -2247,15 +2251,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://mon-expert-en-gestion.fr",
-        "size": 2784.94,
+        "size": 2581.988,
         "nodes": 98,
-        "requests": 51,
+        "requests": 45,
         "grade": "B",
-        "score": 72,
-        "ges": 1.56,
-        "water": 2.34,
+        "score": 73,
+        "ges": 1.54,
+        "water": 2.31,
         "ecoindex_version": "5.4.2",
-        "date": "2023-07-23 01:18:03.542871",
+        "date": "2023-07-30 01:09:17.042580",
         "page_type": "website"
       }
     ],
@@ -2271,14 +2275,14 @@
       "testsslGrade": "B",
       "cookiesGrade": "B",
       "cookiesCount": 1,
-      "trackersGrade": "C",
-      "trackersCount": 10,
-      "lighthouse_performance": 0.6782979965209961,
+      "trackersGrade": "F",
+      "trackersCount": 11,
+      "lighthouse_performance": 0.7171932220458984,
       "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.76,
       "lighthouse_accessibilityGrade": "B",
-      "lighthouse_best-practices": 0.92,
-      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 1,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.8,
@@ -2332,7 +2336,7 @@
     "http": {
       "url": "https://rca.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 23 Jul 2023 01:28:28 GMT",
+      "end_time": "Sun, 30 Jul 2023 01:23:25 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -2341,17 +2345,17 @@
         "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate",
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
-        "Content-Length": "31746",
+        "Content-Length": "31751",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 23 Jul 2023 01:28:23 GMT",
+        "Date": "Sun, 30 Jul 2023 01:23:20 GMT",
         "Expires": "Mon, 29 Oct 1923 20:30:00 GMT",
         "Pragma": "no-cache",
         "Server": "Apache",
         "Vary": "User-Agent,Accept-Encoding"
       },
-      "scan_id": 40005306,
+      "scan_id": 40198607,
       "score": 0,
-      "start_time": "Sun, 23 Jul 2023 01:28:21 GMT",
+      "start_time": "Sun, 30 Jul 2023 01:23:17 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 5,
@@ -2913,7 +2917,7 @@
         "ip": "rca.fr/146.59.209.152",
         "port": "443",
         "severity": "OK",
-        "finding": "56 >= 30 days"
+        "finding": "49 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -3109,14 +3113,14 @@
         "ip": "rca.fr/146.59.209.152",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "rca.fr/146.59.209.152",
         "port": "443",
         "severity": "INFO",
-        "finding": "1690075752"
+        "finding": "1690680286"
       },
       {
         "id": "HSTS",
@@ -3679,7 +3683,7 @@
         "ip": "rca.fr/146.59.209.152",
         "port": "443",
         "severity": "INFO",
-        "finding": "61"
+        "finding": "112"
       }
     ],
     "thirdparties": {
@@ -3701,19 +3705,19 @@
           }
         },
         {
-          "type": "FontAwesome",
-          "url": "https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css",
-          "details": {
-            "id": "FontAwesome",
-            "message": "Host fonts directly"
-          }
-        },
-        {
           "type": "google fonts",
           "url": "https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%2C500%2C200&ver=6.2.2",
           "details": {
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
+          "type": "FontAwesome",
+          "url": "https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css",
+          "details": {
+            "id": "FontAwesome",
+            "message": "Host fonts directly"
           }
         },
         {
@@ -3742,6 +3746,14 @@
         },
         {
           "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
+          "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2",
           "details": {
             "id": "google fonts",
@@ -3751,14 +3763,6 @@
         {
           "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2",
           "details": {
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -3818,9 +3822,9 @@
         "accept-ranges": "bytes",
         "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
         "content-encoding": "gzip",
-        "content-length": "31746",
+        "content-length": "31751",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 23 Jul 2023 01:16:37 GMT",
+        "date": "Sun, 30 Jul 2023 01:08:30 GMT",
         "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
         "pragma": "no-cache",
         "server": "Apache",
@@ -3885,8 +3889,14 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "172.253.115.95",
+          "ip": "142.250.189.170",
           "geoip": {
+            "city": {
+              "geoname_id": 4994862,
+              "names": {
+                "en": "Grosse Pointe"
+              }
+            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -3916,10 +3926,14 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "accuracy_radius": 500,
+              "latitude": 42.3769,
+              "longitude": -82.9152,
+              "metro_code": 505,
+              "time_zone": "America/Detroit"
+            },
+            "postal": {
+              "code": "48230"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -3934,12 +3948,27 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5001836,
+                "iso_code": "MI",
+                "names": {
+                  "en": "Michigan",
+                  "es": "Michigan",
+                  "fr": "Michigan",
+                  "ja": "ミシガン州",
+                  "pt-BR": "Michigão",
+                  "ru": "Мичиган",
+                  "zh-CN": "密歇根州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "use.fontawesome.com",
-          "ip": "172.64.132.15",
+          "ip": "172.64.133.15",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3993,7 +4022,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "172.253.62.94",
+          "ip": "172.217.12.99",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -4534,7 +4563,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 23 Jul 2023 01:27:46",
+      "@generated": "Sun, 30 Jul 2023 01:22:05",
       "site": [
         {
           "@name": "https://rca.fr",
@@ -4702,13 +4731,6 @@
               "confidence": "2",
               "riskdesc": "Informational (Medium)",
               "desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>"
-            },
-            {
-              "name": "User Controllable HTML Element Attribute (Potential XSS)",
-              "riskcode": "0",
-              "confidence": "1",
-              "riskdesc": "Informational (Low)",
-              "desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>"
             }
           ]
         }
@@ -4719,10 +4741,8 @@
       {
         "requestedUrl": "https://rca.fr/",
         "finalUrl": "https://rca.fr/",
-        "fetchTime": "2023-07-23T01:28:02.585Z",
-        "runWarnings": [
-          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling)."
-        ],
+        "fetchTime": "2023-07-30T01:22:53.154Z",
+        "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
@@ -4784,53 +4804,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 11352,
+            "numericValue": 12394,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3927,
-                  "firstMeaningfulPaint": 4622,
-                  "largestContentfulPaint": 5260,
-                  "interactive": 11352,
-                  "speedIndex": 8360,
-                  "totalBlockingTime": 239,
-                  "maxPotentialFID": 163,
+                  "firstContentfulPaint": 4560,
+                  "firstMeaningfulPaint": 4853,
+                  "largestContentfulPaint": 4853,
+                  "interactive": 12394,
+                  "speedIndex": 8946,
+                  "totalBlockingTime": 408,
+                  "maxPotentialFID": 227,
                   "cumulativeLayoutShift": 0.024900157928466796,
                   "cumulativeLayoutShiftMainFrame": 0.024900157928466796,
                   "totalCumulativeLayoutShift": 0.024900157928466796,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 772041295,
+                  "observedTimeOriginTs": 957636042,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 772041295,
-                  "observedFirstPaint": 1553,
-                  "observedFirstPaintTs": 773594042,
-                  "observedFirstContentfulPaint": 1553,
-                  "observedFirstContentfulPaintTs": 773594042,
-                  "observedFirstContentfulPaintAllFrames": 1553,
-                  "observedFirstContentfulPaintAllFramesTs": 773594042,
-                  "observedFirstMeaningfulPaint": 1730,
-                  "observedFirstMeaningfulPaintTs": 773771404,
-                  "observedLargestContentfulPaint": 1730,
-                  "observedLargestContentfulPaintTs": 773771404,
-                  "observedLargestContentfulPaintAllFrames": 1730,
-                  "observedLargestContentfulPaintAllFramesTs": 773771404,
-                  "observedTraceEnd": 5740,
-                  "observedTraceEndTs": 777781275,
-                  "observedLoad": 3429,
-                  "observedLoadTs": 775470290,
-                  "observedDomContentLoaded": 2502,
-                  "observedDomContentLoadedTs": 774543181,
+                  "observedNavigationStartTs": 957636042,
+                  "observedFirstPaint": 2232,
+                  "observedFirstPaintTs": 959867767,
+                  "observedFirstContentfulPaint": 2232,
+                  "observedFirstContentfulPaintTs": 959867767,
+                  "observedFirstContentfulPaintAllFrames": 2232,
+                  "observedFirstContentfulPaintAllFramesTs": 959867767,
+                  "observedFirstMeaningfulPaint": 2340,
+                  "observedFirstMeaningfulPaintTs": 959976320,
+                  "observedLargestContentfulPaint": 2340,
+                  "observedLargestContentfulPaintTs": 959976320,
+                  "observedLargestContentfulPaintAllFrames": 2340,
+                  "observedLargestContentfulPaintAllFramesTs": 959976320,
+                  "observedTraceEnd": 5952,
+                  "observedTraceEndTs": 963588387,
+                  "observedLoad": 3638,
+                  "observedLoadTs": 961273904,
+                  "observedDomContentLoaded": 3237,
+                  "observedDomContentLoadedTs": 960873083,
                   "observedCumulativeLayoutShift": 0.024900157928466796,
                   "observedCumulativeLayoutShiftMainFrame": 0.024900157928466796,
                   "observedTotalCumulativeLayoutShift": 0.024900157928466796,
-                  "observedFirstVisualChange": 1561,
-                  "observedFirstVisualChangeTs": 773602295,
-                  "observedLastVisualChange": 3111,
-                  "observedLastVisualChangeTs": 775152295,
-                  "observedSpeedIndex": 2771,
-                  "observedSpeedIndexTs": 774812006
+                  "observedFirstVisualChange": 2225,
+                  "observedFirstVisualChangeTs": 959861042,
+                  "observedLastVisualChange": 2842,
+                  "observedLastVisualChangeTs": 960478042,
+                  "observedSpeedIndex": 2664,
+                  "observedSpeedIndexTs": 960299753
                 },
                 {
                   "lcpInvalidated": false
@@ -4852,19 +4872,19 @@
                   "numScripts": 31,
                   "numStylesheets": 33,
                   "numFonts": 6,
-                  "numTasks": 2902,
-                  "numTasksOver10ms": 16,
-                  "numTasksOver25ms": 10,
-                  "numTasksOver50ms": 4,
-                  "numTasksOver100ms": 0,
+                  "numTasks": 2182,
+                  "numTasksOver10ms": 24,
+                  "numTasksOver25ms": 13,
+                  "numTasksOver50ms": 8,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 5.949000000000002,
-                  "throughput": 20811971.679243684,
-                  "maxRtt": 87.83800000000001,
-                  "maxServerLatency": 90.48599999999998,
-                  "totalByteWeight": 5324475,
-                  "totalTaskTime": 1118.2500000000157,
-                  "mainDocumentTransferSize": 32380
+                  "rtt": 1.8640000000000008,
+                  "throughput": 38908411.69322696,
+                  "maxRtt": 145.169,
+                  "maxServerLatency": 110.66999999999999,
+                  "totalByteWeight": 5322233,
+                  "totalTaskTime": 1437.302999999957,
+                  "mainDocumentTransferSize": 32368
                 }
               ]
             }
@@ -4887,7 +4907,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://rca.fr",
-        "size": 6399.838,
+        "size": 6398.304,
         "nodes": 1863,
         "requests": 101,
         "grade": "F",
@@ -4895,7 +4915,7 @@
         "ges": 2.64,
         "water": 3.96,
         "ecoindex_version": "5.4.2",
-        "date": "2023-07-23 01:17:44.228435",
+        "date": "2023-07-30 01:09:53.679693",
         "page_type": "website"
       }
     ],
@@ -4933,26 +4953,26 @@
     "http": {
       "url": "https://lacomptasimplifiee.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 23 Jul 2023 01:27:15 GMT",
+      "end_time": "Sun, 30 Jul 2023 01:16:51 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
-        "Accept-Ranges": "none",
+        "Accept-Ranges": "bytes",
         "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate",
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Length": "38160",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 23 Jul 2023 01:27:04 GMT",
+        "Date": "Sun, 30 Jul 2023 01:16:33 GMT",
         "Expires": "Mon, 29 Oct 1923 20:30:00 GMT",
         "Pragma": "no-cache",
         "Server": "Apache",
         "Vary": "User-Agent,Accept-Encoding"
       },
-      "scan_id": 40005289,
+      "scan_id": 40198459,
       "score": 0,
-      "start_time": "Sun, 23 Jul 2023 01:27:01 GMT",
+      "start_time": "Sun, 30 Jul 2023 01:16:03 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -5507,7 +5527,7 @@
         "ip": "lacomptasimplifiee.fr/51.91.236.193",
         "port": "443",
         "severity": "OK",
-        "finding": "52 >= 30 days"
+        "finding": "45 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -5710,7 +5730,7 @@
         "ip": "lacomptasimplifiee.fr/51.91.236.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "1690075700"
+        "finding": "1690679855"
       },
       {
         "id": "HSTS",
@@ -6273,7 +6293,7 @@
         "ip": "lacomptasimplifiee.fr/51.91.236.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "96"
+        "finding": "61"
       }
     ],
     "thirdparties": {
@@ -6372,7 +6392,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/iZWPJyR27lB0cR4hL_xOX0GC/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/iRvKkcsnpNcOYYwhqaQxPITz/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6419,14 +6439,6 @@
           "url": "https://prod-classe7.fr/compta-simplifie/wp-content/uploads/2022/12/illu-slider-client-motif.svg"
         },
         {
-          "type": "google",
-          "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC&theme=light&size=normal&cb=xsaeh2gu0kig",
-          "details": {
-            "id": "google",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
           "type": "google tag manager",
           "url": "https://www.googletagmanager.com/gtag/js?id=G-VTC217M61H&l=dataLayer&cx=c",
           "details": {
@@ -6436,7 +6448,23 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/iZWPJyR27lB0cR4hL_xOX0GC/styles__ltr.css",
+          "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=iRvKkcsnpNcOYYwhqaQxPITz&theme=light&size=normal&cb=ik7i427ctjgk",
+          "details": {
+            "id": "google",
+            "message": "Use hosted Matomo instance"
+          }
+        },
+        {
+          "type": "google analytics",
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je37q0&_p=1531290447&cid=1679883610.1690679296&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1690679295&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
+          "details": {
+            "id": "google analytics",
+            "message": "Use hosted Matomo instance"
+          }
+        },
+        {
+          "type": "google",
+          "url": "https://www.gstatic.com/recaptcha/releases/iRvKkcsnpNcOYYwhqaQxPITz/styles__ltr.css",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6444,7 +6472,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/iZWPJyR27lB0cR4hL_xOX0GC/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/iRvKkcsnpNcOYYwhqaQxPITz/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6468,7 +6496,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC",
+          "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=iRvKkcsnpNcOYYwhqaQxPITz",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -6484,17 +6512,9 @@
         },
         {
           "type": "google",
-          "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz",
+          "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=iRvKkcsnpNcOYYwhqaQxPITz&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz",
           "details": {
             "id": "google",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
-          "type": "google analytics",
-          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je37j0&_p=1844836784&cid=1753615962.1690075007&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1690075007&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1",
-          "details": {
-            "id": "google analytics",
             "message": "Use hosted Matomo instance"
           }
         }
@@ -6502,10 +6522,10 @@
       "cookies": [
         {
           "name": "_ga",
-          "value": "GA1.1.1753615962.1690075007",
+          "value": "GA1.1.1679883610.1690679296",
           "domain": ".lacomptasimplifiee.fr",
           "path": "/",
-          "expires": 1753147007,
+          "expires": 1753751295,
           "size": 30,
           "httpOnly": false,
           "secure": false,
@@ -6516,10 +6536,10 @@
         },
         {
           "name": "_ga_VTC217M61H",
-          "value": "GS1.1.1690075007.1.0.1690075007.0.0.0",
+          "value": "GS1.1.1690679295.1.0.1690679295.0.0.0",
           "domain": ".lacomptasimplifiee.fr",
           "path": "/",
-          "expires": 1753147007,
+          "expires": 1753751295,
           "size": 51,
           "httpOnly": false,
           "secure": false,
@@ -6535,7 +6555,7 @@
         "content-encoding": "gzip",
         "content-length": "38160",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 23 Jul 2023 01:16:44 GMT",
+        "date": "Sun, 30 Jul 2023 01:08:13 GMT",
         "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
         "pragma": "no-cache",
         "server": "Apache",
@@ -6600,7 +6620,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "173.194.192.95",
+          "ip": "142.251.163.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6654,18 +6674,13 @@
         },
         {
           "hostname": "use.typekit.net",
-          "ip": "184.28.41.140",
+          "ip": "23.222.5.73",
           "geoip": {
             "city": {
-              "geoname_id": 4684888,
+              "geoname_id": 4744870,
               "names": {
-                "de": "Dallas",
-                "en": "Dallas",
-                "es": "Dallas",
-                "fr": "Dallas",
-                "ja": "ダラス",
-                "pt-BR": "Dallas",
-                "ru": "Даллас"
+                "en": "Ashburn",
+                "ru": "Ашберн"
               }
             },
             "continent": {
@@ -6698,13 +6713,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 32.7797,
-              "longitude": -96.8022,
-              "metro_code": 623,
-              "time_zone": "America/Chicago"
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "75270"
+              "code": "20149"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -6722,15 +6737,15 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 4736286,
-                "iso_code": "TX",
+                "geoname_id": 6254928,
+                "iso_code": "VA",
                 "names": {
-                  "en": "Texas",
-                  "es": "Texas",
-                  "fr": "Texas",
-                  "ja": "テキサス州",
-                  "ru": "Техас",
-                  "zh-CN": "德克萨斯州"
+                  "en": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
                 }
               }
             ]
@@ -6738,18 +6753,13 @@
         },
         {
           "hostname": "p.typekit.net",
-          "ip": "184.28.41.140",
+          "ip": "23.222.5.79",
           "geoip": {
             "city": {
-              "geoname_id": 4684888,
+              "geoname_id": 4744870,
               "names": {
-                "de": "Dallas",
-                "en": "Dallas",
-                "es": "Dallas",
-                "fr": "Dallas",
-                "ja": "ダラス",
-                "pt-BR": "Dallas",
-                "ru": "Даллас"
+                "en": "Ashburn",
+                "ru": "Ашберн"
               }
             },
             "continent": {
@@ -6782,13 +6792,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 32.7797,
-              "longitude": -96.8022,
-              "metro_code": 623,
-              "time_zone": "America/Chicago"
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "75270"
+              "code": "20149"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -6806,15 +6816,15 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 4736286,
-                "iso_code": "TX",
+                "geoname_id": 6254928,
+                "iso_code": "VA",
                 "names": {
-                  "en": "Texas",
-                  "es": "Texas",
-                  "fr": "Texas",
-                  "ja": "テキサス州",
-                  "ru": "Техас",
-                  "zh-CN": "德克萨斯州"
+                  "en": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
                 }
               }
             ]
@@ -6822,7 +6832,7 @@
         },
         {
           "hostname": "www.google.com",
-          "ip": "74.125.201.104",
+          "ip": "142.251.163.147",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6876,7 +6886,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "108.177.120.94",
+          "ip": "172.253.115.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -6986,7 +6996,7 @@
         },
         {
           "hostname": "www.googletagmanager.com",
-          "ip": "74.125.132.97",
+          "ip": "172.253.122.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -7040,7 +7050,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "142.250.125.94",
+          "ip": "142.251.163.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -7094,7 +7104,7 @@
         },
         {
           "hostname": "www.google-analytics.com",
-          "ip": "74.125.132.138",
+          "ip": "172.253.122.100",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -7671,7 +7681,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 23 Jul 2023 01:26:14",
+      "@generated": "Sun, 30 Jul 2023 01:15:19",
       "site": [
         {
           "@name": "https://lacomptasimplifiee.fr",
@@ -7827,6 +7837,13 @@
               "desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>"
             },
             {
+              "name": "Storable but Non-Cacheable Content",
+              "riskcode": "0",
+              "confidence": "2",
+              "riskdesc": "Informational (Medium)",
+              "desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>"
+            },
+            {
               "name": "User Controllable HTML Element Attribute (Potential XSS)",
               "riskcode": "0",
               "confidence": "1",
@@ -7842,8 +7859,10 @@
       {
         "requestedUrl": "https://lacomptasimplifiee.fr/",
         "finalUrl": "https://lacomptasimplifiee.fr/",
-        "fetchTime": "2023-07-23T01:26:31.187Z",
-        "runWarnings": [],
+        "fetchTime": "2023-07-30T01:15:35.448Z",
+        "runWarnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling)."
+        ],
         "categories": {
           "performance": {
             "title": "Performance",
@@ -7853,7 +7872,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.17385501861572267
+            "score": 0.15440044403076172
           },
           "accessibility": {
             "title": "Accessibility",
@@ -7905,53 +7924,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 15413,
+            "numericValue": 15533,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4446,
-                  "firstMeaningfulPaint": 4446,
-                  "largestContentfulPaint": 9666,
-                  "interactive": 15413,
-                  "speedIndex": 18270,
-                  "totalBlockingTime": 755,
-                  "maxPotentialFID": 350,
-                  "cumulativeLayoutShift": 0.036160652796427405,
-                  "cumulativeLayoutShiftMainFrame": 0.036160652796427405,
-                  "totalCumulativeLayoutShift": 0.036160652796427405,
+                  "firstContentfulPaint": 3884,
+                  "firstMeaningfulPaint": 3884,
+                  "largestContentfulPaint": 11522,
+                  "interactive": 15533,
+                  "speedIndex": 15722,
+                  "totalBlockingTime": 839,
+                  "maxPotentialFID": 438,
+                  "cumulativeLayoutShift": 0.03502203623453776,
+                  "cumulativeLayoutShiftMainFrame": 0.03502203623453776,
+                  "totalCumulativeLayoutShift": 0.03502203623453776,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 751693063,
+                  "observedTimeOriginTs": 616292564,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 751693063,
-                  "observedFirstPaint": 5960,
-                  "observedFirstPaintTs": 757653190,
-                  "observedFirstContentfulPaint": 6073,
-                  "observedFirstContentfulPaintTs": 757766335,
-                  "observedFirstContentfulPaintAllFrames": 6073,
-                  "observedFirstContentfulPaintAllFramesTs": 757766335,
-                  "observedFirstMeaningfulPaint": 6073,
-                  "observedFirstMeaningfulPaintTs": 757766335,
-                  "observedLargestContentfulPaint": 6345,
-                  "observedLargestContentfulPaintTs": 758038224,
-                  "observedLargestContentfulPaintAllFrames": 6345,
-                  "observedLargestContentfulPaintAllFramesTs": 758038224,
-                  "observedTraceEnd": 9758,
-                  "observedTraceEndTs": 761451025,
-                  "observedLoad": 7448,
-                  "observedLoadTs": 759140585,
-                  "observedDomContentLoaded": 6500,
-                  "observedDomContentLoadedTs": 758193170,
-                  "observedCumulativeLayoutShift": 0.036160652796427405,
-                  "observedCumulativeLayoutShiftMainFrame": 0.036160652796427405,
-                  "observedTotalCumulativeLayoutShift": 0.036160652796427405,
-                  "observedFirstVisualChange": 5959,
-                  "observedFirstVisualChangeTs": 757652063,
-                  "observedLastVisualChange": 9459,
-                  "observedLastVisualChangeTs": 761152063,
-                  "observedSpeedIndex": 7424,
-                  "observedSpeedIndexTs": 759116967
+                  "observedNavigationStartTs": 616292564,
+                  "observedFirstPaint": 3782,
+                  "observedFirstPaintTs": 620074637,
+                  "observedFirstContentfulPaint": 3942,
+                  "observedFirstContentfulPaintTs": 620234405,
+                  "observedFirstContentfulPaintAllFrames": 3942,
+                  "observedFirstContentfulPaintAllFramesTs": 620234405,
+                  "observedFirstMeaningfulPaint": 3942,
+                  "observedFirstMeaningfulPaintTs": 620234405,
+                  "observedLargestContentfulPaint": 4172,
+                  "observedLargestContentfulPaintTs": 620464252,
+                  "observedLargestContentfulPaintAllFrames": 4172,
+                  "observedLargestContentfulPaintAllFramesTs": 620464252,
+                  "observedTraceEnd": 7486,
+                  "observedTraceEndTs": 623778476,
+                  "observedLoad": 5171,
+                  "observedLoadTs": 621463671,
+                  "observedDomContentLoaded": 4224,
+                  "observedDomContentLoadedTs": 620516065,
+                  "observedCumulativeLayoutShift": 0.03502203623453776,
+                  "observedCumulativeLayoutShiftMainFrame": 0.03502203623453776,
+                  "observedTotalCumulativeLayoutShift": 0.03502203623453776,
+                  "observedFirstVisualChange": 3782,
+                  "observedFirstVisualChangeTs": 620074564,
+                  "observedLastVisualChange": 7182,
+                  "observedLastVisualChangeTs": 623474564,
+                  "observedSpeedIndex": 5160,
+                  "observedSpeedIndexTs": 621452808
                 },
                 {
                   "lcpInvalidated": false
@@ -7969,23 +7988,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 153,
+                  "numRequests": 154,
                   "numScripts": 45,
                   "numStylesheets": 46,
-                  "numFonts": 4,
-                  "numTasks": 2377,
-                  "numTasksOver10ms": 58,
-                  "numTasksOver25ms": 16,
-                  "numTasksOver50ms": 6,
-                  "numTasksOver100ms": 2,
+                  "numFonts": 5,
+                  "numTasks": 2306,
+                  "numTasksOver10ms": 68,
+                  "numTasksOver25ms": 17,
+                  "numTasksOver50ms": 7,
+                  "numTasksOver100ms": 4,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 27100458.303262148,
-                  "maxRtt": 117.714,
-                  "maxServerLatency": 129.944,
-                  "totalByteWeight": 2758515,
-                  "totalTaskTime": 2406.1749999999993,
-                  "mainDocumentTransferSize": 39049
+                  "throughput": 36401399.802743755,
+                  "maxRtt": 82.57900000000001,
+                  "maxServerLatency": 99.95300000000002,
+                  "totalByteWeight": 2860513,
+                  "totalTaskTime": 2481.035000000004,
+                  "mainDocumentTransferSize": 39026
                 }
               ]
             }
@@ -8008,7 +8027,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://lacomptasimplifiee.fr",
-        "size": 3272.917,
+        "size": 3271.945,
         "nodes": 1797,
         "requests": 119,
         "grade": "F",
@@ -8016,7 +8035,7 @@
         "ges": 2.64,
         "water": 3.96,
         "ecoindex_version": "5.4.2",
-        "date": "2023-07-23 01:18:02.756253",
+        "date": "2023-07-30 01:09:28.445702",
         "page_type": "website"
       }
     ],
@@ -8034,8 +8053,8 @@
       "cookiesCount": 2,
       "trackersGrade": "F",
       "trackersCount": 37,
-      "lighthouse_performance": 0.17385501861572267,
-      "lighthouse_performanceGrade": "E",
+      "lighthouse_performance": 0.15440044403076172,
+      "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.88,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 1,
@@ -8054,7 +8073,7 @@
     "http": {
       "url": "https://blog.rca.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 23 Jul 2023 01:33:30 GMT",
+      "end_time": "Sun, 30 Jul 2023 01:23:06 GMT",
       "grade": "D+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -8062,16 +8081,16 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 23 Jul 2023 01:33:23 GMT",
+        "Date": "Sun, 30 Jul 2023 01:23:00 GMT",
         "Link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\", <https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\", <https://blog.rca.fr/>; rel=shortlink",
         "Server": "Apache",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Powered-By": "PHP/7.4"
       },
-      "scan_id": 40005351,
+      "scan_id": 40198599,
       "score": 40,
-      "start_time": "Sun, 23 Jul 2023 01:33:17 GMT",
+      "start_time": "Sun, 30 Jul 2023 01:22:55 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -8465,7 +8484,7 @@
         "ip": "blog.rca.fr/145.239.37.162",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -8604,8 +8623,8 @@
         "id": "cert_expirationStatus",
         "ip": "blog.rca.fr/145.239.37.162",
         "port": "443",
-        "severity": "MEDIUM",
-        "finding": "expires < 30 days (18)"
+        "severity": "HIGH",
+        "finding": "expires < 15 days (11)"
       },
       {
         "id": "cert_notBefore",
@@ -8618,7 +8637,7 @@
         "id": "cert_notAfter",
         "ip": "blog.rca.fr/145.239.37.162",
         "port": "443",
-        "severity": "MEDIUM",
+        "severity": "HIGH",
         "finding": "2023-08-10 07:43"
       },
       {
@@ -8808,7 +8827,7 @@
         "ip": "blog.rca.fr/145.239.37.162",
         "port": "443",
         "severity": "INFO",
-        "finding": "1690076048"
+        "finding": "1690680227"
       },
       {
         "id": "HSTS",
@@ -9364,7 +9383,7 @@
         "ip": "blog.rca.fr/145.239.37.162",
         "port": "443",
         "severity": "INFO",
-        "finding": "63"
+        "finding": "64"
       }
     ],
     "thirdparties": {
@@ -9411,7 +9430,7 @@
         },
         {
           "type": "google analytics",
-          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je37j0&_p=1673851655&cid=462788014.1690075469&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1690075469&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1",
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je37q0&_p=2085207639&cid=887732283.1690679648&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1690679647&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1",
           "details": {
             "id": "google analytics",
             "message": "Use hosted Matomo instance"
@@ -9421,10 +9440,10 @@
       "cookies": [
         {
           "name": "_ga",
-          "value": "GA1.1.462788014.1690075469",
+          "value": "GA1.1.887732283.1690679648",
           "domain": ".rca.fr",
           "path": "/",
-          "expires": 1753147469,
+          "expires": 1753751647,
           "size": 29,
           "httpOnly": false,
           "secure": false,
@@ -9435,10 +9454,10 @@
         },
         {
           "name": "_ga_9TKD9RN2HY",
-          "value": "GS1.1.1690075469.1.0.1690075469.0.0.0",
+          "value": "GS1.1.1690679647.1.0.1690679647.0.0.0",
           "domain": ".rca.fr",
           "path": "/",
-          "expires": 1753147469,
+          "expires": 1753751647,
           "size": 51,
           "httpOnly": false,
           "secure": false,
@@ -9451,7 +9470,7 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 23 Jul 2023 01:24:27 GMT",
+        "date": "Sun, 30 Jul 2023 01:14:06 GMT",
         "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
         "server": "Apache",
         "vary": "Accept-Encoding",
@@ -9516,7 +9535,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "172.253.122.95",
+          "ip": "142.251.16.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -9570,7 +9589,7 @@
         },
         {
           "hostname": "use.typekit.net",
-          "ip": "23.222.5.90",
+          "ip": "23.222.5.68",
           "geoip": {
             "city": {
               "geoname_id": 4744870,
@@ -9649,7 +9668,7 @@
         },
         {
           "hostname": "p.typekit.net",
-          "ip": "23.222.5.79",
+          "ip": "23.222.5.78",
           "geoip": {
             "city": {
               "geoname_id": 4744870,
@@ -9728,7 +9747,7 @@
         },
         {
           "hostname": "www.googletagmanager.com",
-          "ip": "142.251.163.97",
+          "ip": "142.251.16.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -9782,7 +9801,7 @@
         },
         {
           "hostname": "www.google-analytics.com",
-          "ip": "172.253.115.139",
+          "ip": "172.253.63.113",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -10214,7 +10233,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 23 Jul 2023 01:32:45",
+      "@generated": "Sun, 30 Jul 2023 01:22:23",
       "site": [
         {
           "@name": "https://blog.rca.fr",
@@ -10378,7 +10397,7 @@
       {
         "requestedUrl": "https://blog.rca.fr/",
         "finalUrl": "https://blog.rca.fr/",
-        "fetchTime": "2023-07-23T01:33:01.085Z",
+        "fetchTime": "2023-07-30T01:22:38.222Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -10441,53 +10460,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 10904,
+            "numericValue": 10895,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3089,
-                  "firstMeaningfulPaint": 3754,
-                  "largestContentfulPaint": 12724,
-                  "interactive": 10904,
-                  "speedIndex": 9541,
-                  "totalBlockingTime": 161,
-                  "maxPotentialFID": 272,
-                  "cumulativeLayoutShift": 0.02553642781575521,
-                  "cumulativeLayoutShiftMainFrame": 0.02553642781575521,
-                  "totalCumulativeLayoutShift": 0.02553642781575521,
+                  "firstContentfulPaint": 3093,
+                  "firstMeaningfulPaint": 3093,
+                  "largestContentfulPaint": 12807,
+                  "interactive": 10895,
+                  "speedIndex": 9885,
+                  "totalBlockingTime": 302,
+                  "maxPotentialFID": 306,
+                  "cumulativeLayoutShift": 0.04537845865885417,
+                  "cumulativeLayoutShiftMainFrame": 0.04537845865885417,
+                  "totalCumulativeLayoutShift": 0.04537845865885417,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 592806891,
+                  "observedTimeOriginTs": 679423415,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 592806891,
-                  "observedFirstPaint": 2709,
-                  "observedFirstPaintTs": 595515893,
-                  "observedFirstContentfulPaint": 2709,
-                  "observedFirstContentfulPaintTs": 595515893,
-                  "observedFirstContentfulPaintAllFrames": 2709,
-                  "observedFirstContentfulPaintAllFramesTs": 595515893,
-                  "observedFirstMeaningfulPaint": 2764,
-                  "observedFirstMeaningfulPaintTs": 595571274,
-                  "observedLargestContentfulPaint": 2911,
-                  "observedLargestContentfulPaintTs": 595717696,
-                  "observedLargestContentfulPaintAllFrames": 2911,
-                  "observedLargestContentfulPaintAllFramesTs": 595717696,
-                  "observedTraceEnd": 5324,
-                  "observedTraceEndTs": 598131271,
-                  "observedLoad": 3012,
-                  "observedLoadTs": 595819178,
-                  "observedDomContentLoaded": 2737,
-                  "observedDomContentLoadedTs": 595543954,
-                  "observedCumulativeLayoutShift": 0.02553642781575521,
-                  "observedCumulativeLayoutShiftMainFrame": 0.02553642781575521,
-                  "observedTotalCumulativeLayoutShift": 0.02553642781575521,
-                  "observedFirstVisualChange": 2719,
-                  "observedFirstVisualChangeTs": 595525891,
-                  "observedLastVisualChange": 3052,
-                  "observedLastVisualChangeTs": 595858891,
-                  "observedSpeedIndex": 2861,
-                  "observedSpeedIndexTs": 595667506
+                  "observedNavigationStartTs": 679423415,
+                  "observedFirstPaint": 2999,
+                  "observedFirstPaintTs": 682422478,
+                  "observedFirstContentfulPaint": 2999,
+                  "observedFirstContentfulPaintTs": 682422478,
+                  "observedFirstContentfulPaintAllFrames": 2999,
+                  "observedFirstContentfulPaintAllFramesTs": 682422478,
+                  "observedFirstMeaningfulPaint": 3031,
+                  "observedFirstMeaningfulPaintTs": 682454618,
+                  "observedLargestContentfulPaint": 3274,
+                  "observedLargestContentfulPaintTs": 682697163,
+                  "observedLargestContentfulPaintAllFrames": 3274,
+                  "observedLargestContentfulPaintAllFramesTs": 682697163,
+                  "observedTraceEnd": 5716,
+                  "observedTraceEndTs": 685139527,
+                  "observedLoad": 3405,
+                  "observedLoadTs": 682828304,
+                  "observedDomContentLoaded": 3115,
+                  "observedDomContentLoadedTs": 682538492,
+                  "observedCumulativeLayoutShift": 0.04537845865885417,
+                  "observedCumulativeLayoutShiftMainFrame": 0.04537845865885417,
+                  "observedTotalCumulativeLayoutShift": 0.04537845865885417,
+                  "observedFirstVisualChange": 2999,
+                  "observedFirstVisualChangeTs": 682422415,
+                  "observedLastVisualChange": 3365,
+                  "observedLastVisualChangeTs": 682788415,
+                  "observedSpeedIndex": 3203,
+                  "observedSpeedIndexTs": 682626694
                 },
                 {
                   "lcpInvalidated": false
@@ -10505,23 +10524,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 74,
+                  "numRequests": 75,
                   "numScripts": 21,
                   "numStylesheets": 24,
                   "numFonts": 8,
-                  "numTasks": 857,
-                  "numTasksOver10ms": 12,
+                  "numTasks": 867,
+                  "numTasksOver10ms": 10,
                   "numTasksOver25ms": 4,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 5.509999999999991,
-                  "throughput": 62267558.0595263,
-                  "maxRtt": 82.99900000000001,
-                  "maxServerLatency": 59.56599999999999,
-                  "totalByteWeight": 3774775,
-                  "totalTaskTime": 581.9389999999999,
-                  "mainDocumentTransferSize": 19415
+                  "rtt": 5.372,
+                  "throughput": 68579907.6450077,
+                  "maxRtt": 82.851,
+                  "maxServerLatency": 63.484999999999985,
+                  "totalByteWeight": 4177263,
+                  "totalTaskTime": 613.610000000001,
+                  "mainDocumentTransferSize": 19354
                 }
               ]
             }
@@ -10544,7 +10563,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://blog.rca.fr",
-        "size": 4571.962,
+        "size": 4713.572,
         "nodes": 607,
         "requests": 82,
         "grade": "D",
@@ -10552,7 +10571,7 @@
         "ges": 2.14,
         "water": 3.21,
         "ecoindex_version": "5.4.2",
-        "date": "2023-07-23 01:25:37.698790",
+        "date": "2023-07-30 01:15:12.645963",
         "page_type": "website"
       }
     ],
@@ -10585,108 +10604,12 @@
     }
   },
   {
-    "404": [
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "www.experts-en-gestion.fr",
-          "port": null,
-          "hostname": "www.experts-en-gestion.fr",
-          "hash": null,
-          "search": "?vcwy2s",
-          "query": "vcwy2s",
-          "pathname": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff",
-          "path": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?vcwy2s",
-          "href": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?vcwy2s"
-        },
-        "link": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?vcwy2s",
-        "line": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?vcwy2s",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "www.experts-en-gestion.fr",
-          "port": null,
-          "hostname": "www.experts-en-gestion.fr",
-          "hash": null,
-          "search": "?vcwy2s",
-          "query": "vcwy2s",
-          "pathname": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg",
-          "path": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?vcwy2s",
-          "href": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?vcwy2s"
-        },
-        "link": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?vcwy2s",
-        "line": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?vcwy2s",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "www.experts-en-gestion.fr",
-          "port": null,
-          "hostname": "www.experts-en-gestion.fr",
-          "hash": null,
-          "search": "?vcwy2s",
-          "query": "vcwy2s",
-          "pathname": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot",
-          "path": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?vcwy2s",
-          "href": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?vcwy2s"
-        },
-        "link": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?vcwy2s",
-        "line": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?vcwy2s",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "www.experts-en-gestion.fr",
-          "port": null,
-          "hostname": "www.experts-en-gestion.fr",
-          "hash": null,
-          "search": "?vcwy2s",
-          "query": "vcwy2s",
-          "pathname": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf",
-          "path": "/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?vcwy2s",
-          "href": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?vcwy2s"
-        },
-        "link": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?vcwy2s",
-        "line": "https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?vcwy2s",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "www.experts-en-gestion.fr",
-          "port": null,
-          "hostname": "www.experts-en-gestion.fr",
-          "hash": null,
-          "search": null,
-          "query": null,
-          "pathname": "/wp-content/uploads/2021/11/CP-lancement-CEG.pdf",
-          "path": "/wp-content/uploads/2021/11/CP-lancement-CEG.pdf",
-          "href": "https://www.experts-en-gestion.fr/wp-content/uploads/2021/11/CP-lancement-CEG.pdf"
-        },
-        "link": "https://www.experts-en-gestion.fr/wp-content/uploads/2021/11/CP-lancement-CEG.pdf",
-        "line": "https://www.experts-en-gestion.fr/wp-content/uploads/2021/11/CP-lancement-CEG.pdf",
-        "broken": true
-      }
-    ],
+    "404": [],
     "url": "https://www.experts-en-gestion.fr",
     "http": {
       "url": "https://www.experts-en-gestion.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 23 Jul 2023 01:46:49 GMT",
+      "end_time": "Sun, 30 Jul 2023 01:36:39 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -10694,17 +10617,17 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=UTF-8",
-        "Date": "Sun, 23 Jul 2023 01:46:43 GMT",
+        "Date": "Sun, 30 Jul 2023 01:36:32 GMT",
         "Link": "<https://www.experts-en-gestion.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.experts-en-gestion.fr/wp-json/wp/v2/pages/5220>; rel=\"alternate\"; type=\"application/json\", <https://www.experts-en-gestion.fr/>; rel=shortlink",
         "Server": "Apache",
-        "Set-Cookie": "swpm_session=84df749309eadd7867c4ab20715ee1e1; path=/",
+        "Set-Cookie": "swpm_session=7394a113f721c227bb73513fd14be51f; path=/",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Powered-By": "PHP/7.4"
       },
-      "scan_id": 40005439,
+      "scan_id": 40198833,
       "score": 5,
-      "start_time": "Sun, 23 Jul 2023 01:43:39 GMT",
+      "start_time": "Sun, 30 Jul 2023 01:36:25 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -11253,8 +11176,8 @@
         "id": "cert_expirationStatus",
         "ip": "www.experts-en-gestion.fr/146.59.209.152",
         "port": "443",
-        "severity": "MEDIUM",
-        "finding": "expires < 30 days (20)"
+        "severity": "HIGH",
+        "finding": "expires < 15 days (13)"
       },
       {
         "id": "cert_notBefore",
@@ -11267,7 +11190,7 @@
         "id": "cert_notAfter",
         "ip": "www.experts-en-gestion.fr/146.59.209.152",
         "port": "443",
-        "severity": "MEDIUM",
+        "severity": "HIGH",
         "finding": "2023-08-12 09:58"
       },
       {
@@ -11450,14 +11373,14 @@
         "ip": "www.experts-en-gestion.fr/146.59.209.152",
         "port": "443",
         "severity": "INFO",
-        "finding": "-2 seconds from localtime"
+        "finding": "-3 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.experts-en-gestion.fr/146.59.209.152",
         "port": "443",
         "severity": "INFO",
-        "finding": "1690076856"
+        "finding": "1690681080"
       },
       {
         "id": "HSTS",
@@ -12027,7 +11950,7 @@
         "ip": "www.experts-en-gestion.fr/146.59.209.152",
         "port": "443",
         "severity": "INFO",
-        "finding": "77"
+        "finding": "131"
       }
     ],
     "thirdparties": {
@@ -12066,6 +11989,22 @@
         },
         {
           "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/dmserifdisplay/v12/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
+          "type": "unknown",
+          "url": "https://use.typekit.net/af/f58025/0000000000000000773595e8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
+        },
+        {
+          "type": "unknown",
+          "url": "https://use.typekit.net/af/f1bb96/0000000000000000773595fa/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
+        },
+        {
+          "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2",
           "details": {
             "id": "google fonts",
@@ -12085,10 +12024,6 @@
           "url": "https://use.typekit.net/af/f58025/0000000000000000773595e8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
         },
         {
-          "type": "unknown",
-          "url": "https://use.typekit.net/af/f1bb96/0000000000000000773595fa/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
-        },
-        {
           "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/dmserifdisplay/v12/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2.woff2",
           "details": {
@@ -12109,47 +12044,35 @@
           }
         },
         {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/dmserifdisplay/v12/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "unknown",
-          "url": "https://use.typekit.net/af/f58025/0000000000000000773595e8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
-        },
-        {
           "type": "unknown",
           "url": "https://use.typekit.net/af/f1bb96/0000000000000000773595fa/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/dmserifdisplay/v12/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "unknown",
-          "url": "https://use.typekit.net/af/d31cff/0000000000000000773595f8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3"
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/iZWPJyR27lB0cR4hL_xOX0GC/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/pCoGBhjs9s8EhFOHJFe8cqis/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
+          }
+        },
+        {
+          "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/dmserifdisplay/v12/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
+          "type": "unknown",
+          "url": "https://use.typekit.net/af/d31cff/0000000000000000773595f8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3"
+        },
+        {
+          "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
           }
         },
         {
@@ -12166,7 +12089,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic&co=aHR0cHM6Ly93d3cuZXhwZXJ0cy1lbi1nZXN0aW9uLmZyOjQ0Mw..&hl=en&type=v2_checkbox&v=iZWPJyR27lB0cR4hL_xOX0GC&theme=light&size=normal&cb=qf8kdcijsv30",
+          "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic&co=aHR0cHM6Ly93d3cuZXhwZXJ0cy1lbi1nZXN0aW9uLmZyOjQ0Mw..&hl=en&type=v2_checkbox&v=pCoGBhjs9s8EhFOHJFe8cqis&theme=light&size=normal&cb=n6djz3il8u3h",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -12174,7 +12097,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/iZWPJyR27lB0cR4hL_xOX0GC/styles__ltr.css",
+          "url": "https://www.gstatic.com/recaptcha/releases/pCoGBhjs9s8EhFOHJFe8cqis/styles__ltr.css",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -12182,7 +12105,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.gstatic.com/recaptcha/releases/iZWPJyR27lB0cR4hL_xOX0GC/recaptcha__en.js",
+          "url": "https://www.gstatic.com/recaptcha/releases/pCoGBhjs9s8EhFOHJFe8cqis/recaptcha__en.js",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -12206,7 +12129,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC",
+          "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=pCoGBhjs9s8EhFOHJFe8cqis",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -12230,7 +12153,7 @@
         },
         {
           "type": "google",
-          "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=iZWPJyR27lB0cR4hL_xOX0GC&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic",
+          "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=pCoGBhjs9s8EhFOHJFe8cqis&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -12238,7 +12161,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://f.vimeocdn.com/p/4.24.15/js/player.module.js",
+          "url": "https://f.vimeocdn.com/p/4.24.18/js/player.module.js",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12246,7 +12169,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://f.vimeocdn.com/p/4.24.15/js/vendor.module.js",
+          "url": "https://f.vimeocdn.com/p/4.24.18/js/vendor.module.js",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12254,7 +12177,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://f.vimeocdn.com/p/4.24.15/css/player.css",
+          "url": "https://f.vimeocdn.com/p/4.24.18/css/player.css",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12262,7 +12185,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://f.vimeocdn.com/p/4.24.15/js/player.module.js",
+          "url": "https://f.vimeocdn.com/p/4.24.18/js/player.module.js",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12270,7 +12193,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://f.vimeocdn.com/p/4.24.15/js/vendor.module.js",
+          "url": "https://f.vimeocdn.com/p/4.24.18/js/vendor.module.js",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12278,7 +12201,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://f.vimeocdn.com/p/4.24.15/css/player.css",
+          "url": "https://f.vimeocdn.com/p/4.24.18/css/player.css",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12302,7 +12225,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=2427574a228401f0de890bcab745cff5a7b543e01690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=30f44c45a0e7558e4e513731161b4f5abc33ba5b1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12326,7 +12249,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=a23f28247b5c35aec4d33bccfedd6826c9330dfc1690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=72935b868f8fd12c118cde353641470d5dde2dde1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12334,7 +12257,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=2427574a228401f0de890bcab745cff5a7b543e01690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=30f44c45a0e7558e4e513731161b4f5abc33ba5b1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12346,11 +12269,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/210b9efa,82d261bd,a995c3a8,b0acc1dc,d7551e3d/audio/491235d3,6b60ca25,970efd9d/master.json?base64_init=1&query_string_ranges=1"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/210b9efa,82d261bd,a995c3a8,b0acc1dc,d7551e3d/audio/491235d3,6b60ca25,970efd9d/master.json?base64_init=1&query_string_ranges=1"
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=a23f28247b5c35aec4d33bccfedd6826c9330dfc1690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=72935b868f8fd12c118cde353641470d5dde2dde1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12362,7 +12285,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/sep/video/082933d1,240c02f7,2d325f59,b5795744,f6f3833f/audio/11a570ba,2d97a261,335a61cb/master.json?base64_init=1&query_string_ranges=1"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/sep/video/082933d1,240c02f7,2d325f59,b5795744,f6f3833f/audio/11a570ba,2d97a261,335a61cb/master.json?base64_init=1&query_string_ranges=1"
         },
         {
           "type": "vimeo",
@@ -12373,10 +12296,6 @@
           }
         },
         {
-          "type": "unknown",
-          "url": "https://vimeo.com/ablincoln/vuid?pid=2427574a228401f0de890bcab745cff5a7b543e01690075823"
-        },
-        {
           "type": "vimeo",
           "url": "https://i.vimeocdn.com/video/1404234836-1c4d52e1430e9e95b152efe8cc157a4d422959588203acb2c78f0a486be5292c-d.jpg?mw=80&q=85",
           "details": {
@@ -12385,8 +12304,12 @@
           }
         },
         {
+          "type": "unknown",
+          "url": "https://vimeo.com/ablincoln/vuid?pid=30f44c45a0e7558e4e513731161b4f5abc33ba5b1690679980"
+        },
+        {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=a23f28247b5c35aec4d33bccfedd6826c9330dfc1690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=30f44c45a0e7558e4e513731161b4f5abc33ba5b1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12394,11 +12317,27 @@
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/11a570ba.mp4?r=dXM%3D&range=1095-49018"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/970efd9d.mp4?r=dXM%3D&range=951-50770"
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=a23f28247b5c35aec4d33bccfedd6826c9330dfc1690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=72935b868f8fd12c118cde353641470d5dde2dde1690679980",
+          "details": {
+            "id": "vimeo",
+            "message": "use peertube"
+          }
+        },
+        {
+          "type": "unknown",
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/11a570ba.mp4?r=dXM%3D&range=1095-49018"
+        },
+        {
+          "type": "unknown",
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/video/b0acc1dc.mp4?r=dXM%3D&range=950-249931"
+        },
+        {
+          "type": "vimeo",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=30f44c45a0e7558e4e513731161b4f5abc33ba5b1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12406,7 +12345,7 @@
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=a23f28247b5c35aec4d33bccfedd6826c9330dfc1690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=30f44c45a0e7558e4e513731161b4f5abc33ba5b1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12418,7 +12357,15 @@
         },
         {
           "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=2427574a228401f0de890bcab745cff5a7b543e01690075823",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=72935b868f8fd12c118cde353641470d5dde2dde1690679980",
+          "details": {
+            "id": "vimeo",
+            "message": "use peertube"
+          }
+        },
+        {
+          "type": "vimeo",
+          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=72935b868f8fd12c118cde353641470d5dde2dde1690679980",
           "details": {
             "id": "vimeo",
             "message": "use peertube"
@@ -12426,7 +12373,15 @@
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/970efd9d.mp4?r=dXM%3D&range=951-50770"
+          "url": "https://player-telemetry.vimeo.com/player-events/log/partial"
+        },
+        {
+          "type": "unknown",
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/082933d1.mp4?r=dXMtZWFzdDE%3D&range=1082-100912"
+        },
+        {
+          "type": "unknown",
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=951-74835"
         },
         {
           "type": "vimeo",
@@ -12437,94 +12392,66 @@
           }
         },
         {
-          "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=2427574a228401f0de890bcab745cff5a7b543e01690075823",
-          "details": {
-            "id": "vimeo",
-            "message": "use peertube"
-          }
-        },
-        {
-          "type": "vimeo",
-          "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=2427574a228401f0de890bcab745cff5a7b543e01690075823",
-          "details": {
-            "id": "vimeo",
-            "message": "use peertube"
-          }
+          "type": "unknown",
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-1.m4s?r=dXM%3D"
         },
         {
           "type": "unknown",
-          "url": "https://player-telemetry.vimeo.com/player-events/log/partial"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=1095-72138"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/082933d1.mp4?r=dXMtZWFzdDE%3D&range=1082-100912"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/2d325f59.mp4?r=dXMtZWFzdDE%3D&range=1079-439451"
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/video/b0acc1dc.mp4?r=dXM%3D&range=950-249931"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=1081-903155"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=1095-72138"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=74836-148326"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=1081-903155"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-2.m4s?r=dXM%3D"
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=951-74835"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=148327-222114"
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-1.m4s?r=dXM%3D"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-3.m4s?r=dXM%3D"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=72139-145887"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=72139-145887"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=903156-5880056"
+          "url": "https://117vod-adaptive.akamaized.net/exp=1690683580~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=35acfc9115e1b6a9bd22a19b53a41ee8cac11373d58b8a6549d9eaebcdac452f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=222115-295574"
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=74836-148326"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=145888-219511"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=145888-219511"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=903156-5880056"
         },
         {
           "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-2.m4s?r=dXM%3D"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=5880057-10208222"
         },
         {
           "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=5880057-10208222"
-        },
-        {
-          "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=148327-222114"
-        },
-        {
-          "type": "unknown",
-          "url": "https://179vod-adaptive.akamaized.net/exp=1690079423~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=e12527a5742b5ce91b314f883cb0f726b3710a21a0cddd5bdeebcd6d0d3a635a/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=219512-293119"
-        },
-        {
-          "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-3.m4s?r=dXM%3D"
-        },
-        {
-          "type": "unknown",
-          "url": "https://117vod-adaptive.akamaized.net/exp=1690079423~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=f50da942e9541d38b6cb85eb8888a2957d61313faf2a82d7d70e258ffb19d01c/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=222115-295574"
+          "url": "https://179vod-adaptive.akamaized.net/exp=1690683580~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=9012f7ade5e9d1c7b075d430b09c5171f43191f1598dfad9ad16572bbec555e4/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=219512-293119"
         }
       ],
       "cookies": [
         {
           "name": "swpm_session",
-          "value": "25453f07195c775bb3ba9895e837808b",
+          "value": "7fbbac45a8ca386094b562cdf7ef5085",
           "domain": "www.experts-en-gestion.fr",
           "path": "/",
           "expires": -1,
@@ -12540,10 +12467,10 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 23 Jul 2023 01:30:20 GMT",
+        "date": "Sun, 30 Jul 2023 01:19:37 GMT",
         "link": "<https://www.experts-en-gestion.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://www.experts-en-gestion.fr/wp-json/wp/v2/pages/5220>; rel=\"alternate\"; type=\"application/json\"\n<https://www.experts-en-gestion.fr/>; rel=shortlink",
         "server": "Apache",
-        "set-cookie": "swpm_session=25453f07195c775bb3ba9895e837808b; path=/",
+        "set-cookie": "swpm_session=7fbbac45a8ca386094b562cdf7ef5085; path=/",
         "vary": "Accept-Encoding",
         "x-powered-by": "PHP/7.4"
       },
@@ -12606,13 +12533,18 @@
         },
         {
           "hostname": "use.typekit.net",
-          "ip": "23.46.150.40",
+          "ip": "104.123.71.238",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -12645,13 +12577,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.1835,
+              "longitude": -121.7714,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -12669,15 +12601,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -12685,8 +12619,14 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "142.251.167.95",
+          "ip": "142.250.188.10",
           "geoip": {
+            "city": {
+              "geoname_id": 4994862,
+              "names": {
+                "en": "Grosse Pointe"
+              }
+            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -12716,10 +12656,14 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "accuracy_radius": 500,
+              "latitude": 42.3769,
+              "longitude": -82.9152,
+              "metro_code": 505,
+              "time_zone": "America/Detroit"
+            },
+            "postal": {
+              "code": "48230"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -12734,13 +12678,34 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5001836,
+                "iso_code": "MI",
+                "names": {
+                  "en": "Michigan",
+                  "es": "Michigan",
+                  "fr": "Michigan",
+                  "ja": "ミシガン州",
+                  "pt-BR": "Michigão",
+                  "ru": "Мичиган",
+                  "zh-CN": "密歇根州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "www.google.com",
-          "ip": "172.253.122.104",
+          "ip": "142.250.189.196",
           "geoip": {
+            "city": {
+              "geoname_id": 4994862,
+              "names": {
+                "en": "Grosse Pointe"
+              }
+            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -12770,10 +12735,14 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "accuracy_radius": 500,
+              "latitude": 42.3769,
+              "longitude": -82.9152,
+              "metro_code": 505,
+              "time_zone": "America/Detroit"
+            },
+            "postal": {
+              "code": "48230"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -12788,18 +12757,38 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5001836,
+                "iso_code": "MI",
+                "names": {
+                  "en": "Michigan",
+                  "es": "Michigan",
+                  "fr": "Michigan",
+                  "ja": "ミシガン州",
+                  "pt-BR": "Michigão",
+                  "ru": "Мичиган",
+                  "zh-CN": "密歇根州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "p.typekit.net",
-          "ip": "23.222.5.79",
+          "ip": "104.123.71.230",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -12832,13 +12821,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.1835,
+              "longitude": -121.7714,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -12856,15 +12845,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -12872,8 +12863,14 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "172.253.63.94",
+          "ip": "142.251.32.35",
           "geoip": {
+            "city": {
+              "geoname_id": 4361736,
+              "names": {
+                "en": "Marriottsville"
+              }
+            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -12904,9 +12901,13 @@
             },
             "location": {
               "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "latitude": 39.3385,
+              "longitude": -76.9201,
+              "metro_code": 512,
+              "time_zone": "America/New_York"
+            },
+            "postal": {
+              "code": "21104"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -12921,13 +12922,35 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 4361885,
+                "iso_code": "MD",
+                "names": {
+                  "de": "Maryland",
+                  "en": "Maryland",
+                  "es": "Maryland",
+                  "fr": "Maryland",
+                  "ja": "メリーランド州",
+                  "pt-BR": "Maryland",
+                  "ru": "Мэриленд",
+                  "zh-CN": "马里兰州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "172.253.115.94",
+          "ip": "142.250.189.163",
           "geoip": {
+            "city": {
+              "geoname_id": 4994862,
+              "names": {
+                "en": "Grosse Pointe"
+              }
+            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -12957,10 +12980,14 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "accuracy_radius": 500,
+              "latitude": 42.3769,
+              "longitude": -82.9152,
+              "metro_code": 505,
+              "time_zone": "America/Detroit"
+            },
+            "postal": {
+              "code": "48230"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -12975,12 +13002,27 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5001836,
+                "iso_code": "MI",
+                "names": {
+                  "en": "Michigan",
+                  "es": "Michigan",
+                  "fr": "Michigan",
+                  "ja": "ミシガン州",
+                  "pt-BR": "Michigão",
+                  "ru": "Мичиган",
+                  "zh-CN": "密歇根州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "player.vimeo.com",
-          "ip": "162.159.138.60",
+          "ip": "162.159.128.61",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -13020,13 +13062,18 @@
         },
         {
           "hostname": "f.vimeocdn.com",
-          "ip": "146.75.30.109",
+          "ip": "151.101.42.109",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -13059,13 +13106,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.018,
-              "longitude": -77.539,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.1835,
+              "longitude": -121.7714,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20147"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -13083,15 +13130,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -13099,13 +13148,18 @@
         },
         {
           "hostname": "i.vimeocdn.com",
-          "ip": "146.75.30.109",
+          "ip": "151.101.42.109",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -13138,13 +13192,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.018,
-              "longitude": -77.539,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.1835,
+              "longitude": -121.7714,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20147"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -13162,15 +13216,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -13348,13 +13404,19 @@
         },
         {
           "hostname": "117vod-adaptive.akamaized.net",
-          "ip": "23.222.5.87",
+          "ip": "23.67.33.112",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5393015,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "Santa Clara",
+                "en": "Santa Clara",
+                "es": "Santa Clara",
+                "fr": "Santa Clara",
+                "ja": "サンタクララ",
+                "pt-BR": "Santa Clara",
+                "ru": "Санта-Клара",
+                "zh-CN": "圣克拉拉"
               }
             },
             "continent": {
@@ -13387,13 +13449,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.353,
+              "longitude": -121.9543,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95052"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -13411,15 +13473,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -13427,13 +13491,19 @@
         },
         {
           "hostname": "179vod-adaptive.akamaized.net",
-          "ip": "23.222.5.71",
+          "ip": "23.67.33.83",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5393015,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "Santa Clara",
+                "en": "Santa Clara",
+                "es": "Santa Clara",
+                "fr": "Santa Clara",
+                "ja": "サンタクララ",
+                "pt-BR": "Santa Clara",
+                "ru": "Санта-Клара",
+                "zh-CN": "圣克拉拉"
               }
             },
             "continent": {
@@ -13466,13 +13536,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.353,
+              "longitude": -121.9543,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95052"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -13490,15 +13560,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -13967,7 +14039,7 @@
     "zap": {
       "@programName": "OWASP ZAP",
       "@version": "2.13.0",
-      "@generated": "Sun, 23 Jul 2023 01:42:47",
+      "@generated": "Sun, 30 Jul 2023 01:35:17",
       "site": [
         {
           "@name": "https://www.experts-en-gestion.fr",
@@ -13975,13 +14047,6 @@
           "@port": "443",
           "@ssl": "true",
           "alerts": [
-            {
-              "name": "PII Disclosure",
-              "riskcode": "3",
-              "confidence": "2",
-              "riskdesc": "High (Medium)",
-              "desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>"
-            },
             {
               "name": "Absence of Anti-CSRF Tokens",
               "riskcode": "2",
@@ -14039,13 +14104,6 @@
               "desc": "<p>The page includes one or more script files from a third-party domain.</p>"
             },
             {
-              "name": "Dangerous JS Functions",
-              "riskcode": "1",
-              "confidence": "1",
-              "riskdesc": "Low (Low)",
-              "desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>"
-            },
-            {
               "name": "Permissions Policy Header Not Set",
               "riskcode": "1",
               "confidence": "2",
@@ -14088,25 +14146,11 @@
               "desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>"
             },
             {
-              "name": "Authentication Request Identified",
-              "riskcode": "0",
-              "confidence": "3",
-              "riskdesc": "Informational (High)",
-              "desc": "<p>The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to \"Auto-Detect\" then this rule will change the authentication to match the request identified.</p>"
-            },
-            {
               "name": "Base64 Disclosure",
               "riskcode": "0",
               "confidence": "2",
               "riskdesc": "Informational (Medium)",
               "desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>"
-            },
-            {
-              "name": "Charset Mismatch ",
-              "riskcode": "0",
-              "confidence": "1",
-              "riskdesc": "Informational (Low)",
-              "desc": "<p>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there's a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content's correct character set.</p><p></p><p>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</p>"
             },
             {
               "name": "Information Disclosure - Suspicious Comments",
@@ -14177,13 +14221,6 @@
               "confidence": "2",
               "riskdesc": "Informational (Medium)",
               "desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>"
-            },
-            {
-              "name": "User Controllable HTML Element Attribute (Potential XSS)",
-              "riskcode": "0",
-              "confidence": "1",
-              "riskdesc": "Informational (Low)",
-              "desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>"
             }
           ]
         }
@@ -14194,7 +14231,7 @@
       {
         "requestedUrl": "https://www.experts-en-gestion.fr/",
         "finalUrl": "https://www.experts-en-gestion.fr/",
-        "fetchTime": "2023-07-23T01:43:04.168Z",
+        "fetchTime": "2023-07-30T01:35:36.132Z",
         "runWarnings": [
           "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling)."
         ],
@@ -14259,53 +14296,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 38941,
+            "numericValue": 42036,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4680,
-                  "firstMeaningfulPaint": 5244,
-                  "largestContentfulPaint": 5244,
-                  "interactive": 38941,
-                  "speedIndex": 17222,
-                  "totalBlockingTime": 1834,
-                  "maxPotentialFID": 850,
+                  "firstContentfulPaint": 4862,
+                  "firstMeaningfulPaint": 5387,
+                  "largestContentfulPaint": 5387,
+                  "interactive": 42036,
+                  "speedIndex": 24074,
+                  "totalBlockingTime": 4377,
+                  "maxPotentialFID": 1049,
                   "cumulativeLayoutShift": 0.8257643452700286,
                   "cumulativeLayoutShiftMainFrame": 0.81064453125,
                   "totalCumulativeLayoutShift": 0.8123480902777778,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 835598647,
+                  "observedTimeOriginTs": 1051161699,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 835598647,
-                  "observedFirstPaint": 3095,
-                  "observedFirstPaintTs": 838693823,
-                  "observedFirstContentfulPaint": 3095,
-                  "observedFirstContentfulPaintTs": 838693823,
-                  "observedFirstContentfulPaintAllFrames": 3095,
-                  "observedFirstContentfulPaintAllFramesTs": 838693823,
-                  "observedFirstMeaningfulPaint": 3207,
-                  "observedFirstMeaningfulPaintTs": 838805287,
-                  "observedLargestContentfulPaint": 3207,
-                  "observedLargestContentfulPaintTs": 838805287,
-                  "observedLargestContentfulPaintAllFrames": 3207,
-                  "observedLargestContentfulPaintAllFramesTs": 838805287,
-                  "observedTraceEnd": 8755,
-                  "observedTraceEndTs": 844353638,
-                  "observedLoad": 4540,
-                  "observedLoadTs": 840138515,
-                  "observedDomContentLoaded": 3549,
-                  "observedDomContentLoadedTs": 839147487,
+                  "observedNavigationStartTs": 1051161699,
+                  "observedFirstPaint": 3921,
+                  "observedFirstPaintTs": 1055082318,
+                  "observedFirstContentfulPaint": 3921,
+                  "observedFirstContentfulPaintTs": 1055082318,
+                  "observedFirstContentfulPaintAllFrames": 3921,
+                  "observedFirstContentfulPaintAllFramesTs": 1055082318,
+                  "observedFirstMeaningfulPaint": 4010,
+                  "observedFirstMeaningfulPaintTs": 1055171491,
+                  "observedLargestContentfulPaint": 4010,
+                  "observedLargestContentfulPaintTs": 1055171491,
+                  "observedLargestContentfulPaintAllFrames": 4010,
+                  "observedLargestContentfulPaintAllFramesTs": 1055171491,
+                  "observedTraceEnd": 12280,
+                  "observedTraceEndTs": 1063441664,
+                  "observedLoad": 6679,
+                  "observedLoadTs": 1057840662,
+                  "observedDomContentLoaded": 5125,
+                  "observedDomContentLoadedTs": 1056286400,
                   "observedCumulativeLayoutShift": 0.8257643452700286,
                   "observedCumulativeLayoutShiftMainFrame": 0.81064453125,
                   "observedTotalCumulativeLayoutShift": 0.8123480902777778,
-                  "observedFirstVisualChange": 3051,
-                  "observedFirstVisualChangeTs": 838649647,
-                  "observedLastVisualChange": 8750,
-                  "observedLastVisualChangeTs": 844348647,
-                  "observedSpeedIndex": 6343,
-                  "observedSpeedIndexTs": 841941988
+                  "observedFirstVisualChange": 3862,
+                  "observedFirstVisualChangeTs": 1055023699,
+                  "observedLastVisualChange": 12229,
+                  "observedLastVisualChangeTs": 1063390699,
+                  "observedSpeedIndex": 8612,
+                  "observedSpeedIndexTs": 1059773441
                 },
                 {
                   "lcpInvalidated": false
@@ -14327,19 +14364,19 @@
                   "numScripts": 41,
                   "numStylesheets": 58,
                   "numFonts": 11,
-                  "numTasks": 3482,
-                  "numTasksOver10ms": 69,
-                  "numTasksOver25ms": 20,
-                  "numTasksOver50ms": 9,
-                  "numTasksOver100ms": 3,
-                  "numTasksOver500ms": 0,
+                  "numTasks": 4410,
+                  "numTasksOver10ms": 73,
+                  "numTasksOver25ms": 30,
+                  "numTasksOver50ms": 14,
+                  "numTasksOver100ms": 5,
+                  "numTasksOver500ms": 2,
                   "rtt": 0,
-                  "throughput": 355266790.9347345,
-                  "maxRtt": 84.178,
-                  "maxServerLatency": 79.58600000000001,
-                  "totalByteWeight": 44479269,
-                  "totalTaskTime": 3268.3809999999885,
-                  "mainDocumentTransferSize": 32446
+                  "throughput": 162128358.5069051,
+                  "maxRtt": 145.57,
+                  "maxServerLatency": 245.868,
+                  "totalByteWeight": 44480665,
+                  "totalTaskTime": 5273.1949999999115,
+                  "mainDocumentTransferSize": 32458
                 }
               ]
             }
@@ -14362,21 +14399,21 @@
         "width": 1920,
         "height": 1080,
         "url": "https://www.experts-en-gestion.fr",
-        "size": 15209.304,
+        "size": 15524.326,
         "nodes": 3247,
-        "requests": 140,
-        "grade": "F",
-        "score": 11,
-        "ges": 2.78,
-        "water": 4.17,
+        "requests": 142,
+        "grade": "G",
+        "score": 10,
+        "ges": 2.8,
+        "water": 4.2,
         "ecoindex_version": "5.4.2",
-        "date": "2023-07-23 01:31:39.355578",
+        "date": "2023-07-30 01:21:16.241585",
         "page_type": "website"
       }
     ],
     "sonarcloud": null,
     "summary": {
-      "404": 5,
+      "404": "A+",
       "httpGrade": "F",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
@@ -14387,7 +14424,7 @@
       "cookiesGrade": "B",
       "cookiesCount": 1,
       "trackersGrade": "F",
-      "trackersCount": 80,
+      "trackersCount": 81,
       "lighthouse_performance": 0,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.89,
@@ -14399,7 +14436,7 @@
       "lighthouse_pwa": 0.3,
       "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
-      "ecoindexGrade": "F"
+      "ecoindexGrade": "G"
     }
   }
 ]
