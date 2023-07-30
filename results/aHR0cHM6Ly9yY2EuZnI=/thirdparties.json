@@ -17,19 +17,19 @@
       }
     },
     {
-      "type": "FontAwesome",
-      "url": "https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css",
-      "details": {
-        "id": "FontAwesome",
-        "message": "Host fonts directly"
-      }
-    },
-    {
       "type": "google fonts",
       "url": "https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%2C500%2C200&ver=6.2.2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+      }
+    },
+    {
+      "type": "FontAwesome",
+      "url": "https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css",
+      "details": {
+        "id": "FontAwesome",
+        "message": "Host fonts directly"
       }
     },
     {
@@ -58,6 +58,14 @@
     },
     {
       "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2",
+      "details": {
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+      }
+    },
+    {
+      "type": "google fonts",
       "url": "https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2",
       "details": {
         "id": "google fonts",
@@ -67,14 +75,6 @@
     {
       "type": "google fonts",
       "url": "https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2",
-      "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -134,9 +134,9 @@
     "accept-ranges": "bytes",
     "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
     "content-encoding": "gzip",
-    "content-length": "31746",
+    "content-length": "31751",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 23 Jul 2023 01:16:37 GMT",
+    "date": "Sun, 30 Jul 2023 01:08:30 GMT",
     "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
     "pragma": "no-cache",
     "server": "Apache",
@@ -201,8 +201,14 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.115.95",
+      "ip": "142.250.189.170",
       "geoip": {
+        "city": {
+          "geoname_id": 4994862,
+          "names": {
+            "en": "Grosse Pointe"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -232,10 +238,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 42.3769,
+          "longitude": -82.9152,
+          "metro_code": 505,
+          "time_zone": "America/Detroit"
+        },
+        "postal": {
+          "code": "48230"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -250,12 +260,27 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5001836,
+            "iso_code": "MI",
+            "names": {
+              "en": "Michigan",
+              "es": "Michigan",
+              "fr": "Michigan",
+              "ja": "ミシガン州",
+              "pt-BR": "Michigão",
+              "ru": "Мичиган",
+              "zh-CN": "密歇根州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "use.fontawesome.com",
-      "ip": "172.64.132.15",
+      "ip": "172.64.133.15",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -309,7 +334,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.62.94",
+      "ip": "172.217.12.99",
       "geoip": {
         "continent": {
           "code": "NA",
