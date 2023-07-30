@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 23 Jul 2023 01:32:45",
+	"@generated": "Sun, 30 Jul 2023 01:22:23",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -68,14 +68,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"https://blog.rca.fr/\" method=\"GET\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
-						},
-						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
@@ -85,6 +77,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://blog.rca.fr/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -175,14 +175,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
@@ -192,6 +184,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -282,14 +282,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -299,6 +291,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -454,7 +454,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "592"
+					"sourceid": "663"
 				},
 				{
 					"pluginid": "10063",
@@ -515,14 +515,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
@@ -532,6 +524,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -622,7 +622,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -729,7 +729,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -836,14 +836,6 @@
 							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1663701474",
-							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
-						},
-						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
@@ -853,6 +845,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1663701474",
+							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -951,7 +951,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1038,8 +1038,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA-100x100",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD >\uFFFDM1\uFFFDM"
+							"evidence": "fr/wp-content/uploads/2023/07/IMG_3066-2-1-1024x768",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000c\\x001b\uFFFD\uFFFD\uBBF6\uFFFD_\uFFFD\uFFFDn1\uFFFD"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/tech-vibes/",
@@ -1048,14 +1048,6 @@
 							"attack": "",
 							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA-100x100",
 							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD >\uFFFDM1\uFFFDM"
-						},
-						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
 						},
 						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
@@ -1067,6 +1059,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1125,14 +1125,6 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fdeveloppeurs-faites-exploser-vos-apis%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Ffacture-electronique-la-metamorphose-du-paysage-financier%2F",
 							"method": "GET",
 							"param": "",
@@ -1142,6 +1134,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Finterview-etre-developpeur-en-alternance-chez-rca%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fla-team-rca-fete-son-summer-break%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1211,7 +1211,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "563"
+					"sourceid": "633"
 				},
 				{
 					"pluginid": "10019",
@@ -1326,7 +1326,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1251"
+					"sourceid": "1429"
 				},
 				{
 					"pluginid": "10027",
@@ -1486,14 +1486,6 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://blog.rca.fr/chez-rca-on-est-conseillers-mais-pas-que/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Fermer la recherche</span>\n\t\t\t\t<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
 							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
@@ -1503,6 +1495,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Fermer la recherche</span>\n\t\t\t\t<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1593,7 +1593,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1872,7 +1872,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
