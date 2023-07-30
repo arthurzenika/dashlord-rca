@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 23 Jul 2023 01:26:14",
+	"@generated": "Sun, 30 Jul 2023 01:15:19",
 	"site":[ 
 		{
 			"@name": "https://lacomptasimplifiee.fr",
@@ -52,14 +52,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"gform_field_values\" \"gform_source_page_number_3\" \"gform_submit\" \"gform_submit_button_3\" \"gform_target_page_number_3\" \"gform_unique_id\" \"input_33.2\" \"input_33.3\" \"input_3_1\" \"input_3_2\" \"input_3_3\" \"input_3_33_1\" \"input_3_4\" \"input_3_46\" \"input_3_5\" \"input_3_50\" \"input_3_51\" \"input_3_8_1\" \"input_8.2\" \"input_8.3\" \"is_submit_3\" \"state_3\" ]."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"https://lacomptasimplifiee.fr/\" method=\"GET\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
 							"method": "GET",
 							"param": "",
@@ -77,6 +69,14 @@
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://lacomptasimplifiee.fr/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -483,6 +483,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.11",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.9",
 							"method": "GET",
 							"param": "",
@@ -492,6 +500,14 @@
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.10",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.11",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -515,13 +531,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "7",
+					"count": "9",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "392"
+					"sourceid": "398"
 				},
 				{
 					"pluginid": "10063",
@@ -649,14 +665,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/?s=ZAP",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/comments/feed/",
 							"method": "GET",
 							"param": "",
@@ -713,7 +721,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/pages/6",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/posts/1015",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -727,14 +751,6 @@
 							"attack": "",
 							"evidence": "X-Powered-By: PHP/7.4",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/",
-							"method": "POST",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -743,7 +759,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "700"
+					"sourceid": "625"
 				},
 				{
 					"pluginid": "10035",
@@ -1179,7 +1195,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "380"
+					"sourceid": "382"
 				},
 				{
 					"pluginid": "10027",
@@ -1240,7 +1256,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1248,7 +1264,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1468,17 +1484,9 @@
 							"attack": "",
 							"evidence": "no-store",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store",
-							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1496,14 +1504,6 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
-						{
-							"uri": "https://lacomptasimplifiee.fr/?s=ZAP",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/comments/feed/",
 							"method": "GET",
@@ -1569,7 +1569,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes%2F",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/pages/6",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/posts/1015",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1583,14 +1599,6 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/",
-							"method": "POST",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -1599,7 +1607,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "637"
+					"sourceid": "346"
 				},
 				{
 					"pluginid": "90005",
@@ -1620,14 +1628,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1636,7 +1636,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1663,14 +1663,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1679,7 +1671,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1706,14 +1698,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1722,7 +1706,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1749,14 +1733,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1765,7 +1741,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1799,6 +1775,33 @@
 					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "6"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable but Non-Cacheable Content",
+					"name": "Storable but Non-Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
+					"instances":[ 
+						{
+							"uri": "https://lacomptasimplifiee.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-cache",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "301"
 				},
 				{
 					"pluginid": "10031",
@@ -1929,7 +1932,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "673"
+					"sourceid": "785"
 				}
 			]
 		}
