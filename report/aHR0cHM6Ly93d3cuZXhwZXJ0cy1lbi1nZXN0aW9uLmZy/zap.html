@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 30 Jul 2023 01:35:17
+		Generated on Sun, 6 Aug 2023 01:30:25
 	</h3>
 
 	<h3>
@@ -148,7 +148,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -164,7 +164,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>10</div>
+					<div>11</div>
 				</td>
 			</tr>
 			<tr>
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>11</div>
+					<div>12</div>
 				</td>
 			</tr>
 			<tr>
@@ -198,6 +198,11 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
+				<td><a href="#10062">PII Disclosure</a></td>
+				<td align="center" class="risk-3">High</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">9</td>
@@ -220,22 +225,27 @@ td {
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10011">Cookie Without Secure Flag</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10054">Cookie without SameSite Attribute</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">2</td>
+			</tr>
+			<tr>
+				<td><a href="#10110">Dangerous JS Functions</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
@@ -271,6 +281,11 @@ td {
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">11</td>
+			</tr>
+			<tr>
+				<td><a href="#90011">Charset Mismatch </a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
@@ -328,6 +343,82 @@ td {
 
 	
 		<h3>Alert Detail</h3>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-3"><a
+						id="10062"></a>
+						<div>High</div></th>
+					<th class="risk-3">PII Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.15.0">https://www.experts-en-gestion.fr/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.15.0</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">500 408 258 167</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -1523,7 +1614,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.14.1&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.15.0&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1653,7 +1744,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.14.1&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.15.0&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1787,9 +1878,35 @@ td {
 						<td width="80%">Set-Cookie: swpm_session</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/xmlrpc.php?rsd">https://www.experts-en-gestion.fr/xmlrpc.php?rsd</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">swpm_session</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: swpm_session</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1918,9 +2035,35 @@ td {
 						<td width="80%">Set-Cookie: swpm_session</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/xmlrpc.php?rsd">https://www.experts-en-gestion.fr/xmlrpc.php?rsd</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">swpm_session</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: swpm_session</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2049,9 +2192,35 @@ td {
 						<td width="80%">Set-Cookie: swpm_session</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/xmlrpc.php?rsd">https://www.experts-en-gestion.fr/xmlrpc.php?rsd</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">swpm_session</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: swpm_session</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2115,7 +2284,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.google.com/recaptcha/api.js?render=explicit&amp;ver=3.14.1</td>
+						<td width="80%">https://www.google.com/recaptcha/api.js?render=explicit&amp;ver=3.15.0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2125,7 +2294,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.14.1&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.15.0&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -2141,7 +2310,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.google.com/recaptcha/api.js?render=explicit&amp;ver=3.14.1</td>
+						<td width="80%">https://www.google.com/recaptcha/api.js?render=explicit&amp;ver=3.15.0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2151,7 +2320,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.14.1&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://www.google.com/recaptcha/api.js?render=explicit&amp;#038;ver=3.15.0&#39; id=&#39;elementor-recaptcha-api-js&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -2182,6 +2351,137 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10017/">10017</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="10110"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Dangerous JS Functions</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>A dangerous JS function seems to be in use that would leave the site vulnerable.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1">https://www.experts-en-gestion.fr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eval</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/lottie.min.js?ver=4.10.3">https://www.experts-en-gestion.fr/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/lottie.min.js?ver=4.10.3</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eval</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.4">https://www.experts-en-gestion.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.4</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Eval</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">3</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>See the references for security advice on the use of these functions.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://angular.io/guide/security">https://angular.io/guide/security</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/749.html">749</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10110/">10110</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -2747,7 +3047,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-join/">https://www.experts-en-gestion.fr/membership-join/</a></td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/mentions-legales/">https://www.experts-en-gestion.fr/mentions-legales/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3356,7 +3656,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628127</td>
+						<td width="80%">1691051130</td>
 					</tr>
 				
 					<tr>
@@ -3382,7 +3682,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628130</td>
+						<td width="80%">1691051132</td>
 					</tr>
 				
 					<tr>
@@ -3408,7 +3708,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628131</td>
+						<td width="80%">1691051135</td>
 					</tr>
 				
 					<tr>
@@ -3434,7 +3734,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628132</td>
+						<td width="80%">1691051136</td>
 					</tr>
 				
 					<tr>
@@ -3460,7 +3760,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628133</td>
+						<td width="80%">1691051137</td>
 					</tr>
 				
 					<tr>
@@ -3486,7 +3786,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628134</td>
+						<td width="80%">1691051138</td>
 					</tr>
 				
 					<tr>
@@ -3512,7 +3812,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628135</td>
+						<td width="80%">1691051139</td>
 					</tr>
 				
 					<tr>
@@ -3538,7 +3838,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628136</td>
+						<td width="80%">1691051140</td>
 					</tr>
 				
 					<tr>
@@ -3564,7 +3864,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1688628137</td>
+						<td width="80%">1691051141</td>
 					</tr>
 				
 					<tr>
@@ -3590,7 +3890,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1689933426</td>
+						<td width="80%">1691051142</td>
 					</tr>
 				
 					<tr>
@@ -3616,7 +3916,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1690680807</td>
+						<td width="80%">1691285346</td>
 					</tr>
 				
 					<tr>
@@ -3642,7 +3942,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1690680809</td>
+						<td width="80%">1691285349</td>
 					</tr>
 				
 				<tr>
@@ -3883,32 +4183,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/uploads/2022/04/img-jc.png">https://www.experts-en-gestion.fr/wp-content/uploads/2022/04/img-jc.png</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/uploads/2022/04/img-jerome-clarysse.webp">https://www.experts-en-gestion.fr/wp-content/uploads/2022/04/img-jerome-clarysse.webp</a></td>
 					</tr>
 					<tr>
@@ -3936,6 +4210,32 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/uploads/2022/05/visuel-podcast-generique.jpg">https://www.experts-en-gestion.fr/wp-content/uploads/2022/05/visuel-podcast-generique.jpg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-content-type-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-content/uploads/2023/04/Img-Newsletter-3.png">https://www.experts-en-gestion.fr/wp-content/uploads/2023/04/Img-Newsletter-3.png</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4367,6 +4667,88 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
+						id="90011"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Charset Mismatch </th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there&#39;s a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content&#39;s correct character set.</div>
+							<br />
+						
+							<div>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.experts-en-gestion.fr%2F">https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.experts-en-gestion.fr%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection">http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/436.html">436</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90011/">90011</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
 						id="10027"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Information Disclosure - Suspicious Comments</th>
@@ -4541,7 +4923,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-join/membership-registration/">https://www.experts-en-gestion.fr/membership-join/membership-registration/</a></td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-login/">https://www.experts-en-gestion.fr/membership-login/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4567,7 +4949,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-join/membership-registration/">https://www.experts-en-gestion.fr/membership-join/membership-registration/</a></td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-login/">https://www.experts-en-gestion.fr/membership-login/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4593,7 +4975,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-login/">https://www.experts-en-gestion.fr/membership-login/</a></td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/mentions-legales/">https://www.experts-en-gestion.fr/mentions-legales/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4619,7 +5001,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-login/">https://www.experts-en-gestion.fr/membership-login/</a></td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/mentions-legales/">https://www.experts-en-gestion.fr/mentions-legales/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4956,7 +5338,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/membership-join/membership-registration/">https://www.experts-en-gestion.fr/membership-join/membership-registration/</a></td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr/mentions-legales/">https://www.experts-en-gestion.fr/mentions-legales/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5171,6 +5553,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr">https://www.experts-en-gestion.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/robots.txt">https://www.experts-en-gestion.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5198,32 +5606,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap.xml">https://www.experts-en-gestion.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Dest</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap_index.xml">https://www.experts-en-gestion.fr/sitemap_index.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5302,6 +5684,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr">https://www.experts-en-gestion.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/robots.txt">https://www.experts-en-gestion.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5329,32 +5737,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap.xml">https://www.experts-en-gestion.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Mode</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap_index.xml">https://www.experts-en-gestion.fr/sitemap_index.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5433,6 +5815,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr">https://www.experts-en-gestion.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/robots.txt">https://www.experts-en-gestion.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5460,32 +5868,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap.xml">https://www.experts-en-gestion.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap_index.xml">https://www.experts-en-gestion.fr/sitemap_index.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5564,6 +5946,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.experts-en-gestion.fr">https://www.experts-en-gestion.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/robots.txt">https://www.experts-en-gestion.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -5591,32 +5999,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap.xml">https://www.experts-en-gestion.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-User</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.experts-en-gestion.fr/sitemap_index.xml">https://www.experts-en-gestion.fr/sitemap_index.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5715,7 +6097,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">25d707a157e86defb7aa5060b3a7e4ca</td>
+						<td width="80%">0649305461d495ff6bd46ce54a48424a</td>
 					</tr>
 				
 					<tr>
@@ -5741,7 +6123,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ca1b8cee2fd6dcc0797076283e28ddbf</td>
+						<td width="80%">416189832f471606aa4cdfbcfed018f6</td>
 					</tr>
 				
 					<tr>
@@ -5767,7 +6149,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1278e485cfa4fe2894da1c985599d923</td>
+						<td width="80%">2095dfd5eb7bc2f4ca6b917ab68a083b</td>
 					</tr>
 				
 					<tr>
@@ -5793,7 +6175,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">61f13e0a309b1b46b7d5c255a167f943</td>
+						<td width="80%">7060634cffbfbad0246922f33bc410af</td>
 					</tr>
 				
 					<tr>
@@ -5819,7 +6201,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ca1b8cee2fd6dcc0797076283e28ddbf</td>
+						<td width="80%">0649305461d495ff6bd46ce54a48424a</td>
 					</tr>
 				
 				<tr>
