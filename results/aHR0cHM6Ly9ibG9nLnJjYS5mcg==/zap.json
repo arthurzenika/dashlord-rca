@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 6 Aug 2023 01:20:44",
+	"@generated": "Sun, 13 Aug 2023 01:15:33",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -440,7 +440,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.rca.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.4",
+							"uri": "https://blog.rca.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.0",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -454,7 +454,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "658"
+					"sourceid": "653"
 				},
 				{
 					"pluginid": "10063",
@@ -622,7 +622,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -943,7 +943,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
+							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1181,7 +1181,23 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
+							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Frse-les-actions-mises-en-place-chez-rca%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fseminaire-annuel-rca-2023%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fteam-rca-instagram%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1189,13 +1205,128 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
 					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
 					"sourceid": "629"
+				},
+				{
+					"pluginid": "10019",
+					"alertRef": "10019",
+					"alert": "Content-Type Header Missing",
+					"name": "Content-Type Header Missing",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The Content-Type header was either missing or empty.</p>",
+					"instances":[ 
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Heavy.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-HeavyItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Medium.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-MediumItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Regular.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-RegularItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBold.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBoldItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Thin.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-ThinItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-UltraLight.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-UltraLightItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "12",
+					"solution": "<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
+					"cweid": "345",
+					"wascid": "12",
+					"sourceid": "1425"
 				},
 				{
 					"pluginid": "10027",
@@ -1240,6 +1371,22 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "https://blog.rca.fr/author/rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/blog.rca.fr\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://blog.rca.fr/author/rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "https://blog.rca.fr/categorie/culture-compta/",
 							"method": "GET",
 							"param": "",
@@ -1288,7 +1435,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'></p><p>/* <![CDATA[ */</p><p>var nectarLove = {\"ajaxurl\":\"https:\\/\\/blog.rca.fr\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1741,7 +1888,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
