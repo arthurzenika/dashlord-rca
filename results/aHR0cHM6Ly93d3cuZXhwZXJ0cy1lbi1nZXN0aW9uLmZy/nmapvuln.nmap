@@ -1,25 +1,22 @@
-# Nmap 7.92 scan initiated Sun Aug 13 01:24:55 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.experts-en-gestion.fr
+# Nmap 7.92 scan initiated Sun Aug 20 01:25:38 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.experts-en-gestion.fr
 Nmap scan report for www.experts-en-gestion.fr (146.59.209.152)
-Host is up (0.081s latency).
+Host is up (0.12s latency).
 Other addresses for www.experts-en-gestion.fr (not scanned): 2001:41d0:301::31
 rDNS record for 146.59.209.152: cluster031.hosting.ovh.net
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE  VERSION
 80/tcp  open  http     nginx
-| http-server-header: 
-|   Apache
-|_  nginx
 | fingerprint-strings: 
 |   GetRequest: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
-|     date: Sun, 13 Aug 2023 01:25:09 GMT
+|     date: Sun, 20 Aug 2023 01:25:54 GMT
 |     content-type: text/html; charset=utf8
-|     x-ovh-webhosting-id: 5bf707cee1af8b327e9a5a9b55751f99
+|     x-ovh-webhosting-id: 34a538e732884d02065d88ce5ee68540
 |     pragma: no-cache
 |     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-|     content-length: 4960
-|     x-iplb-request-id: 682DCCA8:E003_923BD198:0050_64D830EF_4B21:1A8D8
+|     content-length: 4959
+|     x-iplb-request-id: 287AF35E:FF80_923BD198:0050_64E16B9C_A068:2B152
 |     x-iplb-instance: 41929
 |     connection: close
 |     <html xml:lang="en-EN" lang="en-EN">
@@ -35,14 +32,14 @@ PORT    STATE SERVICE  VERSION
 |   HTTPOptions: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
-|     date: Sun, 13 Aug 2023 01:25:09 GMT
+|     date: Sun, 20 Aug 2023 01:25:54 GMT
 |     content-type: text/html; charset=utf8
-|     x-ovh-webhosting-id: 7256404f1622b17be8a4e9bf247bea8c
+|     x-ovh-webhosting-id: d4c5cdb81ae9eb0a86ec0915071579ba
 |     pragma: no-cache
 |     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-|     content-length: 4960
-|     x-iplb-request-id: 682DCCA8:E004_923BD198:0050_64D830F5_4DD5:1A8D8
-|     x-iplb-instance: 41929
+|     content-length: 4959
+|     x-iplb-request-id: 287AF35E:FFC2_923BD198:0050_64E16BA2_7CC0:15532
+|     x-iplb-instance: 41928
 |     connection: close
 |     <html xml:lang="en-EN" lang="en-EN">
 |     <head>
@@ -54,17 +51,20 @@ PORT    STATE SERVICE  VERSION
 |     <meta name="robots" content="noindex, nofollow">
 |     <meta name="description" qtlid="283606" content="Site not installed">
 |_    <meta h
+| http-server-header: 
+|   Apache
+|_  nginx
 443/tcp open  ssl/http nginx
 |_http-server-header: Apache
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.92%I=7%D=8/13%Time=64D830F5%P=x86_64-alpine-linux-musl%r
-SF:(GetRequest,14F2,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\
-SF:r\ndate:\x20Sun,\x2013\x20Aug\x202023\x2001:25:09\x20GMT\r\ncontent-typ
-SF:e:\x20text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x205bf707cee1a
-SF:f8b327e9a5a9b55751f99\r\npragma:\x20no-cache\r\ncache-control:\x20no-st
+SF-Port80-TCP:V=7.92%I=7%D=8/20%Time=64E16BA2%P=x86_64-alpine-linux-musl%r
+SF:(GetRequest,14F1,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\
+SF:r\ndate:\x20Sun,\x2020\x20Aug\x202023\x2001:25:54\x20GMT\r\ncontent-typ
+SF:e:\x20text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x2034a538e7328
+SF:84d02065d88ce5ee68540\r\npragma:\x20no-cache\r\ncache-control:\x20no-st
 SF:ore,\x20no-cache,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r
-SF:\ncontent-length:\x204960\r\nx-iplb-request-id:\x20682DCCA8:E003_923BD1
-SF:98:0050_64D830EF_4B21:1A8D8\r\nx-iplb-instance:\x2041929\r\nconnection:
+SF:\ncontent-length:\x204959\r\nx-iplb-request-id:\x20287AF35E:FF80_923BD1
+SF:98:0050_64E16B9C_A068:2B152\r\nx-iplb-instance:\x2041929\r\nconnection:
 SF:\x20close\r\n\r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x
 SF:20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x2
 SF:0installed\x20-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<m
@@ -77,13 +77,13 @@ SF:\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"robots\"\x20content=\"n
 SF:oindex,\x20nofollow\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\
 SF:"description\"\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20inst
 SF:alled\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20h")%r(HTTPOptions,14
-SF:F2,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\r\ndate:\x20Su
-SF:n,\x2013\x20Aug\x202023\x2001:25:09\x20GMT\r\ncontent-type:\x20text/htm
-SF:l;\x20charset=utf8\r\nx-ovh-webhosting-id:\x207256404f1622b17be8a4e9bf2
-SF:47bea8c\r\npragma:\x20no-cache\r\ncache-control:\x20no-store,\x20no-cac
+SF:F1,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\r\ndate:\x20Su
+SF:n,\x2020\x20Aug\x202023\x2001:25:54\x20GMT\r\ncontent-type:\x20text/htm
+SF:l;\x20charset=utf8\r\nx-ovh-webhosting-id:\x20d4c5cdb81ae9eb0a86ec09150
+SF:71579ba\r\npragma:\x20no-cache\r\ncache-control:\x20no-store,\x20no-cac
 SF:he,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r\ncontent-leng
-SF:th:\x204960\r\nx-iplb-request-id:\x20682DCCA8:E004_923BD198:0050_64D830
-SF:F5_4DD5:1A8D8\r\nx-iplb-instance:\x2041929\r\nconnection:\x20close\r\n\
+SF:th:\x204959\r\nx-iplb-request-id:\x20287AF35E:FFC2_923BD198:0050_64E16B
+SF:A2_7CC0:15532\r\nx-iplb-instance:\x2041928\r\nconnection:\x20close\r\n\
 SF:r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x20\x20\x20<hea
 SF:d>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x20installed\x20
 SF:-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"
@@ -98,4 +98,4 @@ SF:\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20installed\">\n\x20
 SF:\x20\x20\x20\x20\x20\x20\x20<meta\x20h");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Aug 13 01:25:22 2023 -- 1 IP address (1 host up) scanned in 26.54 seconds
+# Nmap done at Sun Aug 20 01:26:09 2023 -- 1 IP address (1 host up) scanned in 30.86 seconds

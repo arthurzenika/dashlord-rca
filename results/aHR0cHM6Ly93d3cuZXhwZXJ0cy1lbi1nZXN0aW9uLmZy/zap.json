@@ -1,7 +1,7 @@
 {
-	"@programName": "OWASP ZAP",
+	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 13 Aug 2023 01:22:22",
+	"@generated": "Sun, 20 Aug 2023 01:22:21",
 	"site":[ 
 		{
 			"@name": "https://www.experts-en-gestion.fr",
@@ -34,7 +34,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2008"
+					"sourceid": "2009"
 				},
 				{
 					"pluginid": "10202",
@@ -178,7 +178,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/diagop-loutil-du-ceg-pour-developper-les-honoraires-de-conseil-des-cabinets/",
+							"uri": "https://www.experts-en-gestion.fr/facture-electronique-le-ceg-anticipe-pour-vous-et-avec-vous/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -285,7 +285,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/diagop-loutil-du-ceg-pour-developper-les-honoraires-de-conseil-des-cabinets/",
+							"uri": "https://www.experts-en-gestion.fr/facture-electronique-le-ceg-anticipe-pour-vous-et-avec-vous/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -408,7 +408,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/membership-join/",
+							"uri": "https://www.experts-en-gestion.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -416,7 +416,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/membership-join/",
+							"uri": "https://www.experts-en-gestion.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -424,7 +424,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/membership-join/",
+							"uri": "https://www.experts-en-gestion.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -432,15 +432,23 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/membership-join/",
+							"uri": "https://www.experts-en-gestion.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=7e0ed4' media='all' />",
+							"evidence": "<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Serif+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=7e0ed4' media='all' />",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src='https://www.google.com/recaptcha/api.js?render=explicit&#038;ver=3.15.0' id='elementor-recaptcha-api-js'></script>",
 							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -685,7 +693,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1995"
+					"sourceid": "1987"
 				},
 				{
 					"pluginid": "10063",
@@ -722,7 +730,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/diagop-loutil-du-ceg-pour-developper-les-honoraires-de-conseil-des-cabinets/",
+							"uri": "https://www.experts-en-gestion.fr/facture-electronique-le-ceg-anticipe-pour-vous-et-avec-vous/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -805,61 +813,21 @@
 					"desc": "<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.experts-en-gestion.fr/newsletter1.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-CEG-Logo_Pictogramme-blanc.png",
-							"otherinfo": "tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-CEG-Logo_Pictogramme-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Je%CC%81ro%CC%82me%20Clarysse%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-01-Evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo-E%CC%81ve%CC%80nement%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo-E%CC%81ve%CC%80nement%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Vide%CC%81o-e%CC%81ve%CC%80nement-01%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Picto-evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-02-Methodes.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2003%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-03-Nomination.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Lolita%20Conan%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Lolita%20Conan%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Marine%20Le%CC%81vesque%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Marine%20Le%CC%81vesque%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-04-Outils.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2001.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2002.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2002.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-05-CEG.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%20Vide%CC%81o%20logo%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%20Vide%CC%81o%20logo%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-CEG-Logo_Logo-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Twitter_square_grey.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-LinkedIn_square_grey.png\n"
-						},
-						{
 							"uri": "https://www.experts-en-gestion.fr/newsletter11.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-CEG-Logo_Pictogramme-blanc.png",
 							"otherinfo": "tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-CEG-Logo_Pictogramme-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-05-CEG.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%201.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%201.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-06-Strate%CC%81gie%20Cabinet.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%202.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%202.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-01-Evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%203.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%203.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%204.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%204.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%205.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%205.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-08-Veille.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%206.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%206.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-CEG-Logo_Logo-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Twitter_square_grey.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-LinkedIn_square_grey.png\n"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/newsletter2.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-CEG-Logo_Pictogramme-blanc.png",
-							"otherinfo": "tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-CEG-Logo_Pictogramme-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Je%CC%81ro%CC%82me%20Clarysse%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-06-Strate%CC%81gie%20Cabinet.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Article%20-%2003.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Article%20-%2003.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-04-Outils.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Article%20-%2002.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-01-Evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-img-nl-cafe.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-img-nl-cafe.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Laho%20Business%20Center%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Laho%20Business%20Center%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Picto-evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-08-Veille.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Article%20-%20Veille.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Photo%20Article%20-%20Veille.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-10-Te%CC%81moignages.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Pierre%20Quique.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Pierre%20Quique.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-09-Podcast%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-vignette-podcast-10.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-vignette-podcast-10.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-CEG-Logo_Logo-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-Twitter_square_grey.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/UfvAkc1hQbqVz_Y1FFY5WA/hEU5clt9TjqRqwHnjiCMiw-LinkedIn_square_grey.png\n"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/newsletter4.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-CEG-Logo_Pictogramme-blanc.png",
-							"otherinfo": "tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-CEG-Logo_Pictogramme-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Je%CC%81ro%CC%82me%20Clarysse%402x.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-01-Evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-10-Te%CC%81moignages.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo-frederic-ferry.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo-frederic-ferry.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo-stephae-raynaud.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo-stephae-raynaud.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-05-CEG.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%202.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%202.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%203.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%203.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%204.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Photo%20Article%20-%20Veille%20%E2%80%93%204.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-09-Podcast%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Vignette%20Podcast%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Vignette%20Podcast%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-CEG-Logo_Logo-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-Twitter_square_grey.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/QTPRI8auRrOVrgQ7p1nf5A/8FfOsS0ESv2KDEdOONw-Ww-LinkedIn_square_grey.png\n"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/newsletter5.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-CEG-Logo_Pictogramme-blanc.png",
-							"otherinfo": "tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-CEG-Logo_Pictogramme-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo-jerome-clarysse.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-01-Evenements.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Bannie%CC%80re-mail-RACEG-V1.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Banniere-mail-LVCT-Me%CC%81tropole.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-04-Outils.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%202.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%202.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-02-Methodes.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%204.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%204.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-05-CEG.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%203.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Photo%20Article%20-%2002%20%E2%80%93%203.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-09-Podcast%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-article-podcast-1.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-article-podcast-1.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-CEG-Logo_Logo-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-Twitter_square_grey.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/af2oA5VEQjqx6qx7gdiRtw/KbdBTGoZRnifnxF8E15gmw-LinkedIn_square_grey.png\n"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/newsletter6.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-CEG-Logo_Pictogramme-blanc.png",
-							"otherinfo": "tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-CEG-Logo_Pictogramme-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo-jerome-clarysse.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-04-Outils.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo%20Article%20-%2006%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo%20Article%20-%2006%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Bannie%CC%80re-mail-RACEG-V1.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-05-CEG.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo%20Article%20-%2006%20%E2%80%93%202.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo%20Article%20-%2006%20%E2%80%93%202.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Banniere-mail-LVCT%28sans%20Lille%29.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-06-Strate%CC%81gie%20Cabinet.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-photo.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-photo.jpg\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-09-Podcast%20%E2%80%93%201.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo%20Article%20-%20podcast10.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Photo%20Article%20-%20podcast10.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-CEG-Logo_Logo-blanc.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-Twitter_square_grey.png\ntag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/V-_K2YdfTbOQybt9jhtgTA/HrKbY0J7R4qdt4Fals-GQg-LinkedIn_square_grey.png\n"
 						}
 					],
-					"count": "6",
+					"count": "1",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-CEG-Logo_Pictogramme-blanc.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Je%CC%81ro%CC%82me%20Clarysse%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-01-Evenements.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo-E%CC%81ve%CC%80nement%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo-E%CC%81ve%CC%80nement%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Vide%CC%81o-e%CC%81ve%CC%80nement-01%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Picto-evenements.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-02-Methodes.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2003%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-03-Nomination.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Lolita%20Conan%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Lolita%20Conan%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Marine%20Le%CC%81vesque%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Marine%20Le%CC%81vesque%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-04-Outils.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2001.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2002.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%2002.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-05-CEG.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%20Vide%CC%81o%20logo%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Photo%20Article%20-%20Vide%CC%81o%20logo%402x.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-CEG-Logo_Logo-blanc.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-Twitter_square_grey.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/Ne91cJS_QSmVD_TzSF8Xsg/o0bd56AhT8SrAR3RhGqV8g-LinkedIn_square_grey.png</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-CEG-Logo_Pictogramme-blanc.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-05-CEG.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%201.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%201.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-06-Strate%CC%81gie%20Cabinet.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%202.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%202.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-01-Evenements.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%203.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%203.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%204.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%204.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%205.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%205.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-08-Veille.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%206.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Img-article-NL-1%20%E2%80%93%206.jpg</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-CEG-Logo_Logo-blanc.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-Twitter_square_grey.png</p><p>tag=img src=http://img.communication-ceg.com/620510dbc6ff2437e5e6a267/jkj-3PByRP69GmauqwmCig/xb9BDQjQTceNYIq3YPdD9w-LinkedIn_square_grey.png</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "2098"
+					"sourceid": "1871"
 				},
 				{
 					"pluginid": "10037",
@@ -880,6 +848,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.experts-en-gestion.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.experts-en-gestion.fr/author-sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -889,14 +865,6 @@
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/category-sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/membership-join/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1059,14 +1027,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/wp-content/uploads/2023/07/Img-Newsletter-4.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.experts-en-gestion.fr/wp-json/",
 							"method": "GET",
 							"param": "",
@@ -1075,7 +1035,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
@@ -1178,16 +1138,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691889663",
-							"otherinfo": "1691889663, which evaluates to: 2023-08-13 01:21:03"
+							"evidence": "1692494467",
+							"otherinfo": "1692494467, which evaluates to: 2023-08-20 01:21:07"
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691889666",
-							"otherinfo": "1691889666, which evaluates to: 2023-08-13 01:21:06"
+							"evidence": "1692494470",
+							"otherinfo": "1692494470, which evaluates to: 2023-08-20 01:21:10"
 						}
 					],
 					"count": "12",
@@ -1289,14 +1249,6 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/wp-content/uploads/2022/08/picto-vision-axes.svg",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
 							"uri": "https://www.experts-en-gestion.fr/wp-content/uploads/2023/07/Img-Newsletter-4.png",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1305,40 +1257,13 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10111",
-					"alertRef": "10111",
-					"alert": "Authentication Request Identified",
-					"name": "Authentication Request Identified",
-					"riskcode": "0",
-					"confidence": "3",
-					"riskdesc": "Informational (High)",
-					"desc": "<p>The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to \"Auto-Detect\" then this rule will change the authentication to match the request identified.</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.experts-en-gestion.fr/membership-login/",
-							"method": "POST",
-							"param": "swpm-login",
-							"attack": "",
-							"evidence": "swpm_password",
-							"otherinfo": "userParam=swpm-login\nuserValue=Log In\npasswordParam=swpm_password\nreferer=https://www.experts-en-gestion.fr/membership-login/"
-						}
-					],
-					"count": "1",
-					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
-					"otherinfo": "<p>userParam=swpm-login</p><p>userValue=Log In</p><p>passwordParam=swpm_password</p><p>referer=https://www.experts-en-gestion.fr/membership-login/</p>",
-					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
-					"cweid": "-1",
-					"wascid": "-1",
-					"sourceid": "2077"
 				},
 				{
 					"pluginid": "10094",
@@ -1464,73 +1389,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fdiagop-loutil-du-ceg-pour-developper-les-honoraires-de-conseil-des-cabinets%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fmembership-join%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fmembership-join%2Fmembership-registration%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fmembership-login%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fmembership-login%2Fmembership-profile%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fmembership-login%2Fpassword-reset%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fmentions-legales%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fnewsletter%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						}
 					],
-					"count": "9",
+					"count": "1",
 					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
 					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
@@ -1565,6 +1426,22 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "https://www.experts-en-gestion.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 3 times, the first in the element starting with: \"<script id='pa-frontend-js-extra'>\nvar PremiumSettings = {\"ajaxurl\":\"https:\\/\\/www.experts-en-gestion.fr\\/wp-admin\\/admin-ajax.p\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "https://www.experts-en-gestion.fr/membership-join/",
 							"method": "GET",
 							"param": "",
@@ -1590,22 +1467,6 @@
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/membership-join/membership-registration/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/membership-login/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in the element starting with: \"<script id=\"elementor-pro-frontend-js-before\">\nvar ElementorProFrontendConfig = {\"ajaxurl\":\"https:\\/\\/www.experts-en-gestion.fr\\\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/membership-login/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1707,6 +1568,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.experts-en-gestion.fr/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.experts-en-gestion.fr/author-sitemap.xml",
 							"method": "GET",
 							"param": "cache-control",
@@ -1787,7 +1656,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -1806,6 +1675,14 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.experts-en-gestion.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.experts-en-gestion.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1815,14 +1692,6 @@
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1836,7 +1705,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1849,6 +1718,14 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.experts-en-gestion.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.experts-en-gestion.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1858,14 +1735,6 @@
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1879,7 +1748,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1892,6 +1761,14 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.experts-en-gestion.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.experts-en-gestion.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1901,14 +1778,6 @@
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1922,7 +1791,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1934,6 +1803,14 @@
 					"riskdesc": "Informational (High)",
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
+						{
+							"uri": "https://www.experts-en-gestion.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/robots.txt",
 							"method": "GET",
@@ -1949,14 +1826,6 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
 					"count": "3",
@@ -1965,7 +1834,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -1982,23 +1851,7 @@
 							"method": "GET",
 							"param": "swpm_session",
 							"attack": "",
-							"evidence": "402bb69d02a500443129dc08386d9590",
-							"otherinfo": "\ncookie:swpm_session"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/robots.txt",
-							"method": "GET",
-							"param": "swpm_session",
-							"attack": "",
-							"evidence": "8e9d2aef3280e5034083fa88772c8b20",
-							"otherinfo": "\ncookie:swpm_session"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "swpm_session",
-							"attack": "",
-							"evidence": "7cb15a1ecf3a5ff561f5a595f6729770",
+							"evidence": "569f20a24e0d13e7fc5a33142ba9cdb7",
 							"otherinfo": "\ncookie:swpm_session"
 						},
 						{
@@ -2006,11 +1859,35 @@
 							"method": "GET",
 							"param": "swpm_session",
 							"attack": "",
-							"evidence": "62a3dfe48d194760200504e3458fec3d",
+							"evidence": "a22c6a4cf406f789ae7baca89a21b073",
+							"otherinfo": "\ncookie:swpm_session"
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr/robots.txt",
+							"method": "GET",
+							"param": "swpm_session",
+							"attack": "",
+							"evidence": "4266b93f780079b0f3088d41a96b5b33",
+							"otherinfo": "\ncookie:swpm_session"
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
+							"method": "GET",
+							"param": "swpm_session",
+							"attack": "",
+							"evidence": "ec7b780f2180abbd28e7a8b866c6712e",
+							"otherinfo": "\ncookie:swpm_session"
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr",
+							"method": "GET",
+							"param": "swpm_session",
+							"attack": "",
+							"evidence": "a22c6a4cf406f789ae7baca89a21b073",
 							"otherinfo": "\ncookie:swpm_session"
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:swpm_session</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -2101,14 +1978,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.experts-en-gestion.fr/wp-content/uploads/2023/07/Img-Newsletter-4.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=900",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.experts-en-gestion.fr/wp-json/",
 							"method": "GET",
 							"param": "",
@@ -2117,7 +1986,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -2176,23 +2045,7 @@
 							"param": "form_id",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-id] attribute \r\n\r\nThe user input found was:\r\nform_id=eca8789\r\n\r\nThe user-controlled value was:\r\neca8789"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "form_id",
-							"attack": "",
-							"evidence": "",
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nform_id=14fdea46\r\n\r\nThe user-controlled value was:\r\n14fdea46"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "form_id",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nform_id=eca8789\r\n\r\nThe user-controlled value was:\r\neca8789"
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/",
@@ -2208,23 +2061,7 @@
 							"param": "post_id",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-elementor-id] attribute \r\n\r\nThe user input found was:\r\npost_id=5313\r\n\r\nThe user-controlled value was:\r\n5313"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "post_id",
-							"attack": "",
-							"evidence": "",
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\npost_id=5220\r\n\r\nThe user-controlled value was:\r\n5220"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "post_id",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\npost_id=5313\r\n\r\nThe user-controlled value was:\r\n5313"
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/",
@@ -2259,13 +2096,13 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [meta] tag [content] attribute \r\n\r\nThe user input found was:\r\nreferer_title=Accueil - CEG\r\n\r\nThe user-controlled value was:\r\naccueil - ceg"
 						}
 					],
-					"count": "12",
+					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.experts-en-gestion.fr/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [div] tag [data-id] attribute </p><p></p><p>The user input found was:</p><p>form_id=14fdea46</p><p></p><p>The user-controlled value was:</p><p>14fdea46</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2063"
+					"sourceid": "2051"
 				}
 			]
 		}
