@@ -42,18 +42,47 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je3960&_p=346615158&cid=1992297149.1694307967&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1694307966&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je39d0&_p=1314696644&cid=358301400.1694913055&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1694913055&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
       }
     }
   ],
-  "cookies": [],
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.358301400.1694913055",
+      "domain": ".rca.fr",
+      "path": "/",
+      "expires": 1757985055,
+      "size": 29,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_ga_9TKD9RN2HY",
+      "value": "GS1.1.1694913055.1.0.1694913055.0.0.0",
+      "domain": ".rca.fr",
+      "path": "/",
+      "expires": 1757985055,
+      "size": 51,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 10 Sep 2023 01:06:04 GMT",
+    "date": "Sun, 17 Sep 2023 01:10:53 GMT",
     "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
     "server": "Apache",
     "vary": "Accept-Encoding",
@@ -118,12 +147,12 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.68.106",
+      "ip": "142.250.191.74",
       "geoip": {
         "city": {
-          "geoname_id": 5102162,
+          "geoname_id": 4994862,
           "names": {
-            "en": "Old Bridge"
+            "en": "Grosse Pointe"
           }
         },
         "continent": {
@@ -156,13 +185,13 @@
         },
         "location": {
           "accuracy_radius": 500,
-          "latitude": 40.3913,
-          "longitude": -74.3247,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
+          "latitude": 42.3769,
+          "longitude": -82.9152,
+          "metro_code": 505,
+          "time_zone": "America/Detroit"
         },
         "postal": {
-          "code": "08857"
+          "code": "48230"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -180,16 +209,16 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5101760,
-            "iso_code": "NJ",
+            "geoname_id": 5001836,
+            "iso_code": "MI",
             "names": {
-              "en": "New Jersey",
-              "es": "Nueva Jersey",
-              "fr": "New Jersey",
-              "ja": "ニュージャージー州",
-              "pt-BR": "Nova Jérsia",
-              "ru": "Нью-Джерси",
-              "zh-CN": "新泽西州"
+              "en": "Michigan",
+              "es": "Michigan",
+              "fr": "Michigan",
+              "ja": "ミシガン州",
+              "pt-BR": "Michigão",
+              "ru": "Мичиган",
+              "zh-CN": "密歇根州"
             }
           }
         ]
@@ -197,18 +226,19 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "104.79.0.17",
+      "ip": "23.67.33.233",
       "geoip": {
         "city": {
-          "geoname_id": 5392171,
+          "geoname_id": 5393015,
           "names": {
-            "de": "San José",
-            "en": "San Jose",
-            "es": "San José",
-            "fr": "San José",
-            "ja": "サンノゼ",
-            "pt-BR": "San José",
-            "ru": "Сан-Хосе"
+            "de": "Santa Clara",
+            "en": "Santa Clara",
+            "es": "Santa Clara",
+            "fr": "Santa Clara",
+            "ja": "サンタクララ",
+            "pt-BR": "Santa Clara",
+            "ru": "Санта-Клара",
+            "zh-CN": "圣克拉拉"
           }
         },
         "continent": {
@@ -241,13 +271,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 37.1835,
-          "longitude": -121.7714,
+          "latitude": 37.353,
+          "longitude": -121.9543,
           "metro_code": 807,
           "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "95141"
+          "code": "95052"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -283,7 +313,7 @@
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "104.123.71.221",
+      "ip": "104.79.0.40",
       "geoip": {
         "city": {
           "geoname_id": 5392171,
@@ -369,7 +399,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.250.217.136",
+      "ip": "172.217.12.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -423,8 +453,14 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.251.214.142",
+      "ip": "142.250.68.78",
       "geoip": {
+        "city": {
+          "geoname_id": 5102162,
+          "names": {
+            "en": "Old Bridge"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -454,10 +490,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.3913,
+          "longitude": -74.3247,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "08857"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -472,7 +512,22 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5101760,
+            "iso_code": "NJ",
+            "names": {
+              "en": "New Jersey",
+              "es": "Nueva Jersey",
+              "fr": "New Jersey",
+              "ja": "ニュージャージー州",
+              "pt-BR": "Nova Jérsia",
+              "ru": "Нью-Джерси",
+              "zh-CN": "新泽西州"
+            }
+          }
+        ]
       }
     }
   ]
