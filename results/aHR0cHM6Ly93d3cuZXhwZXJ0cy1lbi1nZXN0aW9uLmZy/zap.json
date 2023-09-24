@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 17 Sep 2023 01:27:51",
+	"@generated": "Sun, 24 Sep 2023 01:29:26",
 	"site":[ 
 		{
 			"@name": "https://www.experts-en-gestion.fr",
@@ -859,7 +859,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "2105"
+					"sourceid": "2104"
 				},
 				{
 					"pluginid": "10037",
@@ -1202,16 +1202,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1694913992",
-							"otherinfo": "1694913992, which evaluates to: 2023-09-17 01:26:32"
+							"evidence": "1695518858",
+							"otherinfo": "1695518858, which evaluates to: 2023-09-24 01:27:38"
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1694913995",
-							"otherinfo": "1694913995, which evaluates to: 2023-09-17 01:26:35"
+							"evidence": "1695518861",
+							"otherinfo": "1695518861, which evaluates to: 2023-09-24 01:27:41"
 						}
 					],
 					"count": "15",
@@ -1520,23 +1520,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.experts-en-gestion.fr%2Fnewsletter%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
 					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1941"
+					"sourceid": "1944"
 				},
 				{
 					"pluginid": "10027",
@@ -1836,7 +1828,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1879,7 +1871,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1922,7 +1914,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1965,7 +1957,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10112",
@@ -1982,23 +1974,7 @@
 							"method": "GET",
 							"param": "swpm_session",
 							"attack": "",
-							"evidence": "e17888e715d09d914163ec39968defef",
-							"otherinfo": "\ncookie:swpm_session"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/robots.txt",
-							"method": "GET",
-							"param": "swpm_session",
-							"attack": "",
-							"evidence": "78c8af74038ba53fe6c5c5c18a231fba",
-							"otherinfo": "\ncookie:swpm_session"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "swpm_session",
-							"attack": "",
-							"evidence": "7155350bb57a98f56c96f61cfcf00ae3",
+							"evidence": "034527474eeeb629b088837fa32c4ab2",
 							"otherinfo": "\ncookie:swpm_session"
 						},
 						{
@@ -2006,7 +1982,7 @@
 							"method": "GET",
 							"param": "swpm_session",
 							"attack": "",
-							"evidence": "e17888e715d09d914163ec39968defef",
+							"evidence": "8352307663c5f73a81473b65069da6a4",
 							"otherinfo": "\ncookie:swpm_session"
 						},
 						{
@@ -2014,17 +1990,41 @@
 							"method": "GET",
 							"param": "swpm_session",
 							"attack": "",
-							"evidence": "78c8af74038ba53fe6c5c5c18a231fba",
+							"evidence": "af2d21577c4aba575164573f49d1a7c0",
+							"otherinfo": "\ncookie:swpm_session"
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr/sitemap.xml",
+							"method": "GET",
+							"param": "swpm_session",
+							"attack": "",
+							"evidence": "606becca865bc6a79a4630430d6c12bf",
+							"otherinfo": "\ncookie:swpm_session"
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr/xmlrpc.php?rsd",
+							"method": "GET",
+							"param": "swpm_session",
+							"attack": "",
+							"evidence": "50372ee4f8c538f928901c295c9c057d",
+							"otherinfo": "\ncookie:swpm_session"
+						},
+						{
+							"uri": "https://www.experts-en-gestion.fr",
+							"method": "GET",
+							"param": "swpm_session",
+							"attack": "",
+							"evidence": "8352307663c5f73a81473b65069da6a4",
 							"otherinfo": "\ncookie:swpm_session"
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:swpm_session</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "341"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -2184,23 +2184,7 @@
 							"param": "form_id",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-id] attribute \r\n\r\nThe user input found was:\r\nform_id=eca8789\r\n\r\nThe user-controlled value was:\r\neca8789"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "form_id",
-							"attack": "",
-							"evidence": "",
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nform_id=14fdea46\r\n\r\nThe user-controlled value was:\r\n14fdea46"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "form_id",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nform_id=eca8789\r\n\r\nThe user-controlled value was:\r\neca8789"
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/",
@@ -2216,23 +2200,7 @@
 							"param": "post_id",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-elementor-id] attribute \r\n\r\nThe user input found was:\r\npost_id=5313\r\n\r\nThe user-controlled value was:\r\n5313"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "post_id",
-							"attack": "",
-							"evidence": "",
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\npost_id=5220\r\n\r\nThe user-controlled value was:\r\n5220"
-						},
-						{
-							"uri": "https://www.experts-en-gestion.fr/",
-							"method": "POST",
-							"param": "post_id",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\npost_id=5313\r\n\r\nThe user-controlled value was:\r\n5313"
 						},
 						{
 							"uri": "https://www.experts-en-gestion.fr/",
@@ -2267,13 +2235,13 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.experts-en-gestion.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [meta] tag [content] attribute \r\n\r\nThe user input found was:\r\nreferer_title=Accueil - CEG\r\n\r\nThe user-controlled value was:\r\naccueil - ceg"
 						}
 					],
-					"count": "12",
+					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.experts-en-gestion.fr/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [div] tag [data-id] attribute </p><p></p><p>The user input found was:</p><p>form_id=14fdea46</p><p></p><p>The user-controlled value was:</p><p>14fdea46</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2080"
+					"sourceid": "2081"
 				}
 			]
 		}
