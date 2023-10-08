@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 1 Oct 2023 01:18:05",
+	"@generated": "Sun, 8 Oct 2023 01:15:36",
 	"site":[ 
 		{
 			"@name": "https://rca.fr",
@@ -478,7 +478,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "62"
+					"sourceid": "93"
 				},
 				{
 					"pluginid": "10017",
@@ -539,6 +539,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/actualites/cas-client-comment-cabinet-hlp-audit-deploye-compta-simplifiee-revolutionne-organisation/",
+							"method": "GET",
+							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.1#038;render=explicit",
+							"attack": "",
+							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.1#038;render=explicit' id='gform_recaptcha-js'></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/actualites/category/cas-client/",
+							"method": "GET",
+							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.1#038;render=explicit",
+							"attack": "",
+							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.1#038;render=explicit' id='gform_recaptcha-js'></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/actualites/category/ressources-telechargeables/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.1#038;render=explicit",
@@ -548,14 +564,6 @@
 						},
 						{
 							"uri": "https://rca.fr/contact/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.1#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.1#038;render=explicit' id='gform_recaptcha-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/protection-dcp/.*",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.1#038;render=explicit",
 							"attack": "",
@@ -577,14 +585,6 @@
 							"attack": "",
 							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.1#038;render=explicit' id='gform_recaptcha-js'></script>",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/formations-rca/",
-							"method": "POST",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.1#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.1#038;render=explicit' id='gform_recaptcha-js'></script>",
-							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -593,7 +593,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "424"
+					"sourceid": "368"
 				},
 				{
 					"pluginid": "10110",
@@ -630,7 +630,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.14",
+							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.15",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -638,7 +638,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.14",
+							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.15",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -684,7 +684,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1487"
+					"sourceid": "1575"
 				},
 				{
 					"pluginid": "10063",
@@ -820,6 +820,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/actualites/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/comments/feed/",
 							"method": "GET",
 							"param": "",
@@ -837,14 +845,6 @@
 						},
 						{
 							"uri": "https://rca.fr/ecosysteme-rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/feed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -906,7 +906,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "765"
+					"sourceid": "775"
 				},
 				{
 					"pluginid": "10035",
@@ -1296,14 +1296,6 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Factualites%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fnos-solutions%2Fecosysteme-rca%2F",
 							"method": "GET",
 							"param": "",
@@ -1328,6 +1320,14 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fressources%2Factualites%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F",
 							"method": "GET",
 							"param": "",
@@ -1342,7 +1342,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1023"
+					"sourceid": "1108"
 				},
 				{
 					"pluginid": "10027",
@@ -1652,6 +1652,14 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
+							"uri": "https://rca.fr/?s=ZAP",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/comments/feed/",
 							"method": "GET",
 							"param": "cache-control",
@@ -1724,14 +1732,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-json/wp/v2/pages/4570",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/wp-json/wp/v2/pages/4872",
 							"method": "GET",
 							"param": "cache-control",
@@ -1754,7 +1754,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "980"
+					"sourceid": "1358"
 				},
 				{
 					"pluginid": "90005",
@@ -1775,6 +1775,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1783,7 +1791,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1810,6 +1818,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1818,7 +1834,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1845,6 +1861,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1853,7 +1877,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1880,6 +1904,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1888,7 +1920,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1911,7 +1943,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "3b488022da4d89cdaae79e700c9ae8ff",
+							"evidence": "7aecd6d34340164c5825e429ecf1d51c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -1919,7 +1951,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "3b488022da4d89cdaae79e700c9ae8ff",
+							"evidence": "7aecd6d34340164c5825e429ecf1d51c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -1927,7 +1959,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "3b488022da4d89cdaae79e700c9ae8ff",
+							"evidence": "7aecd6d34340164c5825e429ecf1d51c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -1935,7 +1967,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "3b488022da4d89cdaae79e700c9ae8ff",
+							"evidence": "7aecd6d34340164c5825e429ecf1d51c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						}
 					],
@@ -1945,7 +1977,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "62"
+					"sourceid": "93"
 				},
 				{
 					"pluginid": "10049",
@@ -1980,7 +2012,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "62"
+					"sourceid": "93"
 				},
 				{
 					"pluginid": "10031",
@@ -1998,7 +2030,7 @@
 							"param": "gform_ajax",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/le-parcours-meg/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ngform_ajax=form_id=26&title=&description=&tabindex=0\r\n\r\nThe user-controlled value was:\r\nform_id=26&title=&description=&tabindex=0"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/le-parcours-meg/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ngform_ajax=form_id=26&title=&description=&tabindex=0&theme=data-form-theme='legacy'\r\n\r\nThe user-controlled value was:\r\nform_id=26&title=&description=&tabindex=0&theme=data-form-theme='legacy'"
 						},
 						{
 							"uri": "https://rca.fr/accompagnement/le-parcours-meg/",
@@ -2099,11 +2131,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://rca.fr/accompagnement/le-parcours-meg/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>gform_ajax=form_id=26&title=&description=&tabindex=0</p><p></p><p>The user-controlled value was:</p><p>form_id=26&title=&description=&tabindex=0</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://rca.fr/accompagnement/le-parcours-meg/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>gform_ajax=form_id=26&title=&description=&tabindex=0&theme=data-form-theme='legacy'</p><p></p><p>The user-controlled value was:</p><p>form_id=26&title=&description=&tabindex=0&theme=data-form-theme='legacy'</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1557"
+					"sourceid": "1683"
 				}
 			]
 		}
