@@ -269,7 +269,7 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "SHA256 with RSA"
+              "finding"      : "SHA384 with RSA"
           }
 ,         {
               "id"           : "cert_keySize",
@@ -297,35 +297,35 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "6D8900126E557A56B3B8832A12B3719F"
+              "finding"      : "80195735C6E9C4F54EBFAE972D87E1"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "16"
+              "finding"      : "15"
           }
 ,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "86BEFFCF02E3D31AE55F712006258E1811E07FCC"
+              "finding"      : "3E1E90A30603F737FF96EABF2366793711458D9B"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5C4AA3F110C16566C3CBB608B5D1AA365E84F0CD125EA6EC4367DD76741D89C8"
+              "finding"      : "98E7221E63384D0A3C1B2927273B0C4E55C248A6EC53B38C98ED15744EF2A1B3"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -373,22 +373,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (8)"
+              "severity"     : "OK",
+              "finding"      : "367 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-09-13 00:00"
+              "finding"      : "2023-09-20 00:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2023-10-09 23:59"
+              "severity"     : "OK",
+              "finding"      : "2024-10-09 23:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -409,14 +409,14 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://crl.usertrust.com/GandiStandardSSLCA2.crl"
+              "finding"      : "--"
           }
 ,         {
               "id"           : "cert_ocspURL",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://ocsp.usertrust.com"
+              "finding"      : "http://ocsp.sectigo.com"
           }
 ,         {
               "id"           : "OCSP_stapling",
@@ -465,35 +465,35 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Gandi Standard SSL CA 2 (Gandi from FR)"
+              "finding"      : "Gandi RSA Domain Validation Secure Server CA 3 (Gandi from FR)"
           }
 ,         {
               "id"           : "intermediate_cert <#1>",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B9F2164323638DCE0B92218B43C41C1B2B2696389329DB19F5CF7AD49B5CB372"
+              "finding"      : "F0104FF17274608F1A18A1E1EABF8E68A51F500A87E2EFA22ECB622763FEF4CF"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#1>",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2014-09-12 00:00"
+              "finding"      : "2023-08-02 00:00"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#1>",
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-09-11 23:59"
+              "finding"      : "2033-08-01 23:59"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#1>",
@@ -507,7 +507,7 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Gandi Standard SSL CA 2 <-- USERTrust RSA Certification Authority"
+              "finding"      : "Gandi RSA Domain Validation Secure Server CA 3 <-- USERTrust RSA Certification Authority"
           }
 ,         {
               "id"           : "intermediate_cert_badOCSP",
@@ -535,7 +535,7 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1696122573"
+              "finding"      : "1696727225"
           }
 ,         {
               "id"           : "HSTS",
@@ -736,7 +736,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=5C4AA3F110C16566C3CBB608B5D1AA365E84F0CD125EA6EC4367DD76741D89C8"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=98E7221E63384D0A3C1B2927273B0C4E55C248A6EC53B38C98ED15744EF2A1B3"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1142,6 +1142,6 @@
               "ip"           : "mon-expert-en-gestion.fr/54.37.63.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "67"
+              "finding"      : "112"
           }
 ]
