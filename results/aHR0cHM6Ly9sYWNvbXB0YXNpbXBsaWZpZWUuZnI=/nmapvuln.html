@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln lacomptasimplifiee.fr</pre>
-<p class="lead">Sun Oct 15 01:26:06 2023 – Sun Oct 15 01:26:44 2023<br>1 hosts scanned.
+<p class="lead">Sun Oct 22 01:22:34 2023 – Sun Oct 22 01:23:04 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,19 +120,23 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 15 Oct 2023 01:26:23 GMT
+    date: Sun, 22 Oct 2023 01:22:48 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: bf41b08d1406f71eb92eeca62166c765
+    x-ovh-webhosting-id: a0ed8b0ef132ec0002bac7b16cf9c06d
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     content-length: 4958
-    x-iplb-request-id: 0D583B67:EC02_335BECC1:0050_652B3FB9_C734:151A3
-    x-iplb-instance: 32680
+    x-iplb-request-id: 14392DA2:44C4_335BECC1:0050_65347962_90A4:97D6
+    x-iplb-instance: 32679
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -143,18 +147,18 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta h
+    &lt;meta ht
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 15 Oct 2023 01:26:24 GMT
+    date: Sun, 22 Oct 2023 01:22:48 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: ff7250b195a5c812febdfb49a4cb259b
+    x-ovh-webhosting-id: 9742a25f71886a67b823fd75139cbc85
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     content-length: 4958
-    x-iplb-request-id: 0D583B67:EC00_335BECC1:0050_652B3FC0_3A530:151B0
-    x-iplb-instance: 32680
+    x-iplb-request-id: 14392DA2:4490_335BECC1:0050_65347968_E191:379E
+    x-iplb-instance: 32677
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -165,11 +169,7 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
+    &lt;meta ht</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
