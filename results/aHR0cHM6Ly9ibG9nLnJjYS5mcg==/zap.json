@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 29 Oct 2023 01:22:12",
+	"@generated": "Sun, 5 Nov 2023 01:28:10",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -660,7 +660,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1257"
+					"sourceid": "1258"
 				},
 				{
 					"pluginid": "10037",
@@ -828,7 +828,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1294,23 +1294,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fteam-rca-instagram%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
 					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "680"
+					"sourceid": "673"
 				},
 				{
 					"pluginid": "10027",
@@ -1577,7 +1569,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
