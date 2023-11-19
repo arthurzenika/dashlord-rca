@@ -42,7 +42,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je3b81v894096030z8894084953&_p=1699751733066&gcd=11l1l1l1l1&dma=0&cid=929708780.1699751733&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1699751733&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=4152",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je3b81v894096030z8894084953&_p=1700356688178&gcd=11l1l1l1l1&dma=0&cid=1310573020.1700356688&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1700356688&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2638",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -52,11 +52,11 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.929708780.1699751733",
+      "value": "GA1.1.1310573020.1700356688",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1762823733,
-      "size": 29,
+      "expires": 1763428688,
+      "size": 30,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -66,10 +66,10 @@
     },
     {
       "name": "_ga_9TKD9RN2HY",
-      "value": "GS1.1.1699751733.1.0.1699751733.0.0.0",
+      "value": "GS1.1.1700356688.1.0.1700356688.0.0.0",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1762823733,
+      "expires": 1763428688,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -82,7 +82,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 12 Nov 2023 01:15:31 GMT",
+    "date": "Sun, 19 Nov 2023 01:18:07 GMT",
     "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
     "server": "Apache",
     "vary": "Accept-Encoding",
@@ -147,7 +147,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.32.42",
+      "ip": "142.251.111.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -201,20 +201,8 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "104.79.0.25",
+      "ip": "23.215.0.139",
       "geoip": {
-        "city": {
-          "geoname_id": 5392171,
-          "names": {
-            "de": "San José",
-            "en": "San Jose",
-            "es": "San José",
-            "fr": "San José",
-            "ja": "サンノゼ",
-            "pt-BR": "San José",
-            "ru": "Сан-Хосе"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -244,14 +232,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
-          "latitude": 37.1835,
-          "longitude": -121.7714,
-          "metro_code": 807,
-          "time_zone": "America/Los_Angeles"
-        },
-        "postal": {
-          "code": "95141"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -266,41 +250,13 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
-            "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "104.123.71.230",
+      "ip": "23.215.0.138",
       "geoip": {
-        "city": {
-          "geoname_id": 5392171,
-          "names": {
-            "de": "San José",
-            "en": "San Jose",
-            "es": "San José",
-            "fr": "San José",
-            "ja": "サンノゼ",
-            "pt-BR": "San José",
-            "ru": "Сан-Хосе"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -330,14 +286,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
-          "latitude": 37.1835,
-          "longitude": -121.7714,
-          "metro_code": 807,
-          "time_zone": "America/Los_Angeles"
-        },
-        "postal": {
-          "code": "95141"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -352,28 +304,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
-            "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.250.191.40",
+      "ip": "142.250.31.97",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -427,7 +363,7 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.251.214.142",
+      "ip": "142.251.111.113",
       "geoip": {
         "continent": {
           "code": "NA",
