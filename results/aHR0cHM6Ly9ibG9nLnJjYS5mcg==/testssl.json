@@ -199,7 +199,7 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -339,7 +339,7 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "58 >= 30 days"
+              "finding"      : "51 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -535,14 +535,14 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1700357285"
+              "finding"      : "1700962231"
           }
 ,         {
               "id"           : "HSTS",
@@ -776,7 +776,7 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_70",
