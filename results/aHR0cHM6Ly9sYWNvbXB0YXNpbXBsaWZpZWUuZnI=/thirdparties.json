@@ -150,7 +150,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=-QbJqHfGOUB8nuVRLvzFLVed&theme=light&size=normal&cb=do9md1f9u9gn",
+      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcNjNQjAAAAAFPrjfK0a3FxKLxFfpN70SuzgVjz&co=aHR0cHM6Ly9sYWNvbXB0YXNpbXBsaWZpZWUuZnI6NDQz&hl=en&v=-QbJqHfGOUB8nuVRLvzFLVed&theme=light&size=normal&cb=wtjemtvwbu01",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -158,7 +158,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je3b81v9100224168z89100215548&_p=1700356452090&gcd=11l1l1l1l1&dma=0&cid=232449641.1700356453&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1700356452&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2215",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VTC217M61H&gtm=45je3b81v9100224168z89100215548&_p=1700961442430&gcd=11l1l1l1l1&dma=0&cid=342952810.1700961443&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1700961443&sct=1&seg=0&dl=https%3A%2F%2Flacomptasimplifiee.fr%2F&dt=La%20Compta%20Simplifi%C3%A9e%20-%20Le%20meilleur%20des%20deux%20mondes&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=3018",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -216,10 +216,10 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.232449641.1700356453",
+      "value": "GA1.1.342952810.1700961443",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1763428452,
+      "expires": 1764033443,
       "size": 29,
       "httpOnly": false,
       "secure": false,
@@ -230,10 +230,10 @@
     },
     {
       "name": "_ga_VTC217M61H",
-      "value": "GS1.1.1700356452.1.0.1700356452.0.0.0",
+      "value": "GS1.1.1700961443.1.0.1700961443.0.0.0",
       "domain": ".lacomptasimplifiee.fr",
       "path": "/",
-      "expires": 1763428452,
+      "expires": 1764033443,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -249,7 +249,7 @@
     "content-encoding": "gzip",
     "content-length": "38348",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 19 Nov 2023 01:14:11 GMT",
+    "date": "Sun, 26 Nov 2023 01:17:20 GMT",
     "expires": "Mon, 29 Oct 1923 20:30:00 GMT",
     "pragma": "no-cache",
     "server": "Apache",
@@ -314,8 +314,14 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.62.95",
+      "ip": "142.250.72.170",
       "geoip": {
+        "city": {
+          "geoname_id": 5131638,
+          "names": {
+            "en": "Plainview"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -345,10 +351,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.7746,
+          "longitude": -73.4761,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11803"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -363,13 +373,42 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.215.0.133",
+      "ip": "23.67.33.217",
       "geoip": {
+        "city": {
+          "geoname_id": 5393015,
+          "names": {
+            "de": "Santa Clara",
+            "en": "Santa Clara",
+            "es": "Santa Clara",
+            "fr": "Santa Clara",
+            "ja": "サンタクララ",
+            "pt-BR": "Santa Clara",
+            "ru": "Санта-Клара",
+            "zh-CN": "圣克拉拉"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -399,10 +438,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 20,
+          "latitude": 37.353,
+          "longitude": -121.9543,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
+        },
+        "postal": {
+          "code": "95052"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -417,13 +460,42 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5332921,
+            "iso_code": "CA",
+            "names": {
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "23.215.0.140",
+      "ip": "23.67.33.203",
       "geoip": {
+        "city": {
+          "geoname_id": 5393015,
+          "names": {
+            "de": "Santa Clara",
+            "en": "Santa Clara",
+            "es": "Santa Clara",
+            "fr": "Santa Clara",
+            "ja": "サンタクララ",
+            "pt-BR": "Santa Clara",
+            "ru": "Санта-Клара",
+            "zh-CN": "圣克拉拉"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -453,10 +525,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 20,
+          "latitude": 37.353,
+          "longitude": -121.9543,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
+        },
+        "postal": {
+          "code": "95052"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -471,13 +547,35 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5332921,
+            "iso_code": "CA",
+            "names": {
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.167.99",
+      "ip": "142.250.68.4",
       "geoip": {
+        "city": {
+          "geoname_id": 5131638,
+          "names": {
+            "en": "Plainview"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -507,10 +605,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.7746,
+          "longitude": -73.4761,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11803"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -525,13 +627,35 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.63.94",
+      "ip": "142.250.68.99",
       "geoip": {
+        "city": {
+          "geoname_id": 5131638,
+          "names": {
+            "en": "Plainview"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -561,10 +685,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.7746,
+          "longitude": -73.4761,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11803"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -579,7 +707,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     },
     {
@@ -640,7 +784,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "172.253.62.97",
+      "ip": "172.217.14.72",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -694,7 +838,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.250.189.3",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -748,7 +892,7 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.251.111.113",
+      "ip": "216.239.38.178",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -780,9 +924,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 34.0544,
+          "longitude": -118.244,
+          "time_zone": "America/Los_Angeles"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -797,7 +941,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5332921,
+            "iso_code": "CA",
+            "names": {
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
+            }
+          }
+        ]
       }
     }
   ]
