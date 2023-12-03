@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln lacomptasimplifiee.fr</pre>
-<p class="lead">Sun Nov 26 01:27:30 2023 – Sun Nov 26 01:28:07 2023<br>1 hosts scanned.
+<p class="lead">Sun Dec  3 01:24:10 2023 – Sun Dec  3 01:24:47 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,19 +120,23 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache
+  nginx</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 26 Nov 2023 01:27:48 GMT
+    date: Sun, 03 Dec 2023 01:24:27 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: b30fff65e452beb340191c68556a3417
+    x-ovh-webhosting-id: b63a35f0a05217a176114f7a501f5b71
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 14AC05D2:73C3_335BECC1:0050_65629F0E_225AC:298C
-    x-iplb-instance: 52342
+    content-length: 4959
+    x-iplb-request-id: 34EE1CB9:0881_335BECC1:0050_656BD8C5_29456:0925
+    x-iplb-instance: 52413
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -147,13 +151,13 @@
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 26 Nov 2023 01:27:48 GMT
+    date: Sun, 03 Dec 2023 01:24:28 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 64211dd21fad90484e436f5c27ebf3d6
+    x-ovh-webhosting-id: c13bb8c9f20504a000c793ccfe5fbb3b
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 14AC05D2:73C1_335BECC1:0050_65629F14_5A1A3:31AB
+    content-length: 4959
+    x-iplb-request-id: 34EE1CB9:0884_335BECC1:0050_656BD8CC_2A4BA:0925
     x-iplb-instance: 52413
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
@@ -166,10 +170,6 @@
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
     &lt;meta h</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
