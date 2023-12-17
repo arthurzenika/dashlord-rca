@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Dec 2023 01:19:06",
+	"@generated": "Sun, 17 Dec 2023 01:19:28",
 	"site":[ 
 		{
 			"@name": "https://rca.fr",
@@ -229,7 +229,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10020",
@@ -336,7 +336,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -413,7 +413,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
+							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -421,7 +421,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
+							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -435,7 +435,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10054",
@@ -486,7 +486,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "167"
 				},
 				{
 					"pluginid": "10017",
@@ -532,14 +532,6 @@
 						},
 						{
 							"uri": "https://rca.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.2#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/actualites/category/cas-client/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.2#038;render=explicit",
 							"attack": "",
@@ -593,6 +585,14 @@
 							"attack": "",
 							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "POST",
+							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.2#038;render=explicit",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -601,7 +601,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "371"
+					"sourceid": "264"
 				},
 				{
 					"pluginid": "10110",
@@ -692,7 +692,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1154"
+					"sourceid": "1149"
 				},
 				{
 					"pluginid": "10063",
@@ -844,6 +844,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/contact",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/ecosysteme-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/gamme-conseil",
 							"method": "GET",
 							"param": "",
@@ -884,23 +900,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/wp-json/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -914,7 +914,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "775"
+					"sourceid": "768"
 				},
 				{
 					"pluginid": "10035",
@@ -959,6 +959,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "",
@@ -991,23 +1007,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/wp-json/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1021,7 +1021,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10096",
@@ -1034,6 +1034,14 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://rca.fr/ressources/actualites/embed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1552567301",
+							"otherinfo": "1552567301, which evaluates to: 2019-03-14 12:41:41"
+						},
+						{
 							"uri": "https://rca.fr/wp-content/uploads/2023/10/2-MEG-ordi.png",
 							"method": "GET",
 							"param": "",
@@ -1042,13 +1050,13 @@
 							"otherinfo": "1462899777, which evaluates to: 2016-05-10 17:02:57"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1462899777, which evaluates to: 2016-05-10 17:02:57</p>",
+					"otherinfo": "<p>1552567301, which evaluates to: 2019-03-14 12:41:41</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3256"
+					"sourceid": "3976"
 				},
 				{
 					"pluginid": "10021",
@@ -1101,6 +1109,14 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1133,14 +1149,6 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1155,7 +1163,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -1262,7 +1270,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90011",
@@ -1377,7 +1385,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1149"
+					"sourceid": "1132"
 				},
 				{
 					"pluginid": "10027",
@@ -1438,7 +1446,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1446,7 +1454,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 4 times, the first in the element starting with: \"<script type=\"text/javascript\" id=\"wpdm-frontjs-js-extra\">\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1612,7 +1620,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/accompagnement/formations-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1652,7 +1676,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "7",
+					"count": "9",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -1671,15 +1695,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"uri": "https://rca.fr/author-sitemap.xml",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/category-sitemap.xml",
+							"uri": "https://rca.fr/?s=ZAP",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1743,7 +1759,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-json/wp/v2/pages/4872",
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1751,7 +1767,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wpdmpro-sitemap.xml",
+							"uri": "https://rca.fr/wp-json/wp/v2/pages/4570",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/wp-json/wp/v2/pages/4872",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1773,7 +1797,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1372"
+					"sourceid": "1428"
 				},
 				{
 					"pluginid": "90005",
@@ -1816,7 +1840,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1859,7 +1883,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1902,7 +1926,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1945,7 +1969,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10112",
@@ -1962,7 +1986,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "354ea22c567465d0bd57d1e5e12b3824",
+							"evidence": "42d7145d70c476098853c98829591d51",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -1970,7 +1994,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "354ea22c567465d0bd57d1e5e12b3824",
+							"evidence": "42d7145d70c476098853c98829591d51",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -1978,17 +2002,33 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "354ea22c567465d0bd57d1e5e12b3824",
+							"evidence": "42d7145d70c476098853c98829591d51",
+							"otherinfo": "\ncookie:__wpdm_client"
+						},
+						{
+							"uri": "https://rca.fr/xmlrpc.php",
+							"method": "GET",
+							"param": "__wpdm_client",
+							"attack": "",
+							"evidence": "42d7145d70c476098853c98829591d51",
+							"otherinfo": "\ncookie:__wpdm_client"
+						},
+						{
+							"uri": "https://rca.fr/xmlrpc.php?rsd",
+							"method": "GET",
+							"param": "__wpdm_client",
+							"attack": "",
+							"evidence": "42d7145d70c476098853c98829591d51",
 							"otherinfo": "\ncookie:__wpdm_client"
 						}
 					],
-					"count": "3",
+					"count": "5",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:__wpdm_client</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "167"
 				},
 				{
 					"pluginid": "10049",
@@ -2015,31 +2055,15 @@
 							"attack": "",
 							"evidence": "max-age=3600",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://rca.fr/wp-json/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "4",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "167"
 				},
 				{
 					"pluginid": "10031",
@@ -2052,141 +2076,133 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
-							"param": "gform_source_page_number_29",
+							"param": "gform_source_page_number_30",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [meta] tag [content] attribute \r\n\r\nThe user input found was:\r\ngform_source_page_number_29=1\r\n\r\nThe user-controlled value was:\r\nwidth=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [meta] tag [content] attribute \r\n\r\nThe user input found was:\r\ngform_source_page_number_30=1\r\n\r\nThe user-controlled value was:\r\nwidth=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "gform_submit",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [data-formid] attribute \r\n\r\nThe user input found was:\r\ngform_submit=29\r\n\r\nThe user-controlled value was:\r\n29"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "gform_submit",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ngform_submit=29\r\n\r\nThe user-controlled value was:\r\n29"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-logo-height] attribute \r\n\r\nThe user input found was:\r\ngform_submit=30\r\n\r\nThe user-controlled value was:\r\n30"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "gform_submit",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ngform_submit=29\r\n\r\nThe user-controlled value was:\r\n29\tfinist\u00E8re"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-m-logo-height] attribute \r\n\r\nThe user input found was:\r\ngform_submit=30\r\n\r\nThe user-controlled value was:\r\n30"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "POST",
+							"param": "gform_submit",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [data-formid] attribute \r\n\r\nThe user input found was:\r\ngform_submit=30\r\n\r\nThe user-controlled value was:\r\n30"
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "POST",
+							"param": "gform_submit",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ngform_submit=30\r\n\r\nThe user-controlled value was:\r\n30"
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "POST",
+							"param": "gform_submit",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ngform_submit=30\r\n\r\nThe user-controlled value was:\r\n30\tgard"
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_1",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_1=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_1=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_2",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_2=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_2=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_3=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_3=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_33.3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [div] tag [data-padding] attribute \r\n\r\nThe user input found was:\r\ninput_33.3=28\r\n\r\nThe user-controlled value was:\r\n28"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_33.3=29\r\n\r\nThe user-controlled value was:\r\n29"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_33.3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [img] tag [width] attribute \r\n\r\nThe user input found was:\r\ninput_33.3=28\r\n\r\nThe user-controlled value was:\r\n281"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_33.3=29\r\n\r\nThe user-controlled value was:\r\n29\tfinist\u00E8re"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "input_33.3",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_33.3=28\r\n\r\nThe user-controlled value was:\r\n28"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "input_33.3",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_33.3=28\r\n\r\nThe user-controlled value was:\r\n28\teure-et-loir"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_4",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_4=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_4=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_41",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_41=01\tAin\r\n\r\nThe user-controlled value was:\r\n01\tain"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_41=01\tAin\r\n\r\nThe user-controlled value was:\r\n01\tain"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "input_43",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_43=Je souhaite t\u00E9l\u00E9charger la plaquette\r\n\r\nThe user-controlled value was:\r\nje souhaite t\u00E9l\u00E9charger la plaquette"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
 							"param": "input_5",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_5=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_5=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/mooc/",
 							"method": "POST",
-							"param": "state_29",
+							"param": "state_30",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/cap-2024/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nstate_29=WyJ7XCI0M1wiOltcImE2YTQ5NWYyNjJiNWVjZjViMGQ1NzY1MWZkNjMyMWRiXCIsXCIxMTg3NDEyNTMyZThmYTYwZjFkYjMzNDkzNmE1ZDNjM1wiXSxcIjMzLjFcIjpcIjlhZTU4OWM0MTAyZWMzY2NhMGFlOTgzYjI2ZWVlNGE1XCIsXCIzMy4yXCI6XCI0OTcxNDY4NjcwNzY5NzdlOTllMjRmN2RmYTk2ODgxOVwiLFwiMzMuM1wiOlwiZWIwODc2YTQzZWE3ZWU0ZGY2NmVlYWQzY2Q2NjBlZmFcIn0iLCJiYzM4ZWQyZTg0NzY2ZjFiMWM4YWZiZDA0MDAzZjRiNiJd\r\n\r\nThe user-controlled value was:\r\nwyj7xci0m1wioltcime2ytq5nwyynjjinwvjzjvimgq1nzy1mwzknjmymwrixcisxcixmtg3ndeyntmyzthmytywzjfkyjmzndkznme1zdnjm1wixsxcijmzljfcijpcijlhztu4owm0mtayzwmzy2nhmgflotgzyji2zwvlnge1xcisxcizmy4yxci6xci0otcxndy4njcwnzy5nzdlotllmjrmn2rmytk2odgxovwilfwimzmum1wiolwizwiwodc2ytqzzwe3zwu0zgy2nmvlywqzy2q2njblzmfcin0ilcjiyzm4zwqyztg0nzy2zjfimwm4ywzizda0mdazzjrinijd"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://rca.fr/accompagnement/mooc/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nstate_30=WyJ7XCIzMy4xXCI6XCI5YWU1ODljNDEwMmVjM2NjYTBhZTk4M2IyNmVlZTRhNVwiLFwiMzMuMlwiOlwiNDk3MTQ2ODY3MDc2OTc3ZTk5ZTI0ZjdkZmE5Njg4MTlcIixcIjMzLjNcIjpcIjI2ZTFmYjQ3MmE4MzI2NjdhODFhMmMzOTEzNzE4MzdhXCJ9IiwiMDk0ZjMyZjVkNDQwNGZmYTBlYWY0MjhjZDMxZmUwZmYiXQ==\r\n\r\nThe user-controlled value was:\r\nwyj7xcizmy4xxci6xci5ywu1odljndewmmvjm2njytbhztk4m2iynmvlztrhnvwilfwimzmumlwiolwindk3mtq2ody3mdc2otc3ztk5zti0zjdkzme5njg4mtlciixcijmzljncijpciji2ztfmyjq3mme4mzi2njdhodfhmmmzoteznze4mzdhxcj9iiwimdk0zjmyzjvkndqwngzmytblywy0mjhjzdmxzmuwzmyixq=="
 						}
 					],
-					"count": "16",
+					"count": "15",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://rca.fr/accompagnement/cap-2024/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>gform_source_page_number_29=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://rca.fr/accompagnement/mooc/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>gform_source_page_number_30=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2013"
+					"sourceid": "1718"
 				}
 			]
 		}
