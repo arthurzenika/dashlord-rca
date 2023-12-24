@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 17 Dec 2023 01:21:02",
+	"@generated": "Sun, 24 Dec 2023 01:20:53",
 	"site":[ 
 		{
 			"@name": "https://lacomptasimplifiee.fr",
@@ -106,7 +106,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10038",
@@ -191,7 +191,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-pre-comptabilite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -199,7 +199,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/pilotage/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -298,7 +298,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-pre-comptabilite/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -306,7 +306,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/pilotage/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -320,7 +320,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90003",
@@ -333,7 +333,15 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Manrope:700%2C500%7CRoboto:400&display=swap\" rel=\"stylesheet\" property=\"stylesheet\" media=\"all\" type=\"text/css\" >",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -341,7 +349,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -349,11 +357,19 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.3.2' type='text/css' media='all' />",
+							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.4.2' type='text/css' media='all' />",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -377,19 +393,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.3.2' type='text/css' media='all' />",
+							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.4.2' type='text/css' media='all' />",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"next\" href=\"https://prod-classe7.fr/compta-simplifie/actualites/category/produit/page/2/\" />",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -397,7 +405,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -405,11 +413,11 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.3.2' type='text/css' media='all' />",
+							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.4.2' type='text/css' media='all' />",
 							"otherinfo": ""
 						},
 						{
@@ -433,17 +441,17 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.3.2' type='text/css' media='all' />",
+							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.4.2' type='text/css' media='all' />",
 							"otherinfo": ""
 						}
 					],
-					"count": "13",
+					"count": "14",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "178"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10017",
@@ -458,17 +466,17 @@
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.2#038;render=explicit",
+							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.2#038;render=explicit",
 							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.2#038;render=explicit' id='gform_recaptcha-js'></script>",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
 							"otherinfo": ""
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
 							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.3.2#038;render=explicit",
+							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.2#038;render=explicit",
 							"attack": "",
-							"evidence": "<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.3.2#038;render=explicit' id='gform_recaptcha-js'></script>",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -486,7 +494,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10110",
@@ -515,14 +523,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.15",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.17",
 							"method": "GET",
 							"param": "",
@@ -539,23 +539,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.15",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.17",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.16",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -579,14 +563,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.0",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Eval",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
 							"method": "GET",
 							"param": "",
@@ -595,13 +571,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "8",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "378"
+					"sourceid": "354"
 				},
 				{
 					"pluginid": "10063",
@@ -686,7 +662,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
+							"uri": "https://lacomptasimplifiee.fr/wp-content/cache/wpfc-minified/7uwrmv8z/6e0ms.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -694,7 +670,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.17",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -721,14 +697,6 @@
 					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/?p=1005",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/?s=ZAP",
 							"method": "GET",
 							"param": "",
@@ -737,7 +705,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/feed/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/feed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -793,7 +761,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/categories/14",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/categories/13",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -815,6 +783,14 @@
 							"attack": "",
 							"evidence": "X-Powered-By: PHP/7.4",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -823,7 +799,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "804"
+					"sourceid": "624"
 				},
 				{
 					"pluginid": "10035",
@@ -943,29 +919,29 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/facture-electronique/embed/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-pre-comptabilite/embed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1664112781",
-							"otherinfo": "1664112781, which evaluates to: 2022-09-25 13:33:01"
+							"evidence": "1435860355",
+							"otherinfo": "1435860355, which evaluates to: 2015-07-02 18:05:55"
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-la-reactivite-du-cabinet-est-demultipliee/embed/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/le-protocole-ebics-destresse-nos-equipes/embed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1474290328",
-							"otherinfo": "1474290328, which evaluates to: 2016-09-19 13:05:28"
+							"evidence": "1886255753",
+							"otherinfo": "1886255753, which evaluates to: 2029-10-09 15:55:53"
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1664112781, which evaluates to: 2022-09-25 13:33:01</p>",
+					"otherinfo": "<p>1435860355, which evaluates to: 2015-07-02 18:05:55</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1183"
+					"sourceid": "1104"
 				},
 				{
 					"pluginid": "10021",
@@ -1157,20 +1133,20 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDb\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD\u01EB\uFFFD\uF722jmk\uFFFD\"\uFFFD\uFFFDb~'\uFFFD\uFFFD\uFFFDb\uFFFD\uFFFD^\uFFFD"
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
+							"uri": "https://lacomptasimplifiee.fr/wp-content/cache/wpfc-minified/f43xsne4/6e0mh.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2022/12/MEG-logo-menu",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDo\uFFFD\uFFFD\uFFFD\\x0004\\x001b\uFFFDh\uFFFD\uFFFD\uFFFDz{"
+							"evidence": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMDY3IDI4NjUgMjQgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTEwNjcgMjg2NSAyNCAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTS0xMDUzIDI4NjVjLTUuNSAwLTEwIDQuNS0xMCAxMGg0YzAtMy4zIDIuNy02IDYtNnM2IDIuNyA2IDZ2MmgtMjB2MTRjMCAzLjMgMi43IDYgNiA2aDEyYzMuMyAwIDYtMi43IDYtNnYtMTZjMC01LjUtNC41LTEwLTEwLTEwem00IDI4aC0xMmMtMS4xIDAtMi0uOS0yLTJ2LTEwaDE2djEwYzAgMS4xLS45IDItMiAyem0tNC02YzAgMS4xLS45IDItMiAycy0yLS45LTItMiAuOS0yIDItMiAyIC45IDIgMnoiIHN0eWxlPSJmaWxsOiM3OTAwMDAiLz48L3N2Zz4=",
+							"otherinfo": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-1067 2865 24 32\" style=\"enable-background:new -1067 2865 24 32\" xml:space=\"preserve\"><path d=\"M-1053 2865c-5.5 0-10 4.5-10 10h4c0-3.3 2.7-6 6-6s6 2.7 6 6v2h-20v14c0 3.3 2.7 6 6 6h12c3.3 0 6-2.7 6-6v-16c0-5.5-4.5-10-10-10zm4 28h-12c-1.1 0-2-.9-2-2v-10h16v10c0 1.1-.9 2-2 2zm-4-6c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z\" style=\"fill:#790000\"/></svg>"
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/pages/6",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fpolitique-de-protections-donnees-personnelles",
-							"otherinfo": "\uFFFDZh\uFFFD+b\uFFFD\uFFFDu\uFA6E\uFFFD^r\u0628\uFFFD\u03DD\uFFFDy\uFFFDz\u03E9z\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD"
+							"evidence": "JTNDZGl2JTIwY2xhc3MlM0QlMjJjYXJkLWZvbmN0aW9ubmFsaXRlcyUyMiUzRSUwQSUzQ2RpdiUyMGNsYXNzJTNEJTIybGlzdGUtZXRhcGVzJTIyJTNFJTBBJTNDdWwlM0UlMEElM0NsaSUzRSUzQ3N0cm9uZyUzRUludGVyZmFjZSUyMGludHVpdGl2ZSUzQyUyRnN0cm9uZyUzRSUyMHBvdXIlMjBmYWNpbGl0ZXIlMjBsYSUyMHByaXNlJTIwZW4lMjBtYWluJTNDJTJGbGklM0UlMEElM0NsaSUzRSUzQ3N0cm9uZyUzRVN5bmNocm9uaXNhdGlvbiUyMGF1dG9tYXRpcXVlJTIwZGVzJTIwZmx1eCUyMGJhbmNhaXJlcyUzQyUyRnN0cm9uZyUzRSUyMCUyOERTUDIlMjAlMjYlMjBFQklDUyUyMC0lMjBTbyUyMGJhbmslMjAlMkYlMjBqZWRlY2xhcmUuY29tJTI5JTNDJTJGbGklM0UlMEElM0NsaSUzRSUzQ3N0cm9uZyUzRVIlQzMlQTljdXAlQzMlQTlyYXRpb24lMjBkJTI3dW4lMjBoaXN0b3JpcXVlJTIwZGUlMjByZWxldiVDMyVBOSUyMGJhbmNhaXJlJTNDJTJGc3Ryb25nJTNFJTNDJTJGbGklM0UlMEElM0MlMkZkaXYlM0UlMEElM0MlMkZkaXYlM0UlMEElMEElMjAlMjAlMjAlMjA=",
+							"otherinfo": "%3Cdiv%20class%3D%22card-fonctionnalites%22%3E%0A%3Cdiv%20class%3D%22liste-etapes%22%3E%0A%3Cul%3E%0A%3Cli%3E%3Cstrong%3EInterface%20intuitive%3C%2Fstrong%3E%20pour%20faciliter%20la%20prise%20en%20main%3C%2Fli%3E%0A%3Cli%3E%3Cstrong%3ESynchronisation%20automatique%20des%20flux%20bancaires%3C%2Fstrong%3E%20%28DSP2%20%26%20EBICS%20-%20So%20bank%20%2F%20jedeclare.com%29%3C%2Fli%3E%0A%3Cli%3E%3Cstrong%3ER%C3%A9cup%C3%A9ration%20d%27un%20historique%20de%20relev%C3%A9%20bancaire%3C%2Fstrong%3E%3C%2Fli%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20"
 						}
 					],
 					"count": "11",
@@ -1208,7 +1184,23 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-compta-simplifiee-la-reactivite-du-cabinet-est-demultipliee%2F",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fl-onboarding-des-clients%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-collecte-des-flux%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-compta-simplifiee-concept-episode-1%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1240,7 +1232,15 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fle-pilotage-de-gestion%2F",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fle-protocole-ebics-destresse-nos-equipes%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fonboarding-des-collaborateurs%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1256,31 +1256,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fun-outil-de-gestion-et-de-pre-comptabilite%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fun-outil-de-pre-comptabilite-pour-gagner-du-temps%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Fmentions-legales%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Fpolitique-de-protections-donnees-personnelles%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1294,7 +1270,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "428"
+					"sourceid": "389"
 				},
 				{
 					"pluginid": "10027",
@@ -1312,7 +1288,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr",
@@ -1320,7 +1296,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "bug",
-							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\ngform.initializeOnLoaded( function() {gformInitSpinner( 3, 'https://lacomptasimplifiee.fr/wp-con\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n/* <![CDATA[ */\ngform.initializeOnLoaded( function() {gformInitSpinner( 3, 'https://lacomptasimp\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr",
@@ -1331,28 +1307,12 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\", see evidence field for the suspicious comment/snippet."
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
@@ -1363,20 +1323,20 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
@@ -1384,7 +1344,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'>\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
@@ -1395,9 +1355,9 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "11",
+					"count": "9",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type='text/javascript' id='nectar-frontend-js-extra'></p><p>/* <![CDATA[ */</p><p>var nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\"></p><p>/* <![CDATA[ */</p><p>var nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
@@ -1486,7 +1446,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/mentions-legales/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-pre-comptabilite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1494,7 +1454,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/politique-de-protections-donnees-personnelles/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/pilotage/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1620,15 +1580,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/feed/",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/feed/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/feed/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1684,6 +1636,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/categories/13",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/pages/6",
 							"method": "GET",
 							"param": "cache-control",
@@ -1714,7 +1674,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "716"
+					"sourceid": "624"
 				},
 				{
 					"pluginid": "90005",
@@ -1727,7 +1687,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1735,7 +1695,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1757,7 +1717,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "178"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1770,7 +1730,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1778,7 +1738,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1800,7 +1760,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "178"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1813,7 +1773,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1821,7 +1781,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1843,7 +1803,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "178"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1856,7 +1816,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1864,7 +1824,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1886,7 +1846,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "178"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1899,6 +1859,14 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
+							"uri": "https://lacomptasimplifiee.fr/comments/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1907,40 +1875,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
-				},
-				{
-					"pluginid": "10049",
-					"alertRef": "10049",
-					"alert": "Storable but Non-Cacheable Content",
-					"name": "Storable but Non-Cacheable Content",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
-					"instances":[ 
-						{
-							"uri": "https://lacomptasimplifiee.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-cache",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"solution": "",
-					"otherinfo": "",
-					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
-					"cweid": "524",
-					"wascid": "13",
-					"sourceid": "325"
+					"sourceid": "316"
 				},
 				{
 					"pluginid": "10031",
@@ -2071,7 +2012,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "760"
+					"sourceid": "666"
 				}
 			]
 		}
