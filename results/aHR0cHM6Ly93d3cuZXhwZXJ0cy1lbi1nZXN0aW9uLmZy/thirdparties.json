@@ -134,7 +134,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic&co=aHR0cHM6Ly93d3cuZXhwZXJ0cy1lbi1nZXN0aW9uLmZyOjQ0Mw..&hl=en&type=v2_checkbox&v=u-xcq3POCWFlCr3x8_IPxgPu&theme=light&size=normal&cb=vmo4g57i3m4w",
+      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic&co=aHR0cHM6Ly93d3cuZXhwZXJ0cy1lbi1nZXN0aW9uLmZyOjQ0Mw..&hl=en&type=v2_checkbox&v=u-xcq3POCWFlCr3x8_IPxgPu&theme=light&size=normal&cb=qu7cjqt8i6e6",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -157,6 +157,10 @@
       }
     },
     {
+      "type": "unknown",
+      "url": "https://player.vimeo.com/video/693984822?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963"
+    },
+    {
       "type": "google",
       "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
       "details": {
@@ -174,11 +178,15 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/bg/mL2Y2df9MP72hJspIKkaS_u6JtFhauYVKQ-w1rT0CAw.js",
+      "url": "https://www.google.com/js/bg/Bxq4bn_S_WQLi1emfppw4efsWzB07mtlRa5_2O6sP_s.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
       }
+    },
+    {
+      "type": "unknown",
+      "url": "https://player.vimeo.com/video/780309048?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963"
     },
     {
       "type": "google",
@@ -195,14 +203,6 @@
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
-    },
-    {
-      "type": "unknown",
-      "url": "https://player.vimeo.com/video/693984822?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963"
-    },
-    {
-      "type": "unknown",
-      "url": "https://player.vimeo.com/video/780309048?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963"
     },
     {
       "type": "vimeo",
@@ -230,6 +230,22 @@
     },
     {
       "type": "vimeo",
+      "url": "https://f.vimeocdn.com/p/4.26.16/js/player.module.js",
+      "details": {
+        "id": "vimeo",
+        "message": "use peertube"
+      }
+    },
+    {
+      "type": "vimeo",
+      "url": "https://f.vimeocdn.com/p/4.26.16/js/vendor.module.js",
+      "details": {
+        "id": "vimeo",
+        "message": "use peertube"
+      }
+    },
+    {
+      "type": "vimeo",
       "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
       "details": {
         "id": "vimeo",
@@ -246,7 +262,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=45b5718d28dc152055c0594c32e97226bd50ac9d1703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=7b69ad4079ee6c052507ce18e998ee1e7e16e3ce1703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -254,7 +270,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=45b5718d28dc152055c0594c32e97226bd50ac9d1703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=7b69ad4079ee6c052507ce18e998ee1e7e16e3ce1703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -266,7 +282,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/210b9efa,82d261bd,a995c3a8,b0acc1dc,d7551e3d/audio/491235d3,6b60ca25,970efd9d/master.json?base64_init=1&query_string_ranges=1"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/210b9efa,82d261bd,a995c3a8,b0acc1dc,d7551e3d/audio/491235d3,6b60ca25,970efd9d/master.json?base64_init=1&query_string_ranges=1"
+    },
+    {
+      "type": "vimeo",
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "details": {
+        "id": "vimeo",
+        "message": "use peertube"
+      }
     },
     {
       "type": "vimeo",
@@ -278,7 +302,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=ed770447b903cda9c69b2499b81193eb9170b6c51703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=6d8cadba7a53d81ea07ca34a170d0d6282cb36251703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -286,11 +310,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://vimeo.com/ablincoln/vuid?pid=45b5718d28dc152055c0594c32e97226bd50ac9d1703381396"
+      "url": "https://vimeo.com/ablincoln/vuid?pid=7b69ad4079ee6c052507ce18e998ee1e7e16e3ce1703985928"
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=ed770447b903cda9c69b2499b81193eb9170b6c51703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=6d8cadba7a53d81ea07ca34a170d0d6282cb36251703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -302,7 +326,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/sep/video/082933d1,240c02f7,2d325f59,b5795744,f6f3833f/audio/11a570ba,2d97a261,335a61cb/master.json?base64_init=1&query_string_ranges=1"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/sep/video/082933d1,240c02f7,2d325f59,b5795744,f6f3833f/audio/11a570ba,2d97a261,335a61cb/master.json?base64_init=1&query_string_ranges=1"
     },
     {
       "type": "vimeo",
@@ -322,7 +346,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=45b5718d28dc152055c0594c32e97226bd50ac9d1703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=7b69ad4079ee6c052507ce18e998ee1e7e16e3ce1703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -330,23 +354,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/970efd9d.mp4?r=dXM%3D&range=951-50770"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/970efd9d.mp4?r=dXM%3D&range=951-50770"
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=ed770447b903cda9c69b2499b81193eb9170b6c51703381396",
-      "details": {
-        "id": "vimeo",
-        "message": "use peertube"
-      }
-    },
-    {
-      "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/11a570ba.mp4?r=dXM%3D&range=1095-49018"
-    },
-    {
-      "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=45b5718d28dc152055c0594c32e97226bd50ac9d1703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=7b69ad4079ee6c052507ce18e998ee1e7e16e3ce1703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -354,27 +366,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=45b5718d28dc152055c0594c32e97226bd50ac9d1703381396",
-      "details": {
-        "id": "vimeo",
-        "message": "use peertube"
-      }
-    },
-    {
-      "type": "unknown",
-      "url": "https://player-telemetry.vimeo.com/player-events/log/partial"
-    },
-    {
-      "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=ed770447b903cda9c69b2499b81193eb9170b6c51703381396",
-      "details": {
-        "id": "vimeo",
-        "message": "use peertube"
-      }
-    },
-    {
-      "type": "vimeo",
-      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=ed770447b903cda9c69b2499b81193eb9170b6c51703381396",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=7b69ad4079ee6c052507ce18e998ee1e7e16e3ce1703985928",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -394,79 +386,107 @@
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/082933d1.mp4?r=dXMtZWFzdDE%3D&range=1082-100912"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/video/b0acc1dc.mp4?r=dXM%3D&range=950-249931"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/video/b0acc1dc.mp4?r=dXM%3D&range=950-249931"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=951-74835"
+    },
+    {
+      "type": "vimeo",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=6d8cadba7a53d81ea07ca34a170d0d6282cb36251703985928",
+      "details": {
+        "id": "vimeo",
+        "message": "use peertube"
+      }
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=951-74835"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/11a570ba.mp4?r=dXM%3D&range=1095-49018"
+    },
+    {
+      "type": "vimeo",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=6d8cadba7a53d81ea07ca34a170d0d6282cb36251703985928",
+      "details": {
+        "id": "vimeo",
+        "message": "use peertube"
+      }
+    },
+    {
+      "type": "vimeo",
+      "url": "https://fresnel.vimeocdn.com/add/player-stats?beacon=1&session-id=6d8cadba7a53d81ea07ca34a170d0d6282cb36251703985928",
+      "details": {
+        "id": "vimeo",
+        "message": "use peertube"
+      }
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=1095-72138"
+      "url": "https://player-telemetry.vimeo.com/player-events/log/partial"
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=1081-903155"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-1.m4s?r=dXM%3D"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-1.m4s?r=dXM%3D"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/082933d1.mp4?r=dXMtZWFzdDE%3D&range=1082-100912"
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=72139-145887"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=1095-72138"
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=903156-5880056"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/2d325f59.mp4?r=dXMtZWFzdDE%3D&range=1079-439451"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=74836-148326"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=1081-903155"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-2.m4s?r=dXM%3D"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=74836-148326"
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=145888-219511"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-2.m4s?r=dXM%3D"
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=5880057-10208222"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=72139-145887"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=148327-222114"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=148327-222114"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-3.m4s?r=dXM%3D"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/sep/video/82d261bd/chop/segment-3.m4s?r=dXM%3D"
     },
     {
       "type": "unknown",
-      "url": "https://117vod-adaptive.akamaized.net/exp=1703384996~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=451e12ea7e826a90fe3593405404521f603858859f6dfe202573d1aa62ade79f/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=222115-295574"
+      "url": "https://117vod-adaptive.akamaized.net/exp=1703989528~acl=%2F8bb164bb-9fdd-4d90-afce-dc827a5e7314%2F%2A~hmac=e05cb8ff82ef25c42386b28326b60bfb26c2f8f47fb4f3910986f805bcc63c72/8bb164bb-9fdd-4d90-afce-dc827a5e7314/parcel/audio/491235d3.mp4?r=dXM%3D&range=222115-295574"
     },
     {
       "type": "unknown",
-      "url": "https://179vod-adaptive.akamaized.net/exp=1703384996~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=dbe6c7ea652bcbd0bb7fc6f484631704657a4fe75419e27ec406fb6114db8236/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=219512-293119"
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=145888-219511"
+    },
+    {
+      "type": "unknown",
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=903156-5880056"
+    },
+    {
+      "type": "unknown",
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/video/f6f3833f.mp4?r=dXMtd2VzdDE%3D&range=5880057-10208222"
+    },
+    {
+      "type": "unknown",
+      "url": "https://179vod-adaptive.akamaized.net/exp=1703989528~acl=%2F86ebe88b-877f-4762-81fa-475dffa99d62%2F%2A~hmac=23d5e52783f04ff5cae95d0b5fe31df1df7f4e23a365625f220324dd4aa7a203/86ebe88b-877f-4762-81fa-475dffa99d62/parcel/audio/2d97a261.mp4?r=dXM%3D&range=219512-293119"
     },
     {
       "type": "google",
       "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=u-xcq3POCWFlCr3x8_IPxgPu&k=6LcjQBQmAAAAAKIH-PpUwYxVRokiVIPsYzzm5Eic",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/u-xcq3POCWFlCr3x8_IPxgPu/styles__ltr.css",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -476,7 +496,7 @@
   "cookies": [
     {
       "name": "swpm_session",
-      "value": "b5540608dc8a768a4be65dccb3783bcf",
+      "value": "9bd6306f42dc2f9a83644691707905c1",
       "domain": "www.experts-en-gestion.fr",
       "path": "/",
       "expires": -1,
@@ -492,10 +512,10 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 24 Dec 2023 01:29:54 GMT",
+    "date": "Sun, 31 Dec 2023 01:25:26 GMT",
     "link": "<https://www.experts-en-gestion.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://www.experts-en-gestion.fr/wp-json/wp/v2/pages/5220>; rel=\"alternate\"; type=\"application/json\"\n<https://www.experts-en-gestion.fr/>; rel=shortlink",
     "server": "Apache",
-    "set-cookie": "swpm_session=b5540608dc8a768a4be65dccb3783bcf; path=/",
+    "set-cookie": "swpm_session=9bd6306f42dc2f9a83644691707905c1; path=/",
     "vary": "Accept-Encoding",
     "x-powered-by": "PHP/7.4"
   },
@@ -558,7 +578,7 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.215.0.139",
+      "ip": "23.215.0.142",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -637,7 +657,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.63.95",
+      "ip": "172.253.115.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -770,7 +790,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.62.147",
+      "ip": "172.253.122.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -824,7 +844,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "172.253.63.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -878,15 +898,8 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.31.94",
+      "ip": "172.253.115.94",
       "geoip": {
-        "city": {
-          "geoname_id": 4364745,
-          "names": {
-            "en": "Oxford",
-            "ru": "Оксфорд"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -916,14 +929,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
-          "latitude": 38.6828,
-          "longitude": -76.1563,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21654"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -938,28 +947,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "player.vimeo.com",
-      "ip": "162.159.138.60",
+      "ip": "162.159.128.61",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
@@ -979,7 +972,7 @@
     },
     {
       "hostname": "vimeo.com",
-      "ip": "162.159.138.60",
+      "ip": "162.159.128.61",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
@@ -1331,13 +1324,16 @@
     },
     {
       "hostname": "117vod-adaptive.akamaized.net",
-      "ip": "23.205.105.47",
+      "ip": "23.46.156.39",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 5097529,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "Edison",
+            "en": "Edison",
+            "ja": "エジソン",
+            "ru": "Эдисон",
+            "zh-CN": "爱迪生"
           }
         },
         "continent": {
@@ -1370,13 +1366,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
+          "latitude": 40.5237,
+          "longitude": -74.4151,
+          "metro_code": 501,
           "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "20149"
+          "code": "08899"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -1394,15 +1390,16 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 5101760,
+            "iso_code": "NJ",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "en": "New Jersey",
+              "es": "Nueva Jersey",
+              "fr": "New Jersey",
+              "ja": "ニュージャージー州",
+              "pt-BR": "Nova Jérsia",
+              "ru": "Нью-Джерси",
+              "zh-CN": "新泽西州"
             }
           }
         ]
@@ -1410,13 +1407,16 @@
     },
     {
       "hostname": "179vod-adaptive.akamaized.net",
-      "ip": "23.205.105.16",
+      "ip": "23.46.156.54",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 5097529,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "Edison",
+            "en": "Edison",
+            "ja": "エジソン",
+            "ru": "Эдисон",
+            "zh-CN": "爱迪生"
           }
         },
         "continent": {
@@ -1449,13 +1449,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
+          "latitude": 40.5237,
+          "longitude": -74.4151,
+          "metro_code": 501,
           "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "20149"
+          "code": "08899"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -1473,15 +1473,16 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 5101760,
+            "iso_code": "NJ",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "en": "New Jersey",
+              "es": "Nueva Jersey",
+              "fr": "New Jersey",
+              "ja": "ニュージャージー州",
+              "pt-BR": "Nova Jérsia",
+              "ru": "Нью-Джерси",
+              "zh-CN": "新泽西州"
             }
           }
         ]
