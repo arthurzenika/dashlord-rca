@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 31 Dec 2023 01:24:24",
+	"@generated": "Sun, 7 Jan 2024 01:29:39",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -68,14 +68,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"https://blog.rca.fr/\" method=\"GET\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
-						},
-						{
 							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "",
@@ -85,6 +77,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://blog.rca.fr/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -175,7 +175,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -199,6 +199,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://blog.rca.fr/migration-aws-rca/",
 							"method": "GET",
 							"param": "",
@@ -215,7 +223,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
@@ -282,6 +290,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -291,14 +307,6 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -523,7 +531,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -684,7 +692,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1379"
+					"sourceid": "1372"
 				},
 				{
 					"pluginid": "10037",
@@ -852,7 +860,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
+							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -959,7 +967,7 @@
 							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1074,7 +1082,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-team-rca-fete-son-summer-break/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1334,7 +1342,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "770"
+					"sourceid": "758"
 				},
 				{
 					"pluginid": "10019",
@@ -1363,15 +1371,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Light.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-LightItalic.woff2",
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Medium.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1380,6 +1380,14 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-MediumItalic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1449,7 +1457,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1709"
+					"sourceid": "1714"
 				},
 				{
 					"pluginid": "10027",
@@ -1609,7 +1617,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"uri": "https://blog.rca.fr/facture-electronique-la-metamorphose-du-paysage-financier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1716,7 +1724,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
