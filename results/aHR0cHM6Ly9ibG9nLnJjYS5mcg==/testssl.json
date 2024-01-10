@@ -199,7 +199,7 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -262,7 +262,7 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04A503C9C46B3CF9F46BB97F152AAFE066CF"
+              "finding"      : "03FDF23D1638510C0F2556546140DB60BA39"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "DFE03F4BAF983D504BA5DFAA6B9AA57D147A7239"
+              "finding"      : "70D2F73E3B4576B88C6263A867AB4111A4E3886E"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "CBAC9FFF36EBDF86166F97F0460A5AA0ABE7C73C211DA3362B1664295BA33F2F"
+              "finding"      : "D0EAF3448E4C0F2AD4FC4029EDDB02BC7D4668E01062371BFEE4D71EA32D8FB0"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIE4jCCA8qgAwIBAgISBKUDycRrPPn0a7l/FSqv4GbPMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzEwMTgyMzM5MjJaFw0yNDAxMTYyMzM5MjFaMBYxFDASBgNVBAMTC2Jsb2cucmNhLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqpwkmCAM0WbW+uuiNrI+sPNPk6lEhE/l2SlYQUOXOaAtuX8ecbIXGzOEkkRVHc/rD3uqG/DMTizL3sN8B2qyUeQbUQzImHXQgzI7fICpTHHrjVD+t+64v3UuRu/k7PJrkAo03RawJdFuO6pTUQsMsDyURSVvlWuFTwu007FV1YQIMqmLHpB1uzBFhDRtkcNEcNk9b2HsHOgGpuZ+V15v81pUAjZSNrQ3lxJNjNsCGTHheDcrMR4WPt3g+Q9FArc+EgTaDAGpGcBZVEJ4PG5OwZ7E43hdMi+lazcLzKGrO16NxQKnYtIfm4wwqBXxPrB0i/eElR77u5sxvJ5djjU5WwIDAQABo4ICDDCCAggwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBT8rWNjzuV9oTUXhwrxVJgcLJ1B9jAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzAWBgNVHREEDzANggtibG9nLnJjYS5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0VfafgAAAQDAEYwRAIgO2ImsIUNKD6JlyJhSu4LDr5fRqR8JkqOp+/cSib2ENACIGSSSJ2uTeQjxZVqBTtIjpPtivG0qNljaEXH7M3CkoaAAHYAO1N3dT4tuYBOizBbBv5AO2fYT8P0x70ADS1yb+H61BcAAAGLRV9p5AAABAMARzBFAiAirfrcM9/3dymJq8UuxmR/J8PROLtuulH4RyGBmJxsswIhAIfjR/K1qzUmGRfmAiUat1xswvxLiuoG5zSzEE+ul8IuMA0GCSqGSIb3DQEBCwUAA4IBAQCIz8mGTU2mFnGkZFWcvOm5FhTCCkvfFtmGf03LSeCMayyCg3HqwP27G07mwyedfyrX2d5AjNYhaY4nWyOBn7aXpz0MjscQO0Vyhs3/B0j18MvHkvRmk00Em7Wyxy+1ArcWiY4PHCBRpefxWoZa4lFhOry4UDq/11DPBuo+SNcfsM1iWxwYkQA3oCd5/lWpBo9/9oJ/vi7VgndVDcWs6hEWWqlwccklLSYkGvhyCBPM0zNS4rUL+1cr/kszONhVtocZ/6KjnJ3lCSYttl6p0zvMEeO7/OvRhYUwtGFM3oAw/Q8/BDOCC2tXpAE0bM1iYZIESZz9TSf5FJbpIBAKp5KF\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIE4zCCA8ugAwIBAgISA/3yPRY4UQwPJVZUYUDbYLo5MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDAxMDkwOTE1MTBaFw0yNDA0MDgwOTE1MDlaMBYxFDASBgNVBAMTC2Jsb2cucmNhLmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArcgYDkWUKo/2ySWoTbqtrk25QApJZ07qlK6AgTH89U8HfRnWEn4jZCBuWGktPrflhc4zixsAWgIPyTSKiMkaWyvVsrl+3OqMGu2+Yq80MRYetxLlFA/YYLb6pFwpn5nZCSH1tFFDOlBGsGX/gslGOUsxA5PSbwasU1foN5Qm8gAzuM1nk6ntGuXr8ezBPO+fM5a7mSWwoIxifV3WD0/XgTd1LEhhEPzsqDZTgxL/lUp8yieT6oY/HZEvz8wyrcUcCOhlNhdEuXpbRsAgeSLlJt1CNz+X/Fnfw1PIn2jWYV+RUQ6EObwmwioaC0T5fX47FMGxWYcaKe+p3qxio+1KEQIDAQABo4ICDTCCAgkwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBT/xT4jAwgdWBqdaS3BIaN1bXwpNzAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzAWBgNVHREEDzANggtibG9nLnJjYS5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABjO24CJIAAAQDAEcwRQIhAJbluiFXXYC4lQlhIS0YzK20QoX6mpKhCBEulfvwdMbAAiBwJSV2rXs3Gx2mdBQCdEsoJlXlIVKZCtoer5za7h2BvwB2AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdMWjp0AAABjO24CQQAAAQDAEcwRQIgENsHgIhAN7pZFIb4Ul8LFkm9dF47K0iUJerpQwHS6+ECIQDdQ8uSQRmF8FHAQkyaCDGTkzlh/u9gMrIaEaFk4RtmaTANBgkqhkiG9w0BAQsFAAOCAQEAMrhQXzD9ZJwMwrmxJXUWFI6zpeU8+fCTR2mU6rzxotVhNR+ynmux2a9ogI0pC2Y2OeWwCXYHaA/2MGaZxVn8OVZisz5+Z05HzaOe+oyxMB6QpCGJgVpVd9PpeuhvLFDRdnf7tCm5NzZJbMSX/MiQ5Y1Yri2DpJDduPojJU812uVZyhEF0m0LZDTqspVfV8gP/3wAzBJ1lyUKygKWDffxqS8wj20+N2yxwaIvaA+WToLqkpq3yGO215Hs2TXJEC623RVyuss8SdDOwTpONSeYj02vhrqjc6hQf91M0820/QaQSyCksk8xf2GIoEWv+3vx62xr1LDT4IXeBD93wumcsg==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 15 days (9)"
+              "severity"     : "OK",
+              "finding"      : "88 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-10-18 23:39"
+              "finding"      : "2024-01-09 09:15"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2024-01-16 23:39"
+              "severity"     : "OK",
+              "finding"      : "2024-04-08 09:15"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -542,7 +542,7 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1704591094"
+              "finding"      : "1704902879"
           }
 ,         {
               "id"           : "HSTS",
@@ -715,7 +715,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=CBAC9FFF36EBDF86166F97F0460A5AA0ABE7C73C211DA3362B1664295BA33F2F"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D0EAF3448E4C0F2AD4FC4029EDDB02BC7D4668E01062371BFEE4D71EA32D8FB0"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1098,6 +1098,6 @@
               "ip"           : "blog.rca.fr/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "108"
+              "finding"      : "72"
           }
 ]
