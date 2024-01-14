@@ -42,7 +42,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je4180v894096030z8894084953&_p=1704902135508&gcd=11l1l1l1l1&dma=0&cid=530476261.1704902136&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1704902135&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=3546",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41a0v894096030z8894084953&_p=1705195376820&gcd=11l1l1l1l1&dma=0&cid=1310683787.1705195377&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1705195377&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2748",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -52,11 +52,11 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.530476261.1704902136",
+      "value": "GA1.1.1310683787.1705195377",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1767974135,
-      "size": 29,
+      "expires": 1768267377,
+      "size": 30,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -66,10 +66,10 @@
     },
     {
       "name": "_ga_9TKD9RN2HY",
-      "value": "GS1.1.1704902135.1.0.1704902135.0.0.0",
+      "value": "GS1.1.1705195377.1.0.1705195377.0.0.0",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1767974135,
+      "expires": 1768267377,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -82,7 +82,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 10 Jan 2024 15:55:34 GMT",
+    "date": "Sun, 14 Jan 2024 01:22:56 GMT",
     "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
     "server": "Apache",
     "vary": "Accept-Encoding",
@@ -183,7 +183,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.217.4.202",
+      "ip": "142.251.16.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -203,7 +203,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -223,7 +223,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -237,7 +237,7 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.45.233.9",
+      "ip": "23.45.181.178",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -264,7 +264,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -288,7 +288,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -316,19 +316,13 @@
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "23.223.17.167",
+      "ip": "23.12.145.45",
       "geoip": {
         "city": {
-          "geoname_id": 6167865,
+          "geoname_id": 4744870,
           "names": {
-            "de": "Toronto",
-            "en": "Toronto",
-            "es": "Toronto",
-            "fr": "Toronto",
-            "ja": "トロント",
-            "pt-BR": "Toronto",
-            "ru": "Торонто",
-            "zh-CN": "多伦多"
+            "en": "Ashburn",
+            "ru": "Ашберн"
           }
         },
         "continent": {
@@ -346,33 +340,34 @@
           }
         },
         "country": {
-          "geoname_id": 6251999,
-          "iso_code": "CA",
+          "geoname_id": 6252001,
+          "iso_code": "US",
           "names": {
-            "de": "Kanada",
-            "en": "Canada",
-            "es": "Canadá",
-            "fr": "Canada",
-            "ja": "カナダ",
-            "pt-BR": "Canadá",
-            "ru": "Канада",
-            "zh-CN": "加拿大"
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
           }
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 43.6547,
-          "longitude": -79.3623,
-          "time_zone": "America/Toronto"
+          "latitude": 39.0469,
+          "longitude": -77.4903,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "M5A"
+          "code": "20149"
         },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -384,15 +379,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6093943,
-            "iso_code": "ON",
+            "geoname_id": 6254928,
+            "iso_code": "VA",
             "names": {
-              "en": "Ontario",
-              "fr": "Ontario",
-              "ja": "オンタリオ州",
-              "pt-BR": "Ontário",
-              "ru": "Онтарио",
-              "zh-CN": "安大略"
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
@@ -400,8 +395,15 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "172.217.0.168",
+      "ip": "142.250.31.97",
       "geoip": {
+        "city": {
+          "geoname_id": 4364745,
+          "names": {
+            "en": "Oxford",
+            "ru": "Оксфорд"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -420,7 +422,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -432,15 +434,19 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 38.6828,
+          "longitude": -76.1563,
+          "metro_code": 512,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "21654"
         },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -449,12 +455,28 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4361885,
+            "iso_code": "MD",
+            "names": {
+              "de": "Maryland",
+              "en": "Maryland",
+              "es": "Maryland",
+              "fr": "Maryland",
+              "ja": "メリーランド州",
+              "pt-BR": "Maryland",
+              "ru": "Мэриленд",
+              "zh-CN": "马里兰州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.250.191.238",
+      "ip": "142.251.16.102",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -474,7 +496,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -494,7 +516,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
