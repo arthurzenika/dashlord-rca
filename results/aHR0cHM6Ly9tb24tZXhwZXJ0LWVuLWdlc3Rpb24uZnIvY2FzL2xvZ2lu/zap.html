@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 14 Jan 2024 01:09:07
+		Generated on Sun, 21 Jan 2024 01:09:30
 	</h3>
 
 	<h3>
@@ -148,7 +148,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>1</div>
+					<div>0</div>
 				</td>
 			</tr>
 			<tr>
@@ -198,11 +198,6 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
-				<td><a href="#10062">PII Disclosure</a></td>
-				<td align="center" class="risk-3">High</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">8</td>
@@ -215,12 +210,12 @@ td {
 			<tr>
 				<td><a href="#3">Referer Exposes Session ID</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#3">Session ID in URL Rewrite</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">9</td>
+				<td align="center">8</td>
 			</tr>
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
@@ -280,7 +275,7 @@ td {
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">12</td>
+				<td align="center">14</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -290,7 +285,7 @@ td {
 			<tr>
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
@@ -320,12 +315,12 @@ td {
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">5</td>
+				<td align="center">7</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">7</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable but Non-Cacheable Content</a></td>
@@ -338,91 +333,6 @@ td {
 
 	
 		<h3>Alert Detail</h3>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-3"><a
-						id="10062"></a>
-						<div>High</div></th>
-					<th class="risk-3">PII Disclosure</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/main.c08a3816c059df18.js">https://mon-expert-en-gestion.fr/portail/main.c08a3816c059df18.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">5000400440116243</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Credit Card Type detected: Maestro
-Bank Identification Number: 500040
-Brand: MAESTRO
-Category: 
-Issuer: </td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -525,7 +435,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -556,7 +466,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -680,7 +590,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -764,7 +674,7 @@ Issuer: </td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a>
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a>
 							<br />
 						
 							<a href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a>
@@ -902,7 +812,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1026,7 +936,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1074,19 +984,19 @@ Issuer: </td>
 							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a>
 							<br />
 						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
 							<br />
 						
-							<a href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a>
+							<a href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a>
 							<br />
 						
-							<a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a>
+							<a href="https://web.dev/articles/csp">https://web.dev/articles/csp</a>
 							<br />
 						
-							<a href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a>
+							<a href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a>
 							<br />
 						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
+							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
 							
 						</td>
 				</tr>
@@ -1128,7 +1038,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1159,7 +1069,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1190,7 +1100,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1218,9 +1128,40 @@ Issuer: </td>
 						<td width="80%"></td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">cdn.rca.fr</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1232,7 +1173,7 @@ Issuer: </td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://seclists.org/lists/webappsec/2002/Oct-Dec/0111.html">http://seclists.org/lists/webappsec/2002/Oct-Dec/0111.html</a>
+							<a href="https://seclists.org/webappsec/2002/q4/111">https://seclists.org/webappsec/2002/q4/111</a>
 							
 						</td>
 				</tr>
@@ -1274,7 +1215,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1294,7 +1235,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1305,7 +1246,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1325,7 +1266,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1336,7 +1277,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1356,7 +1297,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1367,7 +1308,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1387,7 +1328,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1398,7 +1339,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1418,7 +1359,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1429,7 +1370,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1449,7 +1390,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1460,7 +1401,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1480,7 +1421,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1491,38 +1432,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1542,7 +1452,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+						<td width="80%">jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1552,7 +1462,7 @@ Issuer: </td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">9</td>
+					<td width="80%">8</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1564,7 +1474,7 @@ Issuer: </td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://seclists.org/lists/webappsec/2002/Oct-Dec/0111.html">http://seclists.org/lists/webappsec/2002/Oct-Dec/0111.html</a>
+							<a href="https://seclists.org/webappsec/2002/q4/111">https://seclists.org/webappsec/2002/q4/111</a>
 							
 						</td>
 				</tr>
@@ -1730,7 +1640,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1761,7 +1671,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1792,7 +1702,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1823,7 +1733,7 @@ Issuer: </td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1942,7 +1852,7 @@ CVE-2022-31160
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2012,7 +1922,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2196,37 +2106,6 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/">https://mon-expert-en-gestion.fr/cas/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-HA-Backend</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: X-HA-Backend</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
 					</tr>
 					<tr>
@@ -2258,7 +2137,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/styles.css">https://mon-expert-en-gestion.fr/portail/styles.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2289,7 +2168,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css?20240114020856">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css?20240114020856</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css">https://mon-expert-en-gestion.fr/static/css/variables.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2320,7 +2199,38 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css?20240114020856">https://mon-expert-en-gestion.fr/static/css/variables.css?20240114020856</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/favicon.ico">https://mon-expert-en-gestion.fr/static/favicons/favicon.ico</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">set-cookie: X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg">https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2466,37 +2376,6 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/">https://mon-expert-en-gestion.fr/cas/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-HA-Backend</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: X-HA-Backend</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
 					</tr>
 					<tr>
@@ -2590,7 +2469,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/styles.css">https://mon-expert-en-gestion.fr/portail/styles.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2621,7 +2500,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css?20240114020856">https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css?20240114020856</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css">https://mon-expert-en-gestion.fr/static/css/variables.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2652,7 +2531,38 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css?20240114020856">https://mon-expert-en-gestion.fr/static/css/variables.css?20240114020856</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/favicon.ico">https://mon-expert-en-gestion.fr/static/favicons/favicon.ico</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">set-cookie: X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg">https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2767,7 +2677,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2944,7 +2854,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3118,7 +3028,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3149,7 +3059,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3789,13 +3699,13 @@ CVE-2019-11358
 							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
 							<br />
 						
-							<a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
+							<a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
 							<br />
 						
-							<a href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a>
+							<a href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a>
 							<br />
 						
-							<a href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a>
 							
 						</td>
 				</tr>
@@ -3930,7 +3840,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3961,7 +3871,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3992,7 +3902,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5815,7 +5725,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5843,7 +5753,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login</td>
 						<td width="80%">userParam=username
 userValue=foo-bar@example.com
 passwordParam=password
-referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</td>
+referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</td>
 					</tr>
 				
 				<tr>
@@ -5932,7 +5842,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6112,7 +6022,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6143,7 +6053,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6174,7 +6084,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6205,100 +6115,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;    console.log(&quot;Requesting GeoLocation data from the browser...&quot;);&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">User</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected 2 times, the first in the element starting with: &quot;            console.log(&quot;User denied the request for GeoLocation.&quot;);&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">username</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSERNAME\b and was detected 7 times, the first in the element starting with: &quot;    $(&#39;#fm1 input[name=&quot;username&quot;],[name=&quot;password&quot;]&#39;).on(&quot;input&quot;, function (event) {&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js">https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6324,6 +6141,161 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;(function(n,t){&quot;use strict&quot;;function a(n){for(var r in n)if(i[n[r]]!==t)return!0;return!1}function r(n){var t=n.charAt(0).toUppe&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">from</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;(function(n,t){&quot;use strict&quot;;function a(n){for(var r in n)if(i[n[r]]!==t)return!0;return!1}function r(n){var t=n.charAt(0).toUppe&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">from</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;(function(t){&quot;function&quot;==typeof define&amp;&amp;define.amd?define([&quot;jquery&quot;],t):t(jQuery)})(function(t){function e(t){for(var e=t.css(&quot;v&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">select</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bSELECT\b and was detected 5 times, the first in the element starting with: &quot;}}(t.fn.show),hide:function(t){return function(s){if(i(s))return t.apply(this,arguments);var n=e.apply(this,arguments);return n.&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">from</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;(function(t){&quot;function&quot;==typeof define&amp;&amp;define.amd?define([&quot;jquery&quot;],t):t(jQuery)})(function(t){function e(t){for(var e=t.css(&quot;v&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">select</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bSELECT\b and was detected 5 times, the first in the element starting with: &quot;}}(t.fn.show),hide:function(t){return function(s){if(i(s))return t.apply(this,arguments);var n=e.apply(this,arguments);return n.&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 					<tr>
@@ -6391,7 +6363,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6422,7 +6394,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6483,7 +6455,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">14</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6735,9 +6707,102 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 						<td width="80%"></td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css">https://mon-expert-en-gestion.fr/static/css/variables.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">private</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/favicon.ico">https://mon-expert-en-gestion.fr/static/favicons/favicon.ico</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">private</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg">https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">private</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6892,7 +6957,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7047,7 +7112,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E">https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A2FCCC54062864E</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0">https://mon-expert-en-gestion.fr/cas/login;jsessionid=6A55A0E1028A13219E86A49990E42AA0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7168,7 +7233,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas">https://mon-expert-en-gestion.fr/cas</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7199,7 +7264,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/sitemap.xml">https://mon-expert-en-gestion.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/">https://mon-expert-en-gestion.fr/portail/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7314,7 +7379,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas">https://mon-expert-en-gestion.fr/cas</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7345,7 +7410,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/sitemap.xml">https://mon-expert-en-gestion.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/">https://mon-expert-en-gestion.fr/portail/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7460,7 +7525,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas">https://mon-expert-en-gestion.fr/cas</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7491,7 +7556,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/sitemap.xml">https://mon-expert-en-gestion.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/">https://mon-expert-en-gestion.fr/portail/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7606,7 +7671,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas">https://mon-expert-en-gestion.fr/cas</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7637,7 +7702,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/sitemap.xml">https://mon-expert-en-gestion.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/portail/">https://mon-expert-en-gestion.fr/portail/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7741,7 +7806,7 @@ referer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=4D898A887B162C939A
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">rbx1|ZaM0K</td>
+						<td width="80%">rbx1|Zaxuw</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7773,45 +7838,12 @@ cookie:X-HA-Backend</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">711816d26369cfbd</td>
+						<td width="80%">e1948c3a1d68d260</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-cookie:X-HA-cas</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/cas/login">https://mon-expert-en-gestion.fr/cas/login</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">JSESSIONID</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">4D898A887B162C939A2FCCC54062864E</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-cookie:JSESSIONID
 cookie:X-HA-cas</td>
 					</tr>
 				
@@ -7838,7 +7870,7 @@ cookie:X-HA-cas</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">rbx1|ZaM0K</td>
+						<td width="80%">rbx3|Zaxuw</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7847,6 +7879,102 @@ cookie:X-HA-cas</td>
 cookie:X-HA-Backend
 cookie:JSESSIONID
 cookie:X-HA-cas</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css">https://mon-expert-en-gestion.fr/static/css/variables.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">rbx1|Zaxux</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:X-HA-Backend</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/favicon.ico">https://mon-expert-en-gestion.fr/static/favicons/favicon.ico</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">rbx1|Zaxux</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:X-HA-Backend</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg">https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-HA-Backend</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">rbx1|Zaxux</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:X-HA-Backend</td>
 					</tr>
 				
 					<tr>
@@ -7872,7 +8000,7 @@ cookie:X-HA-cas</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">rbx1|ZaM0K</td>
+						<td width="80%">rbx1|Zaxuw</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7883,7 +8011,7 @@ cookie:X-HA-Backend</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					<td width="80%">7</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -8029,37 +8157,6 @@ cookie:X-HA-Backend</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/css/variables.css">https://mon-expert-en-gestion.fr/static/css/variables.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=2592000</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/apple-touch-icon.png">https://mon-expert-en-gestion.fr/static/favicons/apple-touch-icon.png</a></td>
 					</tr>
 					<tr>
@@ -8091,7 +8188,7 @@ cookie:X-HA-Backend</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/favicon.ico">https://mon-expert-en-gestion.fr/static/favicons/favicon.ico</a></td>
+						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/favicon-16x16.png">https://mon-expert-en-gestion.fr/static/favicons/favicon-16x16.png</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8119,40 +8216,9 @@ cookie:X-HA-Backend</td>
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg">https://mon-expert-en-gestion.fr/static/favicons/safari-pinned-tab.svg</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=21600</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
