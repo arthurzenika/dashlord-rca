@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 14 Jan 2024 01:30:47
+		Generated on Sun, 21 Jan 2024 01:29:14
 	</h3>
 
 	<h3>
@@ -200,7 +200,7 @@ td {
 			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">12</td>
+				<td align="center">11</td>
 			</tr>
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
@@ -215,7 +215,7 @@ td {
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">9</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10054">Cookie without SameSite Attribute</a></td>
@@ -230,7 +230,7 @@ td {
 			<tr>
 				<td><a href="#10110">Dangerous JS Functions</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">7</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
@@ -250,7 +250,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">1</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -270,7 +270,7 @@ td {
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">10</td>
+				<td align="center">9</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -280,7 +280,7 @@ td {
 			<tr>
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">7</td>
+				<td align="center">9</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
@@ -310,17 +310,17 @@ td {
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">16</td>
+				<td align="center">17</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -430,68 +430,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/cap-2024/">https://rca.fr/accompagnement/cap-2024/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form role=&quot;search&quot; action=&quot;https://rca.fr/&quot; method=&quot;GET&quot;&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;s&quot; ].</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/cap-2024/">https://rca.fr/accompagnement/cap-2024/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form method=&#39;post&#39; enctype=&#39;multipart/form-data&#39;  id=&#39;gform_29&#39;  action=&#39;/accompagnement/cap-2024/&#39; data-formid=&#39;29&#39; &gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: &quot;gform_field_values&quot; &quot;gform_source_page_number_29&quot; &quot;gform_submit&quot; &quot;gform_submit_button_29&quot; &quot;gform_target_page_number_29&quot; &quot;gform_unique_id&quot; &quot;input_29_1&quot; &quot;input_29_2&quot; &quot;input_29_3&quot; &quot;input_29_33_1&quot; &quot;input_29_4&quot; &quot;input_29_5&quot; &quot;input_33.2&quot; &quot;input_33.3&quot; &quot;is_submit_29&quot; &quot;state_29&quot; ].</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
 					</tr>
 					<tr>
@@ -543,7 +481,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form method=&#39;post&#39; enctype=&#39;multipart/form-data&#39;  id=&#39;gform_24&#39;  action=&#39;/accompagnement/formations-rca/&#39; data-formid=&#39;24&#39; &gt;</td>
+						<td width="80%">&lt;form method=&#39;post&#39; enctype=&#39;multipart/form-data&#39;  id=&#39;gform_24&#39;  action=&#39;/accompagnement/formations-rca/&#39; data-formid=&#39;24&#39; novalidate&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -554,7 +492,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/service-client/">https://rca.fr/accompagnement/service-client/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -580,37 +518,6 @@ td {
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;s&quot; ].</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form method=&#39;post&#39; enctype=&#39;multipart/form-data&#39;  id=&#39;gform_30&#39;  action=&#39;/accompagnement/mooc/&#39; data-formid=&#39;30&#39; &gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: &quot;gform_field_values&quot; &quot;gform_source_page_number_30&quot; &quot;gform_submit&quot; &quot;gform_submit_button_30&quot; &quot;gform_target_page_number_30&quot; &quot;gform_unique_id&quot; &quot;input_30_1&quot; &quot;input_30_2&quot; &quot;input_30_3&quot; &quot;input_30_33_1&quot; &quot;input_30_4&quot; &quot;input_30_5&quot; &quot;input_33.2&quot; &quot;input_33.3&quot; &quot;is_submit_30&quot; &quot;state_30&quot; ].</td>
 					</tr>
 				
 					<tr>
@@ -709,6 +616,68 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/ressources/actualites/">https://rca.fr/ressources/actualites/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form role=&quot;search&quot; action=&quot;https://rca.fr/&quot; method=&quot;GET&quot;&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;s&quot; ].</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/ressources/actualites/">https://rca.fr/ressources/actualites/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form role=&quot;search&quot; method=&quot;get&quot; action=&quot;https://rca.fr/&quot; class=&quot;wp-block-search__button-inside wp-block-search__icon-button search-bar wp-block-search&quot;    &gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: &quot;wp-block-search__input-1&quot; ].</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique/">https://rca.fr/vos-enjeux/facture-electronique/</a></td>
 					</tr>
 					<tr>
@@ -739,7 +708,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">11</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -793,7 +762,7 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a>
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a>
 							<br />
 						
 							<a href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a>
@@ -993,7 +962,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/web-ateliers-gamme-conseil/">https://rca.fr/accompagnement/web-ateliers-gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/service-client/">https://rca.fr/accompagnement/service-client/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1196,19 +1165,19 @@ td {
 							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a>
 							<br />
 						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
 							<br />
 						
-							<a href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a>
+							<a href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a>
 							<br />
 						
-							<a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a>
+							<a href="https://web.dev/articles/csp">https://web.dev/articles/csp</a>
 							<br />
 						
-							<a href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a>
+							<a href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a>
 							<br />
 						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
+							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
 							
 						</td>
 				</tr>
@@ -1405,7 +1374,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/web-ateliers-gamme-conseil/">https://rca.fr/accompagnement/web-ateliers-gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/service-client/">https://rca.fr/accompagnement/service-client/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1740,7 +1709,38 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/">https://rca.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Poppins:600%2C400%7CRoboto:400&amp;display=swap&quot; rel=&quot;stylesheet&quot; property=&quot;stylesheet&quot; media=&quot;all&quot; type=&quot;text/css&quot; &gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/">https://rca.fr/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1771,7 +1771,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/">https://rca.fr/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1864,7 +1864,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/mon-expert-en-gestion/">https://rca.fr/nos-solutions/mon-expert-en-gestion/</a></td>
+						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique/">https://rca.fr/vos-enjeux/facture-electronique/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1895,7 +1895,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/mon-expert-en-gestion/">https://rca.fr/nos-solutions/mon-expert-en-gestion/</a></td>
+						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique/">https://rca.fr/vos-enjeux/facture-electronique/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1925,7 +1925,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">9</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2311,6 +2311,37 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/actualites/cas-client-comment-le-groupe-ameco-a-embarque-ses-collaborateurs-vers-une-nouvelle-forme-de-comptabilite-la-compta-simplifiee/">https://rca.fr/actualites/cas-client-comment-le-groupe-ameco-a-embarque-ses-collaborateurs-vers-une-nouvelle-forme-de-comptabilite-la-compta-simplifiee/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; defer=&#39;defer&#39; src=&quot;https://www.google.com/recaptcha/api.js?hl=en&amp;amp;ver=6.4.2#038;render=explicit&quot; id=&quot;gform_recaptcha-js&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/actualites/category/cas-client/">https://rca.fr/actualites/category/cas-client/</a></td>
 					</tr>
 					<tr>
@@ -2343,6 +2374,37 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/actualites/category/ressources-telechargeables/">https://rca.fr/actualites/category/ressources-telechargeables/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; defer=&#39;defer&#39; src=&quot;https://www.google.com/recaptcha/api.js?hl=en&amp;amp;ver=6.4.2#038;render=explicit&quot; id=&quot;gform_recaptcha-js&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/actualites/kit-communication-deployez-meg-aupres-de-vos-clients/">https://rca.fr/actualites/kit-communication-deployez-meg-aupres-de-vos-clients/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2463,68 +2525,6 @@ td {
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/cap-2024/">https://rca.fr/accompagnement/cap-2024/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;text/javascript&quot; defer=&#39;defer&#39; src=&quot;https://www.google.com/recaptcha/api.js?hl=en&amp;amp;ver=6.4.2#038;render=explicit&quot; id=&quot;gform_recaptcha-js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.2#038;render=explicit</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;text/javascript&quot; defer=&#39;defer&#39; src=&quot;https://www.google.com/recaptcha/api.js?hl=en&amp;amp;ver=6.4.2#038;render=explicit&quot; id=&quot;gform_recaptcha-js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
 					<td width="80%">12</td>
@@ -2578,38 +2578,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-content/cache/wpfc-minified/d5grcnc/2eg6g.js">https://rca.fr/wp-content/cache/wpfc-minified/d5grcnc/2eg6g.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">eval</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-content/cache/wpfc-minified/du9njgdy/2eg5b.js">https://rca.fr/wp-content/cache/wpfc-minified/du9njgdy/2eg5b.js</a></td>
+						<td width="80%"><a href="https://rca.fr/wp-content/cache/wpfc-minified/7nsigkns/4h8zj.js">https://rca.fr/wp-content/cache/wpfc-minified/7nsigkns/4h8zj.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2630,6 +2599,37 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">Eval</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/wp-content/cache/wpfc-minified/d5grcnc/4h8zp.js">https://rca.fr/wp-content/cache/wpfc-minified/d5grcnc/4h8zp.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eval</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2671,7 +2671,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.17">https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.17</a></td>
+						<td width="80%"><a href="https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.1">https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.1</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2702,7 +2702,100 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.18">https://rca.fr/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.18</a></td>
+						<td width="80%"><a href="https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.2">https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eval</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.1">https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.1</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eval</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.2">https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">eval</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.20">https://rca.fr/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.20</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2794,7 +2887,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3034,37 +3127,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/web-ateliers-gamme-conseil/">https://rca.fr/accompagnement/web-ateliers-gamme-conseil/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
 					</tr>
 					<tr>
@@ -3128,6 +3190,37 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/nos-solutions/mon-expert-en-gestion/">https://rca.fr/nos-solutions/mon-expert-en-gestion/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/ressources/actualites/">https://rca.fr/ressources/actualites/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3378,6 +3471,68 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/comments/feed/">https://rca.fr/comments/feed/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: PHP/7.4</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/contact">https://rca.fr/contact</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: PHP/7.4</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil">https://rca.fr/nos-solutions/gamme-conseil</a></td>
 					</tr>
 					<tr>
@@ -3533,69 +3688,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/sitemap_index.xml">https://rca.fr/sitemap_index.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">X-Powered-By: PHP/7.4</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique">https://rca.fr/vos-enjeux/facture-electronique</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">X-Powered-By: PHP/7.4</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-json/">https://rca.fr/wp-json/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3637,10 +3730,10 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a>
+							<a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a>
 							<br />
 						
-							<a href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a>
+							<a href="https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a>
 							
 						</td>
 				</tr>
@@ -3806,6 +3899,37 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/service-client/">https://rca.fr/accompagnement/service-client/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
 					</tr>
 					<tr>
@@ -3899,7 +4023,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/robots.txt">https://rca.fr/robots.txt</a></td>
+						<td width="80%"><a href="https://rca.fr/ressources/actualites/">https://rca.fr/ressources/actualites/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3930,7 +4054,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/sitemap_index.xml">https://rca.fr/sitemap_index.xml</a></td>
+						<td width="80%"><a href="https://rca.fr/robots.txt">https://rca.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3989,37 +4113,6 @@ td {
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-json/">https://rca.fr/wp-json/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
 					<td width="80%">11</td>
@@ -4040,13 +4133,13 @@ td {
 							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
 							<br />
 						
-							<a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
+							<a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
 							<br />
 						
-							<a href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a>
+							<a href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a>
 							<br />
 						
-							<a href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a>
 							
 						</td>
 				</tr>
@@ -4088,6 +4181,130 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/actualites/77e-congres-de-lordre-6-500-visiteurs-tournes-vers-lavenir-de-la-profession-et-accompagnes-par-rca/">https://rca.fr/actualites/77e-congres-de-lordre-6-500-visiteurs-tournes-vers-lavenir-de-la-profession-et-accompagnes-par-rca/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1705711712</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1705711712, which evaluates to: 2024-01-20 00:48:32</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/actualites/category/cas-client/">https://rca.fr/actualites/category/cas-client/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1705737249</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1705737249, which evaluates to: 2024-01-20 07:54:09</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/actualites/interoperabilite-simplifie-echanges-clients/embed/">https://rca.fr/actualites/interoperabilite-simplifie-echanges-clients/embed/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1881848925</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1881848925, which evaluates to: 2029-08-19 15:48:45</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/nos-solutions/mon-expert-en-gestion/embed/">https://rca.fr/nos-solutions/mon-expert-en-gestion/embed/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1690304408</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1690304408, which evaluates to: 2023-07-25 17:00:08</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/wp-content/uploads/2023/10/2-MEG-ordi.png">https://rca.fr/wp-content/uploads/2023/10/2-MEG-ordi.png</a></td>
 					</tr>
 					<tr>
@@ -4118,7 +4335,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -4236,38 +4453,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/cap-2024/">https://rca.fr/accompagnement/cap-2024/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
 					</tr>
 					<tr>
@@ -4301,6 +4486,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-content-type-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/service-client/">https://rca.fr/accompagnement/service-client/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4428,7 +4645,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/robots.txt">https://rca.fr/robots.txt</a></td>
+						<td width="80%"><a href="https://rca.fr/ressources/actualites/">https://rca.fr/ressources/actualites/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4460,7 +4677,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/sitemap_index.xml">https://rca.fr/sitemap_index.xml</a></td>
+						<td width="80%"><a href="https://rca.fr/robots.txt">https://rca.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4538,7 +4755,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a>
+							<a href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a>
 							<br />
 						
 							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
@@ -5363,7 +5580,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection">http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</a>
+							<a href="https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection">https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</a>
 							
 						</td>
 				</tr>
@@ -5533,7 +5750,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique/">https://rca.fr/vos-enjeux/facture-electronique/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5566,7 +5783,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique/">https://rca.fr/vos-enjeux/facture-electronique/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5597,7 +5814,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil/">https://rca.fr/nos-solutions/gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr">https://rca.fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5617,20 +5834,18 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
+						<td width="80%">user</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bADMIN\b and was detected 3 times, the first in the element starting with: &quot;&lt;script type=&quot;text/javascript&quot; id=&quot;wpdm-frontjs-js-extra&quot;&gt;
-/* &lt;![CDATA[ */
-var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;:&quot;h&quot;, see evidence field for the suspicious comment/snippet.</td>
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;https://rca.fr/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil/">https://rca.fr/nos-solutions/gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr/">https://rca.fr/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5650,18 +5865,18 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">query</td>
+						<td width="80%">user</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;&lt;script type=&quot;application/ld+json&quot; class=&quot;yoast-schema-graph&quot;&gt;{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@graph&quot;:[{&quot;@type&quot;:&quot;WebPage&quot;,&quot;@id&quot;, see evidence field for the suspicious comment/snippet.</td>
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;https://rca.fr/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/mon-expert-en-gestion/">https://rca.fr/nos-solutions/mon-expert-en-gestion/</a></td>
+						<td width="80%"><a href="https://rca.fr/vos-enjeux/facture-electronique/">https://rca.fr/vos-enjeux/facture-electronique/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5681,50 +5896,17 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
+						<td width="80%">user</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bADMIN\b and was detected 3 times, the first in the element starting with: &quot;&lt;script type=&quot;text/javascript&quot; id=&quot;wpdm-frontjs-js-extra&quot;&gt;
-/* &lt;![CDATA[ */
-var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;:&quot;h&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/mon-expert-en-gestion/">https://rca.fr/nos-solutions/mon-expert-en-gestion/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">query</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;&lt;script type=&quot;application/ld+json&quot; class=&quot;yoast-schema-graph&quot;&gt;{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@graph&quot;:[{&quot;@type&quot;:&quot;WebPage&quot;,&quot;@id&quot;, see evidence field for the suspicious comment/snippet.</td>
+						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;https://rca.fr/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4&quot;, see evidence field for the suspicious comment/snippet.</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">9</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6269,6 +6451,68 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-store</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/service-client/">https://rca.fr/accompagnement/service-client/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-store</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/nos-solutions/ecosysteme-rca/">https://rca.fr/nos-solutions/ecosysteme-rca/</a></td>
 					</tr>
 					<tr>
@@ -6392,7 +6636,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">9</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6485,37 +6729,6 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/category-sitemap.xml">https://rca.fr/category-sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/comments/feed/">https://rca.fr/comments/feed/</a></td>
 					</tr>
 					<tr>
@@ -6548,37 +6761,6 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/feed/">https://rca.fr/feed/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/post_tag-sitemap.xml">https://rca.fr/post_tag-sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6733,6 +6915,37 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F">https://rca.fr/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">cache-control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2F">https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2F</a></td>
 					</tr>
 					<tr>
@@ -6764,7 +6977,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-json/wp/v2/pages/4872">https://rca.fr/wp-json/wp/v2/pages/4872</a></td>
+						<td width="80%"><a href="https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F">https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6795,7 +7008,38 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wpdmpro-sitemap.xml">https://rca.fr/wpdmpro-sitemap.xml</a></td>
+						<td width="80%"><a href="https://rca.fr/wp-json/wp/v2/pages/4570">https://rca.fr/wp-json/wp/v2/pages/4570</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">cache-control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/wp-json/wp/v2/pages/4872">https://rca.fr/wp-json/wp/v2/pages/4872</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6916,7 +7160,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil/">https://rca.fr/nos-solutions/gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr">https://rca.fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7062,7 +7306,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil/">https://rca.fr/nos-solutions/gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr">https://rca.fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7208,7 +7452,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil/">https://rca.fr/nos-solutions/gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr">https://rca.fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7354,7 +7598,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/nos-solutions/gamme-conseil/">https://rca.fr/nos-solutions/gamme-conseil/</a></td>
+						<td width="80%"><a href="https://rca.fr">https://rca.fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7520,7 +7764,7 @@ var wpdm_url = {&quot;home&quot;:&quot;https:\/\/rca.fr\/&quot;,&quot;site&quot;
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">a0af49513d52ac8822fd8ebfbc7c6267</td>
+						<td width="80%">0ee3746f4a997319c14501f86905cf0a</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7552,7 +7796,7 @@ cookie:__wpdm_client</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">a0af49513d52ac8822fd8ebfbc7c6267</td>
+						<td width="80%">0ee3746f4a997319c14501f86905cf0a</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7584,7 +7828,71 @@ cookie:__wpdm_client</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">a0af49513d52ac8822fd8ebfbc7c6267</td>
+						<td width="80%">0ee3746f4a997319c14501f86905cf0a</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:__wpdm_client</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/xmlrpc.php">https://rca.fr/xmlrpc.php</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">__wpdm_client</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0ee3746f4a997319c14501f86905cf0a</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:__wpdm_client</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/xmlrpc.php?rsd">https://rca.fr/xmlrpc.php?rsd</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">__wpdm_client</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0ee3746f4a997319c14501f86905cf0a</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7595,7 +7903,7 @@ cookie:__wpdm_client</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7707,71 +8015,9 @@ cookie:__wpdm_client</td>
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/sitemap_index.xml">https://rca.fr/sitemap_index.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/wp-json/">https://rca.fr/wp-json/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7843,7 +8089,7 @@ cookie:__wpdm_client</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7853,7 +8099,7 @@ cookie:__wpdm_client</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">gform_source_page_number_24</td>
+						<td width="80%">gform_source_page_number_30</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7870,14 +8116,14 @@ cookie:__wpdm_client</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [meta] tag [content] attribute 
 
 The user input found was:
-gform_source_page_number_24=1
+gform_source_page_number_30=1
 
 The user-controlled value was:
 width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</td>
@@ -7886,7 +8132,7 @@ width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7913,23 +8159,109 @@ width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
+
+appears to include user input in: 
+
+a(n) [div] tag [data-logo-height] attribute 
+
+The user input found was:
+gform_submit=30
+
+The user-controlled value was:
+30</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">gform_submit</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
+
+https://rca.fr/accompagnement/mooc/
+
+appears to include user input in: 
+
+a(n) [div] tag [data-m-logo-height] attribute 
+
+The user input found was:
+gform_submit=30
+
+The user-controlled value was:
+30</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">gform_submit</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
+
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [form] tag [data-formid] attribute 
 
 The user input found was:
-gform_submit=24
+gform_submit=30
 
 The user-controlled value was:
-24</td>
+30</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7956,23 +8288,23 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-gform_submit=24
+gform_submit=30
 
 The user-controlled value was:
-24</td>
+30</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7999,23 +8331,23 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [option] tag [value] attribute 
 
 The user input found was:
-gform_submit=24
+gform_submit=30
 
 The user-controlled value was:
-24	dordogne</td>
+30	gard</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8042,7 +8374,7 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
@@ -8058,7 +8390,7 @@ zap</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8085,7 +8417,7 @@ zap</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
@@ -8101,7 +8433,7 @@ zap</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8128,23 +8460,23 @@ zap</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-input_3=ZAP
+input_3=foo-bar@example.com
 
 The user-controlled value was:
-zap</td>
+foo-bar@example.com</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8171,23 +8503,23 @@ zap</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-input_33.3=23
+input_33.3=29
 
 The user-controlled value was:
-23</td>
+29</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8214,23 +8546,23 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [option] tag [value] attribute 
 
 The user input found was:
-input_33.3=23
+input_33.3=29
 
 The user-controlled value was:
-23	creuse</td>
+29	finistère</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8257,23 +8589,23 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-input_4=ZAP
+input_4=9999999999
 
 The user-controlled value was:
-zap</td>
+9999999999</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8300,7 +8632,7 @@ zap</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
@@ -8316,7 +8648,7 @@ The user-controlled value was:
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8326,7 +8658,7 @@ The user-controlled value was:
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">input_43</td>
+						<td width="80%">input_44</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8343,23 +8675,23 @@ The user-controlled value was:
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [option] tag [value] attribute 
 
 The user input found was:
-input_43=Je souhaite télecharger le catalogue
+input_44=Monsieur
 
 The user-controlled value was:
-je souhaite télecharger le catalogue</td>
+monsieur</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8386,23 +8718,23 @@ je souhaite télecharger le catalogue</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [option] tag [value] attribute 
 
 The user input found was:
-input_48=Monsieur
+input_48=Expert-Comptable diplômé
 
 The user-controlled value was:
-monsieur</td>
+expert-comptable diplômé</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8429,7 +8761,7 @@ monsieur</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
@@ -8445,7 +8777,7 @@ zap</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
+						<td width="80%"><a href="https://rca.fr/accompagnement/mooc/">https://rca.fr/accompagnement/mooc/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8455,7 +8787,7 @@ zap</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">input_56</td>
+						<td width="80%">state_30</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8472,65 +8804,22 @@ zap</td>
 							class="indent2">Other Info</td>
 						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
 
-https://rca.fr/accompagnement/formations-rca/
-
-appears to include user input in: 
-
-a(n) [option] tag [value] attribute 
-
-The user input found was:
-input_56=Expert-Comptable diplômé
-
-The user-controlled value was:
-expert-comptable diplômé</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://rca.fr/accompagnement/formations-rca/">https://rca.fr/accompagnement/formations-rca/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">state_24</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:
-
-https://rca.fr/accompagnement/formations-rca/
+https://rca.fr/accompagnement/mooc/
 
 appears to include user input in: 
 
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-state_24=WyJ7XCI0N1wiOltcIjdmMzc5NWQ3MGM4OWU0NzdmOWFhOWQ2YzlhMDVjZGEzXCIsXCI4NDM1NzE1YWI0Y2MyNWE0NjE1ZmJlMDM2OGRlYWNkNVwiLFwiYWFjNjAzOTBlOTZlYThlMWQ2ZTcyMDRiNGMxY2Q5NTRcIixcImQxYjAwM2VmMGM3MjYzNzIwZGE3MzE4MmMwMTUwMGYzXCIsXCJjMzJlODkxNjgwNTU0OGU3MTFmYmM2MmQ2MTUxNjQxNFwiLFwiNGQxN2Q4ZjU3ZjNhYTkwMGI1Nzk4ODY3NWNkZDlhNWFcIl0sXCI1NlwiOltcIjExNTg2NjY5MWE3ZjNmMTM4NjM1MmU5NmI2N2E4Mzc0XCIsXCJjMTcxODUxZDgyMjlkY2E3OTAwZDRkNDBiNTI2NWVjY1wiLFwiNzFjYzBjNDM3MTQ0ZjI0OWYxOWQzM2ZkMGVhNzUyYzZcIixcIjA4MTA5M2I5ZGNhY2U0NDgxZmMwMWUzZGQyNjgyNDNmXCIsXCI3ZTMzZDE1ZmIwYWNkOTFmOTMyMjYyMzg0NzdiY2UyMFwiLFwiNDQ3NjhlNTE5OTkyZDE1YzU2OWMwNjQwZGNhYmEzODVcIixcIjZkZjRlYjc4MjljN2NiMWZhMTM1Zjg2MjUwZTJlOTI2XCIsXCI2MjY2ZjI3MDFjNzA4ZjM2ODRmMjYzOWI5NzI2ZDE3MFwiLFwiODQxMGViZmFhMGNjYjk5NTM1MzI2MTA4NGZhN2NlN2JcIixcIjcyYTUxNzc4ZDBhN2IwMThmMDI5OTIxMGE3ZDI2MWY1XCIsXCI3OTg0NjU5ODA4Y2E1N2IzYzlkMjJhMTUxYTU5ODZhMVwiXSxcIjQ4XCI6W1wiZjY0NjgzYjIyMDJlYTQxYjg2MzM2NDUzYjM2OWYzMTlcIixcIjJiZGI1ZTgyMDY4NDMwMjJhYTE4MTc1ODdkMTM4ODAzXCJdLFwiNDNcIjpbXCIyOGVmMzc5MzYwYWY1NGU4MDVjY2VmNGI2MmMwNDdlYlwiLFwiNmUxNmFjYjg1YmVkZDNjZjcxNGMyOTA2ODFjYjZmMTlcIl0sXCIzMy4xXCI6XCI5YWU1ODljNDEwMmVjM2NjYTBhZTk4M2IyNmVlZTRhNVwiLFwiMzMuMlwiOlwiNDk3MTQ2ODY3MDc2OTc3ZTk5ZTI0ZjdkZmE5Njg4MTlcIixcIjMzLjNcIjpcIjA3NDFkZTkzNjMxYjJmY2NhMWJmNTU5NWQ0MmVjMWRjXCJ9IiwiNzg3MTQ2NmI0NDBlZmUwYmFhNThlOTA3MzU3OTg4MGUiXQ==
+state_30=WyJ7XCI0M1wiOltcIjdmMzc5NWQ3MGM4OWU0NzdmOWFhOWQ2YzlhMDVjZGEzXCIsXCI4NDM1NzE1YWI0Y2MyNWE0NjE1ZmJlMDM2OGRlYWNkNVwiLFwiYWFjNjAzOTBlOTZlYThlMWQ2ZTcyMDRiNGMxY2Q5NTRcIixcImQxYjAwM2VmMGM3MjYzNzIwZGE3MzE4MmMwMTUwMGYzXCIsXCJjMzJlODkxNjgwNTU0OGU3MTFmYmM2MmQ2MTUxNjQxNFwiLFwiNGQxN2Q4ZjU3ZjNhYTkwMGI1Nzk4ODY3NWNkZDlhNWFcIl0sXCI0OFwiOltcIjExNTg2NjY5MWE3ZjNmMTM4NjM1MmU5NmI2N2E4Mzc0XCIsXCJjMTcxODUxZDgyMjlkY2E3OTAwZDRkNDBiNTI2NWVjY1wiLFwiNzFjYzBjNDM3MTQ0ZjI0OWYxOWQzM2ZkMGVhNzUyYzZcIixcIjA4MTA5M2I5ZGNhY2U0NDgxZmMwMWUzZGQyNjgyNDNmXCIsXCI3ZTMzZDE1ZmIwYWNkOTFmOTMyMjYyMzg0NzdiY2UyMFwiLFwiNDQ3NjhlNTE5OTkyZDE1YzU2OWMwNjQwZGNhYmEzODVcIixcIjZkZjRlYjc4MjljN2NiMWZhMTM1Zjg2MjUwZTJlOTI2XCIsXCI2MjY2ZjI3MDFjNzA4ZjM2ODRmMjYzOWI5NzI2ZDE3MFwiLFwiODQxMGViZmFhMGNjYjk5NTM1MzI2MTA4NGZhN2NlN2JcIixcIjcyYTUxNzc4ZDBhN2IwMThmMDI5OTIxMGE3ZDI2MWY1XCIsXCI3OTg0NjU5ODA4Y2E1N2IzYzlkMjJhMTUxYTU5ODZhMVwiXSxcIjQ0XCI6W1wiZjY0NjgzYjIyMDJlYTQxYjg2MzM2NDUzYjM2OWYzMTlcIixcIjJiZGI1ZTgyMDY4NDMwMjJhYTE4MTc1ODdkMTM4ODAzXCJdLFwiMzMuMVwiOlwiOWFlNTg5YzQxMDJlYzNjY2EwYWU5ODNiMjZlZWU0YTVcIixcIjMzLjJcIjpcIjQ5NzE0Njg2NzA3Njk3N2U5OWUyNGY3ZGZhOTY4ODE5XCIsXCIzMy4zXCI6XCIyNmUxZmI0NzJhODMyNjY3YTgxYTJjMzkxMzcxODM3YVwifSIsImRhZWYwMjhkYzY0MDIxZjk3NWNjNDg1N2RkYTdiMDYxIl0=
 
 The user-controlled value was:
-wyj7xci0n1wioltcijdmmzc5nwq3mgm4owu0nzdmowfhowq2yzlhmdvjzgezxcisxci4ndm1nze1ywi0y2mynwe0nje1zmjlmdm2ogrlywnknvwilfwiywfjnjazotblotzlythlmwq2ztcymdringmxy2q5ntrciixcimqxyjawm2vmmgm3mjyznziwzge3mze4mmmwmtuwmgyzxcisxcjjmzjlodkxnjgwntu0ogu3mtfmymm2mmq2mtuxnjqxnfwilfwingqxn2q4zju3zjnhytkwmgi1nzk4ody3nwnkzdlhnwfcil0sxci1nlwioltcijexntg2njy5mwe3zjnmmtm4njm1mmu5nmi2n2e4mzc0xcisxcjjmtcxoduxzdgymjlky2e3otawzdrkndbinti2nwvjy1wilfwinzfjyzbjndm3mtq0zji0owyxowqzm2zkmgvhnzuyyzzciixcija4mta5m2i5zgnhy2u0ndgxzmmwmwuzzgqynjgyndnmxcisxci3ztmzzde1zmiwywnkotfmotmymjyymzg0nzdiy2uymfwilfwindq3njhlnte5otkyzde1yzu2owmwnjqwzgnhymezodvciixcijzkzjrlyjc4mjljn2nimwzhmtm1zjg2mjuwztjloti2xcisxci2mjy2zji3mdfjnza4zjm2odrmmjyzowi5nzi2zde3mfwilfwiodqxmgvizmfhmgnjyjk5ntm1mzi2mta4ngzhn2nln2jciixcijcyytuxnzc4zdbhn2iwmthmmdi5otixmge3zdi2mwy1xcisxci3otg0nju5oda4y2e1n2izyzlkmjjhmtuxytu5odzhmvwixsxcijq4xci6w1wizjy0njgzyjiymdjlytqxyjg2mzm2nduzyjm2owyzmtlciixcijjizgi1ztgymdy4ndmwmjjhyte4mtc1oddkmtm4odazxcjdlfwindncijpbxciyogvmmzc5mzywywy1ngu4mdvjy2vmngi2mmmwnddlylwilfwinmuxnmfjyjg1ymvkzdnjzjcxngmyota2odfjyjzmmtlcil0sxcizmy4xxci6xci5ywu1odljndewmmvjm2njytbhztk4m2iynmvlztrhnvwilfwimzmumlwiolwindk3mtq2ody3mdc2otc3ztk5zti0zjdkzme5njg4mtlciixcijmzljncijpcija3ndfkztkznjmxyjjmy2nhmwjmntu5nwq0mmvjmwrjxcj9iiwinzg3mtq2nmi0ndblzmuwymfhnthlota3mzu3otg4mguixq==</td>
+wyj7xci0m1wioltcijdmmzc5nwq3mgm4owu0nzdmowfhowq2yzlhmdvjzgezxcisxci4ndm1nze1ywi0y2mynwe0nje1zmjlmdm2ogrlywnknvwilfwiywfjnjazotblotzlythlmwq2ztcymdringmxy2q5ntrciixcimqxyjawm2vmmgm3mjyznziwzge3mze4mmmwmtuwmgyzxcisxcjjmzjlodkxnjgwntu0ogu3mtfmymm2mmq2mtuxnjqxnfwilfwingqxn2q4zju3zjnhytkwmgi1nzk4ody3nwnkzdlhnwfcil0sxci0ofwioltcijexntg2njy5mwe3zjnmmtm4njm1mmu5nmi2n2e4mzc0xcisxcjjmtcxoduxzdgymjlky2e3otawzdrkndbinti2nwvjy1wilfwinzfjyzbjndm3mtq0zji0owyxowqzm2zkmgvhnzuyyzzciixcija4mta5m2i5zgnhy2u0ndgxzmmwmwuzzgqynjgyndnmxcisxci3ztmzzde1zmiwywnkotfmotmymjyymzg0nzdiy2uymfwilfwindq3njhlnte5otkyzde1yzu2owmwnjqwzgnhymezodvciixcijzkzjrlyjc4mjljn2nimwzhmtm1zjg2mjuwztjloti2xcisxci2mjy2zji3mdfjnza4zjm2odrmmjyzowi5nzi2zde3mfwilfwiodqxmgvizmfhmgnjyjk5ntm1mzi2mta4ngzhn2nln2jciixcijcyytuxnzc4zdbhn2iwmthmmdi5otixmge3zdi2mwy1xcisxci3otg0nju5oda4y2e1n2izyzlkmjjhmtuxytu5odzhmvwixsxcijq0xci6w1wizjy0njgzyjiymdjlytqxyjg2mzm2nduzyjm2owyzmtlciixcijjizgi1ztgymdy4ndmwmjjhyte4mtc1oddkmtm4odazxcjdlfwimzmumvwiolwiowflntg5yzqxmdjlyznjy2ewywu5odnimjzlzwu0ytvciixcijmzljjcijpcijq5nze0njg2nza3njk3n2u5owuyngy3zgzhoty4ode5xcisxcizmy4zxci6xciynmuxzmi0nzjhodmynjy3ytgxytjjmzkxmzcxodm3yvwifsisimrhzwywmjhkyzy0mdixzjk3nwnjndg1n2rkytdimdyxil0=</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">16</td>
+					<td width="80%">17</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -8542,7 +8831,7 @@ wyj7xci0n1wioltcijdmmzc5nwq3mgm4owu0nzdmowfhowq2yzlhmdvjzgezxcisxci4ndm1nze1ywi0
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute">http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</a>
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a>
 							
 						</td>
 				</tr>
