@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 14 Jan 2024 01:31:27",
+	"@generated": "Sun, 21 Jan 2024 01:31:34",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -92,7 +92,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -111,7 +111,7 @@
 					"count": "11",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "1"
@@ -175,14 +175,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
 							"method": "GET",
 							"param": "",
@@ -207,7 +199,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -223,10 +215,10 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
@@ -290,7 +282,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/interview-etre-developpeur-en-alternance-chez-rca/",
+							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -314,7 +306,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -470,7 +462,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "744"
+					"sourceid": "764"
 				},
 				{
 					"pluginid": "10063",
@@ -531,6 +523,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "",
@@ -547,15 +547,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -692,7 +684,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1377"
+					"sourceid": "1452"
 				},
 				{
 					"pluginid": "10037",
@@ -753,6 +745,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://blog.rca.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -777,14 +777,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/wp-json/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/wp-json/wp/v2/pages/6",
 							"method": "GET",
 							"param": "",
@@ -796,14 +788,14 @@
 					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
 					"otherinfo": "",
-					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
 					"pluginid": "10035",
-					"alertRef": "10035",
+					"alertRef": "10035-1",
 					"alert": "Strict-Transport-Security Header Not Set",
 					"name": "Strict-Transport-Security Header Not Set",
 					"riskcode": "1",
@@ -860,7 +852,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -903,7 +895,7 @@
 					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
 					"sourceid": "1"
@@ -967,6 +959,14 @@
 							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
 						},
 						{
+							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1663701474",
+							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
+						},
+						{
 							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "",
@@ -983,15 +983,7 @@
 							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1663701474",
-							"otherinfo": "1663701474, which evaluates to: 2022-09-20 19:17:54"
-						},
-						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1082,7 +1074,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1117,7 +1109,7 @@
 					"count": "11",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
-					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
@@ -1137,16 +1129,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/11/RCH_4103-1-scaled",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x001f\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
+							"evidence": "fr/wp-content/uploads/2024/01/IMG_2988-2-scaled",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x000c\\x001b\uFFFD\uFFFD\uFFFD\u03F6\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://blog.rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/11/RCH_4103-1-scaled",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x001f\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
+							"evidence": "fr/wp-content/uploads/2024/01/IMG_2988-2-scaled",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x000c\\x001b\uFFFD\uFFFD\uFFFD\u03F6\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://blog.rca.fr/author/rca/",
@@ -1169,8 +1161,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/11/RCH_4103-1-scaled",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x001f\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
+							"evidence": "fr/wp-content/uploads/2024/01/IMG_2988-2-scaled",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x000c\\x001b\uFFFD\uFFFD\uFFFD\u03F6\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/tech-vibes/",
@@ -1179,6 +1171,14 @@
 							"attack": "",
 							"evidence": "fr/wp-content/uploads/2023/11/RCH_4103-1-scaled",
 							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x001f\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
 						},
 						{
 							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
@@ -1197,20 +1197,12 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
-						},
-						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/10/Hello-RCA-2023-07-AWS",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0796Z>D >\uFFFDM\uFFFD\uFFFDN\uFFFD\\x0001d"
+							"evidence": "fr/wp-content/uploads/2024/01/IMG_2988-2-scaled",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x000c\\x001b\uFFFD\uFFFD\uFFFD\u03F6\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
@@ -1223,7 +1215,7 @@
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x001f\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x000c\\x001b\uFFFD\uFFFD\uFFFD\u03F6\uFFFD\uFFFD\\x001a\uFFFD\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1241,14 +1233,6 @@
 					"instances":[ 
 						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fchez-rca-on-est-conseillers-mais-pas-que%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1304,6 +1288,14 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
+							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fla-teamrca-fete-noel-a-novawest%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fles-ambassadeurs-rca%2F",
 							"method": "GET",
 							"param": "",
@@ -1339,14 +1331,14 @@
 					"count": "12",
 					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
 					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
-					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
+					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "779"
+					"sourceid": "778"
 				},
 				{
 					"pluginid": "10019",
-					"alertRef": "10019",
+					"alertRef": "10019-1",
 					"alert": "Content-Type Header Missing",
 					"name": "Content-Type Header Missing",
 					"riskcode": "0",
@@ -1357,7 +1349,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Heavy.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1365,7 +1357,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-HeavyItalic.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1373,7 +1365,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Medium.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1381,7 +1373,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-MediumItalic.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1389,7 +1381,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Regular.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1397,7 +1389,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-RegularItalic.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1405,7 +1397,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBold.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1413,7 +1405,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBoldItalic.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1421,7 +1413,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Thin.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1429,7 +1421,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-ThinItalic.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1437,7 +1429,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-UltraLight.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1445,7 +1437,7 @@
 						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-UltraLightItalic.woff2",
 							"method": "GET",
-							"param": "",
+							"param": "content-type",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1454,10 +1446,10 @@
 					"count": "12",
 					"solution": "<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>",
 					"otherinfo": "",
-					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1710"
+					"sourceid": "1788"
 				},
 				{
 					"pluginid": "10027",
@@ -1617,6 +1609,14 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://blog.rca.fr/la-facture-electronique-et-apres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Fermer la recherche</span>\n\t\t\t\t<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
 							"method": "GET",
 							"param": "",
@@ -1633,15 +1633,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://blog.rca.fr/la-team-rca-se-reunit-pour-soutenir-des-actions-solidaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Fermer la recherche</span>\n\t\t\t\t<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://blog.rca.fr/migration-aws-rca/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1724,7 +1716,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",

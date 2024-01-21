@@ -42,7 +42,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41a0v894096030z8894084953&_p=1705195376820&gcd=11l1l1l1l1&dma=0&cid=1310683787.1705195377&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1705195377&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2748",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41h0v894096030z8894084953&_p=1705800174498&gcd=11l1l1l1l1&dma=0&cid=2005216008.1705800175&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1705800174&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=3181",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -52,10 +52,10 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1310683787.1705195377",
+      "value": "GA1.1.2005216008.1705800175",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1768267377,
+      "expires": 1768872174,
       "size": 30,
       "httpOnly": false,
       "secure": false,
@@ -66,10 +66,10 @@
     },
     {
       "name": "_ga_9TKD9RN2HY",
-      "value": "GS1.1.1705195377.1.0.1705195377.0.0.0",
+      "value": "GS1.1.1705800174.1.0.1705800174.0.0.0",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1768267377,
+      "expires": 1768872174,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -82,7 +82,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 14 Jan 2024 01:22:56 GMT",
+    "date": "Sun, 21 Jan 2024 01:22:53 GMT",
     "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
     "server": "Apache",
     "vary": "Accept-Encoding",
@@ -183,7 +183,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.16.95",
+      "ip": "142.250.189.234",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -237,13 +237,19 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.45.181.178",
+      "ip": "23.214.95.199",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 5393015,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "Santa Clara",
+            "en": "Santa Clara",
+            "es": "Santa Clara",
+            "fr": "Santa Clara",
+            "ja": "サンタクララ",
+            "pt-BR": "Santa Clara",
+            "ru": "Санта-Клара",
+            "zh-CN": "圣克拉拉"
           }
         },
         "continent": {
@@ -276,13 +282,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 37.353,
+          "longitude": -121.9543,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "20149"
+          "code": "95052"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -300,15 +306,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 5332921,
+            "iso_code": "CA",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
             }
           }
         ]
@@ -316,13 +324,19 @@
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "23.12.145.45",
+      "ip": "23.214.95.197",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 5393015,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "Santa Clara",
+            "en": "Santa Clara",
+            "es": "Santa Clara",
+            "fr": "Santa Clara",
+            "ja": "サンタクララ",
+            "pt-BR": "Santa Clara",
+            "ru": "Санта-Клара",
+            "zh-CN": "圣克拉拉"
           }
         },
         "continent": {
@@ -355,13 +369,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 37.353,
+          "longitude": -121.9543,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "20149"
+          "code": "95052"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -379,15 +393,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 5332921,
+            "iso_code": "CA",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
             }
           }
         ]
@@ -395,15 +411,8 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.250.31.97",
+      "ip": "142.250.189.232",
       "geoip": {
-        "city": {
-          "geoname_id": 4364745,
-          "names": {
-            "en": "Oxford",
-            "ru": "Оксфорд"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -434,13 +443,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.6828,
-          "longitude": -76.1563,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21654"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -455,28 +460,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.251.16.102",
+      "ip": "142.251.214.142",
       "geoip": {
         "continent": {
           "code": "NA",
