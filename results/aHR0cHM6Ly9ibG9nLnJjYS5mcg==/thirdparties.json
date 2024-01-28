@@ -21,16 +21,16 @@
       "url": "https://use.typekit.net/af/28c150/00000000000000007735e9f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
     },
     {
-      "type": "unknown",
-      "url": "https://use.typekit.net/af/28c150/00000000000000007735e9f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
-    },
-    {
       "type": "google tag manager",
       "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MPVDP7T",
       "details": {
         "id": "google tag manager",
         "message": "Use hosted Matomo instance"
       }
+    },
+    {
+      "type": "unknown",
+      "url": "https://use.typekit.net/af/28c150/00000000000000007735e9f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
     },
     {
       "type": "google tag manager",
@@ -42,7 +42,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41h0v894096030z8894084953&_p=1705800174498&gcd=11l1l1l1l1&dma=0&cid=2005216008.1705800175&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1705800174&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=3181",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41o0v894096030z8894084953&_p=1706404467758&gcd=11l1l1l1l1&dma=0&cid=853657524.1706404468&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1706404468&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=4713",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -52,11 +52,11 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.2005216008.1705800175",
+      "value": "GA1.1.853657524.1706404468",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1768872174,
-      "size": 30,
+      "expires": 1769476468,
+      "size": 29,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -66,10 +66,10 @@
     },
     {
       "name": "_ga_9TKD9RN2HY",
-      "value": "GS1.1.1705800174.1.0.1705800174.0.0.0",
+      "value": "GS1.1.1706404468.1.0.1706404468.0.0.0",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1768872174,
+      "expires": 1769476468,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -82,7 +82,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 21 Jan 2024 01:22:53 GMT",
+    "date": "Sun, 28 Jan 2024 01:14:26 GMT",
     "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
     "server": "Apache",
     "vary": "Accept-Encoding",
@@ -183,7 +183,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.189.234",
+      "ip": "142.250.190.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -237,19 +237,19 @@
     },
     {
       "hostname": "use.typekit.net",
-      "ip": "23.214.95.199",
+      "ip": "23.223.17.167",
       "geoip": {
         "city": {
-          "geoname_id": 5393015,
+          "geoname_id": 6167865,
           "names": {
-            "de": "Santa Clara",
-            "en": "Santa Clara",
-            "es": "Santa Clara",
-            "fr": "Santa Clara",
-            "ja": "サンタクララ",
-            "pt-BR": "Santa Clara",
-            "ru": "Санта-Клара",
-            "zh-CN": "圣克拉拉"
+            "de": "Toronto",
+            "en": "Toronto",
+            "es": "Toronto",
+            "fr": "Toronto",
+            "ja": "トロント",
+            "pt-BR": "Toronto",
+            "ru": "Торонто",
+            "zh-CN": "多伦多"
           }
         },
         "continent": {
@@ -267,28 +267,27 @@
           }
         },
         "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
+          "geoname_id": 6251999,
+          "iso_code": "CA",
           "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
+            "de": "Kanada",
+            "en": "Canada",
+            "es": "Canadá",
+            "fr": "Canada",
+            "ja": "カナダ",
+            "pt-BR": "Canadá",
+            "ru": "Канада",
+            "zh-CN": "加拿大"
           }
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 37.353,
-          "longitude": -121.9543,
-          "metro_code": 807,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 43.709,
+          "longitude": -79.4057,
+          "time_zone": "America/Toronto"
         },
         "postal": {
-          "code": "95052"
+          "code": "M5A"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -306,17 +305,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
+            "geoname_id": 6093943,
+            "iso_code": "ON",
             "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
+              "en": "Ontario",
+              "fr": "Ontario",
+              "ja": "オンタリオ州",
+              "pt-BR": "Ontário",
+              "ru": "Онтарио",
+              "zh-CN": "安大略"
             }
           }
         ]
@@ -324,19 +321,19 @@
     },
     {
       "hostname": "p.typekit.net",
-      "ip": "23.214.95.197",
+      "ip": "23.223.17.169",
       "geoip": {
         "city": {
-          "geoname_id": 5393015,
+          "geoname_id": 6167865,
           "names": {
-            "de": "Santa Clara",
-            "en": "Santa Clara",
-            "es": "Santa Clara",
-            "fr": "Santa Clara",
-            "ja": "サンタクララ",
-            "pt-BR": "Santa Clara",
-            "ru": "Санта-Клара",
-            "zh-CN": "圣克拉拉"
+            "de": "Toronto",
+            "en": "Toronto",
+            "es": "Toronto",
+            "fr": "Toronto",
+            "ja": "トロント",
+            "pt-BR": "Toronto",
+            "ru": "Торонто",
+            "zh-CN": "多伦多"
           }
         },
         "continent": {
@@ -354,28 +351,27 @@
           }
         },
         "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
+          "geoname_id": 6251999,
+          "iso_code": "CA",
           "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
+            "de": "Kanada",
+            "en": "Canada",
+            "es": "Canadá",
+            "fr": "Canada",
+            "ja": "カナダ",
+            "pt-BR": "Canadá",
+            "ru": "Канада",
+            "zh-CN": "加拿大"
           }
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 37.353,
-          "longitude": -121.9543,
-          "metro_code": 807,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 43.709,
+          "longitude": -79.4057,
+          "time_zone": "America/Toronto"
         },
         "postal": {
-          "code": "95052"
+          "code": "M5A"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -393,17 +389,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
+            "geoname_id": 6093943,
+            "iso_code": "ON",
             "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
+              "en": "Ontario",
+              "fr": "Ontario",
+              "ja": "オンタリオ州",
+              "pt-BR": "Ontário",
+              "ru": "Онтарио",
+              "zh-CN": "安大略"
             }
           }
         ]
@@ -411,7 +405,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.250.189.232",
+      "ip": "172.217.2.40",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -465,7 +459,7 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "142.251.214.142",
+      "ip": "172.217.4.206",
       "geoip": {
         "continent": {
           "code": "NA",
