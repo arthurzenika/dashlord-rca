@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 21 Jan 2024 01:09:38",
+	"@generated": "Sun, 28 Jan 2024 01:03:21",
 	"site":[ 
 		{
 			"@name": "https://www.mon-expert-en-gestion.com",
@@ -410,7 +410,7 @@
 				},
 				{
 					"pluginid": "10054",
-					"alertRef": "10054",
+					"alertRef": "10054-1",
 					"alert": "Cookie without SameSite Attribute",
 					"name": "Cookie without SameSite Attribute",
 					"riskcode": "1",
@@ -524,7 +524,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "91"
+					"sourceid": "93"
 				},
 				{
 					"pluginid": "10023",
@@ -826,7 +826,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-admin/css/forms.min.css?ver=6.4.2",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/under-construction-page/themes/css/bootstrap.min.css?v=3.97",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1000,7 +1000,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-admin/css/forms.min.css?ver=6.4.2",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/under-construction-page/themes/css/bootstrap.min.css?v=3.97",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1115,7 +1115,7 @@
 							"param": "wp_lang",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).\n\nThis was identified at:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR\r\n\r\nUser-input was found in the following cookie:\r\nwp_lang=fr_FR; path=/; secure\r\n\r\nThe user input was:\r\nwp_lang=fr_FR"
+							"otherinfo": "An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).\n\nThis was identified at:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR\n\nUser-input was found in the following cookie:\nwp_lang=fr_FR; path=/; secure\n\nThe user input was:\nwp_lang=fr_FR"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?wp_lang=fr_FR",
@@ -1123,7 +1123,7 @@
 							"param": "wp_lang",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).\n\nThis was identified at:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?wp_lang=fr_FR\r\n\r\nUser-input was found in the following cookie:\r\nwp_lang=fr_FR; path=/; secure\r\n\r\nThe user input was:\r\nwp_lang=fr_FR"
+							"otherinfo": "An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).\n\nThis was identified at:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php?wp_lang=fr_FR\n\nUser-input was found in the following cookie:\nwp_lang=fr_FR; path=/; secure\n\nThe user input was:\nwp_lang=fr_FR"
 						}
 					],
 					"count": "2",
@@ -1132,7 +1132,7 @@
 					"reference": "<p>https://en.wikipedia.org/wiki/HTTP_cookie</p><p>https://cwe.mitre.org/data/definitions/565.html</p>",
 					"cweid": "565",
 					"wascid": "20",
-					"sourceid": "103"
+					"sourceid": "106"
 				},
 				{
 					"pluginid": "10027",
@@ -1175,6 +1175,14 @@
 							"attack": "",
 							"evidence": "user",
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"!function(e){\"object\"==typeof exports&&\"undefined\"!=typeof module||\"function\"!=typeof define||!define.amd?e():define(\"inert\",e)}\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "username",
+							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected in the element starting with: \"!function(t){\"use strict\";var r,e,n;e={},(n=function(t){if(e[t])return e[t].exports;var o=e[t]={i:t,l:!1,exports:{}};return r[t]\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
@@ -1230,15 +1238,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "user",
-							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"user-profile-js-extra\">\n/* <![CDATA[ */\nvar userProfileL10n = {\"user_id\":\"0\",\"nonce\":\"a09f5a2\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"wordfence-ls-login-js-extra\">\n/* <![CDATA[ */\nvar WFLS_LOGIN_TRANSLATIONS = {\"Message to Supp\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"user-profile-js-extra\">\n/* <![CDATA[ */\nvar userProfileL10n = {\"user_id\":\"0\",\"nonce\":\"4b6bfe5\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "12",
@@ -1247,7 +1247,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "94"
+					"sourceid": "95"
 				},
 				{
 					"pluginid": "10015",
@@ -1389,9 +1389,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/under-construction-page/themes/plain_text/ucp-cog.png",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1432,9 +1440,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/under-construction-page/themes/plain_text/ucp-cog.png",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1475,9 +1491,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/under-construction-page/themes/plain_text/ucp-cog.png",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1518,9 +1542,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/under-construction-page/themes/plain_text/ucp-cog.png",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1547,6 +1579,14 @@
 							"otherinfo": "\ncookie:wordpress_test_cookie"
 						},
 						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "WP%20Cookie%20check",
+							"otherinfo": "\ncookie:wordpress_test_cookie"
+						},
+						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
@@ -1555,7 +1595,7 @@
 							"otherinfo": "\ncookie:wordpress_test_cookie"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:wordpress_test_cookie</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -1638,6 +1678,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/wordfence/modules/login-security/css/login.1704213472.css?ver=1.1.8",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=900",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-includes/css/buttons.min.css?ver=4fd0f5bc13853fae144764d9c4a67c2c",
 							"method": "GET",
 							"param": "",
@@ -1646,7 +1694,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -1671,17 +1719,9 @@
 							"attack": "",
 							"evidence": "no-cache",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-cache",
-							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -1705,7 +1745,7 @@
 							"param": "action",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [id] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpasswordform"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword\n\nappears to include user input in: \n\na(n) [form] tag [id] attribute \n\nThe user input found was:\naction=lostpassword\n\nThe user-controlled value was:\nlostpasswordform"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword",
@@ -1713,7 +1753,7 @@
 							"param": "action",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [name] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpasswordform"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword\n\nappears to include user input in: \n\na(n) [form] tag [name] attribute \n\nThe user input found was:\naction=lostpassword\n\nThe user-controlled value was:\nlostpasswordform"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword",
@@ -1721,39 +1761,15 @@
 							"param": "action",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpassword"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\naction=lostpassword\n\nThe user-controlled value was:\nlostpassword"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR",
-							"method": "GET",
-							"param": "action",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [id] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpasswordform"
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR",
-							"method": "GET",
-							"param": "action",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [name] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpasswordform"
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR",
-							"method": "GET",
-							"param": "action",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpassword"
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php?wp_lang=fr_FR",
 							"method": "GET",
 							"param": "wp_lang",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\nwp_lang=fr_FR\r\n\r\nThe user-controlled value was:\r\nfr_fr"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php?wp_lang=fr_FR\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\nwp_lang=fr_FR\n\nThe user-controlled value was:\nfr_fr"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1761,7 +1777,7 @@
 							"param": "log",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nlog=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nlog=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1769,7 +1785,7 @@
 							"param": "pwd",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\npwd=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\npwd=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1777,7 +1793,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [a] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [a] tag [href] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1785,7 +1801,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/wp-admin/"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/wp-admin/"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1793,7 +1809,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [link] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/wp-admin/css/forms.min.css?ver=6.4.2"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [link] tag [href] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/wp-admin/css/forms.min.css?ver=6.4.2"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1801,7 +1817,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [link] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/wp-admin/css/l10n.min.css?ver=6.4.2"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [link] tag [href] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/wp-admin/css/l10n.min.css?ver=6.4.2"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1809,7 +1825,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [link] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/wp-admin/css/login.min.css?ver=6.4.2"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [link] tag [href] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/wp-admin/css/login.min.css?ver=6.4.2"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1817,7 +1833,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [script] tag [src] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/wp-admin/js/password-strength-meter.min.js?ver=6.4.2"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [script] tag [src] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/wp-admin/js/password-strength-meter.min.js?ver=6.4.2"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1825,7 +1841,7 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [script] tag [src] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://www.mon-expert-en-gestion.com/wp-admin/js/user-profile.min.js?ver=6.4.2"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [script] tag [src] attribute \n\nThe user input found was:\nredirect_to=https://www.mon-expert-en-gestion.com/wp-admin/\n\nThe user-controlled value was:\nhttps://www.mon-expert-en-gestion.com/wp-admin/js/user-profile.min.js?ver=6.4.2"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1833,7 +1849,7 @@
 							"param": "rememberme",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nrememberme=forever\r\n\r\nThe user-controlled value was:\r\nforever"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nrememberme=forever\n\nThe user-controlled value was:\nforever"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-login.php",
@@ -1841,16 +1857,16 @@
 							"param": "wp-submit",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://www.mon-expert-en-gestion.com/wp-login.php\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nwp-submit=Se connecter\r\n\r\nThe user-controlled value was:\r\nse connecter"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://www.mon-expert-en-gestion.com/wp-login.php\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nwp-submit=Se connecter\n\nThe user-controlled value was:\nse connecter"
 						}
 					],
-					"count": "18",
+					"count": "15",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.mon-expert-en-gestion.com/wp-login.php?action=lostpassword</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [form] tag [id] attribute </p><p></p><p>The user input found was:</p><p>action=lostpassword</p><p></p><p>The user-controlled value was:</p><p>lostpasswordform</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "95"
+					"sourceid": "96"
 				}
 			]
 		}
