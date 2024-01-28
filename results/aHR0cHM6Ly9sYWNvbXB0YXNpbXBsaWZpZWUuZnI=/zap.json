@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 21 Jan 2024 01:25:56",
+	"@generated": "Sun, 28 Jan 2024 01:16:35",
 	"site":[ 
 		{
 			"@name": "https://lacomptasimplifiee.fr",
@@ -52,6 +52,14 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"gform_field_values\" \"gform_source_page_number_3\" \"gform_submit\" \"gform_submit_button_3\" \"gform_target_page_number_3\" \"gform_unique_id\" \"input_33.2\" \"input_33.3\" \"input_3_1\" \"input_3_2\" \"input_3_3\" \"input_3_33_1\" \"input_3_4\" \"input_3_46\" \"input_3_5\" \"input_3_50\" \"input_3_51\" \"input_3_8_1\" \"input_8.2\" \"input_8.3\" \"is_submit_3\" \"state_3\" ]."
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://lacomptasimplifiee.fr/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
 							"method": "GET",
 							"param": "",
@@ -100,13 +108,13 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10038",
@@ -175,14 +183,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-la-reactivite-du-cabinet-est-demultipliee/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
@@ -199,7 +199,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/un-outil-de-gestion-et-de-pre-comptabilite/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/le-pilotage-de-gestion/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/un-outil-de-pre-comptabilite-pour-gagner-du-temps/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -213,7 +221,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -282,14 +290,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-la-reactivite-du-cabinet-est-demultipliee/",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -306,7 +306,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/un-outil-de-gestion-et-de-pre-comptabilite/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/le-pilotage-de-gestion/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -322,13 +322,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -381,7 +381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -389,7 +389,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -397,39 +397,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel='stylesheet' id='redux-google-fonts-salient_redux-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%2C800&#038;ver=6.4.2' type='text/css' media='all' />",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"next\" href=\"https://prod-classe7.fr/compta-simplifie/actualites/category/produit/page/2/\" />",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://use.typekit.net/paz3zve.css\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel='stylesheet' id='nectar_default_font_open_sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/category/produit/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -437,13 +405,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10017",
@@ -486,7 +454,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10110",
@@ -654,7 +622,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-content/cache/wpfc-minified/1peeec2b/6e0ms.js",
+							"uri": "https://lacomptasimplifiee.fr/wp-content/cache/wpfc-minified/7uwrmv8z/6e0ms.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -676,7 +644,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10037",
@@ -722,6 +690,14 @@
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -775,14 +751,6 @@
 							"attack": "",
 							"evidence": "X-Powered-By: PHP/7.4",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/",
-							"method": "POST",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -791,7 +759,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "735"
+					"sourceid": "718"
 				},
 				{
 					"pluginid": "10035",
@@ -898,7 +866,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10096",
@@ -933,7 +901,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1145"
+					"sourceid": "1130"
 				},
 				{
 					"pluginid": "10021",
@@ -947,6 +915,14 @@
 					"instances":[ 
 						{
 							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1018,7 +994,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-content/cache/wpfc-minified/7xyhgzql/6e0mf.css",
+							"uri": "https://lacomptasimplifiee.fr/wp-content/cache/wpfc-minified/dq6f60mi/6e0me.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1034,13 +1010,13 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10094",
@@ -1133,12 +1109,12 @@
 							"otherinfo": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-1067 2865 24 32\" style=\"enable-background:new -1067 2865 24 32\" xml:space=\"preserve\"><path d=\"M-1053 2865c-5.5 0-10 4.5-10 10h4c0-3.3 2.7-6 6-6s6 2.7 6 6v2h-20v14c0 3.3 2.7 6 6 6h12c3.3 0 6-2.7 6-6v-16c0-5.5-4.5-10-10-10zm4 28h-12c-1.1 0-2-.9-2-2v-10h16v10c0 1.1-.9 2-2 2zm-4-6c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z\" style=\"fill:#790000\"/></svg>"
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-content/uploads/2022/12/MEG-logo-menu.svg",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/wp/v2/pages/6",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAlCAYAAABReInxAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAHKADAAQAAAABAAAAJQAAAADrRAxvAAAAgElEQVRYCe1XQQ6AMAhT4///t5foYjJ0PoCtGYGEdNcChUIP20WkbI7vcOT6qUhornh+Sc9Ps8dcN6VgJ7wV3BzqhNW8qlIwZEJ3Sd0JuUPl5nCItsA1G2SEGJ+2GGwFg2kLTK+JaNpiQiQsJORKL6zHteiQCdtaz1h2/r9F/glfP/AdlPlykrsAAAAASUVORK5CYII=",
-							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x0000\\x001c\\x0000\\x0000\\x0000%\\x0008\\x0006\\x0000\\x0000\\x0000Qx\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0001sRGB\\x0000\uFFFD\uFFFD\\x001c\uFFFD\\x0000\\x0000\\x00008eXIfMM\\x0000*\\x0000\\x0000\\x0000\\x0008\\x0000\\x0001\uFFFDi\\x0000\\x0004\\x0000\\x0000\\x0000\\x0001\\x0000\\x0000\\x0000\\x001a\\x0000\\x0000\\x0000\\x0000\\x0000\\x0002\uFFFD\\x0002\\x0000\\x0004\\x0000\\x0000\\x0000\\x0001\\x0000\\x0000\\x0000\\x001c\uFFFD\\x0003\\x0000\\x0004\\x0000\\x0000\\x0000\\x0001\\x0000\\x0000\\x0000%\\x0000\\x0000\\x0000\\x0000\uFFFDD\\x000co\\x0000\\x0000\\x0000\uFFFDIDATX\t\uFFFDWA\\x000e\uFFFD0\\x0008S\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDb2t>\uFFFD\uFFFD\\x0019\uFFFD\uFFFDt\uFFFD\\x0002\uFFFDB\\x000f\uFFFDE\uFFFDl\uFFFD\uFFFDp\uFFFD\uFFFD\uFFFDHh\uFFFDx~I\uFFFDO\uFFFD\uFFFD\\7\uFFFD`'\uFFFD\\x0015\uFFFD\\x001c\uFFFD\u057C\uFFFDR0dBwI\uFFFD\t\uFFFDC\uFFFD\uFFFDp\uFFFD\uFFFD\uFFFD5\\x001bd\uFFFD\\x0018\uFFFD\uFFFD\\x0018l\\x0005\uFFFDi\\x000bL\uFFFD\uFFFDh\uFFFDbB$,$\uFFFDJ/\uFFFD\u01F5\uFFFD\t\uFFFDZ\uFFFDXv\uFFFD\uFFFDE\uFFFD\t_?\uFFFD\\x001d\uFFFD\uFFFDr\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
+							"evidence": "JTNDZGl2JTIwY2xhc3MlM0QlMjJjYXJkLWZvbmN0aW9ubmFsaXRlcyUyMiUzRSUwQSUzQ2RpdiUyMGNsYXNzJTNEJTIybGlzdGUtZXRhcGVzJTIyJTNFJTBBJTNDdWwlM0UlMEElM0NsaSUzRSUzQ3N0cm9uZyUzRUludGVyZmFjZSUyMGludHVpdGl2ZSUzQyUyRnN0cm9uZyUzRSUyMHBvdXIlMjBmYWNpbGl0ZXIlMjBsYSUyMHByaXNlJTIwZW4lMjBtYWluJTNDJTJGbGklM0UlMEElM0NsaSUzRSUzQ3N0cm9uZyUzRVN5bmNocm9uaXNhdGlvbiUyMGF1dG9tYXRpcXVlJTIwZGVzJTIwZmx1eCUyMGJhbmNhaXJlcyUzQyUyRnN0cm9uZyUzRSUyMCUyOERTUDIlMjAlMjYlMjBFQklDUyUyMC0lMjBTbyUyMGJhbmslMjAlMkYlMjBqZWRlY2xhcmUuY29tJTI5JTNDJTJGbGklM0UlMEElM0NsaSUzRSUzQ3N0cm9uZyUzRVIlQzMlQTljdXAlQzMlQTlyYXRpb24lMjBkJTI3dW4lMjBoaXN0b3JpcXVlJTIwZGUlMjByZWxldiVDMyVBOSUyMGJhbmNhaXJlJTNDJTJGc3Ryb25nJTNFJTNDJTJGbGklM0UlMEElM0MlMkZkaXYlM0UlMEElM0MlMkZkaXYlM0UlMEElMEElMjAlMjAlMjAlMjA=",
+							"otherinfo": "%3Cdiv%20class%3D%22card-fonctionnalites%22%3E%0A%3Cdiv%20class%3D%22liste-etapes%22%3E%0A%3Cul%3E%0A%3Cli%3E%3Cstrong%3EInterface%20intuitive%3C%2Fstrong%3E%20pour%20faciliter%20la%20prise%20en%20main%3C%2Fli%3E%0A%3Cli%3E%3Cstrong%3ESynchronisation%20automatique%20des%20flux%20bancaires%3C%2Fstrong%3E%20%28DSP2%20%26%20EBICS%20-%20So%20bank%20%2F%20jedeclare.com%29%3C%2Fli%3E%0A%3Cli%3E%3Cstrong%3ER%C3%A9cup%C3%A9ration%20d%27un%20historique%20de%20relev%C3%A9%20bancaire%3C%2Fstrong%3E%3C%2Fli%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20"
 						}
 					],
 					"count": "11",
@@ -1147,7 +1123,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90011",
@@ -1168,6 +1144,14 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fcollecte-des-releves-bancaires%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
 							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Ffacture-electronique%2F",
 							"method": "GET",
 							"param": "",
@@ -1176,7 +1160,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-collecte-des-flux%2F",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-collecte-des-flux-chez-kaliame%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1208,7 +1192,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fla-pre-comptabilite%2F",
+							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Factualites%2Fle-pilotage-de-gestion%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1246,14 +1230,6 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Flacomptasimplifiee.fr%2Fpolitique-de-protections-donnees-personnelles%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						}
 					],
 					"count": "12",
@@ -1262,7 +1238,7 @@
 					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "376"
+					"sourceid": "379"
 				},
 				{
 					"pluginid": "10027",
@@ -1299,22 +1275,6 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/author/rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\", see evidence field for the suspicious comment/snippet."
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/category/interviews/",
 							"method": "GET",
 							"param": "",
@@ -1345,6 +1305,22 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/lacomptasim\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/la-facture-electronique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "9",
@@ -1353,7 +1329,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -1422,14 +1398,6 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-la-reactivite-du-cabinet-est-demultipliee/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
 							"uri": "https://lacomptasimplifiee.fr/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
@@ -1446,7 +1414,15 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://lacomptasimplifiee.fr/actualites/un-outil-de-gestion-et-de-pre-comptabilite/",
+							"uri": "https://lacomptasimplifiee.fr/actualites/le-pilotage-de-gestion/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/actualites/un-outil-de-pre-comptabilite-pour-gagner-du-temps/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1551,7 +1527,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -1589,6 +1565,14 @@
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1650,14 +1634,6 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://lacomptasimplifiee.fr/",
-							"method": "POST",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
 					"count": "12",
@@ -1666,7 +1642,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "642"
+					"sourceid": "587"
 				},
 				{
 					"pluginid": "90005",
@@ -1701,7 +1677,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1736,7 +1712,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1771,7 +1747,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1806,7 +1782,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
@@ -1860,7 +1836,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "306"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10031",
@@ -1878,7 +1854,7 @@
 							"param": "gform_source_page_number_3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [meta] tag [content] attribute \r\n\r\nThe user input found was:\r\ngform_source_page_number_3=1\r\n\r\nThe user-controlled value was:\r\nwidth=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [meta] tag [content] attribute \n\nThe user input found was:\ngform_source_page_number_3=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1886,7 +1862,7 @@
 							"param": "input_1",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_1=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_1=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1894,7 +1870,7 @@
 							"param": "input_2",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_2=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_2=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1902,7 +1878,7 @@
 							"param": "input_28",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_28=Monsieur\r\n\r\nThe user-controlled value was:\r\nmonsieur"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_28=Monsieur\n\nThe user-controlled value was:\nmonsieur"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1910,7 +1886,7 @@
 							"param": "input_3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_3=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_3=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1918,7 +1894,7 @@
 							"param": "input_4",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_4=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_4=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1926,7 +1902,7 @@
 							"param": "input_42",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_42=01\tAin\r\n\r\nThe user-controlled value was:\r\n01\tain"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_42=01\tAin\n\nThe user-controlled value was:\n01\tain"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1934,7 +1910,7 @@
 							"param": "input_45",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_45=Expert-Comptable\r\n\r\nThe user-controlled value was:\r\nexpert-comptable"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_45=Expert-Comptable\n\nThe user-controlled value was:\nexpert-comptable"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1942,7 +1918,7 @@
 							"param": "input_46",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_46=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_46=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1950,7 +1926,7 @@
 							"param": "input_5",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_5=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_5=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1958,7 +1934,7 @@
 							"param": "input_50",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_50=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_50=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1966,7 +1942,7 @@
 							"param": "input_51",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_51=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_51=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1974,7 +1950,7 @@
 							"param": "input_8.2",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\ninput_8.2=J\u2019accepte de recevoir des informations et offres commerciales sur les logiciels RCA.\r\n\r\nThe user-controlled value was:\r\nj\u2019accepte de recevoir des informations et offres commerciales sur les logiciels rca."
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_8.2=J\u2019accepte de recevoir des informations et offres commerciales sur les logiciels RCA.\n\nThe user-controlled value was:\nj\u2019accepte de recevoir des informations et offres commerciales sur les logiciels rca."
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr/",
@@ -1982,7 +1958,7 @@
 							"param": "state_3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://lacomptasimplifiee.fr/\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nstate_3=WyJ7XCI0NVwiOltcIjQwZGZlMDRiZGZiNTI0ZjgyYjQwZTI4ODE2M2Y1ZjBjXCIsXCJjOTQ3YzU2MGVjZWJhZmJhM2IzYzA5MjM1NDIzYThlOVwiLFwiODg5NWM2Y2VmZTZjNGVkNzM2NTA0OGUyYTljYjcxYTdcIl0sXCI4LjFcIjpcImY5Y2ZlZWVjN2E4YzQ2MWEzMzdkYjkwYWRjYjIyZjkwXCIsXCI4LjJcIjpcIjg4YzMyNTgzMmI0YjlkNjMzZTg0NzljMjg4NjhiNjZlXCIsXCI4LjNcIjpcIjUwZTA5NTk4M2YyNzgwZWY4YzVmYjY3Mjg4MzRhOTU1XCIsXCIzMy4xXCI6XCJmOWNmZWVlYzdhOGM0NjFhMzM3ZGI5MGFkY2IyMmY5MFwiLFwiMzMuMlwiOlwiMDMwYTcwMGM5N2M5Y2RlODdkM2M5OTA2MzFkNTAzMGVcIixcIjMzLjNcIjpcIjUwZTA5NTk4M2YyNzgwZWY4YzVmYjY3Mjg4MzRhOTU1XCJ9IiwiOWQxMTQ4ZGM0NmI4NWYyMGI5NzU4MTc4YzM3OTBmZTQiXQ==\r\n\r\nThe user-controlled value was:\r\nwyj7xci0nvwioltcijqwzgzlmdrizgzinti0zjgyyjqwzti4ode2m2y1zjbjxcisxcjjotq3yzu2mgvjzwjhzmjhm2izyza5mjm1ndizythlovwilfwiodg5nwm2y2vmztzjngvknzm2nta0oguyytljyjcxytdcil0sxci4ljfcijpcimy5y2zlzwvjn2e4yzq2mwezmzdkyjkwywrjyjiyzjkwxcisxci4ljjcijpcijg4yzmyntgzmmi0yjlknjmzztg0nzljmjg4njhinjzlxcisxci4ljncijpcijuwzta5ntk4m2yynzgwzwy4yzvmyjy3mjg4mzrhotu1xcisxcizmy4xxci6xcjmownmzwvlyzdhogm0njfhmzm3zgi5mgfky2iymmy5mfwilfwimzmumlwiolwimdmwytcwmgm5n2m5y2rloddkm2m5ota2mzfkntazmgvciixcijmzljncijpcijuwzta5ntk4m2yynzgwzwy4yzvmyjy3mjg4mzrhotu1xcj9iiwiowqxmtq4zgm0nmi4nwyymgi5nzu4mtc4yzm3otbmztqixq=="
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://lacomptasimplifiee.fr/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nstate_3=WyJ7XCI0NVwiOltcIjQwZGZlMDRiZGZiNTI0ZjgyYjQwZTI4ODE2M2Y1ZjBjXCIsXCJjOTQ3YzU2MGVjZWJhZmJhM2IzYzA5MjM1NDIzYThlOVwiLFwiODg5NWM2Y2VmZTZjNGVkNzM2NTA0OGUyYTljYjcxYTdcIl0sXCI4LjFcIjpcImY5Y2ZlZWVjN2E4YzQ2MWEzMzdkYjkwYWRjYjIyZjkwXCIsXCI4LjJcIjpcIjg4YzMyNTgzMmI0YjlkNjMzZTg0NzljMjg4NjhiNjZlXCIsXCI4LjNcIjpcIjUwZTA5NTk4M2YyNzgwZWY4YzVmYjY3Mjg4MzRhOTU1XCIsXCIzMy4xXCI6XCJmOWNmZWVlYzdhOGM0NjFhMzM3ZGI5MGFkY2IyMmY5MFwiLFwiMzMuMlwiOlwiMDMwYTcwMGM5N2M5Y2RlODdkM2M5OTA2MzFkNTAzMGVcIixcIjMzLjNcIjpcIjUwZTA5NTk4M2YyNzgwZWY4YzVmYjY3Mjg4MzRhOTU1XCJ9IiwiOWQxMTQ4ZGM0NmI4NWYyMGI5NzU4MTc4YzM3OTBmZTQiXQ==\n\nThe user-controlled value was:\nwyj7xci0nvwioltcijqwzgzlmdrizgzinti0zjgyyjqwzti4ode2m2y1zjbjxcisxcjjotq3yzu2mgvjzwjhzmjhm2izyza5mjm1ndizythlovwilfwiodg5nwm2y2vmztzjngvknzm2nta0oguyytljyjcxytdcil0sxci4ljfcijpcimy5y2zlzwvjn2e4yzq2mwezmzdkyjkwywrjyjiyzjkwxcisxci4ljjcijpcijg4yzmyntgzmmi0yjlknjmzztg0nzljmjg4njhinjzlxcisxci4ljncijpcijuwzta5ntk4m2yynzgwzwy4yzvmyjy3mjg4mzrhotu1xcisxcizmy4xxci6xcjmownmzwvlyzdhogm0njfhmzm3zgi5mgfky2iymmy5mfwilfwimzmumlwiolwimdmwytcwmgm5n2m5y2rloddkm2m5ota2mzfkntazmgvciixcijmzljncijpcijuwzta5ntk4m2yynzgwzwy4yzvmyjy3mjg4mzrhotu1xcj9iiwiowqxmtq4zgm0nmi4nwyymgi5nzu4mtc4yzm3otbmztqixq=="
 						}
 					],
 					"count": "14",
@@ -1991,7 +1967,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "706"
+					"sourceid": "663"
 				}
 			]
 		}
