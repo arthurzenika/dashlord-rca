@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln lacomptasimplifiee.fr</pre>
-<p class="lead">Sun Jan 28 01:18:31 2024 – Sun Jan 28 01:19:01 2024<br>1 hosts scanned.
+<p class="lead">Sun Feb  4 01:22:44 2024 – Sun Feb  4 01:25:20 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>51.91.236.193</td>
+<td>46.105.204.28</td>
 <td>lacomptasimplifiee.fr</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#51-91-236-193"><h3 class="panel-title">51.91.236.193 - lacomptasimplifiee.fr</h3></div>
-<div class="panel-body collapse in" id="51-91-236-193">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#46-105-204-28"><h3 class="panel-title">46.105.204.28 - lacomptasimplifiee.fr</h3></div>
+<div class="panel-body collapse in" id="46-105-204-28">
 <h4>Hostnames</h4>
 <ul>
 <li>lacomptasimplifiee.fr (user)</li>
-<li>cluster028.hosting.ovh.net (PTR)</li>
+<li>cluster028.hosting.cdn.ovh.net (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -115,74 +115,166 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">nginx</td>
+<td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
+  FourOhFourRequest: 
+    HTTP/1.1 520 Domain not allowed on CDN
+    Date: Sun, 04 Feb 2024 01:22:59 GMT
+    X-CDN-Request-ID: 46653499
+    X-CDN-Pop: bhs
+    Content-Type: text/html; charset=utf-8
+    Retry-After: 5
+    Content-Length: 300
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;520 Domain not allowed on CDN&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Error 520 Domain not allowed on CDN&lt;/h1&gt;
+    &lt;p&gt;Domain not allowed on CDN&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: 46653499&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
   GetRequest: 
-    HTTP/1.1 404 Not Found
-    server: nginx
-    date: Sun, 28 Jan 2024 01:18:46 GMT
-    content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 43e3b5efa6584ec96f1f0cfcf8082f12
-    pragma: no-cache
-    cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4961
-    x-iplb-request-id: ACB77076:A444_335BECC1:0050_65B5AB70_534BB:4636
-    x-iplb-instance: 52342
-    connection: close
-    &lt;html xml:lang="en-EN" lang="en-EN"&gt;
+    HTTP/1.1 520 Domain not allowed on CDN
+    Date: Sun, 04 Feb 2024 01:22:54 GMT
+    X-CDN-Request-ID: 599866588
+    X-CDN-Pop: bhs
+    Content-Type: text/html; charset=utf-8
+    Retry-After: 5
+    Content-Length: 301
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
     &lt;head&gt;
-    &lt;title&gt;Site not installed - OVHcloud&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width"&gt;
-    &lt;meta http-equiv="refresh" content="90"&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-    &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
-    &lt;meta name="robots" content="noindex, nofollow"&gt;
-    &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta h
+    &lt;title&gt;520 Domain not allowed on CDN&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Error 520 Domain not allowed on CDN&lt;/h1&gt;
+    &lt;p&gt;Domain not allowed on CDN&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: 599866588&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
   HTTPOptions: 
-    HTTP/1.1 404 Not Found
-    server: nginx
-    date: Sun, 28 Jan 2024 01:18:46 GMT
-    content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 48ae6b1e9bbbe09cac3d806708fc2dfb
-    pragma: no-cache
-    cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4961
-    x-iplb-request-id: ACB77076:A484_335BECC1:0050_65B5AB76_540AC:4636
-    x-iplb-instance: 52342
-    connection: close
-    &lt;html xml:lang="en-EN" lang="en-EN"&gt;
+    HTTP/1.1 520 Domain not allowed on CDN
+    Date: Sun, 04 Feb 2024 01:22:54 GMT
+    X-CDN-Request-ID: 897596440
+    X-CDN-Pop: bhs
+    Content-Type: text/html; charset=utf-8
+    Retry-After: 5
+    Content-Length: 301
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
     &lt;head&gt;
-    &lt;title&gt;Site not installed - OVHcloud&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width"&gt;
-    &lt;meta http-equiv="refresh" content="90"&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-    &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
-    &lt;meta name="robots" content="noindex, nofollow"&gt;
-    &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta h</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  Apache
-  nginx</pre>
+    &lt;title&gt;520 Domain not allowed on CDN&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Error 520 Domain not allowed on CDN&lt;/h1&gt;
+    &lt;p&gt;Domain not allowed on CDN&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: 897596440&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  RTSPRequest: 
+    HTTP/1.1 400 Bad Request</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">nginx</td>
+<td title="Service">https</td>
+<td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  FourOhFourRequest: 
+    HTTP/1.1 520 Domain not allowed on CDN
+    Date: Sun, 04 Feb 2024 01:23:00 GMT
+    X-CDN-Request-ID: 402465562
+    X-CDN-Pop: bhs
+    Content-Type: text/html; charset=utf-8
+    Retry-After: 5
+    Content-Length: 301
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;520 Domain not allowed on CDN&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Error 520 Domain not allowed on CDN&lt;/h1&gt;
+    &lt;p&gt;Domain not allowed on CDN&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: 402465562&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  GetRequest: 
+    HTTP/1.1 520 Domain not allowed on CDN
+    Date: Sun, 04 Feb 2024 01:23:00 GMT
+    X-CDN-Request-ID: 430489240
+    X-CDN-Pop: bhs
+    Content-Type: text/html; charset=utf-8
+    Retry-After: 5
+    Content-Length: 301
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;520 Domain not allowed on CDN&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Error 520 Domain not allowed on CDN&lt;/h1&gt;
+    &lt;p&gt;Domain not allowed on CDN&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: 430489240&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  HTTPOptions: 
+    HTTP/1.1 520 Domain not allowed on CDN
+    Date: Sun, 04 Feb 2024 01:23:00 GMT
+    X-CDN-Request-ID: 1043588256
+    X-CDN-Pop: bhs
+    Content-Type: text/html; charset=utf-8
+    Retry-After: 5
+    Content-Length: 302
+    Connection: close
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;520 Domain not allowed on CDN&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Error 520 Domain not allowed on CDN&lt;/h1&gt;
+    &lt;p&gt;Domain not allowed on CDN&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: 1043588256&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -202,23 +294,23 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>51.91.236.193 - lacomptasimplifiee.fr</td>
+<td>46.105.204.28 - lacomptasimplifiee.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
-<td>nginx</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>51.91.236.193 - lacomptasimplifiee.fr</td>
+<td>46.105.204.28 - lacomptasimplifiee.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>http</td>
-<td>nginx</td>
+<td>https</td>
 <td></td>
-<td>cpe:/a:igor_sysoev:nginx</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
