@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "google fonts",
-      "url": "https://fonts.googleapis.com/css?family=Gilroy+Regular%3A400&ver=1663701474",
+      "url": "https://fonts.googleapis.com/css?family=Gilroy+Regular%3A400&ver=6.4.3",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -21,16 +21,16 @@
       "url": "https://use.typekit.net/af/28c150/00000000000000007735e9f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
     },
     {
+      "type": "unknown",
+      "url": "https://use.typekit.net/af/28c150/00000000000000007735e9f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
+    },
+    {
       "type": "google tag manager",
       "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MPVDP7T",
       "details": {
         "id": "google tag manager",
         "message": "Use hosted Matomo instance"
       }
-    },
-    {
-      "type": "unknown",
-      "url": "https://use.typekit.net/af/28c150/00000000000000007735e9f4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
     },
     {
       "type": "google tag manager",
@@ -42,7 +42,7 @@
     },
     {
       "type": "google analytics",
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41o0v894096030z8894084953&_p=1706404467758&gcd=11l1l1l1l1&dma=0&cid=853657524.1706404468&ul=en-us&_geo=1&_rdi=1&_s=1&sid=1706404468&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=4713",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9TKD9RN2HY&gtm=45je41v0v894096030z8894084953za200&_p=1707009533773&gcd=11l1l1l1l1&npa=0&dma=0&cid=2049915255.1707009534&ul=en-us&pscdl=noapi&_geo=1&_rdi=1&_s=1&sid=1707009533&sct=1&seg=0&dl=https%3A%2F%2Fblog.rca.fr%2F&dt=Accueil%20-%20Blog%20RCA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2170",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -52,11 +52,11 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.853657524.1706404468",
+      "value": "GA1.1.2049915255.1707009534",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1769476468,
-      "size": 29,
+      "expires": 1770081533,
+      "size": 30,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -66,10 +66,10 @@
     },
     {
       "name": "_ga_9TKD9RN2HY",
-      "value": "GS1.1.1706404468.1.0.1706404468.0.0.0",
+      "value": "GS1.1.1707009533.1.0.1707009533.0.0.0",
       "domain": ".rca.fr",
       "path": "/",
-      "expires": 1769476468,
+      "expires": 1770081533,
       "size": 51,
       "httpOnly": false,
       "secure": false,
@@ -82,7 +82,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 28 Jan 2024 01:14:26 GMT",
+    "date": "Sun, 04 Feb 2024 01:18:53 GMT",
     "link": "<https://blog.rca.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.rca.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\"\n<https://blog.rca.fr/>; rel=shortlink",
     "server": "Apache",
     "vary": "Accept-Encoding",
@@ -183,7 +183,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.190.106",
+      "ip": "142.250.190.138",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -237,6 +237,91 @@
     },
     {
       "hostname": "use.typekit.net",
+      "ip": "23.54.161.96",
+      "geoip": {
+        "city": {
+          "geoname_id": 5101798,
+          "names": {
+            "de": "Newark",
+            "en": "Newark",
+            "es": "Newark",
+            "fr": "Newark",
+            "ja": "ニューアーク",
+            "pt-BR": "Newark",
+            "ru": "Ньюарк"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 20,
+          "latitude": 40.738,
+          "longitude": -74.1634,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "07192"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5101760,
+            "iso_code": "NJ",
+            "names": {
+              "en": "New Jersey",
+              "es": "Nueva Jersey",
+              "fr": "New Jersey",
+              "ja": "ニュージャージー州",
+              "pt-BR": "Nova Jérsia",
+              "ru": "Нью-Джерси",
+              "zh-CN": "新泽西州"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "p.typekit.net",
       "ip": "23.223.17.167",
       "geoip": {
         "city": {
@@ -320,92 +405,8 @@
       }
     },
     {
-      "hostname": "p.typekit.net",
-      "ip": "23.223.17.169",
-      "geoip": {
-        "city": {
-          "geoname_id": 6167865,
-          "names": {
-            "de": "Toronto",
-            "en": "Toronto",
-            "es": "Toronto",
-            "fr": "Toronto",
-            "ja": "トロント",
-            "pt-BR": "Toronto",
-            "ru": "Торонто",
-            "zh-CN": "多伦多"
-          }
-        },
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6251999,
-          "iso_code": "CA",
-          "names": {
-            "de": "Kanada",
-            "en": "Canada",
-            "es": "Canadá",
-            "fr": "Canada",
-            "ja": "カナダ",
-            "pt-BR": "Canadá",
-            "ru": "Канада",
-            "zh-CN": "加拿大"
-          }
-        },
-        "location": {
-          "accuracy_radius": 20,
-          "latitude": 43.709,
-          "longitude": -79.4057,
-          "time_zone": "America/Toronto"
-        },
-        "postal": {
-          "code": "M5A"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 6093943,
-            "iso_code": "ON",
-            "names": {
-              "en": "Ontario",
-              "fr": "Ontario",
-              "ja": "オンタリオ州",
-              "pt-BR": "Ontário",
-              "ru": "Онтарио",
-              "zh-CN": "安大略"
-            }
-          }
-        ]
-      }
-    },
-    {
       "hostname": "www.googletagmanager.com",
-      "ip": "172.217.2.40",
+      "ip": "142.250.190.8",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -459,8 +460,14 @@
     },
     {
       "hostname": "www.google-analytics.com",
-      "ip": "172.217.4.206",
+      "ip": "142.251.32.14",
       "geoip": {
+        "city": {
+          "geoname_id": 5133273,
+          "names": {
+            "en": "Queens"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -490,10 +497,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "accuracy_radius": 500,
+          "latitude": 40.66,
+          "longitude": -73.839,
+          "metro_code": 501,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "11414"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -508,7 +519,23 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5128638,
+            "iso_code": "NY",
+            "names": {
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
+            }
+          }
+        ]
       }
     }
   ]
