@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (20)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 15 days (13)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2024-02-24 06:50"
           }
 ,         {
@@ -535,14 +535,14 @@
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1707010428"
+              "finding"      : "1707614441"
           }
 ,         {
               "id"           : "HSTS",
@@ -1105,6 +1105,6 @@
               "ip"           : "rca.fr/146.59.209.152",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "60"
+              "finding"      : "106"
           }
 ]
