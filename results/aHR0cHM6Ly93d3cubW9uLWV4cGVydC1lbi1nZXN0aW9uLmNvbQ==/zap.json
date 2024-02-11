@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 4 Feb 2024 01:05:12",
+	"@generated": "Sun, 11 Feb 2024 01:05:07",
 	"site":[ 
 		{
 			"@name": "https://www.mon-expert-en-gestion.com",
@@ -36,7 +36,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"gform_field_values\" \"gform_source_page_number_4\" \"gform_submit\" \"gform_submit_button_4\" \"gform_target_page_number_4\" \"gform_unique_id\" \"input_33.2\" \"input_33.3\" \"input_4_1\" \"input_4_2\" \"input_4_33_1\" \"input_4_4\" \"input_4_54\" \"input_4_57\" \"input_4_8_1\" \"input_8.2\" \"input_8.3\" \"is_submit_4\" \"state_4\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -44,7 +44,23 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method='post' enctype='multipart/form-data'  id='gform_4'  action='/' data-formid='4' novalidate>",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"gform_field_values\" \"gform_source_page_number_4\" \"gform_submit\" \"gform_submit_button_4\" \"gform_target_page_number_4\" \"gform_unique_id\" \"input_33.2\" \"input_33.3\" \"input_4_1\" \"input_4_2\" \"input_4_33_1\" \"input_4_4\" \"input_4_54\" \"input_4_57\" \"input_4_8_1\" \"input_8.2\" \"input_8.3\" \"is_submit_4\" \"state_4\" ]."
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://www.mon-expert-en-gestion.com/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -52,7 +68,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"wp-block-search__input-1\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -60,7 +76,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -68,7 +84,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"wp-block-search__input-1\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -76,15 +92,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" action=\"https://www.mon-expert-en-gestion.com/\" class=\"wp-block-search__button-outside wp-block-search__icon-button wp-block-search\"    >",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"wp-block-search__input-1\" ]."
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -92,7 +100,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -100,13 +108,13 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10038",
@@ -135,7 +143,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -143,7 +151,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -151,7 +159,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -159,7 +167,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -167,7 +175,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -175,7 +183,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -183,7 +191,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-pre-comptabilite/",
+							"uri": "https://www.mon-expert-en-gestion.com/mentions-legales/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -191,7 +199,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/meg-la-reactivite-du-cabinet-est-demultipliee/",
+							"uri": "https://www.mon-expert-en-gestion.com/pilotage/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -213,7 +221,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10020",
@@ -242,7 +250,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -250,7 +258,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -258,7 +266,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -266,7 +274,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -274,7 +282,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -282,7 +290,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -290,7 +298,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-pre-comptabilite/",
+							"uri": "https://www.mon-expert-en-gestion.com/mentions-legales/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -298,7 +306,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/meg-la-reactivite-du-cabinet-est-demultipliee/",
+							"uri": "https://www.mon-expert-en-gestion.com/pilotage/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -320,7 +328,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90003",
@@ -381,7 +389,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Manrope:700%2C500%7CRoboto:400&display=swap\" rel=\"stylesheet\" property=\"stylesheet\" media=\"all\" type=\"text/css\" >",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -389,7 +405,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -397,7 +413,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -405,7 +421,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.3#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -413,7 +437,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -421,7 +445,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -429,7 +453,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -437,7 +461,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -445,7 +469,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "14",
+					"count": "16",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
@@ -496,7 +520,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=GT-MR8S9XW",
 							"attack": "",
@@ -504,7 +528,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=GT-MR8S9XW",
 							"attack": "",
@@ -512,7 +536,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=GT-MR8S9XW",
 							"attack": "",
@@ -520,7 +544,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=GT-MR8S9XW",
 							"attack": "",
@@ -528,7 +552,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=GT-MR8S9XW",
 							"attack": "",
@@ -536,7 +560,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=GT-MR8S9XW",
 							"attack": "",
@@ -550,7 +574,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10110",
@@ -563,7 +587,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/e1iht.js",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/2if28.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -571,15 +595,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/963j54j0/e1iht.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.2",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/9ihxhive/2if28.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -619,13 +635,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "397"
+					"sourceid": "416"
 				},
 				{
 					"pluginid": "10063",
@@ -654,7 +670,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -662,7 +678,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -670,7 +686,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -678,7 +694,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -686,7 +702,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -694,7 +710,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -710,7 +726,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/e1iht.js",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/2if28.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -761,7 +777,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -769,7 +785,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -777,7 +793,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -785,7 +801,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/comments/feed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -793,7 +809,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -801,7 +817,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -809,7 +825,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/politique-de-protections-donnees-personnelles/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -868,7 +884,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -876,7 +892,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -884,7 +900,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -892,7 +908,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/comments/feed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -900,7 +916,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -908,7 +924,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -916,7 +932,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/politique-de-protections-donnees-personnelles/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -932,7 +948,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/jxnp0l6y/e1iht.css",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/jxnp0l6y/2if28.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -959,12 +975,12 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/collecte-des-releves-bancaires/embed/",
+							"uri": "https://www.mon-expert-en-gestion.com/gagner-en-simplicite-en-restant-iso-qualite/embed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1988784963",
-							"otherinfo": "1988784963, which evaluates to: 2033-01-08 08:16:03"
+							"evidence": "1703029858",
+							"otherinfo": "1703029858, which evaluates to: 2023-12-19 23:50:58"
 						},
 						{
 							"uri": "https://www.mon-expert-en-gestion.com/wp-content/uploads/2024/01/2-MEG-ordi.png",
@@ -977,11 +993,11 @@
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1988784963, which evaluates to: 2033-01-08 08:16:03</p>",
+					"otherinfo": "<p>1703029858, which evaluates to: 2023-12-19 23:50:58</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1367"
+					"sourceid": "1488"
 				},
 				{
 					"pluginid": "10021",
@@ -1010,7 +1026,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1018,7 +1034,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1026,7 +1042,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1034,7 +1050,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/comments/feed/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1042,7 +1058,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1050,7 +1066,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1058,7 +1074,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/politique-de-protections-donnees-personnelles/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1074,7 +1090,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/jxnp0l6y/e1iht.css",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/jxnp0l6y/2if28.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1117,7 +1133,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFDo\uFFFD\\x0010o\uFFFD\uFFFD\n>\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1125,7 +1141,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFDo\uFFFD\\x0010o\uFFFD\uFFFD\n>\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1133,7 +1149,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFDo\uFFFD\\x0010o\uFFFD\uFFFD\n>\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1141,7 +1157,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFD\u04DF\u054A\u02DE\uFFFD\uFFFD\\x001eo\uFFFD\\x001e\uFFFD'\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDje\uFFFD\uFFFD\uFFFD{\u7A4A\uFFFD\\x001d{\uFFFD"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1149,7 +1165,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFDo\uFFFD\\x0010o\uFFFD\uFFFD\n>\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1157,7 +1173,7 @@
 							"otherinfo": "\uFFFDYZ\uFFFD\uFFFD&\uFFFD\u05BE\uFFFD)\uFFFD\uFFFD'\uFFFDy\uFA3B\uFFFD(\uFFFDg\uFFFD\uFFFD\u9783\uFFFD\uFFFDr\uFFFD\u070AX\uFFFD\uFFFDW\uFFFD\uFFFD\u8955\uFFFD\uFFFD\u05EC\uFFFD\u05EE\uFFFD\u9A1D\u05EC"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1173,7 +1189,7 @@
 							"otherinfo": "\uFFFDZh\uFFFD+b\uFFFD\uFFFDu\uFA6E\uFFFD^r\u0628\uFFFD\u03DD\uFFFDy\uFFFDz\u03E9z\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/dtnd87et/e1iht.css",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/dtnd87et/2if2b.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1195,7 +1211,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90011",
@@ -1216,7 +1232,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Ffacture-electronique%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Ffacture-electronique%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1224,7 +1240,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fla-collecte-des-flux%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fl-onboarding-des-clients%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1232,7 +1248,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fla-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fla-collecte-des-flux%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1240,7 +1256,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fla-facture-electronique%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fla-compta-simplifiee-concept-episode-1%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1248,7 +1264,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fla-pre-comptabilite%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fla-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1256,7 +1272,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fle-pilotage%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fla-facture-electronique%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1264,7 +1280,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fmeg-la-reactivite-du-cabinet-est-demultipliee%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fla-pre-comptabilite%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1272,7 +1288,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Foutil-de-gestion-et-pre-comptabilite%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fmentions-legales%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1280,7 +1296,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fpilotage%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fonboarding-des-collaborateurs%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1288,7 +1304,7 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Factualites%2Fun-outil-de-pre-comptabilite-pour-gagner-du-temps%2F",
+							"uri": "https://www.mon-expert-en-gestion.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fwww.mon-expert-en-gestion.com%2Fpilotage%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1310,7 +1326,7 @@
 					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "452"
+					"sourceid": "411"
 				},
 				{
 					"pluginid": "10027",
@@ -1347,7 +1363,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1355,15 +1371,23 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/www.mon-exp\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bug",
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n/* <![CDATA[ */\ngform.initializeOnLoaded( function() {gformInitSpinner( 4, 'https://www.mon-expe\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1371,31 +1395,31 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/www.mon-exp\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/www.mon-exp\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/www.mon-exp\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\"></p><p>/* <![CDATA[ */</p><p>var nectarLove = {\"ajaxurl\":\"https:\\/\\/www.mon-exp\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1430,7 +1454,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1438,7 +1462,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1446,7 +1470,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1454,7 +1478,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1462,7 +1486,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1470,7 +1494,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1478,7 +1502,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/le-pilotage/",
+							"uri": "https://www.mon-expert-en-gestion.com/mentions-legales/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1486,7 +1510,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/meg-la-reactivite-du-cabinet-est-demultipliee/",
+							"uri": "https://www.mon-expert-en-gestion.com/pilotage/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1537,7 +1561,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1545,7 +1569,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1553,7 +1577,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1561,7 +1585,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/comments/feed/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1569,7 +1593,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1577,7 +1601,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1585,7 +1609,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/feed/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1615,7 +1639,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1628,7 +1652,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.mon-expert-en-gestion.com",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1658,7 +1682,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "90005",
@@ -1671,7 +1695,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.mon-expert-en-gestion.com",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1701,7 +1725,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "90005",
@@ -1714,7 +1738,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.mon-expert-en-gestion.com",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1744,7 +1768,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "90005",
@@ -1757,7 +1781,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.mon-expert-en-gestion.com",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1787,7 +1811,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10049",
@@ -1808,7 +1832,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/author/rca/",
+							"uri": "https://www.mon-expert-en-gestion.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1816,7 +1840,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/article/",
+							"uri": "https://www.mon-expert-en-gestion.com/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1824,7 +1848,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/category/video/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/article/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1832,7 +1856,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/category/video/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1840,7 +1864,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
+							"uri": "https://www.mon-expert-en-gestion.com/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1848,7 +1872,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/actualites/la-facture-electronique/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-compta-simplifiee-ou-comment-meg-reconcilie-le-meilleur-des-deux-mondes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1856,7 +1880,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.mon-expert-en-gestion.com/politique-de-protections-donnees-personnelles/",
+							"uri": "https://www.mon-expert-en-gestion.com/la-facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1870,23 +1894,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://www.mon-expert-en-gestion.com/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
@@ -1913,7 +1929,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "171"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10031",
@@ -2020,7 +2036,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "666"
+					"sourceid": "667"
 				}
 			]
 		}
