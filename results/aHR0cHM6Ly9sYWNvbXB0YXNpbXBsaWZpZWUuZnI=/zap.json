@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 4 Feb 2024 01:19:24",
+	"@generated": "Sun, 11 Feb 2024 01:17:22",
 	"site":[ 
 		{
 			"@name": "https://lacomptasimplifiee.fr",
@@ -202,6 +202,14 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel=\"stylesheet\" href=\"https://use.typekit.net/paz3zve.css\">",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel='shortlink' href='https://www.mon-expert-en-gestion.com/' />",
 							"otherinfo": ""
 						},
 						{
@@ -477,7 +485,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "46",
+					"count": "47",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
@@ -498,25 +506,25 @@
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/e1iht.js",
+							"param": "//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/2if28.js",
 							"attack": "",
-							"evidence": "<script src='//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/e1iht.js' type=\"text/javascript\"></script>",
+							"evidence": "<script src='//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/6xjcc2wa/2if28.js' type=\"text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/963j54j0/e1iht.js",
+							"param": "//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/9ihxhive/2if28.js",
 							"attack": "",
-							"evidence": "<script src='//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/963j54j0/e1iht.js' type=\"text/javascript\"></script>",
+							"evidence": "<script src='//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/9ihxhive/2if28.js' type=\"text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/mn01ma3s/e1iht.js",
+							"param": "//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/m8g4rnol/2if2b.js",
 							"attack": "",
-							"evidence": "<script src='//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/mn01ma3s/e1iht.js' type=\"text/javascript\"></script>",
+							"evidence": "<script src='//www.mon-expert-en-gestion.com/wp-content/cache/wpfc-minified/m8g4rnol/2if2b.js' type=\"text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -602,6 +610,22 @@
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.20",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.20\" defer async id=\"tp-tools-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.20",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.20\" defer async id=\"revmin-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
 							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/salient-core/js/third-party/touchswipe.min.js?ver=1.0",
 							"attack": "",
 							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/salient-core/js/third-party/touchswipe.min.js?ver=1.0\" id=\"touchswipe-js\"></script>",
@@ -613,6 +637,94 @@
 							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/init.js?ver=16.1.3",
 							"attack": "",
 							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/init.js?ver=16.1.3\" id=\"nectar-frontend-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/priority.js?ver=16.1.3",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/priority.js?ver=16.1.3\" id=\"nectar_priority-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/anime.min.js?ver=4.5.1",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/anime.min.js?ver=4.5.1\" id=\"anime-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/hoverintent.min.js?ver=1.9",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/hoverintent.min.js?ver=1.9\" id=\"hoverintent-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/imagesLoaded.min.js?ver=4.1.4",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/imagesLoaded.min.js?ver=4.1.4\" id=\"imagesLoaded-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/jquery.easing.min.js?ver=1.3",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/jquery.easing.min.js?ver=1.3\" id=\"jquery-easing-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/jquery.fancybox.js?ver=3.3.9",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/jquery.fancybox.js?ver=3.3.9\" id=\"fancyBox-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/jquery.mousewheel.min.js?ver=3.1.13",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/jquery.mousewheel.min.js?ver=3.1.13\" id=\"jquery-mousewheel-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/stickkit.js?ver=1.0",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/stickkit.js?ver=1.0\" id=\"stickykit-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/superfish.js?ver=1.5.8",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/superfish.js?ver=1.5.8\" id=\"superfish-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/transit.min.js?ver=0.9.9",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/transit.min.js?ver=0.9.9\" id=\"nectar-transit-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/waypoints.js?ver=4.0.2",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/themes/salient/js/build/third-party/waypoints.js?ver=4.0.2\" id=\"nectar-waypoints-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -672,7 +784,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "22",
+					"count": "35",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -705,6 +817,33 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10037",
+					"alertRef": "10037",
+					"alert": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
+					"instances":[ 
+						{
+							"uri": "https://lacomptasimplifiee.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.0",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
+					"cweid": "200",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -748,7 +887,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10021",
@@ -916,7 +1055,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 70",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -924,7 +1063,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 52",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -942,7 +1081,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>https://www.rfc-editor.org/rfc/rfc9110.html</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -985,7 +1124,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1028,7 +1167,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1071,7 +1210,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1114,7 +1253,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1149,7 +1288,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1176,7 +1315,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "7"
 				}
 			]
 		}
