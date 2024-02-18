@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 11 Feb 2024 01:04:32",
+	"@generated": "Sun, 18 Feb 2024 01:03:41",
 	"site":[ 
 		{
 			"@name": "https://mon-expert-en-gestion.fr",
@@ -36,7 +36,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"_eventId\" \"execution\" ]."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -44,7 +44,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"geolocation\" \"lockTimeInSeconds\" \"nbAuthFailedAttemptsBeforeThisShot\" \"nbMaxAttempts\" \"password\" \"rememberMe\" \"username\" ]."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -76,7 +76,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"_eventId\" \"execution\" ]."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "POST",
 							"param": "",
 							"attack": "",
@@ -127,7 +127,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -159,7 +159,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "POST",
 							"param": "",
 							"attack": "",
@@ -186,7 +186,7 @@
 					"desc": "<p>A hyperlink pointing to another host name was found. As session ID URL rewrite is used, it may be disclosed in referer header to external hosts.</p>",
 					"instances":[ 
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -194,7 +194,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -202,29 +202,21 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "ajax.googleapis.com",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
-							"method": "POST",
-							"param": "",
-							"attack": "",
-							"evidence": "cdn.rca.fr",
-							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>This is a risk if the session ID is sensitive and the hyperlink refers to an external or third party host. For secure content, put session ID in secured session cookie.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://seclists.org/webappsec/2002/q4/111</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "71"
+					"sourceid": "64"
 				},
 				{
 					"pluginid": "3",
@@ -237,77 +229,85 @@
 					"desc": "<p>URL rewrite is used to track user session ID. The session ID may be disclosed via cross-site referer header. In addition, the session ID might be stored in browser history or server logs.</p>",
 					"instances":[ 
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "POST",
 							"param": "",
 							"attack": "",
-							"evidence": "jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": ""
 						}
 					],
-					"count": "8",
+					"count": "9",
 					"solution": "<p>For secure content, put session ID in a cookie. To be even more secure consider using a combination of cookie and URL rewrite.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://seclists.org/webappsec/2002/q4/111</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "71"
+					"sourceid": "64"
 				},
 				{
 					"pluginid": "90003",
@@ -352,7 +352,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -360,7 +360,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -368,7 +368,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -376,7 +376,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -411,7 +411,7 @@
 							"otherinfo": "CVE-2021-41184\nCVE-2021-41183\nCVE-2021-41182\nCVE-2022-31160\n"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -427,7 +427,7 @@
 							"otherinfo": "CVE-2020-11023\nCVE-2020-11022\nCVE-2015-9251\nCVE-2019-11358\n"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -449,7 +449,7 @@
 					"reference": "<p>https://github.com/advisories/GHSA-h6gj-6jjq-h8g9</p><p>https://bugs.jqueryui.com/ticket/15284</p><p>https://github.com/jquery/jquery-ui/commit/8cc5bae1caa1fcf96bf5862c5646c787020ba3f9</p><p>https://nvd.nist.gov/vuln/detail/CVE-2022-31160</p><p>https://github.com/jquery/jquery-ui/security/advisories/GHSA-gpqq-952q-5327</p><p>https://nvd.nist.gov/vuln/detail/CVE-2021-41184</p><p>https://nvd.nist.gov/vuln/detail/CVE-2021-41183</p><p>https://github.com/jquery/jquery-ui/security/advisories/GHSA-9gj3-hwp5-pmwc</p><p>https://nvd.nist.gov/vuln/detail/CVE-2021-41182</p><p>https://github.com/jquery/jquery-ui/issues/2101</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "115"
+					"sourceid": "135"
 				},
 				{
 					"pluginid": "10010",
@@ -476,9 +476,33 @@
 							"attack": "",
 							"evidence": "set-cookie: X-HA-Backend",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "set-cookie: X-HA-Backend",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "set-cookie: X-HA-Backend",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/static/js/perso-cas.js",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "set-cookie: X-HA-Backend",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "5",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
@@ -535,9 +559,33 @@
 							"attack": "",
 							"evidence": "set-cookie: X-HA-cas",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "set-cookie: X-HA-Backend",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "set-cookie: X-HA-Backend",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/static/js/perso-cas.js",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "set-cookie: X-HA-Backend",
+							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "8",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -564,7 +612,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -572,7 +620,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -594,7 +642,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "117"
+					"sourceid": "113"
 				},
 				{
 					"pluginid": "10023",
@@ -615,7 +663,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "POST",
 							"param": "",
 							"attack": "",
@@ -629,7 +677,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "123"
+					"sourceid": "143"
 				},
 				{
 					"pluginid": "10063",
@@ -666,7 +714,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -674,15 +722,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -706,7 +746,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/runtime.356dbd8190be9f79.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/runtime.624d91e5185f80bb.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -723,6 +763,14 @@
 						},
 						{
 							"uri": "https://mon-expert-en-gestion.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/static/js/perso-cas.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -773,7 +821,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/runtime.356dbd8190be9f79.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/runtime.624d91e5185f80bb.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -821,7 +869,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/static/favicons/favicon-32x32.png",
+							"uri": "https://mon-expert-en-gestion.fr/static/favicons/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -835,17 +883,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/static/favicons/site.webmanifest",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
@@ -888,7 +928,7 @@
 							"otherinfo": "1928374655, which evaluates to: 2031-02-09 03:37:35"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -896,7 +936,7 @@
 							"otherinfo": "1472583690, which evaluates to: 2016-08-30 19:01:30"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -904,7 +944,7 @@
 							"otherinfo": "1597532486, which evaluates to: 2020-08-15 23:01:26"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -912,7 +952,7 @@
 							"otherinfo": "1928374655, which evaluates to: 2031-02-09 03:37:35"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -920,7 +960,7 @@
 							"otherinfo": "1396182291, which evaluates to: 2014-03-30 12:24:51"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -928,7 +968,7 @@
 							"otherinfo": "1416354905, which evaluates to: 2014-11-18 23:55:05"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -936,7 +976,7 @@
 							"otherinfo": "1426881987, which evaluates to: 2015-03-20 20:06:27"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -944,7 +984,7 @@
 							"otherinfo": "1432725776, which evaluates to: 2015-05-27 11:22:56"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -952,7 +992,7 @@
 							"otherinfo": "1444681467, which evaluates to: 2015-10-12 20:24:27"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -960,7 +1000,7 @@
 							"otherinfo": "1467031594, which evaluates to: 2016-06-27 12:46:34"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -968,7 +1008,7 @@
 							"otherinfo": "1473231341, which evaluates to: 2016-09-07 06:55:41"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -976,7 +1016,7 @@
 							"otherinfo": "1495990901, which evaluates to: 2017-05-28 17:01:41"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -984,7 +1024,7 @@
 							"otherinfo": "1501505948, which evaluates to: 2017-07-31 12:59:08"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -992,7 +1032,7 @@
 							"otherinfo": "1502002290, which evaluates to: 2017-08-06 06:51:30"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1000,7 +1040,7 @@
 							"otherinfo": "1508970993, which evaluates to: 2017-10-25 22:36:33"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1008,7 +1048,7 @@
 							"otherinfo": "1518500249, which evaluates to: 2018-02-13 05:37:29"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1016,7 +1056,7 @@
 							"otherinfo": "1522805485, which evaluates to: 2018-04-04 01:31:25"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1024,7 +1064,7 @@
 							"otherinfo": "1530992060, which evaluates to: 2018-07-07 19:34:20"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1032,7 +1072,7 @@
 							"otherinfo": "1537002063, which evaluates to: 2018-09-15 09:01:03"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1040,7 +1080,7 @@
 							"otherinfo": "1541459225, which evaluates to: 2018-11-05 23:07:05"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1048,7 +1088,7 @@
 							"otherinfo": "1546045734, which evaluates to: 2018-12-29 01:08:54"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1056,7 +1096,7 @@
 							"otherinfo": "1548603684, which evaluates to: 2019-01-27 15:41:24"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1064,7 +1104,7 @@
 							"otherinfo": "1555081692, which evaluates to: 2019-04-12 15:08:12"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1072,7 +1112,7 @@
 							"otherinfo": "1560198380, which evaluates to: 2019-06-10 20:26:20"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1080,7 +1120,7 @@
 							"otherinfo": "1575990012, which evaluates to: 2019-12-10 15:00:12"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1088,7 +1128,7 @@
 							"otherinfo": "1595750129, which evaluates to: 2020-07-26 07:55:29"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1096,7 +1136,7 @@
 							"otherinfo": "1607167915, which evaluates to: 2020-12-05 11:31:55"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1104,7 +1144,7 @@
 							"otherinfo": "1654270250, which evaluates to: 2022-06-03 15:30:50"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1112,7 +1152,7 @@
 							"otherinfo": "1694076839, which evaluates to: 2023-09-07 08:53:59"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1120,7 +1160,7 @@
 							"otherinfo": "1695183700, which evaluates to: 2023-09-20 04:21:40"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1128,7 +1168,7 @@
 							"otherinfo": "1700485571, which evaluates to: 2023-11-20 13:06:11"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1136,7 +1176,7 @@
 							"otherinfo": "1731405415, which evaluates to: 2024-11-12 09:56:55"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1144,7 +1184,7 @@
 							"otherinfo": "1732584193, which evaluates to: 2024-11-26 01:23:13"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1152,7 +1192,7 @@
 							"otherinfo": "1732584194, which evaluates to: 2024-11-26 01:23:14"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1160,7 +1200,7 @@
 							"otherinfo": "1735328473, which evaluates to: 2024-12-27 19:41:13"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1168,7 +1208,7 @@
 							"otherinfo": "1747873779, which evaluates to: 2025-05-22 00:29:39"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1176,7 +1216,7 @@
 							"otherinfo": "1750603025, which evaluates to: 2025-06-22 14:37:05"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1184,7 +1224,7 @@
 							"otherinfo": "1770035416, which evaluates to: 2026-02-02 12:30:16"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1192,7 +1232,7 @@
 							"otherinfo": "1779033703, which evaluates to: 2026-05-17 16:01:43"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1200,7 +1240,7 @@
 							"otherinfo": "1804603682, which evaluates to: 2027-03-09 14:48:02"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1208,7 +1248,7 @@
 							"otherinfo": "1816402316, which evaluates to: 2027-07-24 04:11:56"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1216,7 +1256,7 @@
 							"otherinfo": "1836072691, which evaluates to: 2028-03-07 20:11:31"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1224,7 +1264,7 @@
 							"otherinfo": "1839030562, which evaluates to: 2028-04-11 01:49:22"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1232,7 +1272,7 @@
 							"otherinfo": "1856431235, which evaluates to: 2028-10-29 11:20:35"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1240,7 +1280,7 @@
 							"otherinfo": "1859775393, which evaluates to: 2028-12-07 04:16:33"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1248,7 +1288,7 @@
 							"otherinfo": "1873313359, which evaluates to: 2029-05-12 20:49:19"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1256,7 +1296,7 @@
 							"otherinfo": "1894007588, which evaluates to: 2030-01-07 09:13:08"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1264,7 +1304,7 @@
 							"otherinfo": "1894986606, which evaluates to: 2030-01-18 17:10:06"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1272,7 +1312,7 @@
 							"otherinfo": "1899447441, which evaluates to: 2030-03-11 08:17:21"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1280,7 +1320,7 @@
 							"otherinfo": "1914138554, which evaluates to: 2030-08-28 09:09:14"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1288,7 +1328,7 @@
 							"otherinfo": "1925078388, which evaluates to: 2031-01-01 23:59:48"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1296,7 +1336,7 @@
 							"otherinfo": "1926607734, which evaluates to: 2031-01-19 16:48:54"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1304,7 +1344,7 @@
 							"otherinfo": "1955562222, which evaluates to: 2031-12-20 19:43:42"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1312,7 +1352,7 @@
 							"otherinfo": "1958414417, which evaluates to: 2032-01-22 20:00:17"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1320,7 +1360,7 @@
 							"otherinfo": "1986661051, which evaluates to: 2032-12-14 18:17:31"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1328,7 +1368,7 @@
 							"otherinfo": "1990404162, which evaluates to: 2033-01-27 02:02:42"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1336,7 +1376,7 @@
 							"otherinfo": "1996064986, which evaluates to: 2033-04-02 14:29:46"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1344,7 +1384,7 @@
 							"otherinfo": "2003034995, which evaluates to: 2033-06-22 06:36:35"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1352,7 +1392,7 @@
 							"otherinfo": "2007800933, which evaluates to: 2033-08-16 10:28:53"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1363,10 +1403,10 @@
 					"count": "62",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1472583690, which evaluates to: 2016-08-30 19:01:30</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "128"
+					"sourceid": "124"
 				},
 				{
 					"pluginid": "10111",
@@ -1387,12 +1427,12 @@
 							"otherinfo": "userParam=username\nuserValue=foo-bar@example.com\npasswordParam=password\nreferer=https://mon-expert-en-gestion.fr/cas/login"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "POST",
 							"param": "username",
 							"attack": "",
 							"evidence": "password",
-							"otherinfo": "userParam=username\nuserValue=foo-bar@example.com\npasswordParam=password\nreferer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2"
+							"otherinfo": "userParam=username\nuserValue=foo-bar@example.com\npasswordParam=password\nreferer=https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71"
 						}
 					],
 					"count": "2",
@@ -1401,7 +1441,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "103"
+					"sourceid": "100"
 				},
 				{
 					"pluginid": "10094",
@@ -1422,7 +1462,7 @@
 							"otherinfo": "\\x000fn\uFFFD\\x000c\\x001e\uFFFD\uFFFD\\x0001:\\x000f\uFFFDuq\uFFFD\uFFFD\uFFFD\\x001f>\uFFFD9\uFFFD~x\uFFFDM4"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1430,7 +1470,7 @@
 							"otherinfo": "\\x000fn\uFFFD\\x000c\\x001e\uFFFD\uFFFD\\x0001:\\x000f\uFFFDuq\uFFFD\uFFFD\uFFFD\\x001f>\uFFFD9\uFFFD~x\uFFFDM4"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/portail/main.3bdb2428aeecfbf7.js",
+							"uri": "https://mon-expert-en-gestion.fr/portail/main.4c166ae71faa1d97.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1460,7 +1500,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "117"
+					"sourceid": "113"
 				},
 				{
 					"pluginid": "10027",
@@ -1497,7 +1537,7 @@
 							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected 7 times, the first in the element starting with: \"    $('#fm1 input[name=\"username\"],[name=\"password\"]').on(\"input\", function (event) {\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1505,7 +1545,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"    console.log(\"Requesting GeoLocation data from the browser...\");\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1513,7 +1553,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"            console.log(\"User denied the request for GeoLocation.\");\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/js/cas.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1521,7 +1561,7 @@
 							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected 7 times, the first in the element starting with: \"    $('#fm1 input[name=\"username\"],[name=\"password\"]').on(\"input\", function (event) {\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1529,23 +1569,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"(function(n,t){\"use strict\";function a(n){for(var r in n)if(i[n[r]]!==t)return!0;return!1}function r(n){var t=n.charAt(0).toUppe\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "from",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"(function(t){\"function\"==typeof define&&define.amd?define([\"jquery\"],t):t(jQuery)})(function(t){function e(t){for(var e=t.css(\"v\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 5 times, the first in the element starting with: \"}}(t.fn.show),hide:function(t){return function(s){if(i(s))return t.apply(this,arguments);var n=e.apply(this,arguments);return n.\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1553,7 +1577,23 @@
 							"otherinfo": "The following pattern was used: \\bDB\\b and was detected 2 times, the first in the element starting with: \"}return c}function Q(a){var b;for(b in a)if((\"data\"!==b||!n.isEmptyObject(a[b]))&&\"toJSON\"!==b)return!1;return!0}function R(a,b,\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"!function(a,b){\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.docu\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db",
+							"otherinfo": "The following pattern was used: \\bDB\\b and was detected 2 times, the first in the element starting with: \"}return c}function Q(a){var b;for(b in a)if((\"data\"!==b||!n.isEmptyObject(a[b]))&&\"toJSON\"!==b)return!1;return!0}function R(a,b,\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/jquery/1.12.4/jquery.min.js;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1575,7 +1615,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "116"
+					"sourceid": "112"
 				},
 				{
 					"pluginid": "10109",
@@ -1592,7 +1632,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"runtime.356dbd8190be9f79.js\" type=\"module\"></script>",
+							"evidence": "<script src=\"runtime.624d91e5185f80bb.js\" type=\"module\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -1600,7 +1640,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"runtime.356dbd8190be9f79.js\" type=\"module\"></script>",
+							"evidence": "<script src=\"runtime.624d91e5185f80bb.js\" type=\"module\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -1682,7 +1722,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1722,7 +1762,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
+							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=6270AC121D99BD9877C424B9D2391D71",
 							"method": "POST",
 							"param": "cache-control",
 							"attack": "",
@@ -1771,17 +1811,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1822,17 +1854,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1859,23 +1883,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://mon-expert-en-gestion.fr/portail/",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1883,7 +1891,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1924,17 +1932,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1957,7 +1957,7 @@
 							"method": "GET",
 							"param": "X-HA-Backend",
 							"attack": "",
-							"evidence": "rbx3|ZcgdG",
+							"evidence": "rbx3|ZdFXZ",
 							"otherinfo": "\ncookie:X-HA-Backend"
 						},
 						{
@@ -1965,7 +1965,7 @@
 							"method": "GET",
 							"param": "X-HA-cas",
 							"attack": "",
-							"evidence": "4669441337544509",
+							"evidence": "74a5554816cc1622",
 							"otherinfo": "\ncookie:X-HA-cas"
 						},
 						{
@@ -1973,7 +1973,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "582C6AD8618C097C48FB6ABB0318ADB2",
+							"evidence": "6270AC121D99BD9877C424B9D2391D71",
 							"otherinfo": "\ncookie:JSESSIONID\ncookie:X-HA-cas"
 						},
 						{
@@ -1981,48 +1981,48 @@
 							"method": "GET",
 							"param": "X-HA-Backend",
 							"attack": "",
-							"evidence": "rbx3|ZcgdG",
+							"evidence": "rbx2|ZdFXZ",
 							"otherinfo": "\ncookie:X-HA-Backend\ncookie:JSESSIONID\ncookie:X-HA-cas"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/headjs/1.0.3/head.min.js",
-							"method": "GET",
-							"param": "X-HA-Backend",
-							"attack": "",
-							"evidence": "rbx3|ZcgdG",
-							"otherinfo": "\ncookie:X-HA-Backend"
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/webjars/zxcvbn/4.3.0/zxcvbn.js",
-							"method": "GET",
-							"param": "X-HA-Backend",
-							"attack": "",
-							"evidence": "rbx3|ZcgdG",
-							"otherinfo": "\ncookie:X-HA-Backend"
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/static/css/variables.css?20240211020424",
+							"uri": "https://mon-expert-en-gestion.fr/$",
 							"method": "GET",
 							"param": "X-HA-cas",
 							"attack": "",
-							"evidence": "\"4669441337544509\"",
+							"evidence": "\"74a5554816cc1622\"",
 							"otherinfo": "\ncookie:X-HA-cas"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login",
-							"method": "POST",
+							"uri": "https://mon-expert-en-gestion.fr/cas/themes/meg/css/cas.css;jsessionid=6270AC121D99BD9877C424B9D2391D71",
+							"method": "GET",
 							"param": "X-HA-Backend",
 							"attack": "",
-							"evidence": "rbx3|ZcgdG",
+							"evidence": "rbx3|ZdFXZ",
 							"otherinfo": "\ncookie:X-HA-Backend"
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/cas/login;jsessionid=582C6AD8618C097C48FB6ABB0318ADB2",
-							"method": "POST",
+							"uri": "https://mon-expert-en-gestion.fr/portail/scripts.d119483c84852380.js",
+							"method": "GET",
 							"param": "X-HA-Backend",
 							"attack": "",
-							"evidence": "rbx3|ZcgdG",
+							"evidence": "rbx3|ZdFXZ",
 							"otherinfo": "\ncookie:X-HA-Backend"
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/static/css/variables.css?20240218020332",
+							"method": "GET",
+							"param": "X-HA-Backend",
+							"attack": "",
+							"evidence": "rbx3|ZdFXZ",
+							"otherinfo": "\ncookie:X-HA-Backend"
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/static/css/variables.css?20240218020332",
+							"method": "GET",
+							"param": "X-HA-cas",
+							"attack": "",
+							"evidence": "\"74a5554816cc1622\"",
+							"otherinfo": "\ncookie:X-HA-cas"
 						}
 					],
 					"count": "9",
@@ -2043,6 +2043,14 @@
 					"riskdesc": "Informational (Medium)",
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
+						{
+							"uri": "https://mon-expert-en-gestion.fr/portail/runtime.624d91e5185f80bb.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=2592000",
+							"otherinfo": ""
+						},
 						{
 							"uri": "https://mon-expert-en-gestion.fr/robots.txt",
 							"method": "GET",
@@ -2068,7 +2076,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://mon-expert-en-gestion.fr/static/favicons/favicon-32x32.png",
+							"uri": "https://mon-expert-en-gestion.fr/static/favicons/apple-touch-icon.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=2592000",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://mon-expert-en-gestion.fr/static/favicons/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -2082,23 +2098,15 @@
 							"attack": "",
 							"evidence": "max-age=21600",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://mon-expert-en-gestion.fr/static/favicons/site.webmanifest",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=21600",
-							"otherinfo": ""
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
-					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "29"
+					"sourceid": "42"
 				},
 				{
 					"pluginid": "10049",
