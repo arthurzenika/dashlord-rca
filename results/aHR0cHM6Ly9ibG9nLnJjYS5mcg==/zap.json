@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 18 Feb 2024 01:28:37",
+	"@generated": "Sun, 25 Feb 2024 01:29:40",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -373,7 +373,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/categorie/culture-compta/",
+							"uri": "https://blog.rca.fr/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -381,7 +381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/categorie/culture-compta/",
+							"uri": "https://blog.rca.fr/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -462,7 +462,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "818"
+					"sourceid": "823"
 				},
 				{
 					"pluginid": "10063",
@@ -684,7 +684,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1604"
+					"sourceid": "1572"
 				},
 				{
 					"pluginid": "10037",
@@ -852,7 +852,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
+							"uri": "https://blog.rca.fr/report-de-la-facture-electronique-et-maintenant/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -941,7 +941,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1331"
+					"sourceid": "1154"
 				},
 				{
 					"pluginid": "10021",
@@ -1002,7 +1002,15 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
+							"uri": "https://blog.rca.fr/la-team-rca-a-fait-sa-rentree/",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://blog.rca.fr/la-teamrca-fete-noel-a-novawest/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1042,7 +1050,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -1270,7 +1278,7 @@
 					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "846"
+					"sourceid": "845"
 				},
 				{
 					"pluginid": "10019",
@@ -1307,6 +1315,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-LightItalic.woff2",
+							"method": "GET",
+							"param": "content-type",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-Medium.woff2",
 							"method": "GET",
 							"param": "content-type",
@@ -1331,7 +1347,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBold.woff2",
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-RegularItalic.woff2",
 							"method": "GET",
 							"param": "content-type",
 							"attack": "",
@@ -1339,7 +1355,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBoldItalic.woff2",
+							"uri": "https://blog.rca.fr/wp-content/themes/salient-child/fonts/Gilroy-SemiBold.woff2",
 							"method": "GET",
 							"param": "content-type",
 							"attack": "",
@@ -1379,13 +1395,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1897"
+					"sourceid": "1899"
 				},
 				{
 					"pluginid": "10027",
@@ -1430,7 +1446,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://blog.rca.fr/categorie/culture-compta/",
+							"uri": "https://blog.rca.fr/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1438,12 +1454,12 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\" id=\"nectar-frontend-js-extra\">\n/* <![CDATA[ */\nvar nectarLove = {\"ajaxurl\":\"https:\\/\\/blog.rca.fr\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://blog.rca.fr/categorie/culture-compta/",
+							"uri": "https://blog.rca.fr/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPag\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/team-rca/",
