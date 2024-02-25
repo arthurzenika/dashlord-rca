@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Feb 18 01:06:08 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mon-expert-en-gestion.fr
+# Nmap 7.92 scan initiated Sun Feb 25 01:05:14 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mon-expert-en-gestion.fr
 Nmap scan report for mon-expert-en-gestion.fr (54.37.63.101)
-Host is up (0.15s latency).
+Host is up (0.088s latency).
 rDNS record for 54.37.63.101: ip101.ip-54-37-63.eu
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE   VERSION
@@ -51,7 +51,7 @@ PORT    STATE SERVICE   VERSION
 |_    data = '{"username": "Wicket-bot", "icon_url": "https://img1.starwars-holonet.com/holonet/dictionnaire/photos/perso_wicket.jpg","text": "####
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=2/18%Time=65D15811%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=2/25%Time=65DA9258%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-len
 SF:gth:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%r
 SF:(HTTPOptions,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-le
@@ -84,7 +84,7 @@ SF:nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x2
 SF:0text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20b
 SF:rowser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=2/18%Time=65D15817%P=x86_64-alpine-linux
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=2/25%Time=65DA925E%P=x86_64-alpine-linux
 SF:-musl%r(GetRequest,344C,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\n
 SF:cache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html>\
 SF:n\x20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20<meta\x20charset=\"UTF-8\"
@@ -128,4 +128,4 @@ SF:20\"https://img1\.starwars-holonet\.com/holonet/dictionnaire/photos/per
 SF:so_wicket\.jpg\",\"text\":\x20\"####\x20");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb 18 01:06:56 2024 -- 1 IP address (1 host up) scanned in 48.31 seconds
+# Nmap done at Sun Feb 25 01:05:50 2024 -- 1 IP address (1 host up) scanned in 36.74 seconds
