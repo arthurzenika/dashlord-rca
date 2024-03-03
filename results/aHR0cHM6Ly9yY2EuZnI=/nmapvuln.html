@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln rca.fr</pre>
-<p class="lead">Sun Feb 25 01:29:55 2024 – Sun Feb 25 01:30:23 2024<br>1 hosts scanned.
+<p class="lead">Sun Mar  3 01:27:50 2024 – Sun Mar  3 01:28:17 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -122,17 +122,17 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GetRequest: 
+  FourOhFourRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 25 Feb 2024 01:30:09 GMT
+    date: Sun, 03 Mar 2024 01:28:05 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 69e608656d3202de24a289c5ac846981
+    x-ovh-webhosting-id: 968f212b8012eda4785620da91cdeb2f
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4961
-    x-iplb-request-id: ACB7836E:BC82_923BD198:0050_65DA981B_14420:64FC
-    x-iplb-instance: 52171
+    content-length: 4958
+    x-iplb-request-id: 1461BF33:0AC2_923BD198:0050_65E3D225_219B7:0F80
+    x-iplb-instance: 52143
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
     &lt;head&gt;
@@ -147,13 +147,13 @@
   HTTPOptions: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 25 Feb 2024 01:30:10 GMT
+    date: Sun, 03 Mar 2024 01:28:04 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 9f3c665de9e44caabc6e41a01422cdc7
+    x-ovh-webhosting-id: 6020c4c1d3e42c5e060e0afd9067f522
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4961
-    x-iplb-request-id: ACB7836E:BC86_923BD198:0050_65DA9822_2D7E9:7DE9
+    content-length: 4958
+    x-iplb-request-id: 1461BF33:0AC0_923BD198:0050_65E3D224_1481B:0FEC
     x-iplb-instance: 52189
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
@@ -165,7 +165,16 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta h</pre>
+    &lt;meta h
+  RTSPRequest, X11Probe: 
+    HTTP/1.1 400 Bad request
+    content-length: 90
+    cache-control: no-cache
+    content-type: text/html
+    connection: close
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
+    Your browser sent an invalid request.
+    &lt;/body&gt;&lt;/html&gt;</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   Apache

@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 25 Feb 2024 01:28:14",
+	"@generated": "Sun, 3 Mar 2024 01:26:16",
 	"site":[ 
 		{
 			"@name": "https://rca.fr",
@@ -108,6 +108,22 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
+							"uri": "https://rca.fr/ressources/actualites/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://rca.fr/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://rca.fr/ressources/actualites/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" method=\"get\" action=\"https://rca.fr/\" class=\"wp-block-search__button-inside wp-block-search__icon-button search-bar wp-block-search\"    >",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"wp-block-search__input-1\" ]."
+						},
+						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
@@ -116,7 +132,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						}
 					],
-					"count": "12",
+					"count": "14",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
@@ -336,7 +352,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -443,7 +459,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10054",
@@ -494,7 +510,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "145"
+					"sourceid": "143"
 				},
 				{
 					"pluginid": "10017",
@@ -547,7 +563,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/actualites/cas-client-comment-le-groupe-ameco-a-embarque-ses-collaborateurs-vers-une-nouvelle-forme-de-comptabilite-la-compta-simplifiee/",
+							"uri": "https://rca.fr/actualites/category/cas-client/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.3#038;render=explicit",
 							"attack": "",
@@ -609,7 +625,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "294"
+					"sourceid": "329"
 				},
 				{
 					"pluginid": "10110",
@@ -646,23 +662,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.3",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.4",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.3",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -702,13 +702,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1041"
+					"sourceid": "1049"
 				},
 				{
 					"pluginid": "10063",
@@ -815,7 +815,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10037",
@@ -1037,7 +1037,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10096",
@@ -1050,37 +1050,93 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://rca.fr/accompagnement/formations-rca/embed/",
+							"uri": "https://rca.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1534896820",
-							"otherinfo": "1534896820, which evaluates to: 2018-08-22 00:13:40"
+							"evidence": "1709148905",
+							"otherinfo": "1709148905, which evaluates to: 2024-02-28 19:35:05"
 						},
 						{
-							"uri": "https://rca.fr/notre-adn/embed/",
+							"uri": "https://rca.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1427799233",
-							"otherinfo": "1427799233, which evaluates to: 2015-03-31 10:53:53"
+							"evidence": "1709148906",
+							"otherinfo": "1709148906, which evaluates to: 2024-02-28 19:35:06"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/uploads/2023/10/2-MEG-ordi.png",
+							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1462899777",
-							"otherinfo": "1462899777, which evaluates to: 2016-05-10 17:02:57"
+							"evidence": "1709148905",
+							"otherinfo": "1709148905, which evaluates to: 2024-02-28 19:35:05"
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148906",
+							"otherinfo": "1709148906, which evaluates to: 2024-02-28 19:35:06"
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148905",
+							"otherinfo": "1709148905, which evaluates to: 2024-02-28 19:35:05"
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148906",
+							"otherinfo": "1709148906, which evaluates to: 2024-02-28 19:35:06"
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148905",
+							"otherinfo": "1709148905, which evaluates to: 2024-02-28 19:35:05"
+						},
+						{
+							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148906",
+							"otherinfo": "1709148906, which evaluates to: 2024-02-28 19:35:06"
+						},
+						{
+							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148905",
+							"otherinfo": "1709148905, which evaluates to: 2024-02-28 19:35:05"
+						},
+						{
+							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1709148906",
+							"otherinfo": "1709148906, which evaluates to: 2024-02-28 19:35:06"
 						}
 					],
-					"count": "3",
+					"count": "10",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1534896820, which evaluates to: 2018-08-22 00:13:40</p>",
+					"otherinfo": "<p>1709148905, which evaluates to: 2024-02-28 19:35:05</p>",
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3329"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -1187,7 +1243,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -1294,7 +1350,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90011",
@@ -1409,7 +1465,7 @@
 					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1054"
+					"sourceid": "1062"
 				},
 				{
 					"pluginid": "10027",
@@ -1438,7 +1494,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
+							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1446,7 +1502,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 3 times, the first in the element starting with: \"<script type=\"text/javascript\" id=\"wpdm-frontjs-js-extra\">\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
+							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1454,7 +1510,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1462,7 +1518,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 3 times, the first in the element starting with: \"<script type=\"text/javascript\" id=\"wpdm-frontjs-js-extra\">\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1478,7 +1534,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<!-- <script type=\"text/javascript\" src=\"https://rca.fr/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
+							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1486,7 +1542,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<!-- <script type=\"text/javascript\" src=\"https://rca.fr/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/gamme-conseil/",
+							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1500,7 +1556,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -1607,7 +1663,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1698,7 +1754,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -1767,7 +1823,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fnos-solutions%2Fmon-expert-en-gestion%2F",
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1783,7 +1839,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fnos-solutions%2Fmon-expert-en-gestion%2F",
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frca.fr%2Fvos-enjeux%2Ffacture-electronique%2F",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1813,7 +1869,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1227"
+					"sourceid": "1268"
 				},
 				{
 					"pluginid": "90005",
@@ -1856,7 +1912,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1899,7 +1955,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1942,7 +1998,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1985,7 +2041,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10112",
@@ -2002,7 +2058,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -2010,73 +2066,81 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/cache/wpfc-minified/qshln6y7",
+							"uri": "https://rca.fr/wp-content/cache/wpfc-minified/7nsigkns",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/plugins/complianz-gdpr/assets/css",
+							"uri": "https://rca.fr/wp-content/themes/salient-child",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/plugins/salient-core/js",
+							"uri": "https://rca.fr/wp-content/themes/salient/css/build/style.css?ver=16.1.3",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/uploads/2021/10/independant.svg",
+							"uri": "https://rca.fr/wp-content/themes/salient/js/build/third-party/waypoints.js?ver=4.0.2",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/uploads/2021/10/picto-aide-support.svg",
+							"uri": "https://rca.fr/wp-content/uploads/2023/09",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-includes/css/dist/block-library",
+							"uri": "https://rca.fr/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1",
+							"uri": "https://rca.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5ed332e56522694b68ca1ddc34421ee6",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
+							"otherinfo": "\ncookie:__wpdm_client"
+						},
+						{
+							"uri": "https://rca.fr/xmlrpc.php?rsd",
+							"method": "GET",
+							"param": "__wpdm_client",
+							"attack": "",
+							"evidence": "dcf0171b38a4b50509a35022daba1b65",
 							"otherinfo": "\ncookie:__wpdm_client"
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:__wpdm_client</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "145"
+					"sourceid": "143"
 				},
 				{
 					"pluginid": "10049",
@@ -2111,7 +2175,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "145"
+					"sourceid": "143"
 				},
 				{
 					"pluginid": "10031",
@@ -2124,157 +2188,141 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
-							"param": "gform_source_page_number_29",
+							"param": "gform_source_page_number_24",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [meta] tag [content] attribute \n\nThe user input found was:\ngform_source_page_number_29=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [meta] tag [content] attribute \n\nThe user input found was:\ngform_source_page_number_24=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "gform_submit",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [form] tag [data-formid] attribute \n\nThe user input found was:\ngform_submit=29\n\nThe user-controlled value was:\n29"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "gform_submit",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ngform_submit=29\n\nThe user-controlled value was:\n29"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [form] tag [data-formid] attribute \n\nThe user input found was:\ngform_submit=24\n\nThe user-controlled value was:\n24"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "gform_submit",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ngform_submit=29\n\nThe user-controlled value was:\n29\tfinist\u00E8re"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ngform_submit=24\n\nThe user-controlled value was:\n24"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
+							"method": "POST",
+							"param": "gform_submit",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ngform_submit=24\n\nThe user-controlled value was:\n24\tdordogne"
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_1",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_1=ZAP\n\nThe user-controlled value was:\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_1=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_2",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_2=ZAP\n\nThe user-controlled value was:\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_2=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_3=foo-bar@example.com\n\nThe user-controlled value was:\nfoo-bar@example.com"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_3=foo-bar@example.com\n\nThe user-controlled value was:\nfoo-bar@example.com"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_33.3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [div] tag [data-padding] attribute \n\nThe user input found was:\ninput_33.3=28\n\nThe user-controlled value was:\n28"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_33.3=23\n\nThe user-controlled value was:\n23"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_33.3",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [img] tag [width] attribute \n\nThe user input found was:\ninput_33.3=28\n\nThe user-controlled value was:\n281"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_33.3=23\n\nThe user-controlled value was:\n23\tcreuse"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "input_33.3",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_33.3=28\n\nThe user-controlled value was:\n28"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
-							"method": "POST",
-							"param": "input_33.3",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_33.3=28\n\nThe user-controlled value was:\n28\teure-et-loir"
-						},
-						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_4",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_4=9999999999\n\nThe user-controlled value was:\n9999999999"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_4=9999999999\n\nThe user-controlled value was:\n9999999999"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_41",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_41=01\tAin\n\nThe user-controlled value was:\n01\tain"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_41=01\tAin\n\nThe user-controlled value was:\n01\tain"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_43",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_43=Je souhaite t\u00E9l\u00E9charger la plaquette\n\nThe user-controlled value was:\nje souhaite t\u00E9l\u00E9charger la plaquette"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_43=Je souhaite t\u00E9lecharger le catalogue\n\nThe user-controlled value was:\nje souhaite t\u00E9lecharger le catalogue"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
-							"param": "input_47",
+							"param": "input_48",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_47=Madame\n\nThe user-controlled value was:\nmadame"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_48=Monsieur\n\nThe user-controlled value was:\nmonsieur"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
 							"param": "input_5",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_5=ZAP\n\nThe user-controlled value was:\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\ninput_5=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
-							"param": "input_51",
+							"param": "input_56",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_51=Expert-Comptable dipl\u00F4m\u00E9\n\nThe user-controlled value was:\nexpert-comptable dipl\u00F4m\u00E9"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [option] tag [value] attribute \n\nThe user input found was:\ninput_56=Expert-Comptable dipl\u00F4m\u00E9\n\nThe user-controlled value was:\nexpert-comptable dipl\u00F4m\u00E9"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024/",
+							"uri": "https://rca.fr/accompagnement/formations-rca/",
 							"method": "POST",
-							"param": "state_29",
+							"param": "state_24",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/cap-2024/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nstate_29=WyJ7XCI0NlwiOltcIjdmMzc5NWQ3MGM4OWU0NzdmOWFhOWQ2YzlhMDVjZGEzXCIsXCI4NDM1NzE1YWI0Y2MyNWE0NjE1ZmJlMDM2OGRlYWNkNVwiLFwiYWFjNjAzOTBlOTZlYThlMWQ2ZTcyMDRiNGMxY2Q5NTRcIixcImQxYjAwM2VmMGM3MjYzNzIwZGE3MzE4MmMwMTUwMGYzXCIsXCJjMzJlODkxNjgwNTU0OGU3MTFmYmM2MmQ2MTUxNjQxNFwiLFwiNGQxN2Q4ZjU3ZjNhYTkwMGI1Nzk4ODY3NWNkZDlhNWFcIl0sXCI1MVwiOltcIjExNTg2NjY5MWE3ZjNmMTM4NjM1MmU5NmI2N2E4Mzc0XCIsXCJjMTcxODUxZDgyMjlkY2E3OTAwZDRkNDBiNTI2NWVjY1wiLFwiNzFjYzBjNDM3MTQ0ZjI0OWYxOWQzM2ZkMGVhNzUyYzZcIixcIjA4MTA5M2I5ZGNhY2U0NDgxZmMwMWUzZGQyNjgyNDNmXCIsXCI3ZTMzZDE1ZmIwYWNkOTFmOTMyMjYyMzg0NzdiY2UyMFwiLFwiNDQ3NjhlNTE5OTkyZDE1YzU2OWMwNjQwZGNhYmEzODVcIixcIjZkZjRlYjc4MjljN2NiMWZhMTM1Zjg2MjUwZTJlOTI2XCIsXCI2MjY2ZjI3MDFjNzA4ZjM2ODRmMjYzOWI5NzI2ZDE3MFwiLFwiODQxMGViZmFhMGNjYjk5NTM1MzI2MTA4NGZhN2NlN2JcIixcIjcyYTUxNzc4ZDBhN2IwMThmMDI5OTIxMGE3ZDI2MWY1XCIsXCI3OTg0NjU5ODA4Y2E1N2IzYzlkMjJhMTUxYTU5ODZhMVwiXSxcIjQ3XCI6W1wiMmJkYjVlODIwNjg0MzAyMmFhMTgxNzU4N2QxMzg4MDNcIixcImY2NDY4M2IyMjAyZWE0MWI4NjMzNjQ1M2IzNjlmMzE5XCJdLFwiNDNcIjpbXCJhNmE0OTVmMjYyYjVlY2Y1YjBkNTc2NTFmZDYzMjFkYlwiLFwiMTE4NzQxMjUzMmU4ZmE2MGYxZGIzMzQ5MzZhNWQzYzNcIl0sXCIzMy4xXCI6XCI5YWU1ODljNDEwMmVjM2NjYTBhZTk4M2IyNmVlZTRhNVwiLFwiMzMuMlwiOlwiNDk3MTQ2ODY3MDc2OTc3ZTk5ZTI0ZjdkZmE5Njg4MTlcIixcIjMzLjNcIjpcImViMDg3NmE0M2VhN2VlNGRmNjZlZWFkM2NkNjYwZWZhXCJ9IiwiNGQ2Y2ZmYzMyYTUxYjk3NDdlYmFkNjdiYzE0YjcyZTAiXQ==\n\nThe user-controlled value was:\nwyj7xci0nlwioltcijdmmzc5nwq3mgm4owu0nzdmowfhowq2yzlhmdvjzgezxcisxci4ndm1nze1ywi0y2mynwe0nje1zmjlmdm2ogrlywnknvwilfwiywfjnjazotblotzlythlmwq2ztcymdringmxy2q5ntrciixcimqxyjawm2vmmgm3mjyznziwzge3mze4mmmwmtuwmgyzxcisxcjjmzjlodkxnjgwntu0ogu3mtfmymm2mmq2mtuxnjqxnfwilfwingqxn2q4zju3zjnhytkwmgi1nzk4ody3nwnkzdlhnwfcil0sxci1mvwioltcijexntg2njy5mwe3zjnmmtm4njm1mmu5nmi2n2e4mzc0xcisxcjjmtcxoduxzdgymjlky2e3otawzdrkndbinti2nwvjy1wilfwinzfjyzbjndm3mtq0zji0owyxowqzm2zkmgvhnzuyyzzciixcija4mta5m2i5zgnhy2u0ndgxzmmwmwuzzgqynjgyndnmxcisxci3ztmzzde1zmiwywnkotfmotmymjyymzg0nzdiy2uymfwilfwindq3njhlnte5otkyzde1yzu2owmwnjqwzgnhymezodvciixcijzkzjrlyjc4mjljn2nimwzhmtm1zjg2mjuwztjloti2xcisxci2mjy2zji3mdfjnza4zjm2odrmmjyzowi5nzi2zde3mfwilfwiodqxmgvizmfhmgnjyjk5ntm1mzi2mta4ngzhn2nln2jciixcijcyytuxnzc4zdbhn2iwmthmmdi5otixmge3zdi2mwy1xcisxci3otg0nju5oda4y2e1n2izyzlkmjjhmtuxytu5odzhmvwixsxcijq3xci6w1wimmjkyjvlodiwnjg0mzaymmfhmtgxnzu4n2qxmzg4mdnciixcimy2ndy4m2iymjayzwe0mwi4njmznjq1m2iznjlmmze5xcjdlfwindncijpbxcjhnme0otvmmjyyyjvly2y1yjbkntc2ntfmzdyzmjfkylwilfwimte4nzqxmjuzmmu4zme2mgyxzgizmzq5mzzhnwqzyzncil0sxcizmy4xxci6xci5ywu1odljndewmmvjm2njytbhztk4m2iynmvlztrhnvwilfwimzmumlwiolwindk3mtq2ody3mdc2otc3ztk5zti0zjdkzme5njg4mtlciixcijmzljncijpcimvimdg3nme0m2vhn2vlngrmnjzlzwfkm2nknjywzwzhxcj9iiwingq2y2zmyzmyytuxyjk3nddlymfknjdiyze0yjcyztaixq=="
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://rca.fr/accompagnement/formations-rca/\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nstate_24=WyJ7XCI0N1wiOltcIjdmMzc5NWQ3MGM4OWU0NzdmOWFhOWQ2YzlhMDVjZGEzXCIsXCI4NDM1NzE1YWI0Y2MyNWE0NjE1ZmJlMDM2OGRlYWNkNVwiLFwiYWFjNjAzOTBlOTZlYThlMWQ2ZTcyMDRiNGMxY2Q5NTRcIixcImQxYjAwM2VmMGM3MjYzNzIwZGE3MzE4MmMwMTUwMGYzXCIsXCJjMzJlODkxNjgwNTU0OGU3MTFmYmM2MmQ2MTUxNjQxNFwiLFwiNGQxN2Q4ZjU3ZjNhYTkwMGI1Nzk4ODY3NWNkZDlhNWFcIl0sXCI1NlwiOltcIjExNTg2NjY5MWE3ZjNmMTM4NjM1MmU5NmI2N2E4Mzc0XCIsXCJjMTcxODUxZDgyMjlkY2E3OTAwZDRkNDBiNTI2NWVjY1wiLFwiNzFjYzBjNDM3MTQ0ZjI0OWYxOWQzM2ZkMGVhNzUyYzZcIixcIjA4MTA5M2I5ZGNhY2U0NDgxZmMwMWUzZGQyNjgyNDNmXCIsXCI3ZTMzZDE1ZmIwYWNkOTFmOTMyMjYyMzg0NzdiY2UyMFwiLFwiNDQ3NjhlNTE5OTkyZDE1YzU2OWMwNjQwZGNhYmEzODVcIixcIjZkZjRlYjc4MjljN2NiMWZhMTM1Zjg2MjUwZTJlOTI2XCIsXCI2MjY2ZjI3MDFjNzA4ZjM2ODRmMjYzOWI5NzI2ZDE3MFwiLFwiODQxMGViZmFhMGNjYjk5NTM1MzI2MTA4NGZhN2NlN2JcIixcIjcyYTUxNzc4ZDBhN2IwMThmMDI5OTIxMGE3ZDI2MWY1XCIsXCI3OTg0NjU5ODA4Y2E1N2IzYzlkMjJhMTUxYTU5ODZhMVwiXSxcIjQ4XCI6W1wiZjY0NjgzYjIyMDJlYTQxYjg2MzM2NDUzYjM2OWYzMTlcIixcIjJiZGI1ZTgyMDY4NDMwMjJhYTE4MTc1ODdkMTM4ODAzXCJdLFwiNDNcIjpbXCIyOGVmMzc5MzYwYWY1NGU4MDVjY2VmNGI2MmMwNDdlYlwiLFwiNmUxNmFjYjg1YmVkZDNjZjcxNGMyOTA2ODFjYjZmMTlcIl0sXCIzMy4xXCI6XCI5YWU1ODljNDEwMmVjM2NjYTBhZTk4M2IyNmVlZTRhNVwiLFwiMzMuMlwiOlwiNDk3MTQ2ODY3MDc2OTc3ZTk5ZTI0ZjdkZmE5Njg4MTlcIixcIjMzLjNcIjpcIjA3NDFkZTkzNjMxYjJmY2NhMWJmNTU5NWQ0MmVjMWRjXCJ9IiwiNzg3MTQ2NmI0NDBlZmUwYmFhNThlOTA3MzU3OTg4MGUiXQ==\n\nThe user-controlled value was:\nwyj7xci0n1wioltcijdmmzc5nwq3mgm4owu0nzdmowfhowq2yzlhmdvjzgezxcisxci4ndm1nze1ywi0y2mynwe0nje1zmjlmdm2ogrlywnknvwilfwiywfjnjazotblotzlythlmwq2ztcymdringmxy2q5ntrciixcimqxyjawm2vmmgm3mjyznziwzge3mze4mmmwmtuwmgyzxcisxcjjmzjlodkxnjgwntu0ogu3mtfmymm2mmq2mtuxnjqxnfwilfwingqxn2q4zju3zjnhytkwmgi1nzk4ody3nwnkzdlhnwfcil0sxci1nlwioltcijexntg2njy5mwe3zjnmmtm4njm1mmu5nmi2n2e4mzc0xcisxcjjmtcxoduxzdgymjlky2e3otawzdrkndbinti2nwvjy1wilfwinzfjyzbjndm3mtq0zji0owyxowqzm2zkmgvhnzuyyzzciixcija4mta5m2i5zgnhy2u0ndgxzmmwmwuzzgqynjgyndnmxcisxci3ztmzzde1zmiwywnkotfmotmymjyymzg0nzdiy2uymfwilfwindq3njhlnte5otkyzde1yzu2owmwnjqwzgnhymezodvciixcijzkzjrlyjc4mjljn2nimwzhmtm1zjg2mjuwztjloti2xcisxci2mjy2zji3mdfjnza4zjm2odrmmjyzowi5nzi2zde3mfwilfwiodqxmgvizmfhmgnjyjk5ntm1mzi2mta4ngzhn2nln2jciixcijcyytuxnzc4zdbhn2iwmthmmdi5otixmge3zdi2mwy1xcisxci3otg0nju5oda4y2e1n2izyzlkmjjhmtuxytu5odzhmvwixsxcijq4xci6w1wizjy0njgzyjiymdjlytqxyjg2mzm2nduzyjm2owyzmtlciixcijjizgi1ztgymdy4ndmwmjjhyte4mtc1oddkmtm4odazxcjdlfwindncijpbxciyogvmmzc5mzywywy1ngu4mdvjy2vmngi2mmmwnddlylwilfwinmuxnmfjyjg1ymvkzdnjzjcxngmyota2odfjyjzmmtlcil0sxcizmy4xxci6xci5ywu1odljndewmmvjm2njytbhztk4m2iynmvlztrhnvwilfwimzmumlwiolwindk3mtq2ody3mdc2otc3ztk5zti0zjdkzme5njg4mtlciixcijmzljncijpcija3ndfkztkznjmxyjjmy2nhmwjmntu5nwq0mmvjmwrjxcj9iiwinzg3mtq2nmi0ndblzmuwymfhnthlota3mzu3otg4mguixq=="
 						}
 					],
-					"count": "18",
+					"count": "16",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://rca.fr/accompagnement/cap-2024/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>gform_source_page_number_29=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://rca.fr/accompagnement/formations-rca/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>gform_source_page_number_24=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1565"
+					"sourceid": "1570"
 				}
 			]
 		}

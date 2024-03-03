@@ -1,23 +1,23 @@
-# Nmap 7.92 scan initiated Sun Feb 25 01:29:55 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln rca.fr
+# Nmap 7.92 scan initiated Sun Mar  3 01:27:50 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln rca.fr
 Nmap scan report for rca.fr (146.59.209.152)
-Host is up (0.10s latency).
+Host is up (0.085s latency).
 Other addresses for rca.fr (not scanned): 2001:41d0:301::31
 rDNS record for 146.59.209.152: cluster031.hosting.ovh.net
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE  VERSION
 80/tcp  open  http     nginx
 | fingerprint-strings: 
-|   GetRequest: 
+|   FourOhFourRequest: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
-|     date: Sun, 25 Feb 2024 01:30:09 GMT
+|     date: Sun, 03 Mar 2024 01:28:05 GMT
 |     content-type: text/html; charset=utf8
-|     x-ovh-webhosting-id: 69e608656d3202de24a289c5ac846981
+|     x-ovh-webhosting-id: 968f212b8012eda4785620da91cdeb2f
 |     pragma: no-cache
 |     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-|     content-length: 4961
-|     x-iplb-request-id: ACB7836E:BC82_923BD198:0050_65DA981B_14420:64FC
-|     x-iplb-instance: 52171
+|     content-length: 4958
+|     x-iplb-request-id: 1461BF33:0AC2_923BD198:0050_65E3D225_219B7:0F80
+|     x-iplb-instance: 52143
 |     connection: close
 |     <html xml:lang="en-EN" lang="en-EN">
 |     <head>
@@ -32,13 +32,13 @@ PORT    STATE SERVICE  VERSION
 |   HTTPOptions: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
-|     date: Sun, 25 Feb 2024 01:30:10 GMT
+|     date: Sun, 03 Mar 2024 01:28:04 GMT
 |     content-type: text/html; charset=utf8
-|     x-ovh-webhosting-id: 9f3c665de9e44caabc6e41a01422cdc7
+|     x-ovh-webhosting-id: 6020c4c1d3e42c5e060e0afd9067f522
 |     pragma: no-cache
 |     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-|     content-length: 4961
-|     x-iplb-request-id: ACB7836E:BC86_923BD198:0050_65DA9822_2D7E9:7DE9
+|     content-length: 4958
+|     x-iplb-request-id: 1461BF33:0AC0_923BD198:0050_65E3D224_1481B:0FEC
 |     x-iplb-instance: 52189
 |     connection: close
 |     <html xml:lang="en-EN" lang="en-EN">
@@ -50,21 +50,30 @@ PORT    STATE SERVICE  VERSION
 |     <meta http-equiv="Content-Language" content="en-EN">
 |     <meta name="robots" content="noindex, nofollow">
 |     <meta name="description" qtlid="283606" content="Site not installed">
-|_    <meta h
+|     <meta h
+|   RTSPRequest, X11Probe: 
+|     HTTP/1.1 400 Bad request
+|     content-length: 90
+|     cache-control: no-cache
+|     content-type: text/html
+|     connection: close
+|     <html><body><h1>400 Bad request</h1>
+|     Your browser sent an invalid request.
+|_    </body></html>
 | http-server-header: 
 |   Apache
 |_  nginx
 443/tcp open  ssl/http nginx
 |_http-server-header: Apache
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.92%I=7%D=2/25%Time=65DA9822%P=x86_64-alpine-linux-musl%r
-SF:(GetRequest,14F3,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\
-SF:r\ndate:\x20Sun,\x2025\x20Feb\x202024\x2001:30:09\x20GMT\r\ncontent-typ
-SF:e:\x20text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x2069e608656d3
-SF:202de24a289c5ac846981\r\npragma:\x20no-cache\r\ncache-control:\x20no-st
+SF-Port80-TCP:V=7.92%I=7%D=3/3%Time=65E3D224%P=x86_64-alpine-linux-musl%r(
+SF:HTTPOptions,14F0,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\
+SF:r\ndate:\x20Sun,\x2003\x20Mar\x202024\x2001:28:04\x20GMT\r\ncontent-typ
+SF:e:\x20text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x206020c4c1d3e
+SF:42c5e060e0afd9067f522\r\npragma:\x20no-cache\r\ncache-control:\x20no-st
 SF:ore,\x20no-cache,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r
-SF:\ncontent-length:\x204961\r\nx-iplb-request-id:\x20ACB7836E:BC82_923BD1
-SF:98:0050_65DA981B_14420:64FC\r\nx-iplb-instance:\x2052171\r\nconnection:
+SF:\ncontent-length:\x204958\r\nx-iplb-request-id:\x201461BF33:0AC0_923BD1
+SF:98:0050_65E3D224_1481B:0FEC\r\nx-iplb-instance:\x2052189\r\nconnection:
 SF:\x20close\r\n\r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x
 SF:20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x2
 SF:0installed\x20-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<m
@@ -76,26 +85,34 @@ SF:x20\x20<meta\x20http-equiv=\"Content-Language\"\x20content=\"en-EN\">\n
 SF:\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"robots\"\x20content=\"n
 SF:oindex,\x20nofollow\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\
 SF:"description\"\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20inst
-SF:alled\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20h")%r(HTTPOptions,14
-SF:F3,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\r\ndate:\x20Su
-SF:n,\x2025\x20Feb\x202024\x2001:30:10\x20GMT\r\ncontent-type:\x20text/htm
-SF:l;\x20charset=utf8\r\nx-ovh-webhosting-id:\x209f3c665de9e44caabc6e41a01
-SF:422cdc7\r\npragma:\x20no-cache\r\ncache-control:\x20no-store,\x20no-cac
-SF:he,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r\ncontent-leng
-SF:th:\x204961\r\nx-iplb-request-id:\x20ACB7836E:BC86_923BD198:0050_65DA98
-SF:22_2D7E9:7DE9\r\nx-iplb-instance:\x2052189\r\nconnection:\x20close\r\n\
-SF:r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x20\x20\x20<hea
-SF:d>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x20installed\x20
-SF:-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"
-SF:viewport\"\x20content=\"width=device-width\">\n\x20\x20\x20\x20\x20\x20
-SF:\x20\x20<meta\x20http-equiv=\"refresh\"\x20content=\"90\">\n\x20\x20\x2
-SF:0\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"
-SF:text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x
-SF:20http-equiv=\"Content-Language\"\x20content=\"en-EN\">\n\x20\x20\x20\x
-SF:20\x20\x20\x20\x20<meta\x20name=\"robots\"\x20content=\"noindex,\x20nof
-SF:ollow\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"description\"
-SF:\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20installed\">\n\x20
-SF:\x20\x20\x20\x20\x20\x20\x20<meta\x20h");
+SF:alled\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20h")%r(RTSPRequest,CF
+SF:,"HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-
+SF:control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20cl
+SF:ose\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\
+SF:x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(X11Probe,CF
+SF:,"HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-
+SF:control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20cl
+SF:ose\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\
+SF:x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(FourOhFourR
+SF:equest,14F0,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x20nginx\r\nda
+SF:te:\x20Sun,\x2003\x20Mar\x202024\x2001:28:05\x20GMT\r\ncontent-type:\x2
+SF:0text/html;\x20charset=utf8\r\nx-ovh-webhosting-id:\x20968f212b8012eda4
+SF:785620da91cdeb2f\r\npragma:\x20no-cache\r\ncache-control:\x20no-store,\
+SF:x20no-cache,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r\ncon
+SF:tent-length:\x204958\r\nx-iplb-request-id:\x201461BF33:0AC2_923BD198:00
+SF:50_65E3D225_219B7:0F80\r\nx-iplb-instance:\x2052143\r\nconnection:\x20c
+SF:lose\r\n\r\n<html\x20xml:lang=\"en-EN\"\x20lang=\"en-EN\">\n\x20\x20\x2
+SF:0\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Site\x20not\x20inst
+SF:alled\x20-\x20OVHcloud</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x
+SF:20name=\"viewport\"\x20content=\"width=device-width\">\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20<meta\x20http-equiv=\"refresh\"\x20content=\"90\">\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20c
+SF:ontent=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20<meta\x20http-equiv=\"Content-Language\"\x20content=\"en-EN\">\n\x20\
+SF:x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"robots\"\x20content=\"noinde
+SF:x,\x20nofollow\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"desc
+SF:ription\"\x20\x20qtlid=\"283606\"\x20content=\"Site\x20not\x20installed
+SF:\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20h");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb 25 01:30:23 2024 -- 1 IP address (1 host up) scanned in 28.37 seconds
+# Nmap done at Sun Mar  3 01:28:17 2024 -- 1 IP address (1 host up) scanned in 26.72 seconds
