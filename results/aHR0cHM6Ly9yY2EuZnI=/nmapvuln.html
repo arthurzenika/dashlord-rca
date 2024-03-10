@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln rca.fr</pre>
-<p class="lead">Sun Mar  3 01:27:50 2024 – Sun Mar  3 01:28:17 2024<br>1 hosts scanned.
+<p class="lead">Sun Mar 10 01:30:49 2024 – Sun Mar 10 01:31:18 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -122,38 +122,16 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
+  GetRequest: 
     HTTP/1.1 404 Not Found
     server: nginx
-    date: Sun, 03 Mar 2024 01:28:05 GMT
+    date: Sun, 10 Mar 2024 01:31:03 GMT
     content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 968f212b8012eda4785620da91cdeb2f
+    x-ovh-webhosting-id: 2680a1c31e1531e69f0b654a8fcc2f16
     pragma: no-cache
     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 1461BF33:0AC2_923BD198:0050_65E3D225_219B7:0F80
-    x-iplb-instance: 52143
-    connection: close
-    &lt;html xml:lang="en-EN" lang="en-EN"&gt;
-    &lt;head&gt;
-    &lt;title&gt;Site not installed - OVHcloud&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width"&gt;
-    &lt;meta http-equiv="refresh" content="90"&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-    &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
-    &lt;meta name="robots" content="noindex, nofollow"&gt;
-    &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta h
-  HTTPOptions: 
-    HTTP/1.1 404 Not Found
-    server: nginx
-    date: Sun, 03 Mar 2024 01:28:04 GMT
-    content-type: text/html; charset=utf8
-    x-ovh-webhosting-id: 6020c4c1d3e42c5e060e0afd9067f522
-    pragma: no-cache
-    cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    content-length: 4958
-    x-iplb-request-id: 1461BF33:0AC0_923BD198:0050_65E3D224_1481B:0FEC
+    content-length: 4960
+    x-iplb-request-id: ACB74DF9:3BC1_923BD198:0050_65ED0D51_ECB7:6164
     x-iplb-instance: 52189
     connection: close
     &lt;html xml:lang="en-EN" lang="en-EN"&gt;
@@ -165,16 +143,29 @@
     &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
     &lt;meta name="robots" content="noindex, nofollow"&gt;
     &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
-    &lt;meta h
-  RTSPRequest, X11Probe: 
-    HTTP/1.1 400 Bad request
-    content-length: 90
-    cache-control: no-cache
-    content-type: text/html
+    &lt;meta ht
+  HTTPOptions: 
+    HTTP/1.1 404 Not Found
+    server: nginx
+    date: Sun, 10 Mar 2024 01:31:03 GMT
+    content-type: text/html; charset=utf8
+    x-ovh-webhosting-id: 25364295fb772bcea0998a8e34eef653
+    pragma: no-cache
+    cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    content-length: 4960
+    x-iplb-request-id: ACB74DF9:3BC3_923BD198:0050_65ED0D57_1E4D3:3D35
+    x-iplb-instance: 52159
     connection: close
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
-    Your browser sent an invalid request.
-    &lt;/body&gt;&lt;/html&gt;</pre>
+    &lt;html xml:lang="en-EN" lang="en-EN"&gt;
+    &lt;head&gt;
+    &lt;title&gt;Site not installed - OVHcloud&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;meta http-equiv="refresh" content="90"&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+    &lt;meta http-equiv="Content-Language" content="en-EN"&gt;
+    &lt;meta name="robots" content="noindex, nofollow"&gt;
+    &lt;meta name="description" qtlid="283606" content="Site not installed"&gt;
+    &lt;meta h</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   Apache
