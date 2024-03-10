@@ -339,7 +339,7 @@
               "ip"           : "www.mon-expert-en-gestion.com/145.239.37.162",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "51 >= 30 days"
+              "finding"      : "44 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -535,14 +535,14 @@
               "ip"           : "www.mon-expert-en-gestion.com/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.mon-expert-en-gestion.com/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1709427928"
+              "finding"      : "1710032804"
           }
 ,         {
               "id"           : "HSTS",
@@ -651,10 +651,10 @@
               "id"           : "CRIME_TLS",
               "ip"           : "www.mon-expert-en-gestion.com/145.239.37.162",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "WARN",
               "cve"          : "CVE-2012-4929",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable"
+              "finding"      : "Check failed, couldn't connect"
           }
 ,         {
               "id"           : "BREACH",
@@ -1098,6 +1098,6 @@
               "ip"           : "www.mon-expert-en-gestion.com/145.239.37.162",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "61"
+              "finding"      : "107"
           }
 ]
