@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Mar 2024 01:20:37",
+	"@generated": "Sun, 17 Mar 2024 01:20:46",
 	"site":[ 
 		{
 			"@name": "https://lacomptasimplifiee.fr",
@@ -233,7 +233,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1709674238\" id=\"cmplz-cookiebanner-js\"></script>",
+							"evidence": "<script defer type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1710279023\" id=\"cmplz-cookiebanner-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -273,7 +273,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.4\" id=\"gform_json-js\"></script>",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.5\" id=\"gform_json-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -281,7 +281,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.4\" id=\"gform_placeholder-js\"></script>",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.5\" id=\"gform_placeholder-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -546,9 +546,9 @@
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1709674238",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1710279023",
 							"attack": "",
-							"evidence": "<script defer type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1709674238\" id=\"cmplz-cookiebanner-js\"></script>",
+							"evidence": "<script defer type=\"text/javascript\" src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1710279023\" id=\"cmplz-cookiebanner-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -578,17 +578,17 @@
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.4",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.5",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.4\" id=\"gform_json-js\"></script>",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.5\" id=\"gform_json-js\"></script>",
 							"otherinfo": ""
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
-							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.4",
+							"param": "https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.5",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.4\" id=\"gform_placeholder-js\"></script>",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.mon-expert-en-gestion.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.5\" id=\"gform_placeholder-js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -783,7 +783,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10096",
@@ -800,21 +800,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709674237",
-							"otherinfo": "1709674237, which evaluates to: 2024-03-05 21:30:37"
+							"evidence": "1710279022",
+							"otherinfo": "1710279022, which evaluates to: 2024-03-12 21:30:22"
 						},
 						{
 							"uri": "https://lacomptasimplifiee.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709674238",
-							"otherinfo": "1709674238, which evaluates to: 2024-03-05 21:30:38"
+							"evidence": "1710279023",
+							"otherinfo": "1710279023, which evaluates to: 2024-03-12 21:30:23"
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1709674237, which evaluates to: 2024-03-05 21:30:37</p>",
+					"otherinfo": "<p>1710279022, which evaluates to: 2024-03-12 21:30:22</p>",
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -994,7 +994,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 1",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -1020,7 +1020,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>https://www.rfc-editor.org/rfc/rfc9110.html</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1063,7 +1063,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1106,7 +1106,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1149,7 +1149,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1192,7 +1192,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1227,7 +1227,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1254,7 +1254,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				}
 			]
 		}

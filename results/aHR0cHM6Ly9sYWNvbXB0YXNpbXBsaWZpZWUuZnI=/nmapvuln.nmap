@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Mar 10 01:22:07 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln lacomptasimplifiee.fr
+# Nmap 7.92 scan initiated Sun Mar 17 01:22:16 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln lacomptasimplifiee.fr
 Nmap scan report for lacomptasimplifiee.fr (46.105.204.28)
-Host is up (0.018s latency).
+Host is up (0.022s latency).
 rDNS record for 46.105.204.28: cluster028.hosting.cdn.ovh.net
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE   VERSION
@@ -8,12 +8,12 @@ PORT    STATE SERVICE   VERSION
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.1 520 Domain not allowed on CDN
-|     Date: Sun, 10 Mar 2024 01:22:23 GMT
-|     X-CDN-Request-ID: 815268835
+|     Date: Sun, 17 Mar 2024 01:22:32 GMT
+|     X-CDN-Request-ID: 66838382
 |     X-CDN-Pop: bhs
 |     Content-Type: text/html; charset=utf-8
 |     Retry-After: 5
-|     Content-Length: 301
+|     Content-Length: 300
 |     Connection: close
 |     <!DOCTYPE html>
 |     <html>
@@ -24,15 +24,15 @@ PORT    STATE SERVICE   VERSION
 |     <h1>Error 520 Domain not allowed on CDN</h1>
 |     <p>Domain not allowed on CDN</p>
 |     <h3>Guru Meditation:</h3>
-|     <p>XID: 815268835</p>
+|     <p>XID: 66838382</p>
 |     <hr>
 |     <p>Varnish cache server</p>
 |     </body>
 |     </html>
 |   GetRequest: 
 |     HTTP/1.1 520 Domain not allowed on CDN
-|     Date: Sun, 10 Mar 2024 01:22:18 GMT
-|     X-CDN-Request-ID: 795752391
+|     Date: Sun, 17 Mar 2024 01:22:27 GMT
+|     X-CDN-Request-ID: 105180373
 |     X-CDN-Pop: bhs
 |     Content-Type: text/html; charset=utf-8
 |     Retry-After: 5
@@ -47,15 +47,15 @@ PORT    STATE SERVICE   VERSION
 |     <h1>Error 520 Domain not allowed on CDN</h1>
 |     <p>Domain not allowed on CDN</p>
 |     <h3>Guru Meditation:</h3>
-|     <p>XID: 795752391</p>
+|     <p>XID: 105180373</p>
 |     <hr>
 |     <p>Varnish cache server</p>
 |     </body>
 |     </html>
 |   HTTPOptions: 
 |     HTTP/1.1 520 Domain not allowed on CDN
-|     Date: Sun, 10 Mar 2024 01:22:18 GMT
-|     X-CDN-Request-ID: 551322491
+|     Date: Sun, 17 Mar 2024 01:22:27 GMT
+|     X-CDN-Request-ID: 121745211
 |     X-CDN-Pop: bhs
 |     Content-Type: text/html; charset=utf-8
 |     Retry-After: 5
@@ -70,7 +70,7 @@ PORT    STATE SERVICE   VERSION
 |     <h1>Error 520 Domain not allowed on CDN</h1>
 |     <p>Domain not allowed on CDN</p>
 |     <h3>Guru Meditation:</h3>
-|     <p>XID: 551322491</p>
+|     <p>XID: 121745211</p>
 |     <hr>
 |     <p>Varnish cache server</p>
 |     </body>
@@ -81,8 +81,8 @@ PORT    STATE SERVICE   VERSION
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.1 520 Domain not allowed on CDN
-|     Date: Sun, 10 Mar 2024 01:22:24 GMT
-|     X-CDN-Request-ID: 902333843
+|     Date: Sun, 17 Mar 2024 01:22:33 GMT
+|     X-CDN-Request-ID: 321426763
 |     X-CDN-Pop: bhs
 |     Content-Type: text/html; charset=utf-8
 |     Retry-After: 5
@@ -97,15 +97,15 @@ PORT    STATE SERVICE   VERSION
 |     <h1>Error 520 Domain not allowed on CDN</h1>
 |     <p>Domain not allowed on CDN</p>
 |     <h3>Guru Meditation:</h3>
-|     <p>XID: 902333843</p>
+|     <p>XID: 321426763</p>
 |     <hr>
 |     <p>Varnish cache server</p>
 |     </body>
 |     </html>
 |   GetRequest: 
 |     HTTP/1.1 520 Domain not allowed on CDN
-|     Date: Sun, 10 Mar 2024 01:22:24 GMT
-|     X-CDN-Request-ID: 362087829
+|     Date: Sun, 17 Mar 2024 01:22:33 GMT
+|     X-CDN-Request-ID: 304054830
 |     X-CDN-Pop: bhs
 |     Content-Type: text/html; charset=utf-8
 |     Retry-After: 5
@@ -120,15 +120,15 @@ PORT    STATE SERVICE   VERSION
 |     <h1>Error 520 Domain not allowed on CDN</h1>
 |     <p>Domain not allowed on CDN</p>
 |     <h3>Guru Meditation:</h3>
-|     <p>XID: 362087829</p>
+|     <p>XID: 304054830</p>
 |     <hr>
 |     <p>Varnish cache server</p>
 |     </body>
 |     </html>
 |   HTTPOptions: 
 |     HTTP/1.1 520 Domain not allowed on CDN
-|     Date: Sun, 10 Mar 2024 01:22:24 GMT
-|     X-CDN-Request-ID: 832373257
+|     Date: Sun, 17 Mar 2024 01:22:33 GMT
+|     X-CDN-Request-ID: 107473717
 |     X-CDN-Pop: bhs
 |     Content-Type: text/html; charset=utf-8
 |     Retry-After: 5
@@ -143,85 +143,85 @@ PORT    STATE SERVICE   VERSION
 |     <h1>Error 520 Domain not allowed on CDN</h1>
 |     <p>Domain not allowed on CDN</p>
 |     <h3>Guru Meditation:</h3>
-|     <p>XID: 832373257</p>
+|     <p>XID: 107473717</p>
 |     <hr>
 |     <p>Varnish cache server</p>
 |     </body>
 |_    </html>
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=3/10%Time=65ED0B4A%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=3/17%Time=65F645D3%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,209,"HTTP/1\.1\x20520\x20Domain\x20not\x20allowed\x20on\x20
-SF:CDN\r\nDate:\x20Sun,\x2010\x20Mar\x202024\x2001:22:18\x20GMT\r\nX-CDN-R
-SF:equest-ID:\x20795752391\r\nX-CDN-Pop:\x20bhs\r\nContent-Type:\x20text/h
+SF:CDN\r\nDate:\x20Sun,\x2017\x20Mar\x202024\x2001:22:27\x20GMT\r\nX-CDN-R
+SF:equest-ID:\x20105180373\r\nX-CDN-Pop:\x20bhs\r\nContent-Type:\x20text/h
 SF:tml;\x20charset=utf-8\r\nRetry-After:\x205\r\nContent-Length:\x20301\r\
 SF:nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>
 SF:\n\x20\x20\x20\x20<title>520\x20Domain\x20not\x20allowed\x20on\x20CDN</
 SF:title>\n\x20\x20</head>\n\x20\x20<body>\n\x20\x20\x20\x20<h1>Error\x205
 SF:20\x20Domain\x20not\x20allowed\x20on\x20CDN</h1>\n\x20\x20\x20\x20<p>Do
 SF:main\x20not\x20allowed\x20on\x20CDN</p>\n\x20\x20\x20\x20<h3>Guru\x20Me
-SF:ditation:</h3>\n\x20\x20\x20\x20<p>XID:\x20795752391</p>\n\x20\x20\x20\
+SF:ditation:</h3>\n\x20\x20\x20\x20<p>XID:\x20105180373</p>\n\x20\x20\x20\
 SF:x20<hr>\n\x20\x20\x20\x20<p>Varnish\x20cache\x20server</p>\n\x20\x20</b
 SF:ody>\n</html>\n")%r(HTTPOptions,209,"HTTP/1\.1\x20520\x20Domain\x20not\
-SF:x20allowed\x20on\x20CDN\r\nDate:\x20Sun,\x2010\x20Mar\x202024\x2001:22:
-SF:18\x20GMT\r\nX-CDN-Request-ID:\x20551322491\r\nX-CDN-Pop:\x20bhs\r\nCon
+SF:x20allowed\x20on\x20CDN\r\nDate:\x20Sun,\x2017\x20Mar\x202024\x2001:22:
+SF:27\x20GMT\r\nX-CDN-Request-ID:\x20121745211\r\nX-CDN-Pop:\x20bhs\r\nCon
 SF:tent-Type:\x20text/html;\x20charset=utf-8\r\nRetry-After:\x205\r\nConte
 SF:nt-Length:\x20301\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<h
 SF:tml>\n\x20\x20<head>\n\x20\x20\x20\x20<title>520\x20Domain\x20not\x20al
 SF:lowed\x20on\x20CDN</title>\n\x20\x20</head>\n\x20\x20<body>\n\x20\x20\x
 SF:20\x20<h1>Error\x20520\x20Domain\x20not\x20allowed\x20on\x20CDN</h1>\n\
 SF:x20\x20\x20\x20<p>Domain\x20not\x20allowed\x20on\x20CDN</p>\n\x20\x20\x
-SF:20\x20<h3>Guru\x20Meditation:</h3>\n\x20\x20\x20\x20<p>XID:\x2055132249
+SF:20\x20<h3>Guru\x20Meditation:</h3>\n\x20\x20\x20\x20<p>XID:\x2012174521
 SF:1</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\x20\x20<p>Varnish\x20cache\x20ser
 SF:ver</p>\n\x20\x20</body>\n</html>\n")%r(RTSPRequest,1C,"HTTP/1\.1\x2040
-SF:0\x20Bad\x20Request\r\n\r\n")%r(FourOhFourRequest,209,"HTTP/1\.1\x20520
-SF:\x20Domain\x20not\x20allowed\x20on\x20CDN\r\nDate:\x20Sun,\x2010\x20Mar
-SF:\x202024\x2001:22:23\x20GMT\r\nX-CDN-Request-ID:\x20815268835\r\nX-CDN-
-SF:Pop:\x20bhs\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nRetry-Af
-SF:ter:\x205\r\nContent-Length:\x20301\r\nConnection:\x20close\r\n\r\n<!DO
-SF:CTYPE\x20html>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20<title>520\x20D
-SF:omain\x20not\x20allowed\x20on\x20CDN</title>\n\x20\x20</head>\n\x20\x20
-SF:<body>\n\x20\x20\x20\x20<h1>Error\x20520\x20Domain\x20not\x20allowed\x2
-SF:0on\x20CDN</h1>\n\x20\x20\x20\x20<p>Domain\x20not\x20allowed\x20on\x20C
-SF:DN</p>\n\x20\x20\x20\x20<h3>Guru\x20Meditation:</h3>\n\x20\x20\x20\x20<
-SF:p>XID:\x20815268835</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\x20\x20<p>Varni
-SF:sh\x20cache\x20server</p>\n\x20\x20</body>\n</html>\n");
+SF:0\x20Bad\x20Request\r\n\r\n")%r(FourOhFourRequest,207,"HTTP/1\.1\x20520
+SF:\x20Domain\x20not\x20allowed\x20on\x20CDN\r\nDate:\x20Sun,\x2017\x20Mar
+SF:\x202024\x2001:22:32\x20GMT\r\nX-CDN-Request-ID:\x2066838382\r\nX-CDN-P
+SF:op:\x20bhs\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nRetry-Aft
+SF:er:\x205\r\nContent-Length:\x20300\r\nConnection:\x20close\r\n\r\n<!DOC
+SF:TYPE\x20html>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20<title>520\x20Do
+SF:main\x20not\x20allowed\x20on\x20CDN</title>\n\x20\x20</head>\n\x20\x20<
+SF:body>\n\x20\x20\x20\x20<h1>Error\x20520\x20Domain\x20not\x20allowed\x20
+SF:on\x20CDN</h1>\n\x20\x20\x20\x20<p>Domain\x20not\x20allowed\x20on\x20CD
+SF:N</p>\n\x20\x20\x20\x20<h3>Guru\x20Meditation:</h3>\n\x20\x20\x20\x20<p
+SF:>XID:\x2066838382</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\x20\x20<p>Varnish
+SF:\x20cache\x20server</p>\n\x20\x20</body>\n</html>\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=3/10%Time=65ED0B50%P=x86_64-alpine-linux
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=3/17%Time=65F645D9%P=x86_64-alpine-linux
 SF:-musl%r(GetRequest,209,"HTTP/1\.1\x20520\x20Domain\x20not\x20allowed\x2
-SF:0on\x20CDN\r\nDate:\x20Sun,\x2010\x20Mar\x202024\x2001:22:24\x20GMT\r\n
-SF:X-CDN-Request-ID:\x20362087829\r\nX-CDN-Pop:\x20bhs\r\nContent-Type:\x2
+SF:0on\x20CDN\r\nDate:\x20Sun,\x2017\x20Mar\x202024\x2001:22:33\x20GMT\r\n
+SF:X-CDN-Request-ID:\x20304054830\r\nX-CDN-Pop:\x20bhs\r\nContent-Type:\x2
 SF:0text/html;\x20charset=utf-8\r\nRetry-After:\x205\r\nContent-Length:\x2
 SF:0301\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x2
 SF:0<head>\n\x20\x20\x20\x20<title>520\x20Domain\x20not\x20allowed\x20on\x
 SF:20CDN</title>\n\x20\x20</head>\n\x20\x20<body>\n\x20\x20\x20\x20<h1>Err
 SF:or\x20520\x20Domain\x20not\x20allowed\x20on\x20CDN</h1>\n\x20\x20\x20\x
 SF:20<p>Domain\x20not\x20allowed\x20on\x20CDN</p>\n\x20\x20\x20\x20<h3>Gur
-SF:u\x20Meditation:</h3>\n\x20\x20\x20\x20<p>XID:\x20362087829</p>\n\x20\x
+SF:u\x20Meditation:</h3>\n\x20\x20\x20\x20<p>XID:\x20304054830</p>\n\x20\x
 SF:20\x20\x20<hr>\n\x20\x20\x20\x20<p>Varnish\x20cache\x20server</p>\n\x20
 SF:\x20</body>\n</html>\n")%r(HTTPOptions,209,"HTTP/1\.1\x20520\x20Domain\
-SF:x20not\x20allowed\x20on\x20CDN\r\nDate:\x20Sun,\x2010\x20Mar\x202024\x2
-SF:001:22:24\x20GMT\r\nX-CDN-Request-ID:\x20832373257\r\nX-CDN-Pop:\x20bhs
+SF:x20not\x20allowed\x20on\x20CDN\r\nDate:\x20Sun,\x2017\x20Mar\x202024\x2
+SF:001:22:33\x20GMT\r\nX-CDN-Request-ID:\x20107473717\r\nX-CDN-Pop:\x20bhs
 SF:\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nRetry-After:\x205\r
 SF:\nContent-Length:\x20301\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20ht
 SF:ml>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20<title>520\x20Domain\x20no
 SF:t\x20allowed\x20on\x20CDN</title>\n\x20\x20</head>\n\x20\x20<body>\n\x2
 SF:0\x20\x20\x20<h1>Error\x20520\x20Domain\x20not\x20allowed\x20on\x20CDN<
 SF:/h1>\n\x20\x20\x20\x20<p>Domain\x20not\x20allowed\x20on\x20CDN</p>\n\x2
-SF:0\x20\x20\x20<h3>Guru\x20Meditation:</h3>\n\x20\x20\x20\x20<p>XID:\x208
-SF:32373257</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\x20\x20<p>Varnish\x20cache
+SF:0\x20\x20\x20<h3>Guru\x20Meditation:</h3>\n\x20\x20\x20\x20<p>XID:\x201
+SF:07473717</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\x20\x20<p>Varnish\x20cache
 SF:\x20server</p>\n\x20\x20</body>\n</html>\n")%r(FourOhFourRequest,209,"H
 SF:TTP/1\.1\x20520\x20Domain\x20not\x20allowed\x20on\x20CDN\r\nDate:\x20Su
-SF:n,\x2010\x20Mar\x202024\x2001:22:24\x20GMT\r\nX-CDN-Request-ID:\x209023
-SF:33843\r\nX-CDN-Pop:\x20bhs\r\nContent-Type:\x20text/html;\x20charset=ut
+SF:n,\x2017\x20Mar\x202024\x2001:22:33\x20GMT\r\nX-CDN-Request-ID:\x203214
+SF:26763\r\nX-CDN-Pop:\x20bhs\r\nContent-Type:\x20text/html;\x20charset=ut
 SF:f-8\r\nRetry-After:\x205\r\nContent-Length:\x20301\r\nConnection:\x20cl
 SF:ose\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20
 SF:<title>520\x20Domain\x20not\x20allowed\x20on\x20CDN</title>\n\x20\x20</
 SF:head>\n\x20\x20<body>\n\x20\x20\x20\x20<h1>Error\x20520\x20Domain\x20no
 SF:t\x20allowed\x20on\x20CDN</h1>\n\x20\x20\x20\x20<p>Domain\x20not\x20all
 SF:owed\x20on\x20CDN</p>\n\x20\x20\x20\x20<h3>Guru\x20Meditation:</h3>\n\x
-SF:20\x20\x20\x20<p>XID:\x20902333843</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\
+SF:20\x20\x20\x20<p>XID:\x20321426763</p>\n\x20\x20\x20\x20<hr>\n\x20\x20\
 SF:x20\x20<p>Varnish\x20cache\x20server</p>\n\x20\x20</body>\n</html>\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Mar 10 01:24:43 2024 -- 1 IP address (1 host up) scanned in 156.56 seconds
+# Nmap done at Sun Mar 17 01:24:53 2024 -- 1 IP address (1 host up) scanned in 156.37 seconds
