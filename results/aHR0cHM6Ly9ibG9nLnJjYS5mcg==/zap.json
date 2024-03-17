@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Mar 2024 01:29:03",
+	"@generated": "Sun, 17 Mar 2024 01:28:52",
 	"site":[ 
 		{
 			"@name": "https://blog.rca.fr",
@@ -76,14 +76,6 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"https://blog.rca.fr/\" method=\"GET\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
-						},
-						{
 							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
 							"method": "GET",
 							"param": "",
@@ -92,7 +84,15 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/lexique-rca-mieux-comprendre-la-profession-comptable/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"https://blog.rca.fr/\" method=\"GET\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -183,14 +183,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
 							"method": "GET",
 							"param": "",
@@ -199,7 +191,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/lexique-rca-mieux-comprendre-la-profession-comptable/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -290,14 +290,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -306,7 +298,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/lexique-rca-mieux-comprendre-la-profession-comptable/",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -357,7 +357,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/author/rca/",
+							"uri": "https://blog.rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -365,7 +365,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/author/rca/",
+							"uri": "https://blog.rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -462,7 +462,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "724"
+					"sourceid": "772"
 				},
 				{
 					"pluginid": "10063",
@@ -531,14 +531,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
 							"method": "GET",
 							"param": "",
@@ -547,7 +539,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/lexique-rca-mieux-comprendre-la-profession-comptable/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -582,15 +582,7 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.rca.fr/wp-content/uploads/2023/09/DJI_0946-1536x863.jpg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "10.00.81.36",
-							"otherinfo": "10.00.81.36\n"
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-content/uploads/2023/09/DJI_0946-2048x1151.jpg",
+							"uri": "https://blog.rca.fr/wp-content/uploads/2023/09/DJI_0946-1024x575.jpg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -686,13 +678,13 @@
 							"otherinfo": "10.00.81.36\n"
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
 					"otherinfo": "<p>10.00.81.36</p><p></p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1632"
+					"sourceid": "1753"
 				},
 				{
 					"pluginid": "10037",
@@ -860,7 +852,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -923,101 +915,101 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673461",
-							"otherinfo": "1709673461, which evaluates to: 2024-03-05 21:17:41"
+							"evidence": "1710278287",
+							"otherinfo": "1710278287, which evaluates to: 2024-03-12 21:18:07"
 						},
 						{
 							"uri": "https://blog.rca.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673462",
-							"otherinfo": "1709673462, which evaluates to: 2024-03-05 21:17:42"
+							"evidence": "1710278288",
+							"otherinfo": "1710278288, which evaluates to: 2024-03-12 21:18:08"
 						},
 						{
 							"uri": "https://blog.rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673461",
-							"otherinfo": "1709673461, which evaluates to: 2024-03-05 21:17:41"
+							"evidence": "1710278287",
+							"otherinfo": "1710278287, which evaluates to: 2024-03-12 21:18:07"
 						},
 						{
 							"uri": "https://blog.rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673462",
-							"otherinfo": "1709673462, which evaluates to: 2024-03-05 21:17:42"
+							"evidence": "1710278288",
+							"otherinfo": "1710278288, which evaluates to: 2024-03-12 21:18:08"
 						},
 						{
 							"uri": "https://blog.rca.fr/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673461",
-							"otherinfo": "1709673461, which evaluates to: 2024-03-05 21:17:41"
+							"evidence": "1710278287",
+							"otherinfo": "1710278287, which evaluates to: 2024-03-12 21:18:07"
 						},
 						{
 							"uri": "https://blog.rca.fr/author/rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673462",
-							"otherinfo": "1709673462, which evaluates to: 2024-03-05 21:17:42"
+							"evidence": "1710278288",
+							"otherinfo": "1710278288, which evaluates to: 2024-03-12 21:18:08"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/culture-compta/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673461",
-							"otherinfo": "1709673461, which evaluates to: 2024-03-05 21:17:41"
+							"evidence": "1710278287",
+							"otherinfo": "1710278287, which evaluates to: 2024-03-12 21:18:07"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/culture-compta/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673462",
-							"otherinfo": "1709673462, which evaluates to: 2024-03-05 21:17:42"
+							"evidence": "1710278288",
+							"otherinfo": "1710278288, which evaluates to: 2024-03-12 21:18:08"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/team-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673461",
-							"otherinfo": "1709673461, which evaluates to: 2024-03-05 21:17:41"
+							"evidence": "1710278287",
+							"otherinfo": "1710278287, which evaluates to: 2024-03-12 21:18:07"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/team-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673462",
-							"otherinfo": "1709673462, which evaluates to: 2024-03-05 21:17:42"
+							"evidence": "1710278288",
+							"otherinfo": "1710278288, which evaluates to: 2024-03-12 21:18:08"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/tech-vibes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673461",
-							"otherinfo": "1709673461, which evaluates to: 2024-03-05 21:17:41"
+							"evidence": "1710278287",
+							"otherinfo": "1710278287, which evaluates to: 2024-03-12 21:18:07"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/tech-vibes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709673462",
-							"otherinfo": "1709673462, which evaluates to: 2024-03-05 21:17:42"
+							"evidence": "1710278288",
+							"otherinfo": "1710278288, which evaluates to: 2024-03-12 21:18:08"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1709673461, which evaluates to: 2024-03-05 21:17:41</p>",
+					"otherinfo": "<p>1710278287, which evaluates to: 2024-03-12 21:18:07</p>",
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1090,7 +1082,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1145,16 +1137,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2024/02/Wordpress-Image-en-avant-2",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkz\uFFFD>\"f\uFFFD{\uFFFD\uFFFD\uFFFD\u069E\u07F6"
+							"evidence": "fr/wp-content/uploads/2024/03/Meetup-devfest2-copie",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x001ez\u06E9\uFFFD\u05EF}\uFFFD-\uFFFD\uFFFD(\uFFFD'"
 						},
 						{
 							"uri": "https://blog.rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2024/02/Wordpress-Image-en-avant-2",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkz\uFFFD>\"f\uFFFD{\uFFFD\uFFFD\uFFFD\u069E\u07F6"
+							"evidence": "fr/wp-content/uploads/2024/03/Meetup-devfest2-copie",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x001ez\u06E9\uFFFD\u05EF}\uFFFD-\uFFFD\uFFFD(\uFFFD'"
 						},
 						{
 							"uri": "https://blog.rca.fr/author/rca/",
@@ -1177,27 +1169,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2024/02/Wordpress-Image-en-avant-2",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkz\uFFFD>\"f\uFFFD{\uFFFD\uFFFD\uFFFD\u069E\u07F6"
+							"evidence": "fr/wp-content/uploads/2024/03/img-yqtwUsZgYenPhT6ZWKKNKMsV",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCAB7\\x0005,f\\x0006\\x001e\uFFFD\uFFFDS\u954A(\u048C\uFFFD"
 						},
 						{
 							"uri": "https://blog.rca.fr/categorie/tech-vibes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2024/02/Design_System-1-1024x408",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\u07B2('\uFFFD,\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDt\u06CCx\uFFFD"
+							"evidence": "fr/wp-content/uploads/2024/03/Meetup-devfest2-copie",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x001ez\u06E9\uFFFD\u05EF}\uFFFD-\uFFFD\uFFFD(\uFFFD'"
 						},
 						{
 							"uri": "https://blog.rca.fr/diversite-index-degalite-professionnelle-de-rca/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/03/Signature-TeamRCA",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDD "
-						},
-						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1209,16 +1193,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2024/02/Wordpress-Image-en-avant-2",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkz\uFFFD>\"f\uFFFD{\uFFFD\uFFFD\uFFFD\u069E\u07F6"
+							"evidence": "fr/wp-content/uploads/2024/03/img-yqtwUsZgYenPhT6ZWKKNKMsV",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCAB7\\x0005,f\\x0006\\x001e\uFFFD\uFFFDS\u954A(\u048C\uFFFD"
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/lexique-rca-mieux-comprendre-la-profession-comptable/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/wp-content/uploads/2023/11/RCH_4103-1-scaled",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDB\\x001f\uFFFD5\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
+							"evidence": "fr/wp-content/uploads/2024/01/Illustration_sans_titre-19",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFD-\uFFFD\uFFFDb\uFFFD\uFFFDj{?\uFFFD+k{\uFFFD}"
+						},
+						{
+							"uri": "https://blog.rca.fr/meetups-talks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/wp-content/uploads/2024/03/Meetup-devfest2-copie",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x001ez\u06E9\uFFFD\u05EF}\uFFFD-\uFFFD\uFFFD(\uFFFD'"
 						},
 						{
 							"uri": "https://blog.rca.fr/report-de-la-facture-electronique-et-maintenant/",
@@ -1231,7 +1223,7 @@
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDkz\uFFFD>\"f\uFFFD{\uFFFD\uFFFD\uFFFD\u069E\u07F6</p>",
+					"otherinfo": "<p>~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06CF\uFFFD\uFFFD\uFFFD\\x001ez\u06E9\uFFFD\u05EF}\uFFFD-\uFFFD\uFFFD(\uFFFD'</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1257,14 +1249,6 @@
 						},
 						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fdiversite-index-degalite-professionnelle-de-rca%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
-							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fla-facture-electronique-et-apres%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1312,6 +1296,14 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
+							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fmeetups-talks%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
 							"uri": "https://blog.rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.rca.fr%2Fmigration-aws-rca%2F",
 							"method": "GET",
 							"param": "",
@@ -1350,7 +1342,7 @@
 					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "767"
+					"sourceid": "818"
 				},
 				{
 					"pluginid": "10019",
@@ -1465,7 +1457,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1825"
+					"sourceid": "1917"
 				},
 				{
 					"pluginid": "10027",
@@ -1649,14 +1641,6 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://blog.rca.fr/le-design-system-chez-rca-mais-quest-ce-que-cest/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n\t\t\t\t<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
 							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
 							"method": "GET",
 							"param": "",
@@ -1665,7 +1649,15 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://blog.rca.fr/rca-fait-son-cinema-au-devfest-nantes-%f0%9f%8e%a5/",
+							"uri": "https://blog.rca.fr/lexique-rca-mieux-comprendre-la-profession-comptable/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n\t\t\t\t<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1748,7 +1740,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://blog.rca.fr/le-premier-escape-game-cybersecurite-chez-rca/",
+							"uri": "https://blog.rca.fr/meetups-talks/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
