@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 24 Mar 2024 01:26:40",
+	"@generated": "Sun, 31 Mar 2024 01:29:59",
 	"site":[ 
 		{
 			"@name": "https://rca.fr",
@@ -122,7 +122,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10038",
@@ -175,6 +175,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/accompagnement/web-ateliers-gamme-conseil/",
 							"method": "GET",
 							"param": "",
@@ -207,14 +215,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/ressources/tous-nos-contenus/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
@@ -229,7 +229,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -282,6 +282,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/accompagnement/web-ateliers-gamme-conseil/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -314,14 +322,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/ressources/tous-nos-contenus/",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -336,7 +336,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -373,7 +373,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
+							"uri": "https://rca.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Poppins:600%2C400%7CRoboto:400%2Citalic%2C700&display=swap\" rel=\"stylesheet\" property=\"stylesheet\" media=\"all\" type=\"text/css\" >",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -381,7 +389,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
+							"uri": "https://rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -389,7 +397,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -397,7 +405,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -421,13 +429,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10054",
@@ -478,7 +486,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "144"
 				},
 				{
 					"pluginid": "10017",
@@ -516,6 +524,14 @@
 						},
 						{
 							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "GET",
+							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.3#038;render=explicit",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.3#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/accompagnement/telechargement-plaquette-formation/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.3#038;render=explicit",
 							"attack": "",
@@ -563,14 +579,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/gamme-conseil/telechargement-plaquette-gamme-conseil/",
-							"method": "GET",
-							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.3#038;render=explicit",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" defer='defer' src=\"https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.3#038;render=explicit\" id=\"gform_recaptcha-js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/telechargement-logiciels/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?hl=en&ver=6.4.3#038;render=explicit",
@@ -593,7 +601,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "311"
+					"sourceid": "339"
 				},
 				{
 					"pluginid": "10110",
@@ -630,23 +638,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.5",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.6",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.5",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -686,13 +678,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1024"
+					"sourceid": "985"
 				},
 				{
 					"pluginid": "10063",
@@ -745,6 +737,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/accompagnement/web-ateliers-gamme-conseil/",
 							"method": "GET",
 							"param": "",
@@ -777,14 +777,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/ressources/tous-nos-contenus/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
@@ -799,7 +791,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10037",
@@ -828,7 +820,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/le-parcours-meg/",
+							"uri": "https://rca.fr/actualites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -836,7 +828,23 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/actualites/",
+							"uri": "https://rca.fr/comments/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/contact",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/7.4",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://rca.fr/feed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -884,23 +892,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/7.4",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/wp-json/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -914,7 +906,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "691"
+					"sourceid": "696"
 				},
 				{
 					"pluginid": "10035",
@@ -967,6 +959,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "",
@@ -999,14 +999,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
@@ -1021,7 +1013,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10096",
@@ -1136,7 +1128,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -1189,6 +1181,14 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1221,14 +1221,6 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1243,7 +1235,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -1296,6 +1288,14 @@
 							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
+						},
+						{
 							"uri": "https://rca.fr/accompagnement/web-ateliers-gamme-conseil/",
 							"method": "GET",
 							"param": "",
@@ -1328,14 +1328,6 @@
 							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
 						},
 						{
-							"uri": "https://rca.fr/ressources/tous-nos-contenus/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\u025F<\uFFFD.\uFFFD\uFFFDk\uFFFDK\uFFFD)\\x0018\\x0007\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\\x0003\uFFFD\uFFFD=J#\uFFFDt\uFFFDr\uFFFDE\u04D6{\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDP\uFFFD\uFFFD\t"
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
@@ -1350,7 +1342,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90011",
@@ -1411,14 +1403,6 @@
 							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
 						},
 						{
-							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fnos-solutions%2Fecosysteme-rca%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
-						},
-						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fnos-solutions%2Fgamme-conseil%2F",
 							"method": "GET",
 							"param": "",
@@ -1428,6 +1412,14 @@
 						},
 						{
 							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fnos-solutions%2Fmon-expert-en-gestion%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match."
+						},
+						{
+							"uri": "https://rca.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Frca.fr%2Fnotre-adn%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1465,7 +1457,7 @@
 					"reference": "<p>https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1007"
+					"sourceid": "1001"
 				},
 				{
 					"pluginid": "10027",
@@ -1494,7 +1486,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"uri": "https://rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1502,7 +1494,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 3 times, the first in the element starting with: \"<script type=\"text/javascript\" id=\"wpdm-frontjs-js-extra\">\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"uri": "https://rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1515,7 +1507,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 3 times, the first in the element starting with: \"<script type=\"text/javascript\" id=\"wpdm-frontjs-js-extra\">\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in the element starting with: \"<script type=\"text/javascript\" id=\"wpdm-frontjs-js-extra\">\n/* <![CDATA[ */\nvar wpdm_url = {\"home\":\"https:\\/\\/rca.fr\\/\",\"site\":\"h\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
@@ -1534,7 +1526,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<!-- <script type=\"text/javascript\" src=\"https://rca.fr/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://rca.fr/nos-solutions/mon-expert-en-gestion/",
+							"uri": "https://rca.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1556,7 +1548,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -1609,6 +1601,14 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/service-client/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://rca.fr/accompagnement/web-ateliers-gamme-conseil/",
 							"method": "GET",
 							"param": "",
@@ -1641,14 +1641,6 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://rca.fr/ressources/tous-nos-contenus/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\"><span class=\"screen-reader-text\">Close Search</span>\n<span class=\"close-wrap\"> <span class=\"close-line close-line1\"></span> <span class=\"close-line close-line2\"></span> </span>\t\t\t\t </a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
 							"uri": "https://rca.fr/vos-enjeux/facture-electronique/",
 							"method": "GET",
 							"param": "",
@@ -1663,7 +1655,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1708,6 +1700,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://rca.fr/accompagnement/mooc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://rca.fr/nos-solutions/ecosysteme-rca/",
 							"method": "GET",
 							"param": "",
@@ -1740,13 +1740,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "8",
+					"count": "9",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -1861,7 +1861,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1234"
+					"sourceid": "1223"
 				},
 				{
 					"pluginid": "90005",
@@ -1904,7 +1904,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1947,7 +1947,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1990,7 +1990,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2033,7 +2033,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -2050,7 +2050,7 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -2058,47 +2058,23 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/cap-2024",
+							"uri": "https://rca.fr/wp-content/cache/wpfc-minified/e3peslan",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/accompagnement/formations-rca",
+							"uri": "https://rca.fr/wp-content/cache/wpfc-minified/eh38ai19",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
-							"otherinfo": "\ncookie:__wpdm_client"
-						},
-						{
-							"uri": "https://rca.fr/actualites/author/rca",
-							"method": "GET",
-							"param": "__wpdm_client",
-							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
-							"otherinfo": "\ncookie:__wpdm_client"
-						},
-						{
-							"uri": "https://rca.fr/notre-adn",
-							"method": "GET",
-							"param": "__wpdm_client",
-							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
-							"otherinfo": "\ncookie:__wpdm_client"
-						},
-						{
-							"uri": "https://rca.fr/vos-enjeux/facture-electronique",
-							"method": "GET",
-							"param": "__wpdm_client",
-							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -2106,23 +2082,15 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/cache/wpfc-minified/qshln6y7",
+							"uri": "https://rca.fr/wp-content/plugins/revslider/public/assets/css",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
-							"otherinfo": "\ncookie:__wpdm_client"
-						},
-						{
-							"uri": "https://rca.fr/wp-content/plugins/complianz-gdpr/cookiebanner/js",
-							"method": "GET",
-							"param": "__wpdm_client",
-							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
@@ -2130,25 +2098,49 @@
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						},
 						{
-							"uri": "https://rca.fr/wp-content/uploads/2021/11",
+							"uri": "https://rca.fr/wp-content/plugins/salient-core/js/third-party",
 							"method": "GET",
 							"param": "__wpdm_client",
 							"attack": "",
-							"evidence": "5fd7374251fe59e93ef1aa3d462d9736",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
+							"otherinfo": "\ncookie:__wpdm_client"
+						},
+						{
+							"uri": "https://rca.fr/wp-content/plugins/salient-portfolio/js/third-party",
+							"method": "GET",
+							"param": "__wpdm_client",
+							"attack": "",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
+							"otherinfo": "\ncookie:__wpdm_client"
+						},
+						{
+							"uri": "https://rca.fr/wp-content/themes/salient/css/build",
+							"method": "GET",
+							"param": "__wpdm_client",
+							"attack": "",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
+							"otherinfo": "\ncookie:__wpdm_client"
+						},
+						{
+							"uri": "https://rca.fr/wp-content/uploads/2021/10/collaborateurs.svg",
+							"method": "GET",
+							"param": "__wpdm_client",
+							"attack": "",
+							"evidence": "8eec3f37929c60b49d50d9c5c5a0296c",
 							"otherinfo": "\ncookie:__wpdm_client"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:__wpdm_client</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "7"
+					"sourceid": "144"
 				},
 				{
 					"pluginid": "10049",
@@ -2175,23 +2167,15 @@
 							"attack": "",
 							"evidence": "max-age=3600",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://rca.fr/sitemap_index.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "144"
 				},
 				{
 					"pluginid": "10031",
@@ -2338,7 +2322,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2043"
+					"sourceid": "1490"
 				}
 			]
 		}
